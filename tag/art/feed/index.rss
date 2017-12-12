@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>art &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/art/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>A Walk Down Memory Lane&#8230;</title>
+		<link>http://mattlockyer.com/2010/01/02/a-walk-down-memory-lane/</link>
+		<comments>http://mattlockyer.com/2010/01/02/a-walk-down-memory-lane/#respond</comments>
+		<pubDate>Sun, 03 Jan 2010 00:48:40 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Old Stuffs]]></category>
+		<category><![CDATA[art]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[old work]]></category>
+		<category><![CDATA[visual]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=56</guid>
+		<description><![CDATA[<p>Here are some very old projects of mine, dating 4 years and older now. Here is a brief overview: Bouncy Boxes &#8211; After writing my own drawing libraries for Flash (actionscript 2) I decided to abstract things a bit more. The drawing you see here is made with code. Recursive &#8211; Some fun with drawing [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/a-walk-down-memory-lane/">A Walk Down Memory Lane&#8230;</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Here are some very old projects of mine, dating 4 years and older now.</p>
+<p>Here is a brief overview:</p>
+<ul>
+<li><a href="http://mattlockyer.com/oldstuff/BouncyBoxes/boxes1.html">Bouncy Boxes</a> &#8211; After writing my own drawing libraries for Flash (actionscript 2) I decided to abstract things a bit more. The drawing you see here is made with code.</li>
+<li><a href="http://mattlockyer.com/oldstuff/Recursive/recursive.html">Recursive</a> &#8211; Some fun with drawing a recursive pattern and animating, may induce vertigo.</li>
+<li><a href="http://mattlockyer.com/oldstuff/Isobox/isobox.html">IsoBox</a> &#8211; Again, more drawing routines.</li>
+<li><a href="http://mattlockyer.com/oldstuff/reveal/">Reveal</a> &#8211; A simple image covered in objects which make themselves transparent with a mouseover.</li>
+<li><a href="http://mattlockyer.com/oldstuff/textexplode/">Text Explode</a> &#8211; An example of a simple particle explosion while hidding a letter.</li>
+<li><a href="http://mattlockyer.com/oldstuff/Snowwalk/snowwalk5.html">Snow Walk</a> &#8211; A simple animation from scanned drawings. Click once on the snowman, then use your arror keys.</li>
+<li><a href="http://mattlockyer.com/oldstuff/Leaves/">Leaves</a> &#8211; A tool made in an art class some time ago.</li>
+<li><a href="http://mattlockyer.com/oldstuff/FoundColor/FoundColor.html">Found Color</a> &#8211; Another tool developed in art class. This was for a found color assignment, in which all samples had to be discovered.</li>
+</ul>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/a-walk-down-memory-lane/">A Walk Down Memory Lane&#8230;</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/01/02/a-walk-down-memory-lane/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

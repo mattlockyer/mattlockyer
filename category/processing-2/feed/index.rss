@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Processing &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/category/processing-2/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</title>
+		<link>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/</link>
+		<comments>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/#respond</comments>
+		<pubDate>Mon, 06 May 2013 18:14:53 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=627</guid>
+		<description><![CDATA[<p>I&#8217;ve released an early stage version of my online editor for html, js, css, and processing called &#8220;Code Tabs&#8221; today. One thing missing from a lot of online editors is the ability to create custom tabs, a pretty essential feature for any project with more than a couple of hundred lines of code. I&#8217;ll be [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/">Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;ve released an early stage version of my online editor for html, js, css, and processing called &#8220;Code Tabs&#8221; today.</p>
+<p>One thing missing from a lot of online editors is the ability to create custom tabs, a pretty essential feature for any project with more than a couple of hundred lines of code.</p>
+<p>I&#8217;ll be using and testing Code Tabs this summer in a course at my school: IAT 167 Digital Games. The course is basically an introduction to game programming for students with a multimedia / multidisciplinary background.</p>
+<p>You can find Code Tabs on <a title="Code Tabs on GitHub" href="https://github.com/mattlockyer/codetabs" target="_blank">GitHub</a>.</p>
+<p>See <a title="Code Tabs Preview" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/" target="_blank">this</a> post for a list of features.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/">Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Code Tabs Preview</title>
+		<link>http://mattlockyer.com/2013/04/22/code-tabs-preview/</link>
+		<comments>http://mattlockyer.com/2013/04/22/code-tabs-preview/#respond</comments>
+		<pubDate>Tue, 23 Apr 2013 05:15:30 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=619</guid>
+		<description><![CDATA[<p>Simple HTML, CSS, JS, and Processing editor, with TABS! Features: TABS! No other online editor has them! Code hinting (autocomplete suggestions) for above languages Syntax highlighting (obvies&#8230;) Selection match highlighting Brace match highlighting Brace / Tag completion Brace / Tag folding Import and use any Javascript library (image ex: three.js) Import or Drag and Drop images [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/">Code Tabs Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Simple HTML, CSS, JS, and Processing editor, with TABS!</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2013/04/examples.jpg"><img class="aligncenter size-medium wp-image-620" alt="examples" src="http://mattlockyer.com/wp-content/uploads/2013/04/examples-300x274.jpg" width="300" height="274" srcset="http://mattlockyer.com/wp-content/uploads/2013/04/examples-300x274.jpg 300w, http://mattlockyer.com/wp-content/uploads/2013/04/examples.jpg 1019w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Features:</p>
+<ul>
+<li><span style="line-height: 13px;">TABS! No other online editor has them!</span></li>
+<li>Code hinting (autocomplete suggestions) for above languages</li>
+<li>Syntax highlighting (obvies&#8230;)</li>
+<li>Selection match highlighting</li>
+<li>Brace match highlighting</li>
+<li>Brace / Tag completion</li>
+<li>Brace / Tag folding</li>
+<li><span style="line-height: 13px;">Import and use any Javascript library (image ex: three.js)</span></li>
+<li>Import or Drag and Drop images for use in Processing and Javascript tabs (it&#8217;s a cat!)</li>
+<li>Built in webcam module (data-webcam=&#8221;true&#8221;)</li>
+<li>Fullscreen mode</li>
+<li>Mobile friendly</li>
+<li>Export .zip of all tabs in tidy project folder</li>
+<li>Setup in HTML markup using: data-option=&#8221;value&#8221; (easy as pie!)</li>
+</ul>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/">Code Tabs Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/22/code-tabs-preview/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick</title>
+		<link>http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/</link>
+		<comments>http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/#respond</comments>
+		<pubDate>Sun, 07 Apr 2013 21:11:47 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=602</guid>
+		<description><![CDATA[<p>An original benchmark posted here showed that Processing.js was lagging by 68-68% behind native Canvas API calls performing essentially the same thing. I was curious where the bottleneck for Processing.js was in the original test so I exposed the processing canvas context to the sketch itself in the head of the document. Then I simply [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/">HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>An original benchmark posted <a title="Paper.js vs Processing.js vs Raphaël" href="http://jsperf.com/paper-vs-processing-vs-raphael">here</a> showed that <a href="http://processingjs.org" title="Processing.js Homepage">Processing.js</a> was lagging by 68-68% behind native Canvas API calls performing essentially the same thing.</p>
+<p>I was curious where the bottleneck for Processing.js was in the original test so I exposed the processing canvas context to the sketch itself in the head of the document.</p>
+<p>Then I simply used the native Canvas API calls from within the Processing.js draw loop like so:</p>
+<pre id="code_snippet_64" style="position:relative;width:100%;border:0;padding:0;">//placed in head of document to expose processing canvas to sketch
+var pctx = processingCanvas.getContext('2d');
+
+//in processingjs draw loop
+pctx.fillStyle = &quot;#000&quot;;
+pctx.fillRect(0, 0, 50, 50);
+pctx.clearRect(0, 0, 100, 100);</pre>
+<p>My updated test is <a title="HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick" href="http://jsperf.com/paper-vs-processing-vs-raphael/3">here </a>and&#8230;</p>
+<p>Using the native canvas api from within Processing.js is MUCH faster.</p>
+<p>Perhaps the fastest (in my tests it outperformed the original Canvas API calls by 2-4% on Chrome and Android)!!!</p>
+<p>Check <a title="ProcessingJS rendering modes" href="http://processingjs.org/articles/RenderingModes.html">this </a>out to see how you can use the native Canvas API in your sketches for a performance boost!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/">HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

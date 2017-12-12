@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>opengl &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/opengl/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Fun Side Project</title>
+		<link>http://mattlockyer.com/2010/07/29/fun-side-project/</link>
+		<comments>http://mattlockyer.com/2010/07/29/fun-side-project/#respond</comments>
+		<pubDate>Fri, 30 Jul 2010 06:08:10 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[Openframeworks]]></category>
+		<category><![CDATA[opengl]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=246</guid>
+		<description><![CDATA[<p>Update: Started to work with OpenCL and managed to achieve the infamous 1 million particles in realtime, framerates are around 120 fps but fall when you add more complexity to the particles, collisions etc&#8230; Previously: Got inspired by Memo Atken&#8216;s Gold Dust. Little fun project made in C++ and OpenGL with the wonderful: OpenFrameworks.cc, OpenCV, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/07/29/fun-side-project/">Fun Side Project</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><br />
+<object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/Tv1lrjA9UvA&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Tv1lrjA9UvA&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></p>
+<p><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/h-7GInkbJHI&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/h-7GInkbJHI&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></p>
+<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="320" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/0R7V7xMMW9o&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="480" height="320" src="http://www.youtube.com/v/0R7V7xMMW9o&amp;hl=en_US&amp;fs=1?rel=0&amp;hd=1" allowscriptaccess="always" allowfullscreen="true"></embed></object></center></p>
+<p>Update:<br />
+Started to work with OpenCL and managed to achieve the infamous 1 million particles in realtime, framerates are around 120 fps but fall when you add more complexity to the particles, collisions etc&#8230;</p>
+<p>Previously:<br />
+Got inspired by <a href="http://memo.tv">Memo Atken</a>&#8216;s Gold Dust.</p>
+<div>Little fun project made in C++ and OpenGL with the wonderful: OpenFrameworks.cc, OpenCV, OfxSimpleGUIToo, and many others&#8230;</div>
+<p></p>
+<div>Stitched together and given life in not too much time and produces a consistent 40fps, with 2^15 particles, sized smallish, on a fairly top shelf one GPU system from two years ago.</div>
+<p></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/07/29/fun-side-project/">Fun Side Project</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/07/29/fun-side-project/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>OpenFrameworks</title>
+		<link>http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/</link>
+		<comments>http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/#respond</comments>
+		<pubDate>Sun, 03 Jan 2010 01:56:19 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[OF]]></category>
+		<category><![CDATA[Openframeworks]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[music]]></category>
+		<category><![CDATA[opengl]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[visualization]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=83</guid>
+		<description><![CDATA[<p>A great time of mine was when I decided not to work for a month and make a particle and music visualizer engine. The amazing OpenFrameworks.cc allowed me to build a very robust, flexible, and powerful engine, and to focus on what I really wanted to achieve, without getting bogged down by hardware details etc. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/">OpenFrameworks</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>A great time of mine was when I decided not to work for a month and make a particle and music visualizer engine. The amazing <a href="http://www.openframeworks.cc/">OpenFrameworks.cc</a> allowed me to build a very robust, flexible, and powerful engine, and to focus on what I really wanted to achieve, without getting bogged down by hardware details etc. The framework is for C++ on most major platforms.</p>
+<p>The videos shown here are created by drawing particles and their reactions to each other given various forces. The trick is to draw the particles very fast so you can have a lot of them. Some clever opengl coding, <a href="http://nehe.gamedev.net/data/lessons/lesson.asp?lesson=45">VBOs</a>, allowed me to draw a fantastic amount of particles. Finally, I added some music forces, that influence velocity, color, and others.</p>
+<p>This first video starts out softly and then get&#8217;s more intense. The song is an unreleased studio track by <a href="http://www.radiohead.com/deadairspace/">Radiohead</a>, and the video is my crowning achievement with this engine. It is best enjoyed in <a href="http://vimeo.com/6493644">HD</a> by going to the <a href="http://vimeo.com/6493644">Vimeo</a> page where it&#8217;s hosted.<br />
+<center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/hb16EjAWoDU" frameborder="0" allowfullscreen></iframe></center><br />
+This was another video done with the same engine. Like the name says, it&#8217;s just a technical demonstration of what&#8217;s possible.</p>
+<p><center><iframe width="480" height="320" src="http://www.youtube.com/embed/ieNZpKIykpg" frameborder="0" allowfullscreen></iframe></center><br />
+Here are some images showing some primatives and other things I built using the engine. This is a cube equalizer, where the cubes hang from springy ropes attached at the &#8220;ceiling&#8221;.</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2.jpg"><img class="aligncenter size-medium wp-image-84" title="cubeEqualizer2" src="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2-1024x640.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4.jpg"><img class="aligncenter size-medium wp-image-85" title="cubeEqualizer4" src="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4-1024x640.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Here is another picture of the particle swarm from the video above.</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3.jpg"><img class="aligncenter size-medium wp-image-86" title="particleSwarm3" src="http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3-1024x640.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>And here&#8217;s a nice one of the field, with the reactive comets. The description of what this is can be found on the vimeo page. Because you should watch it in HD, on the actual page, it&#8217;s only civilized&#8230;   :P</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall.jpg"><img class="aligncenter size-medium wp-image-87" title="polyFieldDesktopSmall" src="http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall-1024x640.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/">OpenFrameworks</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Videos in Processing</title>
+		<link>http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/</link>
+		<comments>http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/#respond</comments>
+		<pubDate>Sun, 03 Jan 2010 01:36:17 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[ess]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[music]]></category>
+		<category><![CDATA[opengl]]></category>
+		<category><![CDATA[processing]]></category>
+		<category><![CDATA[project]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=77</guid>
+		<description><![CDATA[<p>Before moving away from Processing, I dabbled with it&#8217;s video export, sound import and analysis libraries. Using opengl to make some visuals. And some more visual fun! These birds were given a flocking motion of perlin noise, which is a great smooth noise function that can create a nice pseudo flock. They are also in [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/">Videos in Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Before moving away from Processing, I dabbled with it&#8217;s video export, sound import and analysis libraries. Using opengl to make some visuals.</p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/lzagZBz9vzk" frameborder="0" allowfullscreen></iframe><br />
+</center><br />
+<center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/YeD-TO7r4uU" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>And some more visual fun! These birds were given a flocking motion of perlin noise, which is a great smooth noise function that can create a nice pseudo flock. They are also in groups, and flock around a general area. There are 16 or 32 groups total, I can&#8217;t really remember.</p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/EbBbCJJfzI8" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/">Videos in Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

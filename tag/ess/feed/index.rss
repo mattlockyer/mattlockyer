@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ess &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/ess/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Videos in Processing</title>
+		<link>http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/</link>
+		<comments>http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/#respond</comments>
+		<pubDate>Sun, 03 Jan 2010 01:36:17 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[ess]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[music]]></category>
+		<category><![CDATA[opengl]]></category>
+		<category><![CDATA[processing]]></category>
+		<category><![CDATA[project]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=77</guid>
+		<description><![CDATA[<p>Before moving away from Processing, I dabbled with it&#8217;s video export, sound import and analysis libraries. Using opengl to make some visuals. And some more visual fun! These birds were given a flocking motion of perlin noise, which is a great smooth noise function that can create a nice pseudo flock. They are also in [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/">Videos in Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Before moving away from Processing, I dabbled with it&#8217;s video export, sound import and analysis libraries. Using opengl to make some visuals.</p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/lzagZBz9vzk" frameborder="0" allowfullscreen></iframe><br />
+</center><br />
+<center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/YeD-TO7r4uU" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>And some more visual fun! These birds were given a flocking motion of perlin noise, which is a great smooth noise function that can create a nice pseudo flock. They are also in groups, and flock around a general area. There are 16 or 32 groups total, I can&#8217;t really remember.</p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/EbBbCJJfzI8" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/">Videos in Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/01/02/moving-drawings-more-processing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

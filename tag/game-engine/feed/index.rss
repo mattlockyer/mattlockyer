@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Game Engine &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/game-engine/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Blaze Space &#8211; Android Game Engine Demo</title>
+		<link>http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/</link>
+		<comments>http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/#respond</comments>
+		<pubDate>Wed, 15 Jun 2011 15:19:08 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[Adobe Air]]></category>
+		<category><![CDATA[Air for Android]]></category>
+		<category><![CDATA[Game Engine]]></category>
+		<category><![CDATA[flash]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=419</guid>
+		<description><![CDATA[<p>For the last two months I&#8217;ve been working on a fast, lightweight, 2D Physics and Game engine built in Actionscript 3 (Flash). The goal was to develop a library of tools to support creative interactive work (games, etc&#8230;) and allow for rapid prototyping of concepts. Another focus was platform independence which is why I decided [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/">Blaze Space &#8211; Android Game Engine Demo</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="https://market.android.com/details?id=air.BlazeSpace"><img src="http://mattlockyer.com/wp-content/uploads/2011/06/icon.png" alt="" title="BlazeSpace" width="256" height="256" class="aligncenter size-full wp-image-420" srcset="http://mattlockyer.com/wp-content/uploads/2011/06/icon.png 256w, http://mattlockyer.com/wp-content/uploads/2011/06/icon-150x150.png 150w" sizes="(max-width: 256px) 100vw, 256px" /></a></p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/2C7rBRMhtiE?hd=1" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>For the last two months I&#8217;ve been working on a fast, lightweight, 2D Physics and Game engine built in Actionscript 3 (Flash).</p>
+<p>The goal was to develop a library of tools to support creative interactive work (games, etc&#8230;) and allow for rapid prototyping of concepts.</p>
+<p>Another focus was platform independence which is why I decided to work with flash.</p>
+<p>Two months ago Adobe released Air 2.6 for Android and iOS, and I stumbled upon this video:</p>
+<p><center><br />
+<iframe width="540" height="304" src="http://www.youtube.com/embed/5rp7UNCWbyc?feature=oembed" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>The video demonstrated a simple 2D side scrolling game running on multiple devices (Mac, Android, iOS) and potentially all Web / Desktop / Mobile platforms.</p>
+<p>I took this as a testament to how far interpreted languages like Flash have come and realized that Adobe would only throw more support behind such an amazing technology.</p>
+<p>Simply put: code it once, deploy it everywhere.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/">Blaze Space &#8211; Android Game Engine Demo</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

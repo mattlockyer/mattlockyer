@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Works &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/category/works/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Socualizer &#8211; Social Media Visualizer</title>
+		<link>http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/</link>
+		<comments>http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/#respond</comments>
+		<pubDate>Tue, 20 Aug 2013 14:29:40 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=643</guid>
+		<description><![CDATA[<p>&#160; &#160; Socualizer is a product I&#8217;ve been developing for the past 3 months with the goal of integrating Social Media streams with high-end, club / concert grade visuals. The end result will be a turn-key, brandable, social media visualizer, with a powerful dashboard to control the streams and entire visual experience. Technically, Socualizer is [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/">Socualizer &#8211; Social Media Visualizer</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>&nbsp;</p>
+<p><a href="http://www.socualizer.com"><img class="aligncenter size-medium wp-image-644" alt="Socualizer Social Media Visualizer" src="http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample-300x149.jpg" width="300" height="149" srcset="http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample-300x149.jpg 300w, http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample-1024x509.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>&nbsp;</p>
+<p><a href="http://www.socualizer.com/">Socualizer</a> is a product I&#8217;ve been developing for the past 3 months with the goal of integrating Social Media streams with high-end, club / concert grade visuals. The end result will be a turn-key, brandable, social media visualizer, with a powerful dashboard to control the streams and entire visual experience.</p>
+<p>Technically, <a href="http://www.socualizer.com/">Socualizer</a> is built using <a href="http://nodejs.org/">node.js</a>, <a href="https://github.com/jdub/node-twitter">node-twitter</a>, <a href="https://github.com/mckelvey/instagram-node-lib">instagram-node-lib</a>, <a href="http://threejs.org">three.js</a>, <a href="https://github.com/sole/tween.js/">tween.js</a> and <a href="http://www.khronos.org/webgl/">WebGL</a> and some soon to be released on <a href="https://github.com/">GitHub</a> utility classes developed by myself to push the limits of double sided planes using <a href="http://www.khronos.org/webgl/">WebGL</a>.</p>
+<p><a href="http://www.socualizer.com/">Socualizer</a> is currently in private beta.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/">Socualizer &#8211; Social Media Visualizer</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Playground &#8211; Multiplayer, Collaborative, Visual Experience for Mobile</title>
+		<link>http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/</link>
+		<comments>http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/#respond</comments>
+		<pubDate>Thu, 06 Jun 2013 02:35:46 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=633</guid>
+		<description><![CDATA[<p>Recently I was asked to join Tangible Interaction in developing a Chrome Experiment that used WebRTC, an emerging web technology that enables P2P browser interaction (tabs talking to other tabs), without sending the data over the server. We developed Playground, which enables 5 friends in close proximity (100m) to join a &#8220;room&#8221; where each player [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/">Playground &#8211; Multiplayer, Collaborative, Visual Experience for Mobile</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Recently I was asked to join <a title="Tangible Interaction" href="http://www.tangibleinteraction.com/" target="_blank">Tangible Interaction</a> in developing a <a title="Chrome Experiments" href="http://www.chromeexperiments.com/" target="_blank">Chrome Experiment</a> that used <a title="WebRTC" href="http://www.webrtc.org/" target="_blank">WebRTC</a>, an emerging web technology that enables P2P browser interaction (tabs talking to other tabs), without sending the data over the server.</p>
+<p>We developed Playground, which enables 5 friends in close proximity (100m) to join a &#8220;room&#8221; where each player will have a different controller that determines a visual outcome.</p>
+<p>The project was a lot of fun to develop and break new ground using an up and coming web technology on mobile.</p>
+<p>The app can be found on <a title="Chrome Experiments" href="http://www.chromeexperiments.com/" target="_blank">Chrome Experiments</a> <a title="Playground on Chrome Experiments" href="http://www.chromeexperiments.com/detail/playground/" target="_blank">here</a>.</p>
+<p style="text-align: center;"><img class="aligncenter size-medium wp-image-634" alt="Playground Example Controller" src="http://mattlockyer.com/wp-content/uploads/2013/06/large-300x225.png" width="300" height="225" srcset="http://mattlockyer.com/wp-content/uploads/2013/06/large-300x225.png 300w, http://mattlockyer.com/wp-content/uploads/2013/06/large.png 400w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/">Playground &#8211; Multiplayer, Collaborative, Visual Experience for Mobile</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</title>
+		<link>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/</link>
+		<comments>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/#respond</comments>
+		<pubDate>Mon, 06 May 2013 18:14:53 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=627</guid>
+		<description><![CDATA[<p>I&#8217;ve released an early stage version of my online editor for html, js, css, and processing called &#8220;Code Tabs&#8221; today. One thing missing from a lot of online editors is the ability to create custom tabs, a pretty essential feature for any project with more than a couple of hundred lines of code. I&#8217;ll be [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/">Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;ve released an early stage version of my online editor for html, js, css, and processing called &#8220;Code Tabs&#8221; today.</p>
+<p>One thing missing from a lot of online editors is the ability to create custom tabs, a pretty essential feature for any project with more than a couple of hundred lines of code.</p>
+<p>I&#8217;ll be using and testing Code Tabs this summer in a course at my school: IAT 167 Digital Games. The course is basically an introduction to game programming for students with a multimedia / multidisciplinary background.</p>
+<p>You can find Code Tabs on <a title="Code Tabs on GitHub" href="https://github.com/mattlockyer/codetabs" target="_blank">GitHub</a>.</p>
+<p>See <a title="Code Tabs Preview" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/" target="_blank">this</a> post for a list of features.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/">Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Code Tabs Preview</title>
+		<link>http://mattlockyer.com/2013/04/22/code-tabs-preview/</link>
+		<comments>http://mattlockyer.com/2013/04/22/code-tabs-preview/#respond</comments>
+		<pubDate>Tue, 23 Apr 2013 05:15:30 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=619</guid>
+		<description><![CDATA[<p>Simple HTML, CSS, JS, and Processing editor, with TABS! Features: TABS! No other online editor has them! Code hinting (autocomplete suggestions) for above languages Syntax highlighting (obvies&#8230;) Selection match highlighting Brace match highlighting Brace / Tag completion Brace / Tag folding Import and use any Javascript library (image ex: three.js) Import or Drag and Drop images [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/">Code Tabs Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Simple HTML, CSS, JS, and Processing editor, with TABS!</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2013/04/examples.jpg"><img class="aligncenter size-medium wp-image-620" alt="examples" src="http://mattlockyer.com/wp-content/uploads/2013/04/examples-300x274.jpg" width="300" height="274" srcset="http://mattlockyer.com/wp-content/uploads/2013/04/examples-300x274.jpg 300w, http://mattlockyer.com/wp-content/uploads/2013/04/examples.jpg 1019w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Features:</p>
+<ul>
+<li><span style="line-height: 13px;">TABS! No other online editor has them!</span></li>
+<li>Code hinting (autocomplete suggestions) for above languages</li>
+<li>Syntax highlighting (obvies&#8230;)</li>
+<li>Selection match highlighting</li>
+<li>Brace match highlighting</li>
+<li>Brace / Tag completion</li>
+<li>Brace / Tag folding</li>
+<li><span style="line-height: 13px;">Import and use any Javascript library (image ex: three.js)</span></li>
+<li>Import or Drag and Drop images for use in Processing and Javascript tabs (it&#8217;s a cat!)</li>
+<li>Built in webcam module (data-webcam=&#8221;true&#8221;)</li>
+<li>Fullscreen mode</li>
+<li>Mobile friendly</li>
+<li>Export .zip of all tabs in tidy project folder</li>
+<li>Setup in HTML markup using: data-option=&#8221;value&#8221; (easy as pie!)</li>
+</ul>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/">Code Tabs Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/22/code-tabs-preview/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>aMotion Toolkit Video Recording Preview</title>
+		<link>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/</link>
+		<comments>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/#respond</comments>
+		<pubDate>Thu, 30 Aug 2012 18:04:16 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=575</guid>
+		<description><![CDATA[<p>Developing a cross platform motion texture engine in Java for creating affective motion textures with a node based, data flow UI. Using the Xuggle library for recording H264 video at a seemless 60fps. Using LWJGL for OpenGL and OpenCL. Using Jetty to create HTML5 UI that uses WebSockets so the application can be controlled through [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/">aMotion Toolkit Video Recording Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/DB3kBrSaw0k" frameborder="0" width="560" height="315"></iframe></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/08/preview5.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2012/08/preview5-300x152.jpg" alt="" title="aMotion Toolkit Preview Image" width="300" height="152" class="aligncenter size-medium wp-image-578" srcset="http://mattlockyer.com/wp-content/uploads/2012/08/preview5-300x152.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/08/preview5-1024x520.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2012/08/preview5.jpg 1456w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/08/preview6.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2012/08/preview6-300x238.jpg" alt="" title="aMotion Toolkit Preview Image" width="300" height="238" class="aligncenter size-medium wp-image-579" srcset="http://mattlockyer.com/wp-content/uploads/2012/08/preview6-300x238.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/08/preview6.jpg 900w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Developing a cross platform motion texture engine in Java for creating affective motion textures with a node based, data flow UI.</p>
+<p>Using the Xuggle library for recording H264 video at a seemless 60fps.</p>
+<p>Using LWJGL for OpenGL and OpenCL.</p>
+<p>Using Jetty to create HTML5 UI that uses WebSockets so the application can be controlled through the web by phones and other devices collaboratively.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/">aMotion Toolkit Video Recording Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Mutlimedia Programming</title>
+		<link>http://mattlockyer.com/2012/05/15/mutlimedia-programming/</link>
+		<comments>http://mattlockyer.com/2012/05/15/mutlimedia-programming/#respond</comments>
+		<pubDate>Tue, 15 May 2012 20:41:01 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=582</guid>
+		<description><![CDATA[<p>A while back I taught a course at my school titled: Multimedia Programming for Artists and Designers. The course introduces artists and designers to the basic concepts of &#8220;drawing and animating with code&#8221;. The course leveraged some of the latest web technologies to create interactive and engaging content serving as both lecture and study material. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/05/15/mutlimedia-programming/">Mutlimedia Programming</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>A while back I taught a course at my school titled: Multimedia Programming for Artists and Designers.</p>
+<p>The course introduces artists and designers to the basic concepts of &#8220;drawing and animating with code&#8221;.</p>
+<p>The course leveraged some of the latest web technologies to create interactive and engaging content serving as both lecture and study material.</p>
+<p>Here is the website: <a href="http://www.mattlockyer.com/multimediaprogramming">http://www.mattlockyer.com/multimediaprogramming</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/05/15/mutlimedia-programming/">Mutlimedia Programming</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/05/15/mutlimedia-programming/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Friend Flip</title>
+		<link>http://mattlockyer.com/2012/04/07/friend-flip/</link>
+		<comments>http://mattlockyer.com/2012/04/07/friend-flip/#respond</comments>
+		<pubDate>Sun, 08 Apr 2012 03:04:57 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=569</guid>
+		<description><![CDATA[<p>In my spare time I have put together a simple, clean app called Friend Flip. I made Friend Flip because I was sick of scrolling through my news feed like a zombie (when I even did at all). I decided matching up my friends and training my brain would be much more fun. Friend Flip [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/04/07/friend-flip/">Friend Flip</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="https://play.google.com/store/apps/details?id=air.air.FriendFlipAir"><img class="aligncenter size-medium wp-image-570" title="icon_512" src="http://mattlockyer.com/wp-content/uploads/2012/04/icon_512-300x300.png" alt="" width="300" height="300" srcset="http://mattlockyer.com/wp-content/uploads/2012/04/icon_512-300x300.png 300w, http://mattlockyer.com/wp-content/uploads/2012/04/icon_512-150x150.png 150w, http://mattlockyer.com/wp-content/uploads/2012/04/icon_512.png 512w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>In my spare time I have put together a simple, clean app called <a title="FriendFlip" href="http://www.flippomedia.com/friendflip">Friend Flip</a>.</p>
+<p>I made <a href="http://www.flippomedia.com/friendflip">Friend Flip</a> because I was sick of scrolling through my news feed like a zombie (when I even did at all). I decided matching up my friends and training my brain would be much more fun. <a href="http://www.flippomedia.com/friendflip">Friend Flip</a> is built with Adobe Air and was done front to back in 1 week. I used Stage3D and ND2D as a library for that, even though I probably didn&#8217;t need to ;). Also used the Actionscript Facebook API, Minimal Comps for buttons, and that&#8217;s it.</p>
+<p>Try it here: <a href="https://play.google.com/store/apps/details?id=air.air.FriendFlipAir">https://play.google.com/store/apps/details?id=air.air.FriendFlipAir</a></p>
+<p>Here is the app description on Google Play:</p>
+<p>Train your brain and check your FB news feed at the same time!</p>
+<p>An exciting way to train your brain and keep up to date with your friends. <a href="http://www.flippomedia.com/friendflip">Friend Flip</a> is a memory game based on your real-time Facebook news feed. Flip and match friends to read their status updates or just flip out! Have fun and enjoy!</p>
+<p>Note: You will need to be online and have a FB account to play.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/04/07/friend-flip/">Friend Flip</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/04/07/friend-flip/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Genetic Algorithms the Easy Way</title>
+		<link>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/</link>
+		<comments>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/#respond</comments>
+		<pubDate>Wed, 28 Mar 2012 21:27:04 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=562</guid>
+		<description><![CDATA[<p>Most of my work to date has been reactive, that is there is a 1-1 connection between what the user does and what the application does. Recently for a class project I decided to use Genetic Algorithms to enhance the user experience and potentially augment some of the creative processes of working with a tool. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/">Genetic Algorithms the Easy Way</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Most of my work to date has been reactive, that is there is a 1-1 connection between what the user does and what the application does.</p>
+<p>Recently for a class project I decided to use <a href="http://en.wikipedia.org/wiki/Genetic_algorithm">Genetic Algorithms</a> to enhance the user experience and potentially augment some of the creative processes of working with a tool.</p>
+<p>I always stayed away from this type of coding because it didn&#8217;t match the types of applications I was interested in making.</p>
+<p>Additionally GA has always shrouded in mystery for most coders since the concepts are described using genetic metaphors and binary crossover operations.</p>
+<p>I took a somewhat different tact for this assignment and I&#8217;m posting this for the benefit of anyone who is interested in a simple GA implementation for creative coding.</p>
+<p>This assumes the user makes an input that can be mapped directly or indirectly to a property of your system.</p>
+<p>Here are the steps:</p>
+<ol>
+<li>Make user input your fitness value (user did x, x = fitness)</li>
+<li>For all objects in your system measure distance from fitness value to matching object property</li>
+<li>Sort results</li>
+<li>Collect top 10% &#8211; 25% of the objects with closest property values to the fitness value</li>
+<li>For all objects, select 2 or more candidate objects randomly and average their property assigning it to the current object</li>
+<li>Optionally add in the fitness value itself (weighted by a learning factor)</li>
+<li>Optionally add in a random value (weighted)</li>
+</ol>
+<p>My application maps user gestures to motion properties such as: linear angle, linear speed, wave amplitude, wave speed, curve speed and so on&#8230;</p>
+<p>By employing the use of this simple GA, the user&#8217;s actions are not mapped 1-1 to a specific resulting motion type. Instead the system appears to &#8220;learn&#8221; the desired motion by virtue of the selection and mutation processes outlined in the steps above.</p>
+<p>Here are some initial results (does not really show the GA part, but until the app is released assume the experience is amazing):</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/03/sample2.jpg"><img class="aligncenter size-medium wp-image-563" title="sample2" src="http://mattlockyer.com/wp-content/uploads/2012/03/sample2-300x148.jpg" alt="" width="300" height="148" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/sample2-300x148.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/sample2.jpg 775w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/03/sample1.jpg"><img class="aligncenter size-medium wp-image-564" title="sample1" src="http://mattlockyer.com/wp-content/uploads/2012/03/sample1-300x147.jpg" alt="" width="300" height="147" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/sample1-300x147.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/sample1.jpg 797w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/">Genetic Algorithms the Easy Way</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Adobe Air Mobile Development Talk @ Vancouver Flash Platform Meetup</title>
+		<link>http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/</link>
+		<comments>http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/#respond</comments>
+		<pubDate>Mon, 27 Feb 2012 16:34:00 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=543</guid>
+		<description><![CDATA[<p>&#160; Discussing issues of &#8220;deploy everywhere&#8221; mobile technologies in general. Contents (in order): Pros and cons of: Unity, Corona SDK, Marmalade, PhoneGap, Titanium, HTML5 / CSS / JS. Pros and cons of Adobe Air platform for mobile development. Development samples of Adobe Air APIs. Discussion of performance issues, and performance tips. What&#8217;s broken at Adobe? [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/">Adobe Air Mobile Development Talk @ Vancouver Flash Platform Meetup</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe src="http://www.youtube.com/embed/cqt-NZH0J5s" frameborder="0" width="420" height="315"></iframe></center>&nbsp;</p>
+<p>Discussing issues of &#8220;deploy everywhere&#8221; mobile technologies in general.</p>
+<p>Contents (in order):</p>
+<ul>
+<li>Pros and cons of: Unity, Corona SDK, Marmalade, PhoneGap, Titanium, HTML5 / CSS / JS.</li>
+<li>Pros and cons of Adobe Air platform for mobile development.</li>
+<li>Development samples of Adobe Air APIs.</li>
+<li>Discussion of performance issues, and performance tips.</li>
+<li>What&#8217;s broken at Adobe?</li>
+<li>Q + A</li>
+</ul>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/">Adobe Air Mobile Development Talk @ Vancouver Flash Platform Meetup</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Painting Living Paintings</title>
+		<link>http://mattlockyer.com/2011/11/28/living-painting-painting/</link>
+		<comments>http://mattlockyer.com/2011/11/28/living-painting-painting/#respond</comments>
+		<pubDate>Mon, 28 Nov 2011 18:26:08 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=529</guid>
+		<description><![CDATA[<p>The above videos demonstrate user painting in my Living Painting Application described in this post. The hand tracking is done using a Kinect and objects are seeded from the hand with a velocity in the direction the hand is facing. The spread of objects being emitted can be controlled as well. The Living Painting Application [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/28/living-painting-painting/">Painting Living Paintings</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe width="560" height="315" src="http://www.youtube.com/embed/vaX1WWYhR7E" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/zgh-S65mYdk" frameborder="0" allowfullscreen></iframe></center></p>
+<p>The above videos demonstrate user painting in my Living Painting Application described in <a href="http://mattlockyer.com/2011/11/21/living-painting-demos/">this</a> post. The hand tracking is done using a Kinect and objects are seeded from the hand with a velocity in the direction the hand is facing. The spread of objects being emitted can be controlled as well.</p>
+<p>The Living Painting Application can work on a number of layers at once, the top example uses two layers while the bottom is only one. The layers can be video sources that are painted in real time.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/28/living-painting-painting/">Painting Living Paintings</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/11/28/living-painting-painting/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Autumn Crystal Desktops</title>
+		<link>http://mattlockyer.com/2011/11/25/autumn-crystal-desktops/</link>
+		<comments>http://mattlockyer.com/2011/11/25/autumn-crystal-desktops/#respond</comments>
+		<pubDate>Fri, 25 Nov 2011 23:37:50 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=522</guid>
+		<description><![CDATA[<p>These desktops were generated by my Living Painting application. Enjoy!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/25/autumn-crystal-desktops/">Autumn Crystal Desktops</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_01.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_01-300x168.jpg" alt="" title="Autumn_Crystal_Desktops_01" width="300" height="168" class="aligncenter size-medium wp-image-523" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_01-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_01-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_02.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_02-300x168.jpg" alt="" title="Autumn_Crystal_Desktops_02" width="300" height="168" class="aligncenter size-medium wp-image-524" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_02-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_02-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_10.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_10-300x168.jpg" alt="" title="Autumn_Crystal_Desktops_10" width="300" height="168" class="aligncenter size-medium wp-image-525" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_10-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_10-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_18.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_18-300x168.jpg" alt="" title="Autumn_Crystal_Desktops_18" width="300" height="168" class="aligncenter size-medium wp-image-526" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_18-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Autumn_Crystal_Desktops_18-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+These desktops were generated by my Living Painting application. Enjoy!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/25/autumn-crystal-desktops/">Autumn Crystal Desktops</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/11/25/autumn-crystal-desktops/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Living Painting Demos</title>
+		<link>http://mattlockyer.com/2011/11/21/living-painting-demos/</link>
+		<comments>http://mattlockyer.com/2011/11/21/living-painting-demos/#respond</comments>
+		<pubDate>Mon, 21 Nov 2011 15:48:31 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=496</guid>
+		<description><![CDATA[<p>You are the painting. Above are some demos of my Living Painting application. The application can paint still images, video, and video from Kinect with background subtraction. Multiple layers can be created to achieve complex visual results. Blending painted users with painted stills and video in real time. Sound reactive brushes are also available, size [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/21/living-painting-demos/">Living Painting Demos</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe width="560" height="315" src="http://www.youtube.com/embed/UjDaHMKwQl4" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/JbNWU69Ik0c" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/pp-nJ-MDUcU" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="560" height="315" src="http://www.youtube.com/embed/UA4hVXmXr6A" frameborder="0" allowfullscreen></iframe></center></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2011/11/tree.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/tree-300x168.jpg" alt="" title="tree" width="300" height="168" class="aligncenter size-medium wp-image-519" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/tree-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/tree-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/11/tree.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>You are the painting. </p>
+<p>Above are some demos of my Living Painting application. The application can paint still images, video, and video from Kinect with background subtraction.</p>
+<p>Multiple layers can be created to achieve complex visual results. Blending painted users with painted stills and video in real time. Sound reactive brushes are also available, size and movement being controlled by audio levels.</p>
+<p>The application uses Cinder an opensource C++ library, OpenGL, and some advanced programming to achieve over 100,000 brushes with multiple source layers in real time.</p>
+<p>Features:</p>
+<ul>
+<li>Infinite surfaces to paint (stills/video)</li>
+<li>Infinite brush layers</li>
+<li>Kinect video source</li>
+<li>Audio analysis and reaction</li>
+<li>over 100,000 brushes real-time @ 30fps!</li>
+<p>	(tested on core i7 with 460M NVidia, could be better&#8230;)
+</ul>
+<p>The goal of the application is to provide real-time creation of and immersion in famous art styles: impressionism, cubism, abstract.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/21/living-painting-demos/">Living Painting Demos</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/11/21/living-painting-demos/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Kinect Painter for Celfin Art Lab</title>
+		<link>http://mattlockyer.com/2011/11/10/kinect-painter-for-celfin-capital/</link>
+		<comments>http://mattlockyer.com/2011/11/10/kinect-painter-for-celfin-capital/#respond</comments>
+		<pubDate>Fri, 11 Nov 2011 04:26:55 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=508</guid>
+		<description><![CDATA[<p>I was recently contracted by Celfin Capital, an investment firm in Chile to develop what was my Living Brushes program into an interactive painting kiosk for use in the streets of Santiago. We talked on Skype about the possibility of doing the project and I was very interested in being a part of it. Developed [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/10/kinect-painter-for-celfin-capital/">Kinect Painter for Celfin Art Lab</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe width="480" height="320" src="http://www.youtube.com/embed/5QOYsRYROiM" frameborder="0" allowfullscreen></iframe></center></p>
+<p>I was recently contracted by <a href="http://www.celfin.com/home.html">Celfin Capital</a>, an investment firm in Chile to develop what was my <a href="http://mattlockyer.com/2011/03/18/411/">Living Brushes</a> program into an interactive painting kiosk for use in the streets of Santiago. We talked on Skype about the possibility of doing the project and I was very interested in being a part of it.</p>
+<p>Developed mainly in Vancouver over a period of 1 and a half months, the application was finished in Santiago, with some updates being done back here in Vancouver.</p>
+<p>The project officially launched on November 4th, 2011.</p>
+<p>The program allows users to paint with a variety of expressive brushes. A menu system allows users to switch brushes, clear the screen, change backgrounds and email screenshots to themselves. Works for 1 and 2 players.</p>
+<p>The following video is a demo of my cousin using the program before it was released:<br />
+<center><iframe width="480" height="320" src="http://www.youtube.com/embed/vjxNNH_CmSs" frameborder="0" allowfullscreen></iframe></center></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/10/kinect-painter-for-celfin-capital/">Kinect Painter for Celfin Art Lab</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/11/10/kinect-painter-for-celfin-capital/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Living Painting Preview</title>
+		<link>http://mattlockyer.com/2011/11/01/living-painting-preview/</link>
+		<comments>http://mattlockyer.com/2011/11/01/living-painting-preview/#respond</comments>
+		<pubDate>Tue, 01 Nov 2011 14:18:01 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=481</guid>
+		<description><![CDATA[<p>This is a preview of my upcoming Living Painting works. The application used the Cinder library, C++ and OpenGL. The architecture is designed to be extensible and has a full GUI panel for tweaking each effect. OpenGL shaders are used for the bloom and other effects.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/01/living-painting-preview/">Living Painting Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe width="480" height="320" src="http://www.youtube.com/embed/M66ry4vrkXQ" frameborder="0" allowfullscreen></iframe></center></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop3.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop3-300x168.jpg" alt="" title="Desktop3" width="300" height="168" class="aligncenter size-medium wp-image-488" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop3-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Desktop3-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/11/Desktop3.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop4.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop4-300x168.jpg" alt="" title="Desktop4" width="300" height="168" class="aligncenter size-medium wp-image-491" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop4-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Desktop4-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/11/Desktop4.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2011/11/Example8-720.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Example8-720-300x168.jpg" alt="" title="Example8-720" width="300" height="168" class="aligncenter size-medium wp-image-493" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Example8-720-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Example8-720-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/11/Example8-720.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop2.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop2-300x168.jpg" alt="" title="Desktop2" width="300" height="168" class="aligncenter size-medium wp-image-486" srcset="http://mattlockyer.com/wp-content/uploads/2011/11/Desktop2-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/11/Desktop2-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/11/Desktop2.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>This is a preview of my upcoming Living Painting works. The application used the Cinder library, C++ and OpenGL. The architecture is designed to be extensible and has a full GUI panel for tweaking each effect. OpenGL shaders are used for the bloom and other effects.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/11/01/living-painting-preview/">Living Painting Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/11/01/living-painting-preview/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Kinect and Cinder Library</title>
+		<link>http://mattlockyer.com/2011/08/23/kinect-and-cinder-library/</link>
+		<comments>http://mattlockyer.com/2011/08/23/kinect-and-cinder-library/#respond</comments>
+		<pubDate>Tue, 23 Aug 2011 16:52:57 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=439</guid>
+		<description><![CDATA[<p>I decided to give the Cinder library a try based on the packed feature set. This is a little demo application made with the Kinect that runs about 4000 particles in real time using only the Cinder API drawing methods. I believe Cinder will prove to be about 2x faster than openframeworks across the board, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/08/23/kinect-and-cinder-library/">Kinect and Cinder Library</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="http://mattlockyer.com/wp-content/uploads/2011/08/painting.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/08/painting-1024x576.jpg" alt="" title="painting" width="480" height="300" class="aligncenter size-large wp-image-453" style="border:2px solid black;" /></a><center><iframe width="480" height="320" src="http://www.youtube.com/embed/aQWRqZCwefk" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="480" height="320" src="http://www.youtube.com/embed/h9htRy0-sUw" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="480" height="320" src="http://www.youtube.com/embed/QOSozhmGbj4" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="480" height="320" src="http://www.youtube.com/embed/kYJBiQJ_QVA" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="480" height="320" src="http://www.youtube.com/embed/eMpqV-fga0w" frameborder="0" allowfullscreen></iframe></center><br />
+<center><iframe width="480" height="320" src="http://www.youtube.com/embed/1O7Ga7YBnNo" frameborder="0" allowfullscreen></iframe></center></p>
+<p>I decided to give the <a href="http://libcinder.org">Cinder</a> library a try based on the packed feature set.</p>
+<p>This is a little demo application made with the Kinect that runs about 4000 particles in real time using only the Cinder API drawing methods. I believe Cinder will prove to be about 2x faster than openframeworks across the board, which is awesome.</p>
+<p>I&#8217;ve hooked up box2d but haven&#8217;t had a chance to optimize any of the rendering yet.</p>
+<p>[Update]</p>
+<p>Still fleshing out the architecture of the Kinect painting program.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/08/23/kinect-and-cinder-library/">Kinect and Cinder Library</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/08/23/kinect-and-cinder-library/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>IMSound @ Vancouver Mini Maker Faire</title>
+		<link>http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/</link>
+		<comments>http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/#respond</comments>
+		<pubDate>Thu, 28 Jul 2011 16:52:00 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Interaction]]></category>
+		<category><![CDATA[Interactive]]></category>
+		<category><![CDATA[Light]]></category>
+		<category><![CDATA[Sound]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=431</guid>
+		<description><![CDATA[<p>I did some programming work on an interactive installation for the Vancouver Mini Maker Faire this year (2011). The project was a collaboration between Tangible Interaction, Chairman Ting, and myself. We had kids in mind when we thought about creating the install, so we used a heat sensor mounted 4-5 meters high and tracked body [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/">IMSound @ Vancouver Mini Maker Faire</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe width="480" height="320" src="http://www.youtube.com/embed/sR8wLu3OVCI?hd=1" frameborder="0" allowfullscreen></iframe></center></p>
+<p>I did some programming work on an interactive installation for the Vancouver Mini Maker Faire this year (2011).</p>
+<p>The project was a collaboration between Tangible Interaction, Chairman Ting, and myself.</p>
+<p>We had kids in mind when we thought about creating the install, so we used a heat sensor mounted 4-5 meters high and tracked body movement around a grid of characters.</p>
+<p>Each character had a personality (sound, light, face) and would light up when the kids got close.</p>
+<p>It was great to see the kids faces and excitement when they saw what was happening!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/">IMSound @ Vancouver Mini Maker Faire</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Blaze Space &#8211; Android Game Engine Demo</title>
+		<link>http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/</link>
+		<comments>http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/#respond</comments>
+		<pubDate>Wed, 15 Jun 2011 15:19:08 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[Adobe Air]]></category>
+		<category><![CDATA[Air for Android]]></category>
+		<category><![CDATA[Game Engine]]></category>
+		<category><![CDATA[flash]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=419</guid>
+		<description><![CDATA[<p>For the last two months I&#8217;ve been working on a fast, lightweight, 2D Physics and Game engine built in Actionscript 3 (Flash). The goal was to develop a library of tools to support creative interactive work (games, etc&#8230;) and allow for rapid prototyping of concepts. Another focus was platform independence which is why I decided [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/">Blaze Space &#8211; Android Game Engine Demo</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="https://market.android.com/details?id=air.BlazeSpace"><img src="http://mattlockyer.com/wp-content/uploads/2011/06/icon.png" alt="" title="BlazeSpace" width="256" height="256" class="aligncenter size-full wp-image-420" srcset="http://mattlockyer.com/wp-content/uploads/2011/06/icon.png 256w, http://mattlockyer.com/wp-content/uploads/2011/06/icon-150x150.png 150w" sizes="(max-width: 256px) 100vw, 256px" /></a></p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/2C7rBRMhtiE?hd=1" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>For the last two months I&#8217;ve been working on a fast, lightweight, 2D Physics and Game engine built in Actionscript 3 (Flash).</p>
+<p>The goal was to develop a library of tools to support creative interactive work (games, etc&#8230;) and allow for rapid prototyping of concepts.</p>
+<p>Another focus was platform independence which is why I decided to work with flash.</p>
+<p>Two months ago Adobe released Air 2.6 for Android and iOS, and I stumbled upon this video:</p>
+<p><center><br />
+<iframe width="540" height="304" src="http://www.youtube.com/embed/5rp7UNCWbyc?feature=oembed" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>The video demonstrated a simple 2D side scrolling game running on multiple devices (Mac, Android, iOS) and potentially all Web / Desktop / Mobile platforms.</p>
+<p>I took this as a testament to how far interpreted languages like Flash have come and realized that Adobe would only throw more support behind such an amazing technology.</p>
+<p>Simply put: code it once, deploy it everywhere.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/">Blaze Space &#8211; Android Game Engine Demo</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/06/15/blazespace-android-game-engine-demo/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Kinect Ribbons</title>
+		<link>http://mattlockyer.com/2011/03/25/kinect-ribbons/</link>
+		<comments>http://mattlockyer.com/2011/03/25/kinect-ribbons/#respond</comments>
+		<pubDate>Fri, 25 Mar 2011 23:30:08 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=415</guid>
+		<description><![CDATA[<p>Embodiment experiment with Kinect and Processing. Ribbons and sound reactive flares give a representation of myself dancing like a monkey. :P</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/25/kinect-ribbons/">Kinect Ribbons</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/jMsOTiLElcU?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jMsOTiLElcU?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>Embodiment experiment with Kinect and Processing.</p>
+<p>Ribbons and sound reactive flares give a representation of myself dancing like a monkey.</p>
+<p>:P</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/25/kinect-ribbons/">Kinect Ribbons</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/25/kinect-ribbons/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Living Brushes</title>
+		<link>http://mattlockyer.com/2011/03/18/411/</link>
+		<comments>http://mattlockyer.com/2011/03/18/411/#respond</comments>
+		<pubDate>Sat, 19 Mar 2011 01:30:14 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=411</guid>
+		<description><![CDATA[<p>Alpha stages of my Living Brushes program. Brushes of varying influence allow a user to create expressive visuals augmented by the creativity of an emergent system of brushes. This will be an installation soon that will allow the user to paint with brushes that have a simple swarm intelligence to them. Interaction is done with [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/18/411/">Living Brushes</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/zLr3xR_1O5g?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/zLr3xR_1O5g?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/25z8wCTp6Ek?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/25z8wCTp6Ek?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>Alpha stages of my Living Brushes program.</p>
+<p>Brushes of varying influence allow a user to create expressive visuals augmented by the creativity of an emergent system of brushes.</p>
+<p>This will be an installation soon that will allow the user to paint with brushes that have a simple swarm intelligence to them. Interaction is done with a Microsoft Kinect.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/18/411/">Living Brushes</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/18/411/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Video Painting with Kinect Take 2</title>
+		<link>http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/</link>
+		<comments>http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/#respond</comments>
+		<pubDate>Thu, 17 Mar 2011 01:00:56 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=409</guid>
+		<description><![CDATA[<p>This is a really rewarding project I&#8217;m working on that has awesome potential. Flocking behaviors and interaction with a Kinect make for some really fast and beautiful artistic effects.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/">Video Painting with Kinect Take 2</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/Ip5oO78tvFw?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Ip5oO78tvFw?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>This is a really rewarding project I&#8217;m working on that has awesome potential.</p>
+<p>Flocking behaviors and interaction with a Kinect make for some really fast and beautiful artistic effects.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/">Video Painting with Kinect Take 2</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

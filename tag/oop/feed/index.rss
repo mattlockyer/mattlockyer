@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>oop &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/oop/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Drawing with Processing</title>
+		<link>http://mattlockyer.com/2010/01/02/drawing-with-processing/</link>
+		<comments>http://mattlockyer.com/2010/01/02/drawing-with-processing/#respond</comments>
+		<pubDate>Sun, 03 Jan 2010 01:17:59 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[filters]]></category>
+		<category><![CDATA[image manipulation]]></category>
+		<category><![CDATA[java]]></category>
+		<category><![CDATA[oop]]></category>
+		<category><![CDATA[processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=65</guid>
+		<description><![CDATA[<p>Here are some images I developed when creating some drawing behaviors in Processing.org. Processing is a language a lot like java, only with a simplier structure and integrated drawing api that makes programmatic sketching possible. I have taught two workshops on processing at UBC, part of Julio Lopez&#8217;s graduate work to create a code/artist collaborative. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/drawing-with-processing/">Drawing with Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Here are some images I developed when creating some drawing behaviors in <a href="http://www.processing.org">Processing.org</a>.</p>
+<p>Processing is a language a lot like java, only with a simplier structure and integrated drawing api that makes programmatic sketching possible. I have taught two workshops on processing at UBC, part of <a href="http://www.juliolopez.ca/">Julio Lopez&#8217;s</a> graduate work to create a code/artist collaborative. His project was titled <a href="http://www.ahva.ubc.ca/eventsDetails.cfm?EventID=780&amp;EventTypeNumID=9">HUB Media Lab</a>.</p>
+<p>All of these images were created from code, using sampled color from another image. Most of the routines shown here were programmed with Object Oriented practices in mind. In essence, create an Object to do some drawing, make 6400 of them or more, and let them draw.</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild1Desktop.jpg"><img class="aligncenter size-medium wp-image-66" title="ForestWiresBuild1Desktop" src="http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild1Desktop-300x224.jpg" alt="" width="300" height="224" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild1Desktop-300x224.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild1Desktop-1024x767.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild1Desktop.jpg 1067w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild2Desktop.jpg"><img class="aligncenter size-medium wp-image-68" title="ForestWiresBuild2Desktop" src="http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild2Desktop-300x219.jpg" alt="" width="300" height="219" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild2Desktop-300x219.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild2Desktop-1024x748.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2010/01/ForestWiresBuild2Desktop.jpg 1094w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/MosaicImg4Build3.jpg"><img class="aligncenter size-medium wp-image-69" title="MosaicImg4Build3" src="http://mattlockyer.com/wp-content/uploads/2010/01/MosaicImg4Build3-300x227.jpg" alt="" width="300" height="227" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/MosaicImg4Build3-300x227.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/MosaicImg4Build3-1024x775.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2010/01/MosaicImg4Build3.jpg 1056w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaWires.jpg"><img class="aligncenter size-medium wp-image-74" title="ObamaWires" src="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaWires-202x300.jpg" alt="" width="202" height="300" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaWires-202x300.jpg 202w, http://mattlockyer.com/wp-content/uploads/2010/01/ObamaWires-690x1024.jpg 690w, http://mattlockyer.com/wp-content/uploads/2010/01/ObamaWires.jpg 752w" sizes="(max-width: 202px) 100vw, 202px" /></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/MosaicImg4Build3.jpg"></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/substratePainter.jpg"><img class="aligncenter size-medium wp-image-70" title="substratePainter" src="http://mattlockyer.com/wp-content/uploads/2010/01/substratePainter-300x168.jpg" alt="" width="300" height="168" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/substratePainter-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/substratePainter-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2010/01/substratePainter.jpg 1600w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateDesktop2.jpg"><img class="aligncenter size-medium wp-image-72" title="ObamaSubStrateDesktop2" src="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateDesktop2-202x300.jpg" alt="" width="202" height="300" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateDesktop2-202x300.jpg 202w, http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateDesktop2-690x1024.jpg 690w, http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateDesktop2.jpg 763w" sizes="(max-width: 202px) 100vw, 202px" /></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateImg4Build2small.jpg"><img class="aligncenter size-medium wp-image-73" title="ObamaSubStrateImg4Build2small" src="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateImg4Build2small-199x300.jpg" alt="" width="199" height="300" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateImg4Build2small-199x300.jpg 199w, http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateImg4Build2small-679x1024.jpg 679w, http://mattlockyer.com/wp-content/uploads/2010/01/ObamaSubStrateImg4Build2small.jpg 750w" sizes="(max-width: 199px) 100vw, 199px" /></a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/drawing-with-processing/">Drawing with Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/01/02/drawing-with-processing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

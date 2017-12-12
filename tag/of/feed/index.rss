@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>OF &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/of/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Making Shiny Things</title>
+		<link>http://mattlockyer.com/2010/03/16/making-shiny-things/</link>
+		<comments>http://mattlockyer.com/2010/03/16/making-shiny-things/#respond</comments>
+		<pubDate>Wed, 17 Mar 2010 06:18:36 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+		<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[OF]]></category>
+		<category><![CDATA[Openframeworks]]></category>
+		<category><![CDATA[Physical Computing]]></category>
+		<category><![CDATA[Visual Art]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=172</guid>
+		<description><![CDATA[<p>Working with my group in visual arts on a project I developed a program in Open Frameworks to light up 6 LEDs, plugged into an Arduino, based on the audio input signal. In the video: the software shot will show you a simulation of the six LEDs as lights across the top of the screen, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/03/16/making-shiny-things/">Making Shiny Things</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Working with my group in visual arts on a project I developed a program in <a href="http://www.openframeworks.cc/">Open Frameworks</a> to light up 6 LEDs, plugged into an <a href="http://www.arduino.cc/">Arduino</a>, based on the audio input signal.</p>
+<p>In the video: the software shot will show you a simulation of the six LEDs as lights across the top of the screen, the blue bars are the brightness level of those simulated lights.<br />
+<center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/Jehe-dOgl3g" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>Final Video Demo:</p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/O9z-lrwWgo8" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>Some Pics:</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot-300x168.jpg" alt="" title="Group shot" width="300" height="168" class="aligncenter size-medium wp-image-191" srcset="http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can-300x168.jpg" alt="" title="Tin Can" width="300" height="168" class="aligncenter size-medium wp-image-192" srcset="http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The Arduino circuit building adventure is here:</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield.jpg"><img class="aligncenter size-medium wp-image-173" title="ArduinoProtoShield" src="http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield-300x168.jpg" alt="" width="300" height="168" srcset="http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield.jpg 854w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The classes project is too create a visual house space that will incorporate some aspect of physical computing. The overall theme for the space is minimalist.</p>
+<p>My group decided to do the under the stairs portion of the space, it offers something creepy and unique. Our idea: allow the user to go under, line the walls with white fabric, scatter lights throughout the space, hang a tin can with a small microphone inside, and when the user talks&#8230; You guessed it, the lights come on. The space is dark and confined, until you light it up with your voice. Something magical but private happens in this space.</p>
+<p>Thanks to Bobby for all his knowledge of circuitry.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/03/16/making-shiny-things/">Making Shiny Things</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/03/16/making-shiny-things/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>OpenFrameworks</title>
+		<link>http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/</link>
+		<comments>http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/#respond</comments>
+		<pubDate>Sun, 03 Jan 2010 01:56:19 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[OF]]></category>
+		<category><![CDATA[Openframeworks]]></category>
+		<category><![CDATA[api]]></category>
+		<category><![CDATA[graphics]]></category>
+		<category><![CDATA[music]]></category>
+		<category><![CDATA[opengl]]></category>
+		<category><![CDATA[physics]]></category>
+		<category><![CDATA[visualization]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=83</guid>
+		<description><![CDATA[<p>A great time of mine was when I decided not to work for a month and make a particle and music visualizer engine. The amazing OpenFrameworks.cc allowed me to build a very robust, flexible, and powerful engine, and to focus on what I really wanted to achieve, without getting bogged down by hardware details etc. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/">OpenFrameworks</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>A great time of mine was when I decided not to work for a month and make a particle and music visualizer engine. The amazing <a href="http://www.openframeworks.cc/">OpenFrameworks.cc</a> allowed me to build a very robust, flexible, and powerful engine, and to focus on what I really wanted to achieve, without getting bogged down by hardware details etc. The framework is for C++ on most major platforms.</p>
+<p>The videos shown here are created by drawing particles and their reactions to each other given various forces. The trick is to draw the particles very fast so you can have a lot of them. Some clever opengl coding, <a href="http://nehe.gamedev.net/data/lessons/lesson.asp?lesson=45">VBOs</a>, allowed me to draw a fantastic amount of particles. Finally, I added some music forces, that influence velocity, color, and others.</p>
+<p>This first video starts out softly and then get&#8217;s more intense. The song is an unreleased studio track by <a href="http://www.radiohead.com/deadairspace/">Radiohead</a>, and the video is my crowning achievement with this engine. It is best enjoyed in <a href="http://vimeo.com/6493644">HD</a> by going to the <a href="http://vimeo.com/6493644">Vimeo</a> page where it&#8217;s hosted.<br />
+<center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/hb16EjAWoDU" frameborder="0" allowfullscreen></iframe></center><br />
+This was another video done with the same engine. Like the name says, it&#8217;s just a technical demonstration of what&#8217;s possible.</p>
+<p><center><iframe width="480" height="320" src="http://www.youtube.com/embed/ieNZpKIykpg" frameborder="0" allowfullscreen></iframe></center><br />
+Here are some images showing some primatives and other things I built using the engine. This is a cube equalizer, where the cubes hang from springy ropes attached at the &#8220;ceiling&#8221;.</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2.jpg"><img class="aligncenter size-medium wp-image-84" title="cubeEqualizer2" src="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer2-1024x640.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><a href="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4.jpg"><img class="aligncenter size-medium wp-image-85" title="cubeEqualizer4" src="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/cubeEqualizer4-1024x640.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Here is another picture of the particle swarm from the video above.</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3.jpg"><img class="aligncenter size-medium wp-image-86" title="particleSwarm3" src="http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/particleSwarm3-1024x640.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>And here&#8217;s a nice one of the field, with the reactive comets. The description of what this is can be found on the vimeo page. Because you should watch it in HD, on the actual page, it&#8217;s only civilized&#8230;   :P</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall.jpg"><img class="aligncenter size-medium wp-image-87" title="polyFieldDesktopSmall" src="http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall-300x187.jpg" alt="" width="300" height="187" srcset="http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall-300x187.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall-1024x640.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2010/01/polyFieldDesktopSmall.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/">OpenFrameworks</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/01/02/the-big-move-openframeworks/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

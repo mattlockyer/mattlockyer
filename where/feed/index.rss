@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Where</title>
+	<atom:link href="http://mattlockyer.com/where/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 29 Jul 2015 03:12:54 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>By: Toby Reid</title>
+		<link>http://mattlockyer.com/where/#comment-342</link>
+		<dc:creator><![CDATA[Toby Reid]]></dc:creator>
+		<pubDate>Fri, 14 Jun 2013 12:36:14 +0000</pubDate>
+		<guid isPermaLink="false">http://mattlockyer.com/?page_id=17#comment-342</guid>
+		<description><![CDATA[Hi Matt,
+Love your stuff, please get in touch if you&#039;re ever in Sydney. I&#039;m currently doing web development but getting more into interactive visualisations during the weekend as a hobby, hopefully &#039;performing&#039; soon.
+Regards,
+Toby]]></description>
+		<content:encoded><![CDATA[<p>Hi Matt,<br />
+Love your stuff, please get in touch if you&#8217;re ever in Sydney. I&#8217;m currently doing web development but getting more into interactive visualisations during the weekend as a hobby, hopefully &#8216;performing&#8217; soon.<br />
+Regards,<br />
+Toby</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

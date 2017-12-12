@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Close a Twitter Bootstrap Popover when Clicking Outside</title>
+	<atom:link href="http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/</link>
+	<description></description>
+	<lastBuildDate>Wed, 29 Jul 2015 03:12:54 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>By: sulaimaan</title>
+		<link>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/#comment-7273</link>
+		<dc:creator><![CDATA[sulaimaan]]></dc:creator>
+		<pubDate>Fri, 17 Apr 2015 06:59:00 +0000</pubDate>
+		<guid isPermaLink="false">http://mattlockyer.com/?p=616#comment-7273</guid>
+		<description><![CDATA[working excellently. thank you verymuch]]></description>
+		<content:encoded><![CDATA[<p>working excellently. thank you verymuch</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Yuri</title>
+		<link>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/#comment-456</link>
+		<dc:creator><![CDATA[Yuri]]></dc:creator>
+		<pubDate>Wed, 09 Oct 2013 20:25:11 +0000</pubDate>
+		<guid isPermaLink="false">http://mattlockyer.com/?p=616#comment-456</guid>
+		<description><![CDATA[Thank you very much comrade!]]></description>
+		<content:encoded><![CDATA[<p>Thank you very much comrade!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Subodh</title>
+		<link>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/#comment-449</link>
+		<dc:creator><![CDATA[Subodh]]></dc:creator>
+		<pubDate>Mon, 07 Oct 2013 09:35:45 +0000</pubDate>
+		<guid isPermaLink="false">http://mattlockyer.com/?p=616#comment-449</guid>
+		<description><![CDATA[Great it worked perfectly]]></description>
+		<content:encoded><![CDATA[<p>Great it worked perfectly</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Tim</title>
+		<link>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/#comment-348</link>
+		<dc:creator><![CDATA[Tim]]></dc:creator>
+		<pubDate>Tue, 18 Jun 2013 19:06:41 +0000</pubDate>
+		<guid isPermaLink="false">http://mattlockyer.com/?p=616#comment-348</guid>
+		<description><![CDATA[This was very helpful, thanks very much.
+
+If using fake selectors isn&#039;t your thing, you could use the popover plugin&#039;s data-container attribute to have the popovers appended to some container, such as #popoverContainer, and then use $(&#039;:not(#popoverContainer)&#039;) on line #1. (I haven&#039;t tried that on iOS.)]]></description>
+		<content:encoded><![CDATA[<p>This was very helpful, thanks very much.</p>
+<p>If using fake selectors isn&#8217;t your thing, you could use the popover plugin&#8217;s data-container attribute to have the popovers appended to some container, such as #popoverContainer, and then use $(&#8216;:not(#popoverContainer)&#8217;) on line #1. (I haven&#8217;t tried that on iOS.)</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

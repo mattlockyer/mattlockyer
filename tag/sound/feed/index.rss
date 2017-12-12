@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sound &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/sound/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>IMSound @ Vancouver Mini Maker Faire</title>
+		<link>http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/</link>
+		<comments>http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/#respond</comments>
+		<pubDate>Thu, 28 Jul 2011 16:52:00 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Interaction]]></category>
+		<category><![CDATA[Interactive]]></category>
+		<category><![CDATA[Light]]></category>
+		<category><![CDATA[Sound]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=431</guid>
+		<description><![CDATA[<p>I did some programming work on an interactive installation for the Vancouver Mini Maker Faire this year (2011). The project was a collaboration between Tangible Interaction, Chairman Ting, and myself. We had kids in mind when we thought about creating the install, so we used a heat sensor mounted 4-5 meters high and tracked body [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/">IMSound @ Vancouver Mini Maker Faire</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe width="480" height="320" src="http://www.youtube.com/embed/sR8wLu3OVCI?hd=1" frameborder="0" allowfullscreen></iframe></center></p>
+<p>I did some programming work on an interactive installation for the Vancouver Mini Maker Faire this year (2011).</p>
+<p>The project was a collaboration between Tangible Interaction, Chairman Ting, and myself.</p>
+<p>We had kids in mind when we thought about creating the install, so we used a heat sensor mounted 4-5 meters high and tracked body movement around a grid of characters.</p>
+<p>Each character had a personality (sound, light, face) and would light up when the kids got close.</p>
+<p>It was great to see the kids faces and excitement when they saw what was happening!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/">IMSound @ Vancouver Mini Maker Faire</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/07/28/imsound-vancouver-mini-maker-faire/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

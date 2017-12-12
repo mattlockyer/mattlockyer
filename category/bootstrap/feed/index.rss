@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bootstrap &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/category/bootstrap/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Close a Twitter Bootstrap Popover when Clicking Outside</title>
+		<link>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/</link>
+		<comments>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/#comments</comments>
+		<pubDate>Mon, 08 Apr 2013 16:34:46 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Bootstrap]]></category>
+		<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=616</guid>
+		<description><![CDATA[<p>A vexing topic for me and a bunch of other people on stackoverflow, the problem being that Twitter Bootstrap Popovers don&#8217;t close when you click outside to anywhere else on the document. This might not be your desired outcome, simply: when clicking outside a popover, wouldn&#8217;t you want it to close? The code below makes [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/">Close a Twitter Bootstrap Popover when Clicking Outside</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>A vexing topic for me and a bunch of other people on stackoverflow, the problem being that <a href="http://twitter.github.io/bootstrap/javascript.html#popovers" title="Twitter Bootstrap Popover Close on Click Outside">Twitter Bootstrap Popovers</a> don&#8217;t close when you click outside to anywhere else on the document.</p>
+<p>This might not be your desired outcome, simply: when clicking outside a popover, wouldn&#8217;t you want it to close?</p>
+<p>The code below makes this possible:</p>
+<pre id="code_snippet_69" style="position:relative;width:100%;border:0;padding:0;">$('[data-toggle=&quot;popover&quot;]').popover();
+
+$('body').on('click', function (e) {
+    $('[data-toggle=&quot;popover&quot;]').each(function () {
+        //the 'is' for buttons that trigger popups
+        //the 'has' for icons within a button that triggers a popup
+        if (!$(this).is(e.target) &amp;&amp; $(this).has(e.target).length === 0 &amp;&amp; $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide');
+        }
+    });
+});</pre>
+<p>A note about the use of <code>$(':not(#anything)')</code> as my body selector. This is due to iOS not binding click events to &#8216;html&#8217; or &#8216;body&#8217;.</p>
+<p>To put it short, this is a bulletproof way to detect clicks anywhere on the document (providing you don&#8217;t have a div with an id of &#8216;anything&#8217;).</p>
+<p><a href="http://jsfiddle.net/mattdlockyer/C5GBU/2/" title="Close a Twitter Bootstrap Popover when Clicking Outside">Live Example Here</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/">Close a Twitter Bootstrap Popover when Clicking Outside</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Twitter Bootstrap Carousel Full Markup Example</title>
+		<link>http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/</link>
+		<comments>http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/#respond</comments>
+		<pubDate>Mon, 08 Apr 2013 15:21:48 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Bootstrap]]></category>
+		<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=609</guid>
+		<description><![CDATA[<p>I really like Twitter Bootstrap but I&#8217;ve noticed that their example page only shows minimal markup for some of the more exciting features, leaving out little details like the &#8220;carousel-caption&#8221; class that I had to use view source to find. If you were looking for how they do their clever captions at the bottom of [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/">Twitter Bootstrap Carousel Full Markup Example</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I really like <a href="http://twitter.github.io/bootstrap/" title="Twitter Bootstrap Home">Twitter Bootstrap</a> but I&#8217;ve noticed that their example page only shows minimal markup for some of the more exciting features, leaving out little details like the &#8220;carousel-caption&#8221; class that I had to use view source to find.</p>
+<p>If you were looking for how they do their clever captions at the bottom of each carousel image, look no further.</p>
+<p>Since the carousel may or may not play automatically I recommend triggering it with Javascript, live example <a href="http://jsfiddle.net/mattdlockyer/gjPVJ/4/" title="Twitter Bootstrap Carousel Full Markup Example Fiddle">here</a>.</p>
+<p>Below is the full markup of a <a href="http://twitter.github.io/bootstrap/javascript.html#carousel" title="Twitter Bootstrap Carousel">Twitter Bootstrap Carousel</a></p>
+<pre id="code_snippet_66" style="position:relative;width:100%;border:0;padding:0;">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;span12&quot;&gt;
+            
+            &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot;&gt;
+                &lt;ol class=&quot;carousel-indicators&quot;&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+                &lt;/ol&gt;
+                &lt;div class=&quot;carousel-inner&quot;&gt;
+                    &lt;div class=&quot;item active&quot;&gt;
+                        &lt;img src=&quot;http://mattlockyer.com/wp-content/uploads/2011/11/Example8-720.jpg&quot; alt=&quot;http://www.mattlockyer.com&quot;&gt;
+                        &lt;div class=&quot;carousel-caption&quot;&gt;
+                             &lt;h4&gt;First Thumbnail label&lt;/h4&gt;
+
+                            &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item&quot;&gt;
+                        &lt;img src=&quot;http://mattlockyer.com/wp-content/uploads/2011/11/Desktop2.jpg&quot; alt=&quot;http://www.mattlockyer.com&quot;&gt;
+                        &lt;div class=&quot;carousel-caption&quot;&gt;
+                             &lt;h4&gt;Second Thumbnail label&lt;/h4&gt;
+
+                            &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item&quot;&gt;
+                        &lt;img src=&quot;http://mattlockyer.com/wp-content/uploads/2011/11/tree.jpg&quot; alt=&quot;http://www.mattlockyer.com&quot;&gt;
+                        &lt;div class=&quot;carousel-caption&quot;&gt;
+                             &lt;h4&gt;Third Thumbnail label&lt;/h4&gt;
+
+                            &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;‹&lt;/a&gt;
+                &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;›&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>Enjoy!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/">Twitter Bootstrap Carousel Full Markup Example</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

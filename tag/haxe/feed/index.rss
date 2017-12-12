@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Haxe &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/tag/haxe/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Actionscript and Haxe Physics Engine Roundup</title>
+		<link>http://mattlockyer.com/2011/04/15/actionscript-and-haxe-physics-engine-roundup/</link>
+		<comments>http://mattlockyer.com/2011/04/15/actionscript-and-haxe-physics-engine-roundup/#respond</comments>
+		<pubDate>Fri, 15 Apr 2011 15:37:34 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[Haxe]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[physics]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=425</guid>
+		<description><![CDATA[<p>While developing a fast, 2d physics, lightweight, game engine, I tested multiple open source physics engines for three features: speed, memory usage, feature set. Note: I vetted each engine on how it performed on Air for Android. All of these engines are excellent choices for Web / Desktop where squeezing performance is not an issue. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/04/15/actionscript-and-haxe-physics-engine-roundup/">Actionscript and Haxe Physics Engine Roundup</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>While developing a fast, 2d physics, lightweight, game engine, I tested multiple open source physics engines for three features: speed, memory usage, feature set.</p>
+<p>Note: I vetted each engine on how it performed on Air for Android. All of these engines are excellent choices for Web / Desktop where squeezing performance is not an issue.</p>
+<p>Here are the results:</p>
+<p><a href="http://code.google.com/p/glaze/">Glaze</a>: high performance, low memory, full features (except buoyancy)<br />
+<a href="http://code.google.com/p/physaxe/">Physaxe </a>(<a href="http://haxe.org">haxe</a>only): high performance, low memory, limited features<br />
+<a href="http://box2dflash.sourceforge.net/">Box2d </a>(alchemy, <a href="http://haxe.org">haxe</a>, actionscript): medium performance, medium memory, full features<br />
+<a href="http://www.motorphysics.de/">Motor2</a>: medium performance, medium memory, full features</p>
+<p>My choice is <a href="http://code.google.com/p/glaze/">Glaze</a>, simply because it performed the best and had all the features I was looking for.</p>
+<p>There is a divide in physics engines out there that I did notice: Chipmunk based engines (Glaze, Physaxe) and Box2D based engines (motor2).</p>
+<p>The reasons being that Box2D has always been focused on simulation accuracy, while Chipmunk is geared towards game performance.</p>
+<p>Needless to say, these are all my experiences and opinions, there are many articles debating these topics and the only way to really know which physics engine you should use is to test them yourself.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/04/15/actionscript-and-haxe-physics-engine-roundup/">Actionscript and Haxe Physics Engine Roundup</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/04/15/actionscript-and-haxe-physics-engine-roundup/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

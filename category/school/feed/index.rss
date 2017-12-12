@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>School &#8211; The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/category/school/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>aMotion Toolkit Video Recording Preview</title>
+		<link>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/</link>
+		<comments>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/#respond</comments>
+		<pubDate>Thu, 30 Aug 2012 18:04:16 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=575</guid>
+		<description><![CDATA[<p>Developing a cross platform motion texture engine in Java for creating affective motion textures with a node based, data flow UI. Using the Xuggle library for recording H264 video at a seemless 60fps. Using LWJGL for OpenGL and OpenCL. Using Jetty to create HTML5 UI that uses WebSockets so the application can be controlled through [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/">aMotion Toolkit Video Recording Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/DB3kBrSaw0k" frameborder="0" width="560" height="315"></iframe></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/08/preview5.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2012/08/preview5-300x152.jpg" alt="" title="aMotion Toolkit Preview Image" width="300" height="152" class="aligncenter size-medium wp-image-578" srcset="http://mattlockyer.com/wp-content/uploads/2012/08/preview5-300x152.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/08/preview5-1024x520.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2012/08/preview5.jpg 1456w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/08/preview6.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2012/08/preview6-300x238.jpg" alt="" title="aMotion Toolkit Preview Image" width="300" height="238" class="aligncenter size-medium wp-image-579" srcset="http://mattlockyer.com/wp-content/uploads/2012/08/preview6-300x238.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/08/preview6.jpg 900w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Developing a cross platform motion texture engine in Java for creating affective motion textures with a node based, data flow UI.</p>
+<p>Using the Xuggle library for recording H264 video at a seemless 60fps.</p>
+<p>Using LWJGL for OpenGL and OpenCL.</p>
+<p>Using Jetty to create HTML5 UI that uses WebSockets so the application can be controlled through the web by phones and other devices collaboratively.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/">aMotion Toolkit Video Recording Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Mutlimedia Programming</title>
+		<link>http://mattlockyer.com/2012/05/15/mutlimedia-programming/</link>
+		<comments>http://mattlockyer.com/2012/05/15/mutlimedia-programming/#respond</comments>
+		<pubDate>Tue, 15 May 2012 20:41:01 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=582</guid>
+		<description><![CDATA[<p>A while back I taught a course at my school titled: Multimedia Programming for Artists and Designers. The course introduces artists and designers to the basic concepts of &#8220;drawing and animating with code&#8221;. The course leveraged some of the latest web technologies to create interactive and engaging content serving as both lecture and study material. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/05/15/mutlimedia-programming/">Mutlimedia Programming</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>A while back I taught a course at my school titled: Multimedia Programming for Artists and Designers.</p>
+<p>The course introduces artists and designers to the basic concepts of &#8220;drawing and animating with code&#8221;.</p>
+<p>The course leveraged some of the latest web technologies to create interactive and engaging content serving as both lecture and study material.</p>
+<p>Here is the website: <a href="http://www.mattlockyer.com/multimediaprogramming">http://www.mattlockyer.com/multimediaprogramming</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/05/15/mutlimedia-programming/">Mutlimedia Programming</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/05/15/mutlimedia-programming/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Genetic Algorithms the Easy Way</title>
+		<link>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/</link>
+		<comments>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/#respond</comments>
+		<pubDate>Wed, 28 Mar 2012 21:27:04 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=562</guid>
+		<description><![CDATA[<p>Most of my work to date has been reactive, that is there is a 1-1 connection between what the user does and what the application does. Recently for a class project I decided to use Genetic Algorithms to enhance the user experience and potentially augment some of the creative processes of working with a tool. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/">Genetic Algorithms the Easy Way</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Most of my work to date has been reactive, that is there is a 1-1 connection between what the user does and what the application does.</p>
+<p>Recently for a class project I decided to use <a href="http://en.wikipedia.org/wiki/Genetic_algorithm">Genetic Algorithms</a> to enhance the user experience and potentially augment some of the creative processes of working with a tool.</p>
+<p>I always stayed away from this type of coding because it didn&#8217;t match the types of applications I was interested in making.</p>
+<p>Additionally GA has always shrouded in mystery for most coders since the concepts are described using genetic metaphors and binary crossover operations.</p>
+<p>I took a somewhat different tact for this assignment and I&#8217;m posting this for the benefit of anyone who is interested in a simple GA implementation for creative coding.</p>
+<p>This assumes the user makes an input that can be mapped directly or indirectly to a property of your system.</p>
+<p>Here are the steps:</p>
+<ol>
+<li>Make user input your fitness value (user did x, x = fitness)</li>
+<li>For all objects in your system measure distance from fitness value to matching object property</li>
+<li>Sort results</li>
+<li>Collect top 10% &#8211; 25% of the objects with closest property values to the fitness value</li>
+<li>For all objects, select 2 or more candidate objects randomly and average their property assigning it to the current object</li>
+<li>Optionally add in the fitness value itself (weighted by a learning factor)</li>
+<li>Optionally add in a random value (weighted)</li>
+</ol>
+<p>My application maps user gestures to motion properties such as: linear angle, linear speed, wave amplitude, wave speed, curve speed and so on&#8230;</p>
+<p>By employing the use of this simple GA, the user&#8217;s actions are not mapped 1-1 to a specific resulting motion type. Instead the system appears to &#8220;learn&#8221; the desired motion by virtue of the selection and mutation processes outlined in the steps above.</p>
+<p>Here are some initial results (does not really show the GA part, but until the app is released assume the experience is amazing):</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/03/sample2.jpg"><img class="aligncenter size-medium wp-image-563" title="sample2" src="http://mattlockyer.com/wp-content/uploads/2012/03/sample2-300x148.jpg" alt="" width="300" height="148" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/sample2-300x148.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/sample2.jpg 775w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/03/sample1.jpg"><img class="aligncenter size-medium wp-image-564" title="sample1" src="http://mattlockyer.com/wp-content/uploads/2012/03/sample1-300x147.jpg" alt="" width="300" height="147" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/sample1-300x147.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/sample1.jpg 797w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/">Genetic Algorithms the Easy Way</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>aMotion Toolkit &#8211; Submission to CAe 2012</title>
+		<link>http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/</link>
+		<comments>http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/#respond</comments>
+		<pubDate>Mon, 19 Mar 2012 14:54:52 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=548</guid>
+		<description><![CDATA[<p>Demonstration video from research at SFU. Submitted to Computational Aesthetics 2012. Abstract from paper: Visual artists and designers frequently use carefully crafted motion textures &#8212; patterns of ambient motion throughout a scene &#8212; to imbue the atmosphere with affect. The design of such ambient visual cues is an elusive topic that has been studied by [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/">aMotion Toolkit &#8211; Submission to CAe 2012</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/rbS1bdjAM7c" frameborder="0" width="560" height="315"></iframe></p>
+<p>Demonstration video from research at SFU.</p>
+<p>Submitted to Computational Aesthetics 2012.</p>
+<div id="attachment_554" style="width: 310px" class="wp-caption aligncenter"><a href="http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion.jpg"><img class="size-medium wp-image-554" title="SpiralSpaceMotion" src="http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion-300x168.jpg" alt="" width="300" height="168" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">click to enlarge</p></div>
+<div id="attachment_556" style="width: 310px" class="wp-caption aligncenter"><a href="http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite.jpg"><img class="size-medium wp-image-556" title="PlumeriaComposite" src="http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite-300x262.jpg" alt="" width="300" height="262" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite-300x262.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite.jpg 960w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">click to enlarge</p></div>
+<div id="attachment_557" style="width: 310px" class="wp-caption aligncenter"><a href="http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped.jpg"><img class="size-medium wp-image-557" title="WebComp2-Cropped" src="http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped-300x192.jpg" alt="" width="300" height="192" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped-300x192.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped-1024x655.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped.jpg 1200w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">click to enlarge</p></div>
+<p>Abstract from paper:</p>
+<blockquote><p>Visual artists and designers frequently use carefully crafted motion textures &#8212; patterns of ambient motion throughout a scene &#8212; to imbue the atmosphere with affect. The design of such ambient visual cues is an elusive topic that has been studied by painters, theatre directors, scenic designers, lighting designers, filmmakers, producers, and artists for years. Recent research shows that such motion textures have the capacity to be both perceptually efficient and powerfully evocative, but adding them to scenes requires careful manipulation &#8220;by hand&#8221;: no tools currently exist to facilitate this integration. In this paper we describe the design and development of the aMotion toolkit: a palette of composable motion &#8220;brushes&#8221; for image and video based on our affective motion research. We discuss insights from an on-going qualitative study with professional visual effects de-signers into how such capabilities can enhance their current practice</p></blockquote>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/">aMotion Toolkit &#8211; Submission to CAe 2012</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Best Paper CAe 2011</title>
+		<link>http://mattlockyer.com/2012/01/12/best-paper-in-computational-aesthetics-2011/</link>
+		<comments>http://mattlockyer.com/2012/01/12/best-paper-in-computational-aesthetics-2011/#respond</comments>
+		<pubDate>Thu, 12 Jan 2012 18:46:06 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=536</guid>
+		<description><![CDATA[<p>Last summer my research won the best paper at Computational Aesthetics 2011 hosted here in Vancouver. Link to papers Here is the abstract from the paper: The communication of emotion and the creation of affect are core to creating immersive and engaging experiences, such as those in performance, games and simulation. They often rely on [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/01/12/best-paper-in-computational-aesthetics-2011/">Best Paper CAe 2011</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Last summer my research won the best paper at Computational Aesthetics 2011 hosted here in Vancouver.</p>
+<p><a href="http://www.cl.cam.ac.uk/conference/cae-sbim-npar-2011/Best-Papers">Link to papers</a></p>
+<p>Here is the abstract from the paper:</p>
+<blockquote><p>The communication of emotion and the creation of affect are core to creating immersive and engaging experiences, such as those in performance, games and simulation.    They often rely on atmospheric cues that influence how an environment feels. The design of such ambient visual cues for affect is an elusive topic that has been studied by painters, theatre directors, scenic designers, lighting designers, filmmakers, producers, and artists for years.  Research shows that simple motions have the capacity to be both perceptually efficient and powerfully evocative, and motion textures – patterns of ambient motion throughout the scene – are frequently used to imbue the atmosphere with affect. To date there is little empirical evidence of what properties of motion texture are most influential in this affect. In this paper we report the results of a study of simple, abstract motion textures that show path curvature, speed and texture layout can influence affective impressions such as valence, comfort, urgency and in.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/01/12/best-paper-in-computational-aesthetics-2011/">Best Paper CAe 2011</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/01/12/best-paper-in-computational-aesthetics-2011/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Living Brushes</title>
+		<link>http://mattlockyer.com/2011/03/18/411/</link>
+		<comments>http://mattlockyer.com/2011/03/18/411/#respond</comments>
+		<pubDate>Sat, 19 Mar 2011 01:30:14 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=411</guid>
+		<description><![CDATA[<p>Alpha stages of my Living Brushes program. Brushes of varying influence allow a user to create expressive visuals augmented by the creativity of an emergent system of brushes. This will be an installation soon that will allow the user to paint with brushes that have a simple swarm intelligence to them. Interaction is done with [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/18/411/">Living Brushes</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/zLr3xR_1O5g?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/zLr3xR_1O5g?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/25z8wCTp6Ek?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/25z8wCTp6Ek?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>Alpha stages of my Living Brushes program.</p>
+<p>Brushes of varying influence allow a user to create expressive visuals augmented by the creativity of an emergent system of brushes.</p>
+<p>This will be an installation soon that will allow the user to paint with brushes that have a simple swarm intelligence to them. Interaction is done with a Microsoft Kinect.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/18/411/">Living Brushes</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/18/411/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Video Painting with Kinect Take 2</title>
+		<link>http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/</link>
+		<comments>http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/#respond</comments>
+		<pubDate>Thu, 17 Mar 2011 01:00:56 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=409</guid>
+		<description><![CDATA[<p>This is a really rewarding project I&#8217;m working on that has awesome potential. Flocking behaviors and interaction with a Kinect make for some really fast and beautiful artistic effects.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/">Video Painting with Kinect Take 2</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/Ip5oO78tvFw?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Ip5oO78tvFw?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>This is a really rewarding project I&#8217;m working on that has awesome potential.</p>
+<p>Flocking behaviors and interaction with a Kinect make for some really fast and beautiful artistic effects.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/">Video Painting with Kinect Take 2</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/16/video-painting-with-kinect-take-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Kinect Flock</title>
+		<link>http://mattlockyer.com/2011/03/16/kinect-flock/</link>
+		<comments>http://mattlockyer.com/2011/03/16/kinect-flock/#respond</comments>
+		<pubDate>Wed, 16 Mar 2011 18:42:54 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=406</guid>
+		<description><![CDATA[<p>Flocking with Kinect as a controller. The flocking patters change based on the orientation of the hands. Amazing stuff!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/16/kinect-flock/">Kinect Flock</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/Tom4jx4kVzw?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Tom4jx4kVzw?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>Flocking with Kinect as a controller. The flocking patters change based on the orientation of the hands.</p>
+<p>Amazing stuff!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/16/kinect-flock/">Kinect Flock</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/16/kinect-flock/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Video Painter with Kinect</title>
+		<link>http://mattlockyer.com/2011/03/14/video-painter-with-kinect/</link>
+		<comments>http://mattlockyer.com/2011/03/14/video-painter-with-kinect/#respond</comments>
+		<pubDate>Tue, 15 Mar 2011 01:11:15 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=402</guid>
+		<description><![CDATA[<p>My video painting program running with a Kinect to do some clever background subtraction. Results are great, I&#8217;m so glad we&#8217;ve picked one up for our lab!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/14/video-painter-with-kinect/">Video Painter with Kinect</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/eCxR1IHP5po?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/eCxR1IHP5po?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>My video painting program running with a Kinect to do some clever background subtraction.<br />
+Results are great, I&#8217;m so glad we&#8217;ve picked one up for our lab!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/14/video-painter-with-kinect/">Video Painter with Kinect</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/14/video-painter-with-kinect/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Video Painter First Look</title>
+		<link>http://mattlockyer.com/2011/03/12/video-painter-first-look/</link>
+		<comments>http://mattlockyer.com/2011/03/12/video-painter-first-look/#respond</comments>
+		<pubDate>Sun, 13 Mar 2011 01:47:36 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=393</guid>
+		<description><![CDATA[<p>These are samples from a project I&#8217;m working on for a class called Metacreation. The system runs off a webcam and uses multi agent swarms to draw what it sees. There are many settings for the swarm: flocking behaviors, attraction, repulsion, tracking user motion, in addition to many brush settings. These are just a few [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/12/video-painter-first-look/">Video Painter First Look</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/iMWATqaK8io?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/iMWATqaK8io?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter1.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter1-300x168.jpg" alt="" title="videoPainter1" width="300" height="168" class="aligncenter size-medium wp-image-394" srcset="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter1-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter1-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter1.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter2.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter2-300x168.jpg" alt="" title="videoPainter2" width="300" height="168" class="aligncenter size-medium wp-image-395" srcset="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter2-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter2-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter2.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter3.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter3-300x168.jpg" alt="" title="videoPainter3" width="300" height="168" class="aligncenter size-medium wp-image-396" srcset="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter3-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter3-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter3.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter4.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter4-300x168.jpg" alt="" title="videoPainter4" width="300" height="168" class="aligncenter size-medium wp-image-397" srcset="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter4-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter4-1024x576.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter4.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter5.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter5-300x225.jpg" alt="" title="videoPainter5" width="300" height="225" class="aligncenter size-medium wp-image-398" srcset="http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter5-300x225.jpg 300w, http://mattlockyer.com/wp-content/uploads/2011/03/videoPainter5.jpg 640w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>These are samples from a project I&#8217;m working on for a class called Metacreation. The system runs off a webcam and uses multi agent swarms to draw what it sees. There are many settings for the swarm: flocking behaviors, attraction, repulsion, tracking user motion, in addition to many brush settings. These are just a few samples.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2011/03/12/video-painter-first-look/">Video Painter First Look</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2011/03/12/video-painter-first-look/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Music Sketch in Processing</title>
+		<link>http://mattlockyer.com/2010/11/18/music-sketch-in-processing/</link>
+		<comments>http://mattlockyer.com/2010/11/18/music-sketch-in-processing/#respond</comments>
+		<pubDate>Thu, 18 Nov 2010 19:13:45 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=322</guid>
+		<description><![CDATA[<p>Here&#8217;s a little music visualizer sketch I made for my class on multimedia programming. It&#8217;s made in processing.org which is a great framework built on java for sketching quick, clean, portable ideas. http://mattlockyer.com/processing/musicsketch/</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/11/18/music-sketch-in-processing/">Music Sketch in Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Here&#8217;s a little music visualizer sketch I made for my class on multimedia programming.<br />
+<center><br />
+<object width="480" height="320"><param name="movie" value="http://www.youtube.com/v/jn8oesP_y0M?fs=1&amp;hl=en_US&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/jn8oesP_y0M?fs=1&amp;hl=en_US&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="320"></embed></object></center></p>
+<p>It&#8217;s made in processing.org which is a great framework built on java for sketching quick, clean, portable ideas.</p>
+<p><a href="http://mattlockyer.com/processing/musicsketch/">http://mattlockyer.com/processing/musicsketch/</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/11/18/music-sketch-in-processing/">Music Sketch in Processing</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/11/18/music-sketch-in-processing/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Making Shiny Things</title>
+		<link>http://mattlockyer.com/2010/03/16/making-shiny-things/</link>
+		<comments>http://mattlockyer.com/2010/03/16/making-shiny-things/#respond</comments>
+		<pubDate>Wed, 17 Mar 2010 06:18:36 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+		<category><![CDATA[Arduino]]></category>
+		<category><![CDATA[C++]]></category>
+		<category><![CDATA[OF]]></category>
+		<category><![CDATA[Openframeworks]]></category>
+		<category><![CDATA[Physical Computing]]></category>
+		<category><![CDATA[Visual Art]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=172</guid>
+		<description><![CDATA[<p>Working with my group in visual arts on a project I developed a program in Open Frameworks to light up 6 LEDs, plugged into an Arduino, based on the audio input signal. In the video: the software shot will show you a simulation of the six LEDs as lights across the top of the screen, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/03/16/making-shiny-things/">Making Shiny Things</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Working with my group in visual arts on a project I developed a program in <a href="http://www.openframeworks.cc/">Open Frameworks</a> to light up 6 LEDs, plugged into an <a href="http://www.arduino.cc/">Arduino</a>, based on the audio input signal.</p>
+<p>In the video: the software shot will show you a simulation of the six LEDs as lights across the top of the screen, the blue bars are the brightness level of those simulated lights.<br />
+<center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/Jehe-dOgl3g" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>Final Video Demo:</p>
+<p><center><br />
+<iframe width="480" height="320" src="http://www.youtube.com/embed/O9z-lrwWgo8" frameborder="0" allowfullscreen></iframe><br />
+</center></p>
+<p>Some Pics:</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot-300x168.jpg" alt="" title="Group shot" width="300" height="168" class="aligncenter size-medium wp-image-191" srcset="http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/03/Group-shot-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><br />
+<a href="http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can-300x168.jpg" alt="" title="Tin Can" width="300" height="168" class="aligncenter size-medium wp-image-192" srcset="http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/03/Tin-Can-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The Arduino circuit building adventure is here:</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield.jpg"><img class="aligncenter size-medium wp-image-173" title="ArduinoProtoShield" src="http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield-300x168.jpg" alt="" width="300" height="168" srcset="http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2010/03/ArduinoProtoShield.jpg 854w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The classes project is too create a visual house space that will incorporate some aspect of physical computing. The overall theme for the space is minimalist.</p>
+<p>My group decided to do the under the stairs portion of the space, it offers something creepy and unique. Our idea: allow the user to go under, line the walls with white fabric, scatter lights throughout the space, hang a tin can with a small microphone inside, and when the user talks&#8230; You guessed it, the lights come on. The space is dark and confined, until you light it up with your voice. Something magical but private happens in this space.</p>
+<p>Thanks to Bobby for all his knowledge of circuitry.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2010/03/16/making-shiny-things/">Making Shiny Things</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2010/03/16/making-shiny-things/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

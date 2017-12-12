@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>The Works of Matt Lockyer</title>
+	<atom:link href="http://mattlockyer.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mattlockyer.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 12 Dec 2017 20:28:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>Archiving mattlockyer.com</title>
+		<link>http://mattlockyer.com/2017/12/12/archiving-mattlockyer-com/</link>
+		<pubDate>Tue, 12 Dec 2017 20:25:44 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Unfiltered]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=681</guid>
+		<description><![CDATA[<p>This website is now an archive of my blog from 2010 &#8211; 2017. For the latest updates on my professional career and projects please reach out via the following links: https://medium.com/@mattdlockyer https://twitter.com/mattdlockyer https://www.linkedin.com/in/mattlockyer/ Best wishes and thanks for reading, Matt</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2017/12/12/archiving-mattlockyer-com/">Archiving mattlockyer.com</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>This website is now an archive of my blog from 2010 &#8211; 2017.</p>
+<p>For the latest updates on my professional career and projects please reach out via the following links:</p>
+<p><a href="https://medium.com/@mattdlockyer">https://medium.com/@mattdlockyer</a><br />
+<a href="https://twitter.com/mattdlockyer">https://twitter.com/mattdlockyer</a><br />
+<a href="https://www.linkedin.com/in/mattlockyer/">https://www.linkedin.com/in/mattlockyer/</a></p>
+<p>Best wishes and thanks for reading, Matt</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2017/12/12/archiving-mattlockyer-com/">Archiving mattlockyer.com</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Google, Facebook, Banks, Blockchain, WTF is Happening?</title>
+		<link>http://mattlockyer.com/2017/05/24/google-facebook-banks-blockchain-wtf-is-happening/</link>
+		<comments>http://mattlockyer.com/2017/05/24/google-facebook-banks-blockchain-wtf-is-happening/#respond</comments>
+		<pubDate>Wed, 24 May 2017 16:58:41 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=672</guid>
+		<description><![CDATA[<p>I haven&#8217;t been posting on Facebook in a while and I have never written something like this on my blog but here we go. Trust A lot of issues regarding Facebook&#8217;s walled gardens and Google&#8217;s projects (AMP and others) have spurred regular people to start considering their online behavior. This is a good thing. As [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2017/05/24/google-facebook-banks-blockchain-wtf-is-happening/">Google, Facebook, Banks, Blockchain, WTF is Happening?</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I haven&#8217;t been posting on Facebook in a while and I have never written something like this on my blog but here we go.</p>
+<p><strong>Trust</strong></p>
+<p>A lot of issues regarding Facebook&#8217;s walled gardens and Google&#8217;s projects (AMP and others) have spurred regular people to start considering their online behavior. This is a good thing. As society becomes more technocratic, we evolve to understand our tools and consider the consequences.</p>
+<p>Combine this newfound understanding with a strong sense of distrust in governments and financial institutions. What happens? Blockchain.</p>
+<div id="attachment_673" style="width: 550px" class="wp-caption aligncenter"><img src="http://mattlockyer.com/wp-content/uploads/2017/05/Screenshot-2017-05-24-at-9.36.45-AM-1024x210.png" alt="" width="540" height="111" class="size-large wp-image-673" srcset="http://mattlockyer.com/wp-content/uploads/2017/05/Screenshot-2017-05-24-at-9.36.45-AM-1024x210.png 1024w, http://mattlockyer.com/wp-content/uploads/2017/05/Screenshot-2017-05-24-at-9.36.45-AM-300x62.png 300w, http://mattlockyer.com/wp-content/uploads/2017/05/Screenshot-2017-05-24-at-9.36.45-AM-768x158.png 768w, http://mattlockyer.com/wp-content/uploads/2017/05/Screenshot-2017-05-24-at-9.36.45-AM.png 1330w" sizes="(max-width: 540px) 100vw, 540px" /><p class="wp-caption-text">Havard scholar &#8220;thefuture420&#8221; breaks the movement down for us</p></div>
+<p><strong>Why?</strong></p>
+<p>The blockchain movement isn’t simply about currency anymore. It’s about decentralization, distribution and the “property rights” of your “bits and bytes”. While you don’t need a blockchain to decentralize and distribute a file system, you do need incentives for participants to host and transfer files. For example if you&#8217;re not close to India, someone in India can get a copy of your file to someone who wants it, or if you are disconnected and your hard drive erased, some node on the network still has your file.</p>
+<p>The issues of trust (ironically), incentive, compensation models and simply &#8220;will this replace my YouTube cat videos&#8221; are still being developed and debated.</p>
+<p>Most promising are the concepts that fully engage both users and devices in distributed publishing and consumption of content. Web 2.0 has become an oligarchy of centralized services that funnel users traffic and attention through stratified pricing tiers.</p>
+<p>YouTube stars are moaning over compensation, publishers are clueless / desperate and journalists are hopeless.</p>
+<p>We have an internet of information, we need an internet of value.</p>
+<p><strong>The Last Mile</strong></p>
+<p>It was a problem for the internet in the 90&#8217;s and it&#8217;s a problem today. All of this fervor and excitement is flying in the face of practicality and profits, which are necessary evils in ANY form of society.</p>
+<p>Ideas are happening fast&#8230; without tangible adoption. How do I buy a sandwich, a beer, surf a website, stream a video, store my DNA forever?</p>
+<p>IMHO the current bubble around blockchain technology as a whole will have a correction, but like the 90&#8217;s and web 1.0 it will all eventually take root, it has to.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2017/05/24/google-facebook-banks-blockchain-wtf-is-happening/">Google, Facebook, Banks, Blockchain, WTF is Happening?</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2017/05/24/google-facebook-banks-blockchain-wtf-is-happening/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Introduction to Web and Information Design</title>
+		<link>http://mattlockyer.com/2015/08/25/introduction-to-web-and-information-design/</link>
+		<comments>http://mattlockyer.com/2015/08/25/introduction-to-web-and-information-design/#respond</comments>
+		<pubDate>Tue, 25 Aug 2015 18:31:58 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=657</guid>
+		<description><![CDATA[<p>I just finished teaching a course on the fundamentals of web and general information design. We focused on the principles of user experience, visual fundamentals such as gestalt principles and introduced the students to the wonderful world of frontend web design. Find out more here: http://mattlockyer.github.io/iat235/</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2015/08/25/introduction-to-web-and-information-design/">Introduction to Web and Information Design</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I just finished teaching a course on the fundamentals of web and general information design.</p>
+<p>We focused on the principles of user experience, visual fundamentals such as gestalt principles and introduced the students to the wonderful world of frontend web design.</p>
+<p>Find out more here: <a href="http://mattlockyer.github.io/iat235/" target="_blank">http://mattlockyer.github.io/iat235/</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2015/08/25/introduction-to-web-and-information-design/">Introduction to Web and Information Design</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2015/08/25/introduction-to-web-and-information-design/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Mobile Web Application Design and Development</title>
+		<link>http://mattlockyer.com/2015/04/25/mobile-web-application-design-and-development/</link>
+		<comments>http://mattlockyer.com/2015/04/25/mobile-web-application-design-and-development/#respond</comments>
+		<pubDate>Sat, 25 Apr 2015 18:26:31 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=655</guid>
+		<description><![CDATA[<p>Recently I taught a course on mobile applications using modern web technologies. We covered topics such as: touch, accelerometer, location, audio, viewport, angular js, react js and more, all using HTML CSS and JS. Check it out here: http://mattlockyer.github.io/iat381/</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2015/04/25/mobile-web-application-design-and-development/">Mobile Web Application Design and Development</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Recently I taught a course on mobile applications using modern web technologies.</p>
+<p>We covered topics such as: touch, accelerometer, location, audio, viewport, angular js, react js and more, all using HTML CSS and JS.</p>
+<p>Check it out here: <a href="http://mattlockyer.github.io/iat381/" target="_blank">http://mattlockyer.github.io/iat381/</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2015/04/25/mobile-web-application-design-and-development/">Mobile Web Application Design and Development</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2015/04/25/mobile-web-application-design-and-development/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Audio and Visual Signal Processing in JavaScript</title>
+		<link>http://mattlockyer.com/2014/12/15/audio-and-visual-signal-processing-in-javascript/</link>
+		<comments>http://mattlockyer.com/2014/12/15/audio-and-visual-signal-processing-in-javascript/#respond</comments>
+		<pubDate>Mon, 15 Dec 2014 19:22:32 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=653</guid>
+		<description><![CDATA[<p>I recently taught a course in audio and visual programming and decided to use Javascript as the language. We explored the canvas, transformations, pixel manipulations, filters, kernels, the web audio api, pass filters and more. Take a look here: https://github.com/mattlockyer/iat455</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2014/12/15/audio-and-visual-signal-processing-in-javascript/">Audio and Visual Signal Processing in JavaScript</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I recently taught a course in audio and visual programming and decided to use Javascript as the language.</p>
+<p>We explored the canvas, transformations, pixel manipulations, filters, kernels, the web audio api, pass filters and more.</p>
+<p>Take a look here: <a href="https://github.com/mattlockyer/iat455" target="_blank">https://github.com/mattlockyer/iat455</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2014/12/15/audio-and-visual-signal-processing-in-javascript/">Audio and Visual Signal Processing in JavaScript</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2014/12/15/audio-and-visual-signal-processing-in-javascript/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Center image vertically and horizontally, CSS and jQuery a.k.a. image lightbox</title>
+		<link>http://mattlockyer.com/2014/01/20/center-vertically-horizontally-css-jquery-lightbox/</link>
+		<comments>http://mattlockyer.com/2014/01/20/center-vertically-horizontally-css-jquery-lightbox/#respond</comments>
+		<pubDate>Mon, 20 Jan 2014 17:06:50 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=648</guid>
+		<description><![CDATA[<p>In my opinion you should use libraries rather than role your own solution, but I came across this Stackoverflow question and couldn&#8217;t resist rolling my own lightweight, lightbox implementation. Here is a link and to my jsFiddle where the magic happens. Check out the results:</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2014/01/20/center-vertically-horizontally-css-jquery-lightbox/">Center image vertically and horizontally, CSS and jQuery a.k.a. image lightbox</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>In my opinion you should use libraries rather than role your own solution, but I came across this <a href="http://stackoverflow.com/questions/21224664" title="jQuery how to center image vertically and horizontally a.k.a. image lightbox">Stackoverflow</a> question and couldn&#8217;t resist rolling my own lightweight, lightbox implementation.</p>
+<p>Here is a <a href="http://stackoverflow.com/a/21225124/1060487" title="Lightweight Vertical and Horizonally Centered Lightbox CSS + jQuery">link</a> and to my <a href="http://jsfiddle.net/mattdlockyer/SyJSS/1/" title="Lightweight Vertical and Horizonally Centered Lightbox CSS + jQuery">jsFiddle</a> where the magic happens.</p>
+<p>Check out the results:</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2014/01/lightbox.png"><img src="http://mattlockyer.com/wp-content/uploads/2014/01/lightbox-300x259.png" alt="Lightbox CSS jQuery Sample" width="300" height="259" class="aligncenter size-medium wp-image-650" srcset="http://mattlockyer.com/wp-content/uploads/2014/01/lightbox-300x259.png 300w, http://mattlockyer.com/wp-content/uploads/2014/01/lightbox.png 634w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2014/01/20/center-vertically-horizontally-css-jquery-lightbox/">Center image vertically and horizontally, CSS and jQuery a.k.a. image lightbox</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2014/01/20/center-vertically-horizontally-css-jquery-lightbox/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Socualizer &#8211; Social Media Visualizer</title>
+		<link>http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/</link>
+		<comments>http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/#respond</comments>
+		<pubDate>Tue, 20 Aug 2013 14:29:40 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=643</guid>
+		<description><![CDATA[<p>&#160; &#160; Socualizer is a product I&#8217;ve been developing for the past 3 months with the goal of integrating Social Media streams with high-end, club / concert grade visuals. The end result will be a turn-key, brandable, social media visualizer, with a powerful dashboard to control the streams and entire visual experience. Technically, Socualizer is [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/">Socualizer &#8211; Social Media Visualizer</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>&nbsp;</p>
+<p><a href="http://www.socualizer.com"><img class="aligncenter size-medium wp-image-644" alt="Socualizer Social Media Visualizer" src="http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample-300x149.jpg" width="300" height="149" srcset="http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample-300x149.jpg 300w, http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample-1024x509.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2013/08/socualizer-sample.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>&nbsp;</p>
+<p><a href="http://www.socualizer.com/">Socualizer</a> is a product I&#8217;ve been developing for the past 3 months with the goal of integrating Social Media streams with high-end, club / concert grade visuals. The end result will be a turn-key, brandable, social media visualizer, with a powerful dashboard to control the streams and entire visual experience.</p>
+<p>Technically, <a href="http://www.socualizer.com/">Socualizer</a> is built using <a href="http://nodejs.org/">node.js</a>, <a href="https://github.com/jdub/node-twitter">node-twitter</a>, <a href="https://github.com/mckelvey/instagram-node-lib">instagram-node-lib</a>, <a href="http://threejs.org">three.js</a>, <a href="https://github.com/sole/tween.js/">tween.js</a> and <a href="http://www.khronos.org/webgl/">WebGL</a> and some soon to be released on <a href="https://github.com/">GitHub</a> utility classes developed by myself to push the limits of double sided planes using <a href="http://www.khronos.org/webgl/">WebGL</a>.</p>
+<p><a href="http://www.socualizer.com/">Socualizer</a> is currently in private beta.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/">Socualizer &#8211; Social Media Visualizer</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/08/20/socualizer-social-media-visualizer/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Playground &#8211; Multiplayer, Collaborative, Visual Experience for Mobile</title>
+		<link>http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/</link>
+		<comments>http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/#respond</comments>
+		<pubDate>Thu, 06 Jun 2013 02:35:46 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=633</guid>
+		<description><![CDATA[<p>Recently I was asked to join Tangible Interaction in developing a Chrome Experiment that used WebRTC, an emerging web technology that enables P2P browser interaction (tabs talking to other tabs), without sending the data over the server. We developed Playground, which enables 5 friends in close proximity (100m) to join a &#8220;room&#8221; where each player [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/">Playground &#8211; Multiplayer, Collaborative, Visual Experience for Mobile</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Recently I was asked to join <a title="Tangible Interaction" href="http://www.tangibleinteraction.com/" target="_blank">Tangible Interaction</a> in developing a <a title="Chrome Experiments" href="http://www.chromeexperiments.com/" target="_blank">Chrome Experiment</a> that used <a title="WebRTC" href="http://www.webrtc.org/" target="_blank">WebRTC</a>, an emerging web technology that enables P2P browser interaction (tabs talking to other tabs), without sending the data over the server.</p>
+<p>We developed Playground, which enables 5 friends in close proximity (100m) to join a &#8220;room&#8221; where each player will have a different controller that determines a visual outcome.</p>
+<p>The project was a lot of fun to develop and break new ground using an up and coming web technology on mobile.</p>
+<p>The app can be found on <a title="Chrome Experiments" href="http://www.chromeexperiments.com/" target="_blank">Chrome Experiments</a> <a title="Playground on Chrome Experiments" href="http://www.chromeexperiments.com/detail/playground/" target="_blank">here</a>.</p>
+<p style="text-align: center;"><img class="aligncenter size-medium wp-image-634" alt="Playground Example Controller" src="http://mattlockyer.com/wp-content/uploads/2013/06/large-300x225.png" width="300" height="225" srcset="http://mattlockyer.com/wp-content/uploads/2013/06/large-300x225.png 300w, http://mattlockyer.com/wp-content/uploads/2013/06/large.png 400w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/">Playground &#8211; Multiplayer, Collaborative, Visual Experience for Mobile</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/06/05/playground-multiplayer-collaborative-visual-experience-for-mobile/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</title>
+		<link>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/</link>
+		<comments>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/#respond</comments>
+		<pubDate>Mon, 06 May 2013 18:14:53 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=627</guid>
+		<description><![CDATA[<p>I&#8217;ve released an early stage version of my online editor for html, js, css, and processing called &#8220;Code Tabs&#8221; today. One thing missing from a lot of online editors is the ability to create custom tabs, a pretty essential feature for any project with more than a couple of hundred lines of code. I&#8217;ll be [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/">Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I&#8217;ve released an early stage version of my online editor for html, js, css, and processing called &#8220;Code Tabs&#8221; today.</p>
+<p>One thing missing from a lot of online editors is the ability to create custom tabs, a pretty essential feature for any project with more than a couple of hundred lines of code.</p>
+<p>I&#8217;ll be using and testing Code Tabs this summer in a course at my school: IAT 167 Digital Games. The course is basically an introduction to game programming for students with a multimedia / multidisciplinary background.</p>
+<p>You can find Code Tabs on <a title="Code Tabs on GitHub" href="https://github.com/mattlockyer/codetabs" target="_blank">GitHub</a>.</p>
+<p>See <a title="Code Tabs Preview" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/" target="_blank">this</a> post for a list of features.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/">Code Tabs: Online HTML, JS, CSS, and Processing Editor with TABS</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/05/06/code-tabs-on-github-online-html-js-css-and-processing-editor-with-tabs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Code Tabs Preview</title>
+		<link>http://mattlockyer.com/2013/04/22/code-tabs-preview/</link>
+		<comments>http://mattlockyer.com/2013/04/22/code-tabs-preview/#respond</comments>
+		<pubDate>Tue, 23 Apr 2013 05:15:30 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[Code]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=619</guid>
+		<description><![CDATA[<p>Simple HTML, CSS, JS, and Processing editor, with TABS! Features: TABS! No other online editor has them! Code hinting (autocomplete suggestions) for above languages Syntax highlighting (obvies&#8230;) Selection match highlighting Brace match highlighting Brace / Tag completion Brace / Tag folding Import and use any Javascript library (image ex: three.js) Import or Drag and Drop images [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/">Code Tabs Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Simple HTML, CSS, JS, and Processing editor, with TABS!</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2013/04/examples.jpg"><img class="aligncenter size-medium wp-image-620" alt="examples" src="http://mattlockyer.com/wp-content/uploads/2013/04/examples-300x274.jpg" width="300" height="274" srcset="http://mattlockyer.com/wp-content/uploads/2013/04/examples-300x274.jpg 300w, http://mattlockyer.com/wp-content/uploads/2013/04/examples.jpg 1019w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Features:</p>
+<ul>
+<li><span style="line-height: 13px;">TABS! No other online editor has them!</span></li>
+<li>Code hinting (autocomplete suggestions) for above languages</li>
+<li>Syntax highlighting (obvies&#8230;)</li>
+<li>Selection match highlighting</li>
+<li>Brace match highlighting</li>
+<li>Brace / Tag completion</li>
+<li>Brace / Tag folding</li>
+<li><span style="line-height: 13px;">Import and use any Javascript library (image ex: three.js)</span></li>
+<li>Import or Drag and Drop images for use in Processing and Javascript tabs (it&#8217;s a cat!)</li>
+<li>Built in webcam module (data-webcam=&#8221;true&#8221;)</li>
+<li>Fullscreen mode</li>
+<li>Mobile friendly</li>
+<li>Export .zip of all tabs in tidy project folder</li>
+<li>Setup in HTML markup using: data-option=&#8221;value&#8221; (easy as pie!)</li>
+</ul>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/22/code-tabs-preview/">Code Tabs Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/22/code-tabs-preview/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Close a Twitter Bootstrap Popover when Clicking Outside</title>
+		<link>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/</link>
+		<comments>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/#comments</comments>
+		<pubDate>Mon, 08 Apr 2013 16:34:46 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Bootstrap]]></category>
+		<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=616</guid>
+		<description><![CDATA[<p>A vexing topic for me and a bunch of other people on stackoverflow, the problem being that Twitter Bootstrap Popovers don&#8217;t close when you click outside to anywhere else on the document. This might not be your desired outcome, simply: when clicking outside a popover, wouldn&#8217;t you want it to close? The code below makes [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/">Close a Twitter Bootstrap Popover when Clicking Outside</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>A vexing topic for me and a bunch of other people on stackoverflow, the problem being that <a href="http://twitter.github.io/bootstrap/javascript.html#popovers" title="Twitter Bootstrap Popover Close on Click Outside">Twitter Bootstrap Popovers</a> don&#8217;t close when you click outside to anywhere else on the document.</p>
+<p>This might not be your desired outcome, simply: when clicking outside a popover, wouldn&#8217;t you want it to close?</p>
+<p>The code below makes this possible:</p>
+<pre id="code_snippet_69" style="position:relative;width:100%;border:0;padding:0;">$('[data-toggle=&quot;popover&quot;]').popover();
+
+$('body').on('click', function (e) {
+    $('[data-toggle=&quot;popover&quot;]').each(function () {
+        //the 'is' for buttons that trigger popups
+        //the 'has' for icons within a button that triggers a popup
+        if (!$(this).is(e.target) &amp;&amp; $(this).has(e.target).length === 0 &amp;&amp; $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide');
+        }
+    });
+});</pre>
+<p>A note about the use of <code>$(':not(#anything)')</code> as my body selector. This is due to iOS not binding click events to &#8216;html&#8217; or &#8216;body&#8217;.</p>
+<p>To put it short, this is a bulletproof way to detect clicks anywhere on the document (providing you don&#8217;t have a div with an id of &#8216;anything&#8217;).</p>
+<p><a href="http://jsfiddle.net/mattdlockyer/C5GBU/2/" title="Close a Twitter Bootstrap Popover when Clicking Outside">Live Example Here</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/">Close a Twitter Bootstrap Popover when Clicking Outside</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/08/close-a-twitter-bootstrap-popover-when-clicking-outside/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Twitter Bootstrap Carousel Full Markup Example</title>
+		<link>http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/</link>
+		<comments>http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/#respond</comments>
+		<pubDate>Mon, 08 Apr 2013 15:21:48 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Bootstrap]]></category>
+		<category><![CDATA[Code]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=609</guid>
+		<description><![CDATA[<p>I really like Twitter Bootstrap but I&#8217;ve noticed that their example page only shows minimal markup for some of the more exciting features, leaving out little details like the &#8220;carousel-caption&#8221; class that I had to use view source to find. If you were looking for how they do their clever captions at the bottom of [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/">Twitter Bootstrap Carousel Full Markup Example</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>I really like <a href="http://twitter.github.io/bootstrap/" title="Twitter Bootstrap Home">Twitter Bootstrap</a> but I&#8217;ve noticed that their example page only shows minimal markup for some of the more exciting features, leaving out little details like the &#8220;carousel-caption&#8221; class that I had to use view source to find.</p>
+<p>If you were looking for how they do their clever captions at the bottom of each carousel image, look no further.</p>
+<p>Since the carousel may or may not play automatically I recommend triggering it with Javascript, live example <a href="http://jsfiddle.net/mattdlockyer/gjPVJ/4/" title="Twitter Bootstrap Carousel Full Markup Example Fiddle">here</a>.</p>
+<p>Below is the full markup of a <a href="http://twitter.github.io/bootstrap/javascript.html#carousel" title="Twitter Bootstrap Carousel">Twitter Bootstrap Carousel</a></p>
+<pre id="code_snippet_66" style="position:relative;width:100%;border:0;padding:0;">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;span12&quot;&gt;
+            
+            &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot;&gt;
+                &lt;ol class=&quot;carousel-indicators&quot;&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot; class=&quot;&quot;&gt;&lt;/li&gt;
+                    &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+                &lt;/ol&gt;
+                &lt;div class=&quot;carousel-inner&quot;&gt;
+                    &lt;div class=&quot;item active&quot;&gt;
+                        &lt;img src=&quot;http://mattlockyer.com/wp-content/uploads/2011/11/Example8-720.jpg&quot; alt=&quot;http://www.mattlockyer.com&quot;&gt;
+                        &lt;div class=&quot;carousel-caption&quot;&gt;
+                             &lt;h4&gt;First Thumbnail label&lt;/h4&gt;
+
+                            &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item&quot;&gt;
+                        &lt;img src=&quot;http://mattlockyer.com/wp-content/uploads/2011/11/Desktop2.jpg&quot; alt=&quot;http://www.mattlockyer.com&quot;&gt;
+                        &lt;div class=&quot;carousel-caption&quot;&gt;
+                             &lt;h4&gt;Second Thumbnail label&lt;/h4&gt;
+
+                            &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;item&quot;&gt;
+                        &lt;img src=&quot;http://mattlockyer.com/wp-content/uploads/2011/11/tree.jpg&quot; alt=&quot;http://www.mattlockyer.com&quot;&gt;
+                        &lt;div class=&quot;carousel-caption&quot;&gt;
+                             &lt;h4&gt;Third Thumbnail label&lt;/h4&gt;
+
+                            &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;‹&lt;/a&gt;
+                &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;›&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>Enjoy!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/">Twitter Bootstrap Carousel Full Markup Example</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/08/twitter-bootstrap-carousel-full-markup-example/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick</title>
+		<link>http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/</link>
+		<comments>http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/#respond</comments>
+		<pubDate>Sun, 07 Apr 2013 21:11:47 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Processing]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=602</guid>
+		<description><![CDATA[<p>An original benchmark posted here showed that Processing.js was lagging by 68-68% behind native Canvas API calls performing essentially the same thing. I was curious where the bottleneck for Processing.js was in the original test so I exposed the processing canvas context to the sketch itself in the head of the document. Then I simply [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/">HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>An original benchmark posted <a title="Paper.js vs Processing.js vs Raphaël" href="http://jsperf.com/paper-vs-processing-vs-raphael">here</a> showed that <a href="http://processingjs.org" title="Processing.js Homepage">Processing.js</a> was lagging by 68-68% behind native Canvas API calls performing essentially the same thing.</p>
+<p>I was curious where the bottleneck for Processing.js was in the original test so I exposed the processing canvas context to the sketch itself in the head of the document.</p>
+<p>Then I simply used the native Canvas API calls from within the Processing.js draw loop like so:</p>
+<pre id="code_snippet_64" style="position:relative;width:100%;border:0;padding:0;">//placed in head of document to expose processing canvas to sketch
+var pctx = processingCanvas.getContext('2d');
+
+//in processingjs draw loop
+pctx.fillStyle = &quot;#000&quot;;
+pctx.fillRect(0, 0, 50, 50);
+pctx.clearRect(0, 0, 100, 100);</pre>
+<p>My updated test is <a title="HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick" href="http://jsperf.com/paper-vs-processing-vs-raphael/3">here </a>and&#8230;</p>
+<p>Using the native canvas api from within Processing.js is MUCH faster.</p>
+<p>Perhaps the fastest (in my tests it outperformed the original Canvas API calls by 2-4% on Chrome and Android)!!!</p>
+<p>Check <a title="ProcessingJS rendering modes" href="http://processingjs.org/articles/RenderingModes.html">this </a>out to see how you can use the native Canvas API in your sketches for a performance boost!</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/">HTML5 Canvas API, Paper.js, Raphael.js, Processing.js: Performance, Benchmarks and a New Trick</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/04/07/html5-canvas-processingjs-performance-benchmarks/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Minecraft Steve Easy Costume Template (wine box design)</title>
+		<link>http://mattlockyer.com/2013/02/24/minecraft-steve-easy-costume-template-wine-box-design/</link>
+		<comments>http://mattlockyer.com/2013/02/24/minecraft-steve-easy-costume-template-wine-box-design/#comments</comments>
+		<pubDate>Sun, 24 Feb 2013 21:14:03 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Unfiltered]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=588</guid>
+		<description><![CDATA[<p>Recently was invited to a costume party. I really hate having to come up with a costume and buy a bunch of cheap crap that will eventually be thrown out or donated so I decided to go a little crafty this time&#8230; I looked at some other templates for Minecraft Steve costumes but they were [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/02/24/minecraft-steve-easy-costume-template-wine-box-design/">Minecraft Steve Easy Costume Template (wine box design)</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Recently was invited to a costume party. I really hate having to come up with a costume and buy a bunch of cheap crap that will eventually be thrown out or donated so I decided to go a little crafty this time&#8230;</p>
+<p>I looked at some other templates for Minecraft Steve costumes but they were cumbersome and required too much custom cardboard (what a waste)!</p>
+<p>So I decided that a simple wine box would do the trick and made my own template, hope you enjoy!</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2013/02/20130223_200507.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2013/02/20130223_200507-225x300.jpg" alt="" title="20130223_200507" width="225" height="300" class="aligncenter size-medium wp-image-597" srcset="http://mattlockyer.com/wp-content/uploads/2013/02/20130223_200507-225x300.jpg 225w, http://mattlockyer.com/wp-content/uploads/2013/02/20130223_200507-768x1024.jpg 768w" sizes="(max-width: 225px) 100vw, 225px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2013/02/857375_10151775653583709_1603125681_o.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2013/02/857375_10151775653583709_1603125681_o-168x300.jpg" alt="" title="857375_10151775653583709_1603125681_o" width="168" height="300" class="aligncenter size-medium wp-image-589" srcset="http://mattlockyer.com/wp-content/uploads/2013/02/857375_10151775653583709_1603125681_o-168x300.jpg 168w, http://mattlockyer.com/wp-content/uploads/2013/02/857375_10151775653583709_1603125681_o-576x1024.jpg 576w, http://mattlockyer.com/wp-content/uploads/2013/02/857375_10151775653583709_1603125681_o.jpg 720w" sizes="(max-width: 168px) 100vw, 168px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2013/02/859296_10151775654038709_249271803_o-1.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2013/02/859296_10151775654038709_249271803_o-1-300x169.jpg" alt="" title="859296_10151775654038709_249271803_o (1)" width="300" height="169" class="aligncenter size-medium wp-image-590" srcset="http://mattlockyer.com/wp-content/uploads/2013/02/859296_10151775654038709_249271803_o-1-300x169.jpg 300w, http://mattlockyer.com/wp-content/uploads/2013/02/859296_10151775654038709_249271803_o-1-1024x577.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href='http://mattlockyer.com/wp-content/uploads/2013/02/Minecraft-Steve-Template-Wine-Box.zip'>Minecraft Steve Template Wine Box PDF and PSD (.zip)</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2013/02/24/minecraft-steve-easy-costume-template-wine-box-design/">Minecraft Steve Easy Costume Template (wine box design)</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2013/02/24/minecraft-steve-easy-costume-template-wine-box-design/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>aMotion Toolkit Video Recording Preview</title>
+		<link>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/</link>
+		<comments>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/#respond</comments>
+		<pubDate>Thu, 30 Aug 2012 18:04:16 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=575</guid>
+		<description><![CDATA[<p>Developing a cross platform motion texture engine in Java for creating affective motion textures with a node based, data flow UI. Using the Xuggle library for recording H264 video at a seemless 60fps. Using LWJGL for OpenGL and OpenCL. Using Jetty to create HTML5 UI that uses WebSockets so the application can be controlled through [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/">aMotion Toolkit Video Recording Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/DB3kBrSaw0k" frameborder="0" width="560" height="315"></iframe></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/08/preview5.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2012/08/preview5-300x152.jpg" alt="" title="aMotion Toolkit Preview Image" width="300" height="152" class="aligncenter size-medium wp-image-578" srcset="http://mattlockyer.com/wp-content/uploads/2012/08/preview5-300x152.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/08/preview5-1024x520.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2012/08/preview5.jpg 1456w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/08/preview6.jpg"><img src="http://mattlockyer.com/wp-content/uploads/2012/08/preview6-300x238.jpg" alt="" title="aMotion Toolkit Preview Image" width="300" height="238" class="aligncenter size-medium wp-image-579" srcset="http://mattlockyer.com/wp-content/uploads/2012/08/preview6-300x238.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/08/preview6.jpg 900w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Developing a cross platform motion texture engine in Java for creating affective motion textures with a node based, data flow UI.</p>
+<p>Using the Xuggle library for recording H264 video at a seemless 60fps.</p>
+<p>Using LWJGL for OpenGL and OpenCL.</p>
+<p>Using Jetty to create HTML5 UI that uses WebSockets so the application can be controlled through the web by phones and other devices collaboratively.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/">aMotion Toolkit Video Recording Preview</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/08/30/amotion-toolkit-video-recording-preview/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Mutlimedia Programming</title>
+		<link>http://mattlockyer.com/2012/05/15/mutlimedia-programming/</link>
+		<comments>http://mattlockyer.com/2012/05/15/mutlimedia-programming/#respond</comments>
+		<pubDate>Tue, 15 May 2012 20:41:01 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=582</guid>
+		<description><![CDATA[<p>A while back I taught a course at my school titled: Multimedia Programming for Artists and Designers. The course introduces artists and designers to the basic concepts of &#8220;drawing and animating with code&#8221;. The course leveraged some of the latest web technologies to create interactive and engaging content serving as both lecture and study material. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/05/15/mutlimedia-programming/">Mutlimedia Programming</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>A while back I taught a course at my school titled: Multimedia Programming for Artists and Designers.</p>
+<p>The course introduces artists and designers to the basic concepts of &#8220;drawing and animating with code&#8221;.</p>
+<p>The course leveraged some of the latest web technologies to create interactive and engaging content serving as both lecture and study material.</p>
+<p>Here is the website: <a href="http://www.mattlockyer.com/multimediaprogramming">http://www.mattlockyer.com/multimediaprogramming</a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/05/15/mutlimedia-programming/">Mutlimedia Programming</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/05/15/mutlimedia-programming/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Friend Flip</title>
+		<link>http://mattlockyer.com/2012/04/07/friend-flip/</link>
+		<comments>http://mattlockyer.com/2012/04/07/friend-flip/#respond</comments>
+		<pubDate>Sun, 08 Apr 2012 03:04:57 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=569</guid>
+		<description><![CDATA[<p>In my spare time I have put together a simple, clean app called Friend Flip. I made Friend Flip because I was sick of scrolling through my news feed like a zombie (when I even did at all). I decided matching up my friends and training my brain would be much more fun. Friend Flip [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/04/07/friend-flip/">Friend Flip</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="https://play.google.com/store/apps/details?id=air.air.FriendFlipAir"><img class="aligncenter size-medium wp-image-570" title="icon_512" src="http://mattlockyer.com/wp-content/uploads/2012/04/icon_512-300x300.png" alt="" width="300" height="300" srcset="http://mattlockyer.com/wp-content/uploads/2012/04/icon_512-300x300.png 300w, http://mattlockyer.com/wp-content/uploads/2012/04/icon_512-150x150.png 150w, http://mattlockyer.com/wp-content/uploads/2012/04/icon_512.png 512w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>In my spare time I have put together a simple, clean app called <a title="FriendFlip" href="http://www.flippomedia.com/friendflip">Friend Flip</a>.</p>
+<p>I made <a href="http://www.flippomedia.com/friendflip">Friend Flip</a> because I was sick of scrolling through my news feed like a zombie (when I even did at all). I decided matching up my friends and training my brain would be much more fun. <a href="http://www.flippomedia.com/friendflip">Friend Flip</a> is built with Adobe Air and was done front to back in 1 week. I used Stage3D and ND2D as a library for that, even though I probably didn&#8217;t need to ;). Also used the Actionscript Facebook API, Minimal Comps for buttons, and that&#8217;s it.</p>
+<p>Try it here: <a href="https://play.google.com/store/apps/details?id=air.air.FriendFlipAir">https://play.google.com/store/apps/details?id=air.air.FriendFlipAir</a></p>
+<p>Here is the app description on Google Play:</p>
+<p>Train your brain and check your FB news feed at the same time!</p>
+<p>An exciting way to train your brain and keep up to date with your friends. <a href="http://www.flippomedia.com/friendflip">Friend Flip</a> is a memory game based on your real-time Facebook news feed. Flip and match friends to read their status updates or just flip out! Have fun and enjoy!</p>
+<p>Note: You will need to be online and have a FB account to play.</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/04/07/friend-flip/">Friend Flip</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/04/07/friend-flip/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Genetic Algorithms the Easy Way</title>
+		<link>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/</link>
+		<comments>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/#respond</comments>
+		<pubDate>Wed, 28 Mar 2012 21:27:04 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=562</guid>
+		<description><![CDATA[<p>Most of my work to date has been reactive, that is there is a 1-1 connection between what the user does and what the application does. Recently for a class project I decided to use Genetic Algorithms to enhance the user experience and potentially augment some of the creative processes of working with a tool. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/">Genetic Algorithms the Easy Way</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Most of my work to date has been reactive, that is there is a 1-1 connection between what the user does and what the application does.</p>
+<p>Recently for a class project I decided to use <a href="http://en.wikipedia.org/wiki/Genetic_algorithm">Genetic Algorithms</a> to enhance the user experience and potentially augment some of the creative processes of working with a tool.</p>
+<p>I always stayed away from this type of coding because it didn&#8217;t match the types of applications I was interested in making.</p>
+<p>Additionally GA has always shrouded in mystery for most coders since the concepts are described using genetic metaphors and binary crossover operations.</p>
+<p>I took a somewhat different tact for this assignment and I&#8217;m posting this for the benefit of anyone who is interested in a simple GA implementation for creative coding.</p>
+<p>This assumes the user makes an input that can be mapped directly or indirectly to a property of your system.</p>
+<p>Here are the steps:</p>
+<ol>
+<li>Make user input your fitness value (user did x, x = fitness)</li>
+<li>For all objects in your system measure distance from fitness value to matching object property</li>
+<li>Sort results</li>
+<li>Collect top 10% &#8211; 25% of the objects with closest property values to the fitness value</li>
+<li>For all objects, select 2 or more candidate objects randomly and average their property assigning it to the current object</li>
+<li>Optionally add in the fitness value itself (weighted by a learning factor)</li>
+<li>Optionally add in a random value (weighted)</li>
+</ol>
+<p>My application maps user gestures to motion properties such as: linear angle, linear speed, wave amplitude, wave speed, curve speed and so on&#8230;</p>
+<p>By employing the use of this simple GA, the user&#8217;s actions are not mapped 1-1 to a specific resulting motion type. Instead the system appears to &#8220;learn&#8221; the desired motion by virtue of the selection and mutation processes outlined in the steps above.</p>
+<p>Here are some initial results (does not really show the GA part, but until the app is released assume the experience is amazing):</p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/03/sample2.jpg"><img class="aligncenter size-medium wp-image-563" title="sample2" src="http://mattlockyer.com/wp-content/uploads/2012/03/sample2-300x148.jpg" alt="" width="300" height="148" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/sample2-300x148.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/sample2.jpg 775w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p><a href="http://mattlockyer.com/wp-content/uploads/2012/03/sample1.jpg"><img class="aligncenter size-medium wp-image-564" title="sample1" src="http://mattlockyer.com/wp-content/uploads/2012/03/sample1-300x147.jpg" alt="" width="300" height="147" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/sample1-300x147.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/sample1.jpg 797w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/">Genetic Algorithms the Easy Way</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/03/28/genetic-algorithms-the-easy-way/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>aMotion Toolkit &#8211; Submission to CAe 2012</title>
+		<link>http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/</link>
+		<comments>http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/#respond</comments>
+		<pubDate>Mon, 19 Mar 2012 14:54:52 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[School]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=548</guid>
+		<description><![CDATA[<p>Demonstration video from research at SFU. Submitted to Computational Aesthetics 2012. Abstract from paper: Visual artists and designers frequently use carefully crafted motion textures &#8212; patterns of ambient motion throughout a scene &#8212; to imbue the atmosphere with affect. The design of such ambient visual cues is an elusive topic that has been studied by [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/">aMotion Toolkit &#8211; Submission to CAe 2012</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><iframe src="http://www.youtube.com/embed/rbS1bdjAM7c" frameborder="0" width="560" height="315"></iframe></p>
+<p>Demonstration video from research at SFU.</p>
+<p>Submitted to Computational Aesthetics 2012.</p>
+<div id="attachment_554" style="width: 310px" class="wp-caption aligncenter"><a href="http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion.jpg"><img class="size-medium wp-image-554" title="SpiralSpaceMotion" src="http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion-300x168.jpg" alt="" width="300" height="168" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion-300x168.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/SpiralSpaceMotion-1024x576.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">click to enlarge</p></div>
+<div id="attachment_556" style="width: 310px" class="wp-caption aligncenter"><a href="http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite.jpg"><img class="size-medium wp-image-556" title="PlumeriaComposite" src="http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite-300x262.jpg" alt="" width="300" height="262" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite-300x262.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/PlumeriaComposite.jpg 960w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">click to enlarge</p></div>
+<div id="attachment_557" style="width: 310px" class="wp-caption aligncenter"><a href="http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped.jpg"><img class="size-medium wp-image-557" title="WebComp2-Cropped" src="http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped-300x192.jpg" alt="" width="300" height="192" srcset="http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped-300x192.jpg 300w, http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped-1024x655.jpg 1024w, http://mattlockyer.com/wp-content/uploads/2012/03/WebComp2-Cropped.jpg 1200w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">click to enlarge</p></div>
+<p>Abstract from paper:</p>
+<blockquote><p>Visual artists and designers frequently use carefully crafted motion textures &#8212; patterns of ambient motion throughout a scene &#8212; to imbue the atmosphere with affect. The design of such ambient visual cues is an elusive topic that has been studied by painters, theatre directors, scenic designers, lighting designers, filmmakers, producers, and artists for years. Recent research shows that such motion textures have the capacity to be both perceptually efficient and powerfully evocative, but adding them to scenes requires careful manipulation &#8220;by hand&#8221;: no tools currently exist to facilitate this integration. In this paper we describe the design and development of the aMotion toolkit: a palette of composable motion &#8220;brushes&#8221; for image and video based on our affective motion research. We discuss insights from an on-going qualitative study with professional visual effects de-signers into how such capabilities can enhance their current practice</p></blockquote>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/">aMotion Toolkit &#8211; Submission to CAe 2012</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/03/19/amotion-toolkit-submission-to-cae-2012/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Adobe Air Mobile Development Talk @ Vancouver Flash Platform Meetup</title>
+		<link>http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/</link>
+		<comments>http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/#respond</comments>
+		<pubDate>Mon, 27 Feb 2012 16:34:00 +0000</pubDate>
+		<dc:creator><![CDATA[Matt]]></dc:creator>
+				<category><![CDATA[Works]]></category>
+		<category><![CDATA[News]]></category>
+
+		<guid isPermaLink="false">http://mattlockyer.com/?p=543</guid>
+		<description><![CDATA[<p>&#160; Discussing issues of &#8220;deploy everywhere&#8221; mobile technologies in general. Contents (in order): Pros and cons of: Unity, Corona SDK, Marmalade, PhoneGap, Titanium, HTML5 / CSS / JS. Pros and cons of Adobe Air platform for mobile development. Development samples of Adobe Air APIs. Discussion of performance issues, and performance tips. What&#8217;s broken at Adobe? [&#8230;]</p>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/">Adobe Air Mobile Development Talk @ Vancouver Flash Platform Meetup</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><center><iframe src="http://www.youtube.com/embed/cqt-NZH0J5s" frameborder="0" width="420" height="315"></iframe></center>&nbsp;</p>
+<p>Discussing issues of &#8220;deploy everywhere&#8221; mobile technologies in general.</p>
+<p>Contents (in order):</p>
+<ul>
+<li>Pros and cons of: Unity, Corona SDK, Marmalade, PhoneGap, Titanium, HTML5 / CSS / JS.</li>
+<li>Pros and cons of Adobe Air platform for mobile development.</li>
+<li>Development samples of Adobe Air APIs.</li>
+<li>Discussion of performance issues, and performance tips.</li>
+<li>What&#8217;s broken at Adobe?</li>
+<li>Q + A</li>
+</ul>
+<p>The post <a rel="nofollow" href="http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/">Adobe Air Mobile Development Talk @ Vancouver Flash Platform Meetup</a> appeared first on <a rel="nofollow" href="http://mattlockyer.com">The Works of Matt Lockyer</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mattlockyer.com/2012/02/27/adobe-air-mobile-development-talk-vancouver-flash-platform-meetup/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
