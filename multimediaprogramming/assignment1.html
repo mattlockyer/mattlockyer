@@ -1,135 +1,137 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Assignment 1</title>
-<link type="text/css" rel=StyleSheet href="css/main.css">
-</head>
-<body>
-<div id="assignmentWrap">
-<div id="assignment">
-<div class="whitespace"></div>
-<p><a href="index.html">Back</a></p>
-<h1>
-Assignment 1 - Shapes and Transformations
-</h1>
-<div class="rule"></div>
-<h1>
-Guidelines
-</h1>
-<h2>
-Due at 11.59pm, Sunday, September 25th.
-</h2>
-<ul>
-<li>You are graded on the completeness, neatness, comments, and visual style of your final assignment</li>
-<li>All assignments are individual</li>
-<li>ZIP ALL SKETCH FOLDERS (not individual files) INTO ONE ZIP FILE</li>
-<li>Submit to WebCT before the deadline</li>
-</ul>
-<h1>
-There is no late policy for this course!
-</h1>
-<h2>
-If you do not complete the assignment by the deadline, you will receive 0<br />
-You will be excused pending discussion with your TA<br />
-</h2>
-<div class="rule"></div>
-<h1>
-Part 1 - Drawing Directly
-</h1>
-<p>
-Draw a scene using the shapes covered in lectures and labs. <br />
-Place this code inside the setup method. <br />
-Examples:
-</p>
-<ul>
-<li>A location (city, street, ocean, mountains, island, jungle)</li>
-<li>A pattern (shapes in grid layout, shapes inside shapes)</li>
-</ul>
-<h2>
-Requirements:
-</h2>
-<p>
-Practice each shape type and have some variation in position, size, shape.<br />
-Use at least 4 of EACH shape type:
-</p>
-<ul>
-<li>Line</li>
-<li>Rectangle</li>
-<li>Ellipse</li>
-<li>Triangle</li>
-<li>Quad</li>
-<li>Arc</li>
-<li>Curve</li>
-</ul>
-<p>
-Use at least:
-</p>
-<ul>
-<li>8 different fills</li>
-<li>4 different strokes</li>
-<li>4 different stroke widths</li>
-<li>Use both RGB and HSB color modes</li>
-</ul>
-<div class="rule"></div>
-<h1>
-Part 2 - Drawing with Transformations
-</h1>
-<p>
-Draw a character for your scene. <br />
-Place this code inside the draw method and clear the background.<br />
-Examples:
-</p>
-<ul>
-<li>A spaceship</li>
-<li>An animal</li>
-<li>A person</li>
-</ul>
-<h2>
-Requirements:
-</h2>
-<ul>
-<li>Use at least 4 different shapes</li>
-<li>Use at least 16 shapes in total</li>
-<li>Your character drawing should be oriented around the point (0, 0)</li>
-<li>Your character drawing should no more than 200 pixels wide or tall</li>
-</ul>
-<ul>
-<li>Translate your character to the center of the screen</li>
-<li>Rotate your character 45 degrees to the left and 45 degrees to the right based on the mouseX position</li>
-<li>Scale your character based on the mouseY position (suggested values: 0.5 - 2)</li>
-<li>Your mouseX and mouseY interaction must use the full width and height of the window</li>
-</ul>
-<div class="rule"></div>
-<h1>
-Part 3 - Drawing in a Method
-</h1>
-<p>
-Make a new sketch (using your background from Part 1 and character from Part 2).<br />
-Move your scene code and character code inside their own methods. <br />
-Call these methods from the draw method.
-</p>
-<h2>
-Requirements:
-</h2>
-<ul>
-<li>Clear the background</li>
-<li>Call the scene method</li>
-<li>Provide x, y, rotation, and scale parameters for your character method</li>
-<li>Call your character method at least 8 times with different positions, rotations, and scalings</li>
-</ul>
-<div class="rule"></div>
-<h1>
-Tips and Tricks
-</h1>
-<ul>
-<li>Be creative with your character! You will be reusing these characters in future assignments</li>
-<li>Style counts! Take time to design your scene and character</li>
-<li>Your animation should match the character's design</li>
-<li>Start now! Use Part 1 to practice the shapes learned in the lectures</li>
-</ul>
-<div class="whitespace"></div>
-</div>
-</div>
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Assignment 1</title>
+        <link type="text/css" rel=StyleSheet href="css/main.css">
+    </head>
+    <body>
+        <div id="assignmentWrap">
+            <div id="assignment">
+
+                <div class="whitespace"></div>
+                <p><a href="index.html">Back</a></p>
+                <h1>
+                    Assignment 1 - Shapes and Transformations
+                </h1>
+                <div class="rule"></div>
+                <h1>
+                    Guidelines
+                </h1>
+                <h2>
+                    Due at 11.59pm, Sunday, September 25th.
+                </h2>
+                <ul>
+                    <li>You are graded on the completeness, neatness, comments, and visual style of your final assignment</li>
+                    <li>All assignments are individual</li>
+                    <li>ZIP ALL SKETCH FOLDERS (not individual files) INTO ONE ZIP FILE</li>
+                    <li>Submit to WebCT before the deadline</li>
+                </ul>
+                <h1>
+                    There is no late policy for this course!
+                </h1>
+                <h2>
+                    If you do not complete the assignment by the deadline, you will receive 0<br />
+                    You will be excused pending discussion with your TA<br />
+                </h2>
+                <div class="rule"></div>
+                <h1>
+                    Part 1 - Drawing Directly
+                </h1>
+                <p>
+                    Draw a scene using the shapes covered in lectures and labs. <br />
+                    Place this code inside the setup method. <br />
+                    Examples:
+                </p>
+                <ul>
+                    <li>A location (city, street, ocean, mountains, island, jungle)</li>
+                    <li>A pattern (shapes in grid layout, shapes inside shapes)</li>
+                </ul>
+                <h2>
+                    Requirements:
+                </h2>
+                <p>
+                    Practice each shape type and have some variation in position, size, shape.<br />
+                    Use at least 4 of EACH shape type:
+                </p>
+                <ul>
+                    <li>Line</li>
+                    <li>Rectangle</li>
+                    <li>Ellipse</li>
+                    <li>Triangle</li>
+                    <li>Quad</li>
+                    <li>Arc</li>
+                    <li>Curve</li>
+                </ul>
+                <p>
+                    Use at least:
+                </p>
+                <ul>
+                    <li>8 different fills</li>
+                    <li>4 different strokes</li>
+                    <li>4 different stroke widths</li>
+                    <li>Use both RGB and HSB color modes</li>
+                </ul>
+                <div class="rule"></div>
+                <h1>
+                    Part 2 - Drawing with Transformations
+                </h1>
+                <p>
+                    Draw a character for your scene. <br />
+                    Place this code inside the draw method and clear the background.<br />
+                    Examples:
+                </p>
+                <ul>
+                    <li>A spaceship</li>
+                    <li>An animal</li>
+                    <li>A person</li>
+                </ul>
+                <h2>
+                    Requirements:
+                </h2>
+                <ul>
+                    <li>Use at least 4 different shapes</li>
+                    <li>Use at least 16 shapes in total</li>
+                    <li>Your character drawing should be oriented around the point (0, 0)</li>
+                    <li>Your character drawing should no more than 200 pixels wide or tall</li>
+                </ul>
+                <ul>
+                    <li>Translate your character to the center of the screen</li>
+                    <li>Rotate your character 45 degrees to the left and 45 degrees to the right based on the mouseX position</li>
+                    <li>Scale your character based on the mouseY position (suggested values: 0.5 - 2)</li>
+                    <li>Your mouseX and mouseY interaction must use the full width and height of the window</li>
+                </ul>
+                <div class="rule"></div>
+                <h1>
+                    Part 3 - Drawing in a Method
+                </h1>
+                <p>
+                    Make a new sketch (using your background from Part 1 and character from Part 2).<br />
+                    Move your scene code and character code inside their own methods. <br />
+                    Call these methods from the draw method.
+                </p>
+                <h2>
+                    Requirements:
+                </h2>
+                <ul>
+                    <li>Clear the background</li>
+                    <li>Call the scene method</li>
+                    <li>Provide x, y, rotation, and scale parameters for your character method</li>
+                    <li>Call your character method at least 8 times with different positions, rotations, and scalings</li>
+                </ul>
+                <div class="rule"></div>
+                <h1>
+                    Tips and Tricks
+                </h1>
+                <ul>
+                    <li>Be creative with your character! You will be reusing these characters in future assignments</li>
+                    <li>Style counts! Take time to design your scene and character</li>
+					<li>Your animation should match the character's design</li>
+                    <li>Start now! Use Part 1 to practice the shapes learned in the lectures</li>
+                </ul>
+                <div class="whitespace"></div>
+
+            </div>
+        </div>
+    </body>
 </html>

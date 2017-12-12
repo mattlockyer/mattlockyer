@@ -1,161 +1,165 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Assignment 2</title>
-<link type="text/css" rel=StyleSheet href="css/main.css">
-</head>
-<body>
-<div id="assignmentWrap">
-<div id="assignment">
-<div class="whitespace"></div>
-<p><a href="index.html">Back</a></p>
-<h1>
-Assignment 3 - Objects and Inheritance
-</h1>
-<div class="rule"></div>
-<h1>
-Guidelines
-</h1>
-<h2>
-Due at 11.59pm, Sunday, October 23rd.
-</h2>
-<ul>
-<li>You are graded on the completeness, neatness, comments, and visual style of your final assignment</li>
-<li>All assignments are individual</li>
-<li>ONE SKETCH ONLY</li>
-<li>ZIP YOUR SKETCH FOLDER (not individual files) INTO ONE ZIP FILE</li>
-<li>Submit to WebCT before the deadline</li>
-</ul>
-<h1>
-There is no late policy for this course!
-</h1>
-<h2>
-If you do not complete the assignment by the deadline, you will receive 0<br />
-You will be excused pending discussion with your TA<br />
-</h2>
-<div class="rule"></div>
-<h1>
-Overview:
-</h1>
-<p>
-We are going to create a grid layout of shape objects in order to create stunning patterns and effects.
-Our shape objects will be interactive and react to the user input via the mouse. This will allow us to
-parameterize our pattern and work with data in the context of a design constraint. Samples:
-</p>
-<center>
-<img src="img/assignment3/example1.jpg" width="400" height="500" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="img/assignment3/example2.jpg" width="400" height="400" /><br /><br />
-<iframe src="applets/a3/index.html" width="600" height="600">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Assignment 2</title>
+        <link type="text/css" rel=StyleSheet href="css/main.css">
+    </head>
+    <body>
+        <div id="assignmentWrap">
+            <div id="assignment">
+
+                <div class="whitespace"></div>
+                <p><a href="index.html">Back</a></p>
+                <h1>
+                    Assignment 3 - Objects and Inheritance
+                </h1>
+                <div class="rule"></div>
+                <h1>
+                    Guidelines
+                </h1>
+                <h2>
+                    Due at 11.59pm, Sunday, October 23rd.
+                </h2>
+                <ul>
+                    <li>You are graded on the completeness, neatness, comments, and visual style of your final assignment</li>
+                    <li>All assignments are individual</li>
+                    <li>ONE SKETCH ONLY</li>
+                    <li>ZIP YOUR SKETCH FOLDER (not individual files) INTO ONE ZIP FILE</li>
+                    <li>Submit to WebCT before the deadline</li>
+                </ul>
+                <h1>
+                    There is no late policy for this course!
+                </h1>
+                <h2>
+                    If you do not complete the assignment by the deadline, you will receive 0<br />
+                    You will be excused pending discussion with your TA<br />
+                </h2>
+                <div class="rule"></div>
+                <h1>
+                    Overview:
+                </h1>
+                <p>
+                    We are going to create a grid layout of shape objects in order to create stunning patterns and effects.
+                    Our shape objects will be interactive and react to the user input via the mouse. This will allow us to 
+                    parameterize our pattern and work with data in the context of a design constraint. Samples:
+                </p>
+                <center>
+                    <img src="img/assignment3/example1.jpg" width="400" height="500" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="img/assignment3/example2.jpg" width="400" height="400" /><br /><br />
+                    <iframe src="applets/a3/index.html" width="600" height="600">
                         Your browser doesn't support iframes
                     </iframe>
-</center>
-<div class="rule"></div>
-<h2>
-Produce one sketch only, the requirements are given in parts as a guide only<br />
-Make sure you fulfill all requirements, but feel free to deviate artistically<br />
-This is a real opportunity to create some stunning work, BE CREATIVE AND TAKE RISKS.<br />
-Aim high and keep moving!<br />
-</h2>
-<div class="rule"></div>
-<h1>
-Part 1 - A Shape Object
-</h1>
-<p>
-Create a class to define a shape of your choice.<br />
-Instantiate this shape several times and arrange in a grid.<br />
-</p>
-<h2>
-Requirements:
-</h2>
-<ul>
-<li>Your shape class must have fields to represent:</li>
-<ul>
-<li>Position</li>
-<li>Rotation / Orientation</li>
-<li>Size / Scale</li>
-<li>Color</li>
-</ul>
-<li>Your shape class must also have the following:</li>
-<ul>
-<li>A constructor with no parameters that initializes the shape fields with random values</li>
-<li>A constructor with two parameters to initialize the position fields of the shape</li>
-<li>A draw method that uses a combination of simple and complex shapes</li>
-</ul>
-<li>In your main sketch (setup, draw):</li>
-<ul>
-<li>A datatype to store your shape instances</li>
-<li>Initialize all the shape objects</li>
-<li>Call the draw method of all the shape objects</li>
-</ul>
-</ul>
-<div class="rule"></div>
-<h1>
-Part 2 - Reactive Shapes
-</h1>
-<p>
-You will now make a subclass of your shape class from Part 1.<br />
-Add methods to allow the new objects to react to user input.<br />
-</p>
-<h2>
-Requirements:
-</h2>
-<ul>
-<li>Your new class must have the following methods:</li>
-<li>(choose three, or make your own)</li>
-<ul>
-<li>Effect the color (gradient) based on distance to the mouse</li>
-<li>Effect the size based on distance to the mouse</li>
-<li>Effect the shape based on distance to the mouse</li>
-<li>Effect the rotation based on the angle to mouse</li>
-<li>Effect the size based on the angle to mouse</li>
-<li>Effect the color (gradient) based on the angle to mouse</li>
-<li>Effect the shape based on the angle to mouse</li>
-</ul>
-*** For distance based interaction it can be distance to mouseX, mouseY, or both<br /><br />
-<li>In your main sketch (setup, draw):</li>
-<ul>
-<li>Add these new shapes to your datatype from Part 1</li>
-<li>Call their reactive methods and test them</li>
-</ul>
-</ul>
-<div class="rule"></div>
-<h1>
-Part 3 - Different Shapes
-</h1>
-<p>
-You will now create a new subclass of your class from Part 2.<br />
-This class will override the draw method that was inherited from the original class from Part 1.<br />
-</p>
-<h2>
-Requirements:
-</h2>
-<ul>
-<li>Your overridden draw method must do the following:</li>
-<ul>
-<li>Use a combination of simple and complex shapes</li>
-<li>Be distinct but harmonious with your shape design from Part 1</li>
-</ul>
-<li>In your main sketch (setup, draw):</li>
-<ul>
-<li>Store in your datatype a random or static pattern of the reactive shapes from Part 2 and Part 3</li>
-<li>You should now have a grid layout composed of two types of reactive shapes</li>
-</ul>
-<li>Select a key for saving images of your sketch</li>
-(use the variable frameCount in the file name) so you don't overwrite previous saved images
-</ul>
-<div class="rule"></div>
-<h1>
-Tips and Tricks
-</h1>
-<ul>
-<li>Code a SINGLE item (maybe even a single line) then TEST TEST TEST</li>
-<li>Review Objects, Methods, Arrays</li>
-<li>Style counts! We want to see some amazing designs!</li>
-<li>Start soon!</li>
-</ul>
-<div class="whitespace"></div>
-</div>
-</div>
-</body>
+                </center>
+                 <div class="rule"></div>
+                <h2>
+                    Produce one sketch only, the requirements are given in parts as a guide only<br />
+                    Make sure you fulfill all requirements, but feel free to deviate artistically<br />
+                    This is a real opportunity to create some stunning work, BE CREATIVE AND TAKE RISKS.<br />
+                    Aim high and keep moving!<br />
+                </h2>
+                <div class="rule"></div>
+                <h1>
+                    Part 1 - A Shape Object
+                </h1>
+                <p>
+                    Create a class to define a shape of your choice.<br />
+                    Instantiate this shape several times and arrange in a grid.<br />
+                </p>
+                <h2>
+                    Requirements:
+                </h2>
+                <ul>
+                    <li>Your shape class must have fields to represent:</li>
+                    <ul>
+                        <li>Position</li>
+                        <li>Rotation / Orientation</li>
+                        <li>Size / Scale</li>
+                        <li>Color</li>
+                    </ul>
+                    <li>Your shape class must also have the following:</li>
+                    <ul>
+                        <li>A constructor with no parameters that initializes the shape fields with random values</li>
+                        <li>A constructor with two parameters to initialize the position fields of the shape</li>
+                        <li>A draw method that uses a combination of simple and complex shapes</li>
+                    </ul>
+                    <li>In your main sketch (setup, draw):</li>
+                    <ul>
+                        <li>A datatype to store your shape instances</li>
+                        <li>Initialize all the shape objects</li>
+                        <li>Call the draw method of all the shape objects</li>
+                    </ul>
+                </ul>
+                <div class="rule"></div>
+                <h1>
+                    Part 2 - Reactive Shapes
+                </h1>
+                <p>
+                    You will now make a subclass of your shape class from Part 1.<br />
+                    Add methods to allow the new objects to react to user input.<br />
+                </p>
+                <h2>
+                    Requirements:
+                </h2>
+                <ul>
+                    <li>Your new class must have the following methods:</li>
+                    <li>(choose three, or make your own)</li>
+                    <ul>
+                        <li>Effect the color (gradient) based on distance to the mouse</li>
+                        <li>Effect the size based on distance to the mouse</li>
+                        <li>Effect the shape based on distance to the mouse</li>
+                        <li>Effect the rotation based on the angle to mouse</li>
+                        <li>Effect the size based on the angle to mouse</li>
+                        <li>Effect the color (gradient) based on the angle to mouse</li>
+                        <li>Effect the shape based on the angle to mouse</li>
+                    </ul>
+                   *** For distance based interaction it can be distance to mouseX, mouseY, or both<br /><br />
+                    <li>In your main sketch (setup, draw):</li>
+                    <ul>
+                        <li>Add these new shapes to your datatype from Part 1</li>
+                        <li>Call their reactive methods and test them</li>
+                    </ul>
+                </ul>
+
+                <div class="rule"></div>
+                <h1>
+                    Part 3 - Different Shapes
+                </h1>
+                <p>
+                    You will now create a new subclass of your class from Part 2.<br />
+                    This class will override the draw method that was inherited from the original class from Part 1.<br />
+                </p>
+                <h2>
+                    Requirements:
+                </h2>
+                <ul>
+                    <li>Your overridden draw method must do the following:</li>
+                    <ul>
+
+                        <li>Use a combination of simple and complex shapes</li>
+                        <li>Be distinct but harmonious with your shape design from Part 1</li>
+                    </ul>
+                    <li>In your main sketch (setup, draw):</li>
+                    <ul>
+                        <li>Store in your datatype a random or static pattern of the reactive shapes from Part 2 and Part 3</li>
+                        <li>You should now have a grid layout composed of two types of reactive shapes</li>
+                    </ul>
+                    <li>Select a key for saving images of your sketch</li>
+                     (use the variable frameCount in the file name) so you don't overwrite previous saved images
+                </ul>
+                <div class="rule"></div>
+                <h1>
+                    Tips and Tricks
+                </h1>
+                <ul>
+                    <li>Code a SINGLE item (maybe even a single line) then TEST TEST TEST</li>
+                    <li>Review Objects, Methods, Arrays</li>
+                    <li>Style counts! We want to see some amazing designs!</li>
+                    <li>Start soon!</li>
+                </ul>
+                <div class="whitespace"></div>
+
+            </div>
+        </div>
+    </body>
 </html>

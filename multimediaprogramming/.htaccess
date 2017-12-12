@@ -1,0 +1,2 @@
+AuthName "multimediaprogramming"
+AuthUserFile "/home7/patchste/.htpasswds/public_html/multimediaprogramming/passwd"

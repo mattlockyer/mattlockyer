@@ -1,204 +1,232 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Using Objects</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Using Objects</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Declaring and Initializing</a></li>
-<li><a href="#tabs-3">Array of Objects</a></li>
-<li><a href="#tabs-4">ArrayList of Objects</a></li>
-<li><a href="#tabs-5">Example</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Using Objects
-<ul>
-<li>Declaring / Initializing Objects</li>
-<li>Array of Objects</li>
-<li>ArrayList of Objects</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://processing.org/learning/topics/arraylistclass.html">http://processing.org/learning/topics/arraylistclass.html</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"A poet is a professional maker of verbal objects." ~ W.H. Auden
-</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Declaring an Object</h1>
-<p>
-Once an object is defined by a class definition, it can be instantiated, bringing an instance of that object into
-your program, allowing you to change fields and call methods. Why is it important that we encapsulate information
-inside an object and work with instances of the object rather than working with the data directly?
-We do this to make our code both formally and conceptually cleaner. Remember working with strings? We
-never had to know the details of the methods of the string class, or how they worked, we leveraged code that was
-already written. This is the power of object oriented programming.
-</p>
-<p>
-<span class="code">PinkElephant myPet;</span> declare a reference variable of type PinkElephant<br />
-<span class="code">myPet = new PinkElephant();</span> <br />
-<ul>
-<li>Creates a new instance of the PinkElephant class by calling the constructor in the PinkElephant class.</li>
-<li>A reference to the newly created object is returned to where the constructor was called using the new keyword.</li>
-<li>The reference of the newly created object is assigned to the myPet reference variable.</li>
-</ul>
-</p>
-<p>
-Now that we have a reference variable of the type PinkElephant, we can go ahead and change some of this objects fields
-or call some of it's methods.
-</p>
-<p>
-<span class="code">myPet.size = 50;</span> set the size of myPet (a PinkElephant) to 50<br />
-<span class="code">myPet.eatPeanuts();</span> tell the myPet object to eatPeanuts();<br />
-</p>
-<div class="rule"></div>
-<div class="important">When you create an instance of a class (an object) using the new keyword, you are actually
-calling the constructor method of that class, which will return a reference to the newly created object.</div>
-<div class="important">Make sure you declare a reference variable of the right type (class name) before you
-create a new instance of that object.</div>
-</div>
-<div id="tabs-3" class="tab">
-<h1>Array of Objects</h1>
-<p>
-We've seen before that creating multiple elements of the same type can be tedious and time consuming in code.
-It's much better to store similar primatives or complex (object) types in an array that can be controlled by a
-loop. Here's how to declare an array of objects:
-</p>
-<p>
-<span class="code">PinkElephant[] myPets;</span><br />
-Declare an array of PinkElephant objects.<br />
-<span class="code">myPets = new PinkElephant[5];</span><br />
-Initialize the array of PinkElephant objects.<br />
-NOTE: No instances of PinkElephant have been created yet...<br />
-Only the array has been initialized, however each position is still empty (NO PINK ELEPHANTS)
-</p>
-<p>
-Now let's initialize each position in our array with a new instance of the PinkElephant class:
-</p>
-<form><textarea class="processingide" style="height:90px" noplay="true">
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Declaring and Initializing</a></li>
+                        <li><a href="#tabs-3">Array of Objects</a></li>
+                        <li><a href="#tabs-4">ArrayList of Objects</a></li>
+                        <li><a href="#tabs-5">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Using Objects
+                                <ul>
+                                    <li>Declaring / Initializing Objects</li>
+                                    <li>Array of Objects</li>
+                                    <li>ArrayList of Objects</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                           <a href="http://processing.org/learning/topics/arraylistclass.html">http://processing.org/learning/topics/arraylistclass.html</a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "A poet is a professional maker of verbal objects." ~ W.H. Auden
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+                        <h1>Declaring an Object</h1>
+                        <p>
+                            Once an object is defined by a class definition, it can be instantiated, bringing an instance of that object into
+                            your program, allowing you to change fields and call methods. Why is it important that we encapsulate information
+                            inside an object and work with instances of the object rather than working with the data directly?
+                            We do this to make our code both formally and conceptually cleaner. Remember working with strings? We
+                            never had to know the details of the methods of the string class, or how they worked, we leveraged code that was
+                            already written. This is the power of object oriented programming.
+                        </p>
+                        <p>
+                            <span class="code">PinkElephant myPet;</span> declare a reference variable of type PinkElephant<br />
+                            <span class="code">myPet = new PinkElephant();</span> <br />
+                        <ul>
+                            <li>Creates a new instance of the PinkElephant class by calling the constructor in the PinkElephant class.</li>
+                            <li>A reference to the newly created object is returned to where the constructor was called using the new keyword.</li>
+                            <li>The reference of the newly created object is assigned to the myPet reference variable.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Now that we have a reference variable of the type PinkElephant, we can go ahead and change some of this objects fields
+                            or call some of it's methods.
+                        </p>
+                        <p>
+                            <span class="code">myPet.size = 50;</span> set the size of myPet (a PinkElephant) to 50<br />
+                            <span class="code">myPet.eatPeanuts();</span> tell the myPet object to eatPeanuts();<br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="important">When you create an instance of a class (an object) using the new keyword, you are actually
+                        calling the constructor method of that class, which will return a reference to the newly created object.</div>
+                        <div class="important">Make sure you declare a reference variable of the right type (class name) before you 
+                            create a new instance of that object.</div>
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+
+                        <h1>Array of Objects</h1>
+
+                        <p>
+                            We've seen before that creating multiple elements of the same type can be tedious and time consuming in code.
+                            It's much better to store similar primatives or complex (object) types in an array that can be controlled by a
+                            loop. Here's how to declare an array of objects:
+                        </p>
+                        <p>
+                            <span class="code">PinkElephant[] myPets;</span><br />
+                            Declare an array of PinkElephant objects.<br />
+                            <span class="code">myPets = new PinkElephant[5];</span><br />
+                            Initialize the array of PinkElephant objects.<br />
+                            NOTE: No instances of PinkElephant have been created yet...<br />
+                            Only the array has been initialized, however each position is still empty (NO PINK ELEPHANTS)
+                        </p>
+                        <p>
+                            Now let's initialize each position in our array with a new instance of the PinkElephant class:
+                        </p>
+                       <form><textarea class="processingide" style="height:90px" noplay="true">
 for (int i = 0; i < myPets.length; i++) {
     myPets[i] = new PinkElephant();
 }</textarea></form>
-<p>
-Now what if we wanted to draw each of our "pets" of the type PinkElephant. Well first we would
-want to make sure the PinkElephant class has a draw method. For the purposes of this demonstration let's assume it does.
-</p>
-<form><textarea class="processingide" style="height:90px" noplay="true">
+                        <p>
+                            Now what if we wanted to draw each of our "pets" of the type PinkElephant. Well first we would
+                            want to make sure the PinkElephant class has a draw method. For the purposes of this demonstration let's assume it does.
+                        </p>
+                         <form><textarea class="processingide" style="height:90px" noplay="true">
 for (int i = 0; i < myPets.length; i++) {
     myPets[i].draw();
 }</textarea></form>
-<p>
-So we've successfully called the draw method of each of our pets.
-</p>
-<div class="rule"></div>
-<div class="important">When we declare and initialize an Array of objects, the Array is empty.
-it has a size, but doesn't contain any objects.</div>
-<div class="important">Not until we've initialize each position in the array can we say that our array contains objects.</div>
-<div class="important">Once each position in the array has be initialized with a new instance of the object class, we can
-begin using those newly created objects in other portions of our sketch.</div>
-</div>
-<div id="tabs-4" class="tab">
-<h1>ArrayList of Objects</h1>
-<p>
-Now we will go into the details of creating an ArrayList of objects. For some purposes an ArrayList is better
-than an Array. Mainly if the size of your list is going to expand and contract, an Array won't be suited for this.
-ArrayLists have the added benefit of not having a fixed size, which allows you to add and remove items when you wish.
-</p>
-<p>
-<span class="code">ArrayList myPets;</span><br />
-Declare an ArrayList.<br />
-<span class="code">myPets = new ArrayList();</span><br />
-Initialize the ArrayList.<br />
-NOTE: ArrayLists are type agnostic by default (they do not know what kind of objects they contain)<br />
-</p>
-<p>
-Now let's add some new instances of the PinkElephant class to our ArrayList:
-</p>
-<form><textarea class="processingide" style="height:90px" noplay="true">
+                        <p>
+                            So we've successfully called the draw method of each of our pets.
+                        </p>
+                        <div class="rule"></div>
+
+                        <div class="important">When we declare and initialize an Array of objects, the Array is empty.
+                        it has a size, but doesn't contain any objects.</div>
+                        <div class="important">Not until we've initialize each position in the array can we say that our array contains objects.</div>
+                        <div class="important">Once each position in the array has be initialized with a new instance of the object class, we can
+                            begin using those newly created objects in other portions of our sketch.</div>
+
+                    </div>
+                     <div id="tabs-4" class="tab">
+
+                        <h1>ArrayList of Objects</h1>
+
+                        <p>
+                            Now we will go into the details of creating an ArrayList of objects. For some purposes an ArrayList is better
+                            than an Array. Mainly if the size of your list is going to expand and contract, an Array won't be suited for this.
+                            ArrayLists have the added benefit of not having a fixed size, which allows you to add and remove items when you wish.
+                        </p>
+                        <p>
+                            <span class="code">ArrayList myPets;</span><br />
+                            Declare an ArrayList.<br />
+                            <span class="code">myPets = new ArrayList();</span><br />
+                            Initialize the ArrayList.<br />
+                            NOTE: ArrayLists are type agnostic by default (they do not know what kind of objects they contain)<br />
+                        </p>
+                        <p>
+                            Now let's add some new instances of the PinkElephant class to our ArrayList:
+                        </p>
+                       <form><textarea class="processingide" style="height:90px" noplay="true">
 for (int i = 0; i < 5; i++) {
     myPets.add ( new PinkElephant() );
 }</textarea></form>
-<p>
-Notice the use of the add( *object instance* ) method of the ArrayList. The ArrayList itself is an
-object, and add(...) is merely a method of the ArrayList class.<br />
-Also note that when creating the ArrayList we never specified a size, so in our first for loop, we
-cannot use the ArrayList method size() yet, since the ArrayList myPets contains no objects before
-the loop.
-</p>
-<p>
-Let's draw our PinkElephants inside the ArrayList myPets.
-</p>
-<form><textarea class="processingide" style="height:120px" noplay="true">
+                        <p>
+                            Notice the use of the add( *object instance* ) method of the ArrayList. The ArrayList itself is an 
+                            object, and add(...) is merely a method of the ArrayList class.<br />
+                            Also note that when creating the ArrayList we never specified a size, so in our first for loop, we
+                            cannot use the ArrayList method size() yet, since the ArrayList myPets contains no objects before
+                            the loop.                            
+                        </p>
+                        <p>
+                            Let's draw our PinkElephants inside the ArrayList myPets.                           
+                        </p>
+                         <form><textarea class="processingide" style="height:120px" noplay="true">
 for (int i = 0; i < myPets.size(); i++) {
     PinkElephant pinkE = (PinkElephant) myPets.get(i);
     pinkE.draw();
 }</textarea></form>
-<p>
-Notice how we declared a new reference variable to store each reference we took out of our
-ArrayList using the get(index) method? This is merely a formality, and helps for calling other
-methods of each object in the ArrayList.<br />
-</p>
-<p>
-Since ArrayLists are type agnostic, the ArrayList does not remember that we added PinkElephant
-objects into it. So when we use the get(index) method of the ArrayList it returns a reference
-to an object of the generic type Object, not PinkElephant.
-</p>
-<p>
-In order to use the reference variable returned by the get(index) method as a PinkElephant, we
-must first cast it as such using the cast (PinkElephant).<br />
-</p>
-<div class="rule"></div>
-<h1>Typed ArrayList</h1>
-<p>
-We can declare a typed ArrayList which will behave a lot more like an Array since the ArrayList will
-return references of the type we specify. Here is an example:
-</p>
-<form><textarea class="processingide" style="height:120px" noplay="true">
+                        <p>
+                            Notice how we declared a new reference variable to store each reference we took out of our 
+                            ArrayList using the get(index) method? This is merely a formality, and helps for calling other
+                            methods of each object in the ArrayList.<br /> 
+                        </p>
+                        <p>
+                            Since ArrayLists are type agnostic, the ArrayList does not remember that we added PinkElephant
+                            objects into it. So when we use the get(index) method of the ArrayList it returns a reference
+                             to an object of the generic type Object, not PinkElephant.
+                        </p>
+                        <p>
+                            In order to use the reference variable returned by the get(index) method as a PinkElephant, we
+                            must first cast it as such using the cast (PinkElephant).<br /> 
+                        </p>
+                        <div class="rule"></div>
+                        
+                        <h1>Typed ArrayList</h1>
+
+                        <p>
+                            We can declare a typed ArrayList which will behave a lot more like an Array since the ArrayList will
+                            return references of the type we specify. Here is an example:
+                        </p>
+                        
+                        <form><textarea class="processingide" style="height:120px" noplay="true">
 ArrayList<PinkElephant> myPets = new ArrayList<PinkElephant>();
 myPets.add( new PinkElephant() );
 myPets.get(0).draw();</textarea></form>
-<p>
-This last line where we get and use the object instance directly as if it was an object of PinkElephant
-only works because our ArrayList is typed. This is an extremely useful feature of ArrayLists.
-</p>
-<div class="rule"></div>
-<div class="important">A newly created ArrayList has a size of 0.</div>
-<div class="important">ArrayLists do not remember the type of objects they contain, so each object reference
-obtained using the .get(index) method must be cast before using.</div>
-<div class="important">A typed ArrayList will always return a reference of the type specified when
-the ArrayList was created, making life much more simple.</div>
-</div>
-<div id="tabs-5" class="tab">
-<form><textarea class="processingide" style="height:580px">
+                        <p>
+                            This last line where we get and use the object instance directly as if it was an object of PinkElephant
+                            only works because our ArrayList is typed. This is an extremely useful feature of ArrayLists.
+                        </p>
+                        
+                        <div class="rule"></div>
+                        <div class="important">A newly created ArrayList has a size of 0.</div>
+                        <div class="important">ArrayLists do not remember the type of objects they contain, so each object reference
+                        obtained using the .get(index) method must be cast before using.</div>
+                        <div class="important">A typed ArrayList will always return a reference of the type specified when
+                        the ArrayList was created, making life much more simple.</div>
+
+                    </div>
+
+                    <div id="tabs-5" class="tab">
+                        <form><textarea class="processingide" style="height:580px">
 ArrayList<Ball> ballList = new ArrayList<Ball>();
 
 void setup() {
@@ -261,10 +289,16 @@ class Ball {
     popMatrix();
   }
 }</textarea></form>
-</div>
-</div>
-</div>
-</div>
-</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
 </html>

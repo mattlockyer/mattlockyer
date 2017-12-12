@@ -1,198 +1,245 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Beyond Processing</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Beyond Processing</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Eclipse</a></li>
-<li><a href="#tabs-3">Max and VVVV</a></li>
-<li><a href="#tabs-4">C++ Libs / Frameworks</a></li>
-<li><a href="#tabs-5">Summary</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Eclipse
-<ul>
-<li>Setup</li>
-<li>public static void main...</li>
-<li>What is a PApplet anyway?</li>
-</ul>
-</li>
-<li>Max and VVVV
-<ul>
-<li>Compare to programming environments</li>
-<li>All code on the inside</li>
-</ul>
-</li>
-<li>C++ Libs and Frameworks
-<ul>
-<li>Why C++?</li>
-<li>Power comparison</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://processing.org/learning/eclipse/">Processing in Eclipse</a><br />
-<a href="http://cycling74.com/">Max MSP</a><br />
-<a href="http://vvvv.org/">VVVV</a><br />
-<a href="http://libcinder.org/">Cinder</a><br />
-<a href="http://www.openframeworks.cc/">OpenFrameworks</a><br />
-<a href="http://polycode.org/">Polycode</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"An artist can be truly evaluated only after he is dead. At the very 11th hour, he might do something that will eclipse everything else." ~ Van Cliburn
-</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Eclipse - Setup</h1>
-<a href="http://processing.org/learning/eclipse/">Processing in Eclipse</a><br />
-<p>
-Setup for processing in Eclipse is covered in detail in the above link. However it might be nice to get a big picture overview.
-</p>
-<p>
-Almost everything in Java is an object. In fact, when we've been writing sketches, processing has been running our code as an instance
-of the class PApplet. What that means is that all of our sketches and code can easily be used inside of Eclipse if we set up the PApplet correctly.
-</p>
-<div class="important">All sketches are instances of PApplet.</div>
-<div class="rule"></div>
-<h1>public static void main...</h1>
-<p>
-So what's this stuff in Java? Well, when a full Java application runs, it's running in a desktop environment.
-</p>
-<p>
-The following method:<br />
-<span class="code">public static void main(String args[]) { ... }</span><br />
-Is the main method (entry point) for all Java applications written.
-</p>
-<p>
-The parameter <span class="code">String args[]</span> is a string array of arguments to the application (made from the command line).
-</p>
-<p>
-Almost everything in Java is an object. In fact, when we've been writing sketches, processing has been running our code as an instance
-of the class PApplet. What that means is that all of our sketches and code can easily be used inside of Eclipse if we set up the PApplet correctly.
-</p>
-<div class="important">public static void main(String args[]) { ... } is the main method of all Java applications, it's the "setup" of Java applications.</div>
-<div class="rule"></div>
-<h1>What's a PApplet?</h1>
-<p>
-PApplet is the main class of processing. It's the portion of the processing library that takes care of things like calling setup and draw.
-Global sketch variables like width, height, mouseX, mouseY, ...
-</p>
-<p>
-It should be noted that a PApplet functions differently in full Java mode (when used in Eclipse). These differences are well documented online.
-We've also included an example of using full Java mode in <a href="oop_javaobjects.html">this</a> section.
-Even though this example is using full Java mode from within processing, since there is no public static void main... The principles of Java
-access control apply in the same way in Eclipse as in this example.
-</p>
-<div class="whitespace"></div>
-</div>
-<div id="tabs-3" class="tab">
-<h1>Max and VVVV</h1>
-<img src="http://installationspace.com/spaces/wp-content/dump/uploads/2008/01/maxposterweb.jpg" />
-<p>
-Graphical programming languages (or node based frameworks) are very popular among artists and designers since they offer ease of use, extendibility,
- and a graphical layout environment for their objects.
-</p>
-<p>
-At their core all of these environments are running code. Through patches, addons, or whatever they're called.
-</p>
-<p>
-The pros to these environments are many. An easy to use interface to snap together programming objects like lego.
-Very clear to see an overall picture of the application and what's happening, even while it's running.
-Redesigns and changes are quick and painless.
-</p>
-<p>
-There are some drawbacks to getting comfortable in these environments. Mainly, what happens to the specifics of an application.
-If we're snapping and layering output patches, what happens when our application ends up looking like the filtered output of lots of
-other applications using the same patches or combinations of patches.
-</p>
-<p>
-In order to produce a truly unique and original experience in an application, some programming must always be done.
-Something new has to be created!
-</p>
-<p>
-Thankfully these environments do offer the ability to create custom own patches, but guess what? You need to know how to program...
-</p>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Cinder</h1>
-<p>
-Cinder is a fantastic library. Very well structured and easy to learn by following examples. The code is commented and documentation is auto
-generated which can be confusing to some beginners.
-</p>
-<p>
-Cinder offers more complex graphical processes straight out of the box. Edge detection and image filtering can be done with single
-method calls. There are also examples of more advanced OpenGL concepts such as: FBOs, VBOs, and shaders.
-</p>
-<p>
-The community is sparse but growing rapidly. As more coders migrate from existing frameworks, Cinder looks to be the #1 C++ framework for
-creative coding.
-</p>
-<h1>Openframeworks</h1>
-<p>
-The original C++ framework for creative code, Openframeworks has a huge following online. Large community means lots of help and lots of forums.
-</p>
-<p>
-Compared with Cinder, Openframeworks initial offerings are fewer, but the addons are many.
-</p>
-<p>
-Personally the updates to the main Openframeworks branches have been slow, the community is fragmented, and large portions of the community are
-moving to Cinder.
-</p>
-<h1>PolyCode</h1>
-<p>
-Brand new, small community, very few projects.
-</p>
-<p>
-This is a full C++ framework with added IDE for scripting projects (ala processing).
-</p>
-<p>
-Since it's new, there might not be much in terms of documentation. Coming from a processing background the scripting IDE makes sense.
-</p>
-</div>
+        <div id="wrapper">
 
-<div id="tabs-5" class="tab">
-<h1>Summary</h1>
-<p>
-Creative code is just that, code.
-</p>
-<p>
-Anyway or at any level you decide to work with the code is up to you.
-</p>
-<p>
-There are pros and cons to all approaches and at the end of the day you should develop a workflow that works for you. It should
-allow you to express yourself in code as quickly and painlessly as possible.
-</p>
-</div>
-</div>
-</div>
-</div>
-</body>
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Eclipse</a></li>
+                        <li><a href="#tabs-3">Max and VVVV</a></li>
+                        <li><a href="#tabs-4">C++ Libs / Frameworks</a></li>
+                        <li><a href="#tabs-5">Summary</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Eclipse
+                                <ul>
+                                    <li>Setup</li>
+                                    <li>public static void main...</li>
+                                    <li>What is a PApplet anyway?</li>
+                                </ul>
+                            </li>
+                            <li>Max and VVVV
+                                <ul>
+                                    <li>Compare to programming environments</li>
+                                    <li>All code on the inside</li>
+                                </ul>
+                            </li>
+                            <li>C++ Libs and Frameworks
+                                <ul>
+                                    <li>Why C++?</li>
+                                    <li>Power comparison</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                            <a href="http://processing.org/learning/eclipse/">Processing in Eclipse</a><br />
+                            <a href="http://cycling74.com/">Max MSP</a><br />
+                            <a href="http://vvvv.org/">VVVV</a><br />
+                            <a href="http://libcinder.org/">Cinder</a><br />
+                            <a href="http://www.openframeworks.cc/">OpenFrameworks</a><br />
+                            <a href="http://polycode.org/">Polycode</a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "An artist can be truly evaluated only after he is dead. At the very 11th hour, he might do something that will eclipse everything else." ~ Van Cliburn
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Eclipse - Setup</h1>
+
+                        <a href="http://processing.org/learning/eclipse/">Processing in Eclipse</a><br />
+
+                        <p>
+                            Setup for processing in Eclipse is covered in detail in the above link. However it might be nice to get a big picture overview.
+                        </p>
+                        <p>
+                            Almost everything in Java is an object. In fact, when we've been writing sketches, processing has been running our code as an instance
+                            of the class PApplet. What that means is that all of our sketches and code can easily be used inside of Eclipse if we set up the PApplet correctly.
+                        </p>
+
+                        <div class="important">All sketches are instances of PApplet.</div>
+
+                        <div class="rule"></div>
+                        
+                        <h1>public static void main...</h1>
+
+                        <p>
+                            So what's this stuff in Java? Well, when a full Java application runs, it's running in a desktop environment.
+                        </p>
+                        <p>
+                            The following method:<br/>
+                            <span class="code">public static void main(String args[]) { ... }</span><br/>
+                            Is the main method (entry point) for all Java applications written.
+                        </p>
+                        <p>
+                            The parameter <span class="code">String args[]</span> is a string array of arguments to the application (made from the command line).
+                        </p>
+                        <p>
+                            Almost everything in Java is an object. In fact, when we've been writing sketches, processing has been running our code as an instance
+                            of the class PApplet. What that means is that all of our sketches and code can easily be used inside of Eclipse if we set up the PApplet correctly.
+                        </p>
+                        
+                        <div class="important">public static void main(String args[]) { ... } is the main method of all Java applications, it's the "setup" of Java applications.</div>
+
+                        <div class="rule"></div>
+                        
+                        <h1>What's a PApplet?</h1>
+
+                        <p>
+                            PApplet is the main class of processing. It's the portion of the processing library that takes care of things like calling setup and draw.
+                            Global sketch variables like width, height, mouseX, mouseY, ...
+                        </p>
+                        <p>
+                            It should be noted that a PApplet functions differently in full Java mode (when used in Eclipse). These differences are well documented online.
+                            We've also included an example of using full Java mode in <a href="oop_javaobjects.html">this</a> section.
+                            Even though this example is using full Java mode from within processing, since there is no public static void main... The principles of Java
+                            access control apply in the same way in Eclipse as in this example.
+                        </p>
+                        
+                        <div class="whitespace"></div>
+                    </div>
+                    <div id="tabs-3" class="tab">
+
+                        <h1>Max and VVVV</h1>
+
+                        <img src="http://installationspace.com/spaces/wp-content/dump/uploads/2008/01/maxposterweb.jpg" />
+                        <p>
+                            Graphical programming languages (or node based frameworks) are very popular among artists and designers since they offer ease of use, extendibility,
+                            and a graphical layout environment for their objects.
+                        </p>
+                        
+                        <p>
+                            At their core all of these environments are running code. Through patches, addons, or whatever they're called.
+                        </p>
+                        <p>
+                            The pros to these environments are many. An easy to use interface to snap together programming objects like lego.
+                            Very clear to see an overall picture of the application and what's happening, even while it's running.
+                            Redesigns and changes are quick and painless.
+                        </p>
+                        <p>
+                            There are some drawbacks to getting comfortable in these environments. Mainly, what happens to the specifics of an application.
+                            If we're snapping and layering output patches, what happens when our application ends up looking like the filtered output of lots of
+                            other applications using the same patches or combinations of patches.
+                        </p>
+                        <p>
+                            In order to produce a truly unique and original experience in an application, some programming must always be done.
+                            Something new has to be created!
+                        </p>
+                        <p>
+                            Thankfully these environments do offer the ability to create custom own patches, but guess what? You need to know how to program...
+                        </p>
+
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+
+                        <h1>Cinder</h1>
+
+                        <p>
+                            Cinder is a fantastic library. Very well structured and easy to learn by following examples. The code is commented and documentation is auto
+                            generated which can be confusing to some beginners.
+                        </p>
+                        <p>
+                            Cinder offers more complex graphical processes straight out of the box. Edge detection and image filtering can be done with single
+                            method calls. There are also examples of more advanced OpenGL concepts such as: FBOs, VBOs, and shaders.
+                        </p>
+                        <p>
+                            The community is sparse but growing rapidly. As more coders migrate from existing frameworks, Cinder looks to be the #1 C++ framework for
+                            creative coding.
+                        </p>
+                        
+                        <h1>Openframeworks</h1>
+
+                        <p>
+                            The original C++ framework for creative code, Openframeworks has a huge following online. Large community means lots of help and lots of forums.
+                        </p>
+                        <p>
+                            Compared with Cinder, Openframeworks initial offerings are fewer, but the addons are many.
+                        </p>
+                        <p>
+                            Personally the updates to the main Openframeworks branches have been slow, the community is fragmented, and large portions of the community are 
+                            moving to Cinder.
+                        </p>
+                        
+                        <h1>PolyCode</h1>
+
+                        <p>
+                            Brand new, small community, very few projects.
+                        </p>
+                        <p>
+                            This is a full C++ framework with added IDE for scripting projects (ala processing).
+                        </p>
+                        <p>
+                            Since it's new, there might not be much in terms of documentation. Coming from a processing background the scripting IDE makes sense.
+                        </p>
+
+                    </div>
+                    
+                    <div id="tabs-5" class="tab">
+
+                        <h1>Summary</h1>
+
+                        <p>
+                            Creative code is just that, code.
+                        </p>
+                        <p>
+                            Anyway or at any level you decide to work with the code is up to you.
+                        </p>
+                        <p>
+                            There are pros and cons to all approaches and at the end of the day you should develop a workflow that works for you. It should
+                            allow you to express yourself in code as quickly and painlessly as possible.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
 </html>

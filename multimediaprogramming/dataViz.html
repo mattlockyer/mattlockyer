@@ -1,165 +1,193 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Data Visualization</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Data Visualization</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Data Viz</a></li>
-<li><a href="#tabs-3">Using Data</a></li>
-<li><a href="#tabs-4">Visual Representation</a></li>
-<li><a href="#tabs-5">Twitter API</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Data Viz - Overview</li>
-<li>Using Data - Map, Min, Max</li>
-<li>Visual Representations
-<ul>
-<li>Linear: Bars and Points</li>
-<li>Radial: Arcs and Segments</li>
-</ul>
-</li>
-<li>Twitter API - Using Real Data</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://en.wikipedia.org/wiki/Data_visualization">Data Visualization</a><br />
-<a href="http://www.amazon.com/gp/product/0596514557?ie=UTF8&amp;tag=processing09-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596514557">
-Visualizing Data - Book
-</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"Visualize this thing that you want, see it, feel it, believe in it. Make your mental blue print, and begin to build." ~ Robert Collier
-</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Data Visualization Overview</h1>
-<img src="http://upload.wikimedia.org/wikipedia/commons/b/b9/WorldWideWebAroundWikipedia.png" width="500" height="500" />
-<p>
-Data Visualization is a field that concerns itself with how we see and perceive information. There's an incredible amount of
-data in the world, but it's all just numbers if we can't see the patterns in it. Good data visualization not only shows
-the meaning of the data, but tells a story.
-</p>
-<p>
-This image is a representation of Wikipedia as part of the world wide web represented by hyperlinks.
-</p>
-<div class="rule"></div>
-<h1>The Field</h1>
-<p>
-Data Visualization encompasses a number of different areas:
-</p>
-<ul>
-<li>Mindmaps</li>
-<li>Displaying news</li>
-<li>Displaying data</li>
-<li>Displaying connections</li>
-<li>Displaying networks</li>
-<li>Displaying websites</li>
-<li>Tools and services</li>
-</ul>
-<p>
-Other areas related to Data Visualization are: information graphics, information visualization, scientific visualization, and statistical graphics.
-</p>
-<div class="rule"></div>
-</div>
-<div id="tabs-3" class="tab">
-<h1>Using Data</h1>
-<p>
-When making visualizations with data, we need to know a few things beyond what the plain numbers will tell us.
-</p>
-<p>
-If we're too plot a correct graph, or points for example, we're going to want to maximize our screen space.
-</p>
-<p>
-There are some useful methods available in processing to help us with this.
-</p>
-<div class="rule"></div>
-<h1>Map</h1>
-<p>
-One of the most useful methods in processing is the map method. It takes as parameters: a variable, the possible range of values it
-can be, and lastly the desired range of output values.
-</p>
-<p>
-Using the map method, we can convert numbers between 0 and 1 to a percentage between 0 and 100. Let's take a look:
-</p>
-<p>
-<span class="code">map(value, 0, 1, 0, 100);</span><br />
-Notice how map has 5 parameters, the first is the variable holding the value.<br />
-The second and third are the possible values in the original range of that variable.<br />
-The fourth and fifth specify the output range.
-</p>
-<p>
-The map method is not useful unless we store the new value somewhere. The method returns the new value like this:<br />
-<span class="code">float newValue = map(value, 0, 1, 0, 100);</span><br />
-</p>
-<div class="rule"></div>
-<h1>Min and Max</h1>
-<p>
-The min and max methods are overloaded and have many forms:
-</p>
-<p>
-Examples using min:<br />
-<span class="code">float result = min(value1, value2);</span> ints or floats<br />
-<span class="code">float result = min(value1, value2, value3);</span> ints or floats<br />
-<span class="code">float result = min(values);</span> array of values<br />
-</p>
-<p>
- Probably the most useful is the array form of the min method. Since we can pass in an array of any size and it will return the minimum
-number in the array.
-</p>
-<div class="rule"></div>
-<h1>Why Bother With Map, Min, and Max?</h1>
-<p>
-You'll see in the following examples that these methods are indispensable when creating charts and graphs from data.
-</p>
-<p>
-Take this problem for example:<br />
-You want to make a bar chart and full maximize the screen space. You have an array of numbers that is loaded dynamically, so
-until it comes time to draw the chart you have no idea what the max or min values are, or even how many there are. That's where
-looping and methods like map, min, and max are essential.
-</p>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Visual Representations</h1>
-<p>
-There are many ways to visualize data. The most standard are the obvious, plot, bar, pie chart.
-</p>
-<p>
-We'll take a look at how to quickly and efficiently create these basic visualizations since they are the foundations of many others
-and this will provide the necessary skills for working with data.
-</p>
-<div class="rule"></div>
-<h1>Linear Representations - Plots</h1>
-<p>
-Here is an example of a plot of data:
-</p>
-<form><textarea class="processingide" style="height:400px">
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Data Viz</a></li>
+                        <li><a href="#tabs-3">Using Data</a></li>
+                        <li><a href="#tabs-4">Visual Representation</a></li>
+                        <li><a href="#tabs-5">Twitter API</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Data Viz - Overview</li>
+                            <li>Using Data - Map, Min, Max</li>
+                            <li>Visual Representations
+                                <ul>
+                                    <li>Linear: Bars and Points</li>
+                                    <li>Radial: Arcs and Segments</li>
+                                </ul>
+                            </li>
+                            <li>Twitter API - Using Real Data</li>
+                        </ul>
+
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                            <a href="http://en.wikipedia.org/wiki/Data_visualization">Data Visualization</a><br />
+                            <a href="http://www.amazon.com/gp/product/0596514557?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0596514557">
+                                Visualizing Data - Book
+                            </a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "Visualize this thing that you want, see it, feel it, believe in it. Make your mental blue print, and begin to build." ~ Robert Collier
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Data Visualization Overview</h1>
+
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/b/b9/WorldWideWebAroundWikipedia.png" width="500" height="500" />
+
+                        <p>
+                            Data Visualization is a field that concerns itself with how we see and perceive information. There's an incredible amount of
+                            data in the world, but it's all just numbers if we can't see the patterns in it. Good data visualization not only shows
+                            the meaning of the data, but tells a story.
+                        </p>
+                        <p>
+                            This image is a representation of Wikipedia as part of the world wide web represented by hyperlinks.
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>The Field</h1>
+                        <p>
+                            Data Visualization encompasses a number of different areas:
+                        </p>
+                        <ul>
+                            <li>Mindmaps</li>
+                            <li>Displaying news</li>
+                            <li>Displaying data</li>
+                            <li>Displaying connections</li>
+                            <li>Displaying networks</li>
+                            <li>Displaying websites</li>
+                            <li>Tools and services</li>
+                        </ul>
+                        <p>
+                            Other areas related to Data Visualization are: information graphics, information visualization, scientific visualization, and statistical graphics.
+                        </p>
+
+                        <div class="rule"></div>
+
+
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+                        <h1>Using Data</h1>
+                        <p>
+                            When making visualizations with data, we need to know a few things beyond what the plain numbers will tell us.
+                        </p>
+                        <p>
+                            If we're too plot a correct graph, or points for example, we're going to want to maximize our screen space.
+                        </p>
+                        <p>
+                            There are some useful methods available in processing to help us with this.
+                        </p>
+                        <div class="rule"></div>
+                        <h1>Map</h1>
+                        <p>
+                            One of the most useful methods in processing is the map method. It takes as parameters: a variable, the possible range of values it
+                            can be, and lastly the desired range of output values.
+                        </p>
+                        <p>
+                            Using the map method, we can convert numbers between 0 and 1 to a percentage between 0 and 100. Let's take a look:
+                        </p>
+                        <p>
+                            <span class="code">map(value, 0, 1, 0, 100);</span><br/>
+                            Notice how map has 5 parameters, the first is the variable holding the value.<br/>
+                            The second and third are the possible values in the original range of that variable.<br/>
+                            The fourth and fifth specify the output range.
+                        </p>
+                        <p>
+                            The map method is not useful unless we store the new value somewhere. The method returns the new value like this:<br/>
+                            <span class="code">float newValue = map(value, 0, 1, 0, 100);</span><br/>
+                        </p>
+
+
+                        <div class="rule"></div>
+                        <h1>Min and Max</h1>
+                        <p>
+                            The min and max methods are overloaded and have many forms:
+                        </p>
+                        <p>
+                            Examples using min:<br/>
+                            <span class="code">float result = min(value1, value2);</span> ints or floats<br/>
+                            <span class="code">float result = min(value1, value2, value3);</span> ints or floats<br/>
+                            <span class="code">float result = min(values);</span> array of values<br/>
+                        </p>
+                        <p>
+                            Probably the most useful is the array form of the min method. Since we can pass in an array of any size and it will return the minimum
+                            number in the array.
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Why Bother With Map, Min, and Max?</h1>
+                        <p>
+                            You'll see in the following examples that these methods are indispensable when creating charts and graphs from data.
+                        </p>
+                        <p>
+                            Take this problem for example:<br/>
+                            You want to make a bar chart and full maximize the screen space. You have an array of numbers that is loaded dynamically, so
+                            until it comes time to draw the chart you have no idea what the max or min values are, or even how many there are. That's where
+                            looping and methods like map, min, and max are essential.
+                        </p>
+
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+                        <h1>Visual Representations</h1>
+                        <p>
+                            There are many ways to visualize data. The most standard are the obvious, plot, bar, pie chart.
+                        </p>
+                        <p>
+                            We'll take a look at how to quickly and efficiently create these basic visualizations since they are the foundations of many others
+                            and this will provide the necessary skills for working with data.
+                        </p>
+                        <div class="rule"></div>
+                        <h1>Linear Representations - Plots</h1>
+                        <p>
+                            Here is an example of a plot of data:
+                        </p>
+                        <form><textarea class="processingide" style="height:400px">
 //Build Arrays to hold all the data
 int count = 20;
 int[] numbers = new int[count];
@@ -191,29 +219,29 @@ void draw() {
     ellipse(25 + i * w, h, w, w);
   }
 }</textarea></form>
-<p>
-The numbers here are plotted from bottom to top, increasing in value. They also range from red to yellow increasing in value.
-</p>
-<p>
-Notice how the width of each point is pre-computed before the loop and stored in the variable 'w'.
-</p>
-<p>
-Also, look how the map method is used, in conjunction with the min and max methods to find the perfect placement and color for our values.
-</p>
-The height of each point is computed using the map method, but it's actually quite a simple calculation:
-</p>
-<p>
-The height of each point is computed using the map method, but it's actually quite a simple calculation:
-</p>
-<p>
-float height = value / maxValue * (height - 50);
-</p>
-<div class="rule"></div>
-<h1>Linear Representations - Bars</h1>
- <p>
-Very similar to plotting data is a bar chart, here is an example:
-</p>
-<form><textarea class="processingide" style="height:400px">
+                        <p>
+                            The numbers here are plotted from bottom to top, increasing in value. They also range from red to yellow increasing in value.
+                        </p>
+                        <p>
+                            Notice how the width of each point is pre-computed before the loop and stored in the variable 'w'.
+                        </p>
+                        <p>
+                            Also, look how the map method is used, in conjunction with the min and max methods to find the perfect placement and color for our values.
+                        </p>
+                        The height of each point is computed using the map method, but it's actually quite a simple calculation:
+                        </p>
+                        <p>
+                            The height of each point is computed using the map method, but it's actually quite a simple calculation:
+                        </p>
+                        <p>
+                            float height = value / maxValue * (height - 50);
+                        </p>
+                        <div class="rule"></div>
+                        <h1>Linear Representations - Bars</h1>
+                        <p>
+                            Very similar to plotting data is a bar chart, here is an example:
+                        </p>
+                        <form><textarea class="processingide" style="height:400px">
 //Build Arrays to hold all the data
 int count = 20;
 int[] numbers = new int[count];
@@ -244,20 +272,20 @@ void draw() {
     rect(25 + i * w, height, w, -h);
   }
 }</textarea></form>
-<p>
-All we've done here is draw a rectangle instead of an ellipse. Notice how the rectangle needed to be drawn from the bottom of the screen
-updwards (take a look at the y pos and height of the rectangle).
-</p>
-<div class="rule"></div>
-<h1>Radial Representations - Pie Chart</h1>
-<p>
-Radial representations are somewhat different. Each piece is based on an angle in the pie which is a percentage of the total pie.
-Also, each piece must know the angle of the piece that came before it, so that it can draw forward in the pie.
-</p>
-<p>
-Take a look at the example and pay close attention to how the angles are calculated:
-</p>
-<form><textarea class="processingide" style="height:400px">
+                        <p>
+                            All we've done here is draw a rectangle instead of an ellipse. Notice how the rectangle needed to be drawn from the bottom of the screen
+                            updwards (take a look at the y pos and height of the rectangle).
+                        </p>
+                        <div class="rule"></div>
+                        <h1>Radial Representations - Pie Chart</h1>
+                        <p>
+                            Radial representations are somewhat different. Each piece is based on an angle in the pie which is a percentage of the total pie.
+                            Also, each piece must know the angle of the piece that came before it, so that it can draw forward in the pie.
+                        </p>
+                        <p>
+                            Take a look at the example and pay close attention to how the angles are calculated:
+                        </p>
+                        <form><textarea class="processingide" style="height:400px">
 int count = 20;
 int[] numbers = new int[count];
 int total = 0;
@@ -290,42 +318,47 @@ void draw() {
     lastAng += ang;
   }
 }</textarea></form>
-<p>
-Notice how when we use the map method of the angles we're mapping each number between 0 and the total. This allows us to get each piece of the pie
-to fit. Contrary to the bar chart where we needed only heights, and each number had an x index, here we need to find the value of each number
-as a percentage of the whole and then multiply that value to find the value's angle in a circle.
-</p>
-<p>
-float angle = value / total * TWO_PI;
-</p>
-</div>
-<div id="tabs-5" class="tab">
-<h1>Twitter API</h1>
-<p>
-The term API stands for application programming interface. It simply allows programmers to access the data and functionality of a web service like twitter.
-</p>
-<p>
-We're going to use a Twitter library called <a href="http://twitter4j.org/en/index.html">Twitter4J</a> to access the Twitter API.
-</p>
-<p>
-To add the library to your sketch, download and unzip the library. Find the file <strong>twitter4j-core-2.2.5.jar</strong> and add it to your sketch.
-Under the sketch menu, select add file, then point to the .jar file. You can now use the Twitter4J library in your sketch.
-</p>
-<p>
-To start we'll need to create an object of type Twitter from the library<br />
-<span class="code">Twitter twitter;</span><br />
-We'll simply name it lowercase twitter.
-</p>
-<p>
-Now we need to initialize our Twitter object in our setup:<br />
-<span class="code">twitter = new TwitterFactory().getInstance();</span>
-</p>
-<div class="rule"></div>
-<h1>Searching</h1>
-<p>
-Here is an example of how to use the twitter object to search for a term:
-</p>
-<form><textarea class="processingide" style="height:420px" noplay="true">
+                        <p>
+                            Notice how when we use the map method of the angles we're mapping each number between 0 and the total. This allows us to get each piece of the pie
+                            to fit. Contrary to the bar chart where we needed only heights, and each number had an x index, here we need to find the value of each number
+                            as a percentage of the whole and then multiply that value to find the value's angle in a circle.
+                        </p>
+                        <p>
+                            float angle = value / total * TWO_PI;
+                        </p>
+
+                    </div>
+
+                    <div id="tabs-5" class="tab">
+                        <h1>Twitter API</h1>
+
+                        <p>
+                            The term API stands for application programming interface. It simply allows programmers to access the data and functionality of a web service like twitter.
+                        </p>
+                        <p>
+                            We're going to use a Twitter library called <a href="http://twitter4j.org/en/index.html">Twitter4J</a> to access the Twitter API.
+                        </p>
+                        <p>
+                            To add the library to your sketch, download and unzip the library. Find the file <strong>twitter4j-core-2.2.5.jar</strong> and add it to your sketch.
+                            Under the sketch menu, select add file, then point to the .jar file. You can now use the Twitter4J library in your sketch.
+                        </p>
+                        <p>
+                            To start we'll need to create an object of type Twitter from the library<br />
+                            <span class="code">Twitter twitter;</span><br />
+                            We'll simply name it lowercase twitter.
+                        </p>
+                        <p>
+                            Now we need to initialize our Twitter object in our setup:<br />
+                            <span class="code">twitter = new TwitterFactory().getInstance();</span>
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Searching</h1>
+
+                        <p>
+                            Here is an example of how to use the twitter object to search for a term:
+                        </p>
+                        <form><textarea class="processingide" style="height:420px" noplay="true">
 Query query = new Query("hello");
 query.setRpp(100); //set the result per page we want max:100
 //Try making the query request
@@ -342,20 +375,25 @@ catch (TwitterException te) {
   //Print an error if we couldn't connect to twitter
   println("Couldn't connect: " + te);
 }</textarea></form>
-</div>
-<p>
-Notice how the twitter search method takes an object of type Query? We must first build this object before we can make a search.
-</p>
-<p>
-Also, the QueryResult object stores the result until we use the getTweets() method which returns to us an ArrayList of Tweet objects.
-</p>
-<p>
-This is an example of some excellent OOP programming in the library and in fact is how many data APIs operate.
-</p>
-<div class="rule"></div>
-</div>
-</div>
-</div>
-</div>
+                    </div>
+
+                    <p>
+                        Notice how the twitter search method takes an object of type Query? We must first build this object before we can make a search.
+                    </p>
+                    <p>
+                        Also, the QueryResult object stores the result until we use the getTweets() method which returns to us an ArrayList of Tweet objects.
+                    </p>
+                    <p>
+                        This is an example of some excellent OOP programming in the library and in fact is how many data APIs operate.
+                    </p>
+                        <div class="rule"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
 </html>

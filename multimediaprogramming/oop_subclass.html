@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Object Oriented Programming: Subclasses</title>
+
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        
+		<!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        
+		<!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
+
+
+    </head>
+    <body>
+        
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+						<li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Background</a></li>
+
+                        <li><a href="#tabs-4">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>To understand inheritance
+								<ul>
+									<li>To declare subclasses
+										<ul>
+											<li><span class="code">this</span>, <span class="code">super</span></li>
+											<li>To override methods</li>
+										</ul>
+									</li>
+									<li>Polymorphism</li>
+								</ul>
+							</li>
+                        </ul>
+						<div class="rule"></div>
+          			</div>
+                    
+					<div id="tabs-2" class="tab">
+
+                        <h1>Declaring a subclass</h1>
+
+                        <img src="img/shapes/cartesian.png"></img>
+
+                        <p>
+                            In a traditional Cartesian coordinate system, there are four quadrants (sections) around the origin 
+                            which is at the center. The quadrants are divided by the x axis and y axis.
+                            An axis is the line that runs across the coordinate system, while the other coordinate value remains at 0.
+                            Each quadrant corresponds to a set of negative, positive pairs of x and y values.
+                            Quadrant 1 for example is the upper right quadrant with positive x and y values.
+                            Quadrant 2 is the upper left quadrant with negative x values and positive y values.
+                            The quadrants are numbered in the counter-clockwise direction.</p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">We will not be using the Traditional Cartesian Coordinates in this course!</div>
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+
+                        <h1>Processing Coordinates</h1>
+
+                        <img src="img/shapes/processing.png"></img>
+
+                        <p>
+                            In Processing, we are still using a Cartesian Coordinate System.
+                            However in this system the y axis is flipped, and the origin (0, 0) is now in the top left corner.
+                            Having the y axis flipped means that moving down the window will be increasing positive y values.
+                            The x values are the same, but remember that (0, 0) is now the top left corner of the sketch window.
+                            The bottom right corner of the sketch is (width, height) where width and height represent the
+                            size of the sketch window. The center of the sketch is (width/2, height/2). In the sketch window
+                            we are in Quadrant 1 of a Traditional Cartesian Coordinate System
+                            with the y axis flipped.
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Positive y values are increasing down the window.</div>
+                        <div class="important">The top left corner of the sketch is (0, 0)</div>
+                        <div class="important">The center of the sketch is (width/2, height/2)</div>
+                        <div class="important">The bottom right corner of the sketch is (width, height)</div>
+
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+
+                        <h1>Points</h1>
+
+                        <img src="img/shapes/points.png"></img>
+
+                        <p>
+                            Drawing points is often referred to as "plotting" points.<br />
+                            The method to place a point is:<br />
+                            <span class="code">point( x, y );</span><br />
+                            The x argument is the amount of pixels from the left side of the sketch window.<br />
+                            The y argument is the amount of pixels from the top of the sketch window.<br />
+
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <h1>Lines</h1>
+
+                        <img src="img/shapes/lines.png"></img>
+
+                        <p>
+                            Lines are basically connecting two points.<br />
+                            Once you learn to plot points, you can make lines.<br />
+                            The method to draw a line is:<br />
+                            <span class="code">line( x1, y1, x2, y2 );</span><br />
+                            The x1, y1 arguments are the location of the start point of the line.<br />
+                            The x2, y2 arguments are the location of the end point of the line.<br />
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <h1>Ellipses</h1>
+
+                        <img src="img/shapes/ellipses.png"></img>
+
+                        <p>
+                            Ellipses are a bit different than lines and points.<br />
+                            First you place the center point of the ellipse.<br />
+                            Then you specify the width and height of the ellipse.<br />
+                            The method to draw an ellipse is:<br />
+                            <span class="code">ellipse( x, y, width, height );</span><br />
+                            The x, y arguments are the location of the center of the ellipse.<br />
+                            The width, height arguments are how wide and tall the ellipse will be around the center.<br />
+                        </p>
+
+                        <div class="important">
+                            Ellipses are drawn around their center point.
+                        </div>
+
+                        <div class="rule"></div>
+
+                        <h1>Rectangles</h1>
+
+                        <img src="img/shapes/rects.png"></img>
+
+                        <p>
+                            Rectangles are a bit different than ellipses.<br />
+                            First you place the top left corner of the rectangle.<br />
+                            Then you specify the width and height of the rectangle.<br />
+                            The method to draw a rectangle is:<br />
+                            <span class="code">rect( x, y, width, height );</span><br />
+                            The x, y arguments are the location of the top left corner of the rectangle.<br />
+                            The width, height arguments are how wide (right) and how tall (down) the
+                            rectangle will be.<br />
+                        </p>
+
+                        <div class="important">
+                            Rectangles, unlike ellipses are drawn to the right and down from their top left corner.
+                        </div>
+
+                    </div>
+
+
+
+                    <div id="tabs-5" class="tab">
+
+                        <h1>Triangles</h1>
+
+                        <img src="img/shapes/tris.png"></img>
+
+                        <p>
+                            Triangles are as easy as plotting 3 points<br />
+                            First place the start point for the triangle.<br />
+                            Then place the next two points for the triangle.<br />
+                            A line will be drawn connecting the first and third points.<br />
+                            The method to draw a triangle is:<br />
+                            <span class="code">triangle( x1,y1,x2,y2,x3,y3 );</span><br />
+                            Each set of x, y arguments corresponds to each point in the triangle.<br />
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <h1>Quadrilaterals</h1>
+
+                        <img src="img/shapes/quads.png"></img>
+
+                        <p>
+                            Quadrilaterals are like triangles except they use 4 points<br />
+                            First place the start point for the quad.<br />
+                            Then place the next three points and a line will be drawn between the first and fourth points.<br />
+                            The method to draw a quad is:<br />
+                            <span class="code">quad( x1,y1,x2,y2,x3,y3,x4,y4 );</span><br />
+                            Each set of x, y arguments corresponds to each point in the quad.<br />
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <h1>Arcs</h1>
+
+                        <img src="img/shapes/arcs.png"></img>
+
+                        <p>
+                            Arcs are a lot like ellipses, with a bit more flexibility.<br />
+                            First draw an ellipse as you would like to see it on screen.<br />
+                            Next the start angle for the arc.<br />
+                            Next the stop angle for the arc.<br />
+                            The method to draw an arc is:<br />
+                            <span class="code">arc( <br />x1,y1,width,height,start,stop );</span><br />
+                            The first four arguments are just like an ellipse.<br />
+                            The start, stop arguments are the start and end angles of the arc.<br />
+                        </p>
+
+                        <div class="important">
+                            Start and stop are specified in radians, not degrees.
+                        </div>
+
+                        <div class="rule"></div>
+
+                        <h1>Curves</h1>
+
+                        <img src="img/shapes/curves.png"></img>
+
+                        <p>
+                            Curves are a totally different shape.<br />
+                            First place the starting control point, this will pull through the first point of the curve.<br />
+                            Next place the start and end points of the curve.<br />
+                            Last place the end control point which will pull through the end point of the curve.<br />
+                            The method to draw a curve is:<br />
+                            <span class="code">curve(x1,y1,x2,y2,x3,y3,x4,y4);</span><br />
+                            x1, y1 are the location of the start control point.<br />
+                            x2, y2 are the location of the start point.<br />
+                            x3, y3 are the location of the end point.<br />
+                            x4, y4 are the location of the end control point.<br />
+                        </p>
+
+                        <div class="important">
+                            Curves are difficult to control, and must be practiced in order to gain experience.
+                        </div>
+
+                    </div>
+                    <div id="tabs-6" class="tab">
+
+                        <form><textarea class="processingide" style="height:580px">
+ void setup() {
+  size(400, 400);
+  
+  background(255);
+  
+  stroke(0, 32);
+  strokeWeight(2);
+  fill(255, 128, 0, 32);
+  
+  ellipse(width/2, height/2, 300, 200);
+  ellipse(width/2, height/2, 200, 300);
+  
+  rect(width/2 - 60, height/2 - 40, 120, 80);
+  rect(width/2 - 40, height/2 - 60, 80, 120);
+  
+  triangle(100, 0, 200, 300, 300, 0);
+  triangle(100, height, 200, 100, 300, height);
+  
+  quad(0, height, 50, 50, 350, 50, width, height);
+      
+  arc(0, 40, 80, 80, -PI/2, PI/2);
+  arc(width, 40, 80, 80, PI/2, PI * 1.5);
+      
+  curve(0, -height, 0, height/2, width, height/2, width, height * 2);
+  curve(0, height * 2, 0, height/2, width, height/2, width, -height);
+      
+  line(0, height/2, width, height/2);
+}
+                                </textarea></form>
+                        
+                        
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
+</html>

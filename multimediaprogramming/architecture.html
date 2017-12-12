@@ -1,287 +1,347 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Architecture</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Architecture</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Planning</a></li>
-<li><a href="#tabs-3">UML</a></li>
-<li><a href="#tabs-4">Patterns</a></li>
-<li><a href="#tabs-5">Case Study 1</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Planning a Program
-<ul>
-<li>Ideas</li>
-<li>Requirements</li>
-<li>Scope</li>
-</ul>
-</li>
-<li>UML: Universal Modeling Language
-<ul>
-<li>A Class</li>
-<li>Fields</li>
-<li>Methods</li>
-<li>Relationships</li>
-</ul>
-</li>
-<li>Design Patterns
-<ul>
-<li>Decorator</li>
-<li>Factory</li>
-</ul>
-</li>
-<li>Case Study: Asteroid</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language">UML</a><br />
-<a href="http://en.wikipedia.org/wiki/Decorator_pattern">Decorator Pattern</a><br />
-<a href="http://en.wikipedia.org/wiki/Factory_method_pattern">Factory Pattern</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"An important work of architecture will create polemics." ~ Richard Meier
-</div>
-</div>
-<div id="tabs-2" class="tab">
- <h1>Ideas</h1>
-<p>
-Every program starts with an idea. Make sure you are working with a topic that you know well and is of interest to you.
-</p>
-<p>
-Once you have chosen the main idea, research the domain it falls in:
-</p>
-<ul>
-<li>Painting Application</li>
-<li>Generative Art Application</li>
-<li>Interactive Slideshow</li>
-<li>Data Visualization</li>
-<li>Videogame
-<ul>
-<li>Puzzle Game</li>
-<li>Arcade Game</li>
-<li>Action Game</li>
-</ul>
-</li>
-</ul>
-<p>
-Why does your application fit into this domain? What makes your application similar to existing applications
-in this domain, and what makes it different?
-</p>
-<div class="rule"></div>
-<h1>Requirements</h1>
-<p>
-What does your application need to do? Before programming you should make a detailed list of everything that will be included
-in your application.
-</p>
-<p>
-Example for painting application:
-</p>
-<ul>
-<li>Welcome / start screen</li>
-<li>3 brush tool buttons</li>
-<li>1 clear screen button</li>
-<li>1 save button</li>
-<li>3 brush tools
-<ul>
-<li>1 regular brush</li>
-<li>1 splatter brush</li>
-<li>1 geometric brush</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Scope</h1>
-<p>
-Put a time estimate next to your list of requirements. How long will each take? Give yourself lots of room for error.
-</p>
-<p>
-Is it too much time? Maybe you can cut some requirements? Maybe the idea is beyond your skill level.
-</p>
-<p>
-Whatever it is, make sure you have scoped your design to something manageable before you start working.
-</p>
-<div class="rule"></div>
-<div class="important">Choose an idea and research the domain.</div>
-<div class="important">Prepare a list of detailed requirements.</div>
-<div class="important">Scope the requirements to your skill level.</div>
-</div>
-<div id="tabs-3" class="tab">
-<h1>Universal Modeling Language</h1>
-<p>
-Disclaimer: this is not the correct way to write UML. There are in fact many ways to do UML diagrams, and we will
-only be looking at those features that are important to this course and multimedia programming.
-</p>
-<p>
-If you'd like to learn more, take a look. This lecture should provide you with the basics.
-</p>
-<div class="rule"></div>
-<h1>Modeling a Class</h1>
-<img src="img/uml/umlClass.png" />
-<div class="rule"></div>
-<p>
-A UML diagram for a class begins with the class name at the top. Clearly we are going to define a
-Moving Object class, followed by two sub-classes: Player and Enemy.
-</p>
-<div class="rule"></div>
-<h1>Adding Fields</h1>
-<img src="img/uml/umlFields.png" />
-<div class="rule"></div>
-<p>
-Now we've added some fields to the classes, and notice this takes on the same structure as if we were to
-actually code the class. Define the class name, list the fields, list the methods.
-</p>
-<p>
-The fields are marked with a dash because they are private. If they were public we would use a + sign.
-</p>
-<div class="rule"></div>
-<h1>Adding Methods</h1>
-<img src="img/uml/umlMethods.png" />
-<div class="rule"></div>
-<p>
-When adding methods it is important to encapsulate the method signature and the return type. This should give you a clear idea
-of what the method will be doing based on: name and parameters (signature) and the return type.
-</p>
-<p>
-Notice how the methods are public since they are written with the + sign.
-</p>
-<div class="rule"></div>
-<h1>Relationships</h1>
-<img src="img/uml/umlRelationships.png" />
-<div class="rule"></div>
-<p>
-We're only concerned with showing our inheritance relationship in our UML diagrams. This is displayed by drawing a solid
-white arrow from the subclass pointing to the superclass.
-</p>
-<div class="rule"></div>
-<div class="important">Public fields and methods in UML are listed with a (+) sign.</div>
-<div class="important">Private fields and methods in UML are listed with a (-) sign.</div>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Software Design Patterns</h1>
-<img src="http://mudbugmedia.com/blog/wp-content/uploads/2011/05/design_patterns.jpg" />
-<div class="rule"></div>
-<p>
-There are several ways to organize objects into a functioning application. Design patters are a way to
-approach the problem of complexity. Mainly, we cannot have all objects contained in ArrayLists declared in the
-main program, at some point we'd like those objects to simply take care of themselves.
-We're going to look at two useful software design patterns that organize complexity in an application.
-</p>
-<div class="rule"></div>
-<h1>Decorator Pattern</h1>
-<img src="http://upload.wikimedia.org/wikipedia/commons/e/e9/Decorator_UML_class_diagram.svg" width="700" height="500" />
-<div class="rule"></div>
-<p>
-In the decorator pattern there is a main object that needs to be decorated, <strong>Component</strong>. The <strong>Component</strong>
-contains a list of objects of type <strong>Decorator</strong>. The <strong>Concrete</strong> objects here are simply subclasses of the
-two main classes we're talking about <strong>Components</strong> and <strong>Decorators</strong>.
-</p>
-<p>
-Example: Rewards in a Game
-</p>
-<p>
-A Player class has an ArrayList of type Reward. As the instance of Player scores points, instances of Reward are created and
-added to the player's ArrayList. The player instance is now "decorated" with objects of type Reward.
-</p>
-<div class="rule"></div>
-<h1>Factory Pattern</h1>
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/a3/FactoryMethod.svg" width="700" height="400" />
-<div class="rule"></div>
-<p>
-In the factory pattern there are objects that need to be created with different properties and returned to some object
-that contains them. A <strong>Creator</strong> has a factory method to create a <strong>Product</strong> which can be though of as
-simply any object that needs creating. Subclasses of the <strong>Creator</strong> can override the factory method to return products of
-different types.
-</p>
-<p>
-Example: Painting Application
-</p>
-<p>
-A painting application may have several different instances of a BrushMovement and several different instances of BrushTips.
-A factory method in the main Brush class can be used to return a single Brush object that combines a BrushMovement
-with a BrushTip and returns the composite object to the main sketch where it can be added to an ArrayList.
-</p>
-<div class="rule"></div>
-<div class="important">Both Decorator and Factory design patterns can be combined and are closely related.</div>
-<div class="important">Decorator Patterns are useful when an object needs to have several different objects added to it.</div>
-<div class="important">Factory Patters are useful for creating different objects that may be composed of one or more objects.</div>
-</div>
-<div id="tabs-5" class="tab">
-<h1>Case Study: Asteroids</h1>
-<img src="http://cdn.fd.uproxx.com/wp-content/uploads/2009/07/asteroids_arcade.jpg" width="500" />
-<div class="rule"></div>
-<p>
-Everyone should be familiar with the game asteroids by now, but how would one go about coding it?
-Let's take a look at the requirements:
-</p>
-<h2>
-Classes:
-</h2>
-<ul>
-<li>MovingObject class</li>
-<li>Player class</li>
-<li>Missile class</li>
-<li>Enemy class</li>
-<li>Asteroid class</li>
-<li>AsteroidFactory class</li>
-</ul>
-<h2>
-Functionality:
-</h2>
-<ul>
-<li>Player is created and can shoot missiles</li>
-<li>Asteroids are created from the AsteroidFactory and added a list of active asteroids</li>
-<li>Enemies are created and added to the list of active enemies</li>
-<li>A Player, Enemy, Missile, and Asteroid are all subclasses of MovingObject</li>
-<li>MovingObject will detect collisions between instances of MovingObject</li>
-<li>MovingObject will store and update the location of the instance</li>
-<li>Each subclass of MovingObject will implement a handleCollision method</li>
-<li>The handleCollision method will be overridden and perform the correct function</li>
-<li>There will be player lives and score displayed on the screen</li>
-<li>There will be a pause button</li>
-<li>...</li>
-</ul>
-<h2>
-Basic (incomplete) UML View:
-</h2>
-<img src="img/uml/asteroids.png" />
-<div class="rule"></div>
-<p>
-Notice with the UML diagram that if it were complete we would have everything we needed to know in order
-to create this game. We would know what classes, fields, methods and everything else to implement.
-It's highly recommended to always create a detailed UML diagram for any application that goes beyond 2 or 3
-classes or has more than a few simple functions.
-</p>
-</div>
-</div>
-</div>
-</div>
-</body>
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Planning</a></li>
+                        <li><a href="#tabs-3">UML</a></li>
+                        <li><a href="#tabs-4">Patterns</a></li>
+                        <li><a href="#tabs-5">Case Study 1</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Planning a Program
+                                <ul>
+                                    <li>Ideas</li>
+                                    <li>Requirements</li>
+                                    <li>Scope</li>
+                                </ul>
+                            </li>
+                            <li>UML: Universal Modeling Language
+                                <ul>
+                                    <li>A Class</li>
+                                    <li>Fields</li>
+                                    <li>Methods</li>
+                                    <li>Relationships</li>
+                                </ul>
+                            </li>
+                            <li>Design Patterns
+                                <ul>
+                                    <li>Decorator</li>
+                                    <li>Factory</li>
+                                </ul>
+                            </li>
+                            <li>Case Study: Asteroid</li>
+                        </ul>
+
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                            <a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language">UML</a><br />
+                            <a href="http://en.wikipedia.org/wiki/Decorator_pattern">Decorator Pattern</a><br />
+                            <a href="http://en.wikipedia.org/wiki/Factory_method_pattern">Factory Pattern</a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "An important work of architecture will create polemics." ~ Richard Meier 
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Ideas</h1>
+
+                        <p>
+                            Every program starts with an idea. Make sure you are working with a topic that you know well and is of interest to you.
+                        </p>
+                        <p>
+                            Once you have chosen the main idea, research the domain it falls in:
+                        </p>
+                        <ul>
+                            <li>Painting Application</li>
+                            <li>Generative Art Application</li>
+                            <li>Interactive Slideshow</li>
+                            <li>Data Visualization</li>
+                            <li>Videogame
+                                <ul>
+                                    <li>Puzzle Game</li>
+                                    <li>Arcade Game</li>
+                                    <li>Action Game</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>
+                            Why does your application fit into this domain? What makes your application similar to existing applications
+                            in this domain, and what makes it different?
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Requirements</h1>
+                        <p>
+                            What does your application need to do? Before programming you should make a detailed list of everything that will be included
+                            in your application.
+                        </p>
+                        <p>
+                            Example for painting application:
+                        </p>
+                        <ul>
+                            <li>Welcome / start screen</li>
+                            <li>3 brush tool buttons</li>
+                            <li>1 clear screen button</li>
+                            <li>1 save button</li>
+                            <li>3 brush tools
+                                <ul>
+                                    <li>1 regular brush</li>
+                                    <li>1 splatter brush</li>
+                                    <li>1 geometric brush</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="rule"></div>
+                        <h1>Scope</h1>
+                        <p>
+                            Put a time estimate next to your list of requirements. How long will each take? Give yourself lots of room for error.
+                        </p>
+                        <p>
+                            Is it too much time? Maybe you can cut some requirements? Maybe the idea is beyond your skill level.
+                        </p>
+                        <p>
+                            Whatever it is, make sure you have scoped your design to something manageable before you start working.
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Choose an idea and research the domain.</div>
+                        <div class="important">Prepare a list of detailed requirements.</div>
+                        <div class="important">Scope the requirements to your skill level.</div>
+
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+
+                        <h1>Universal Modeling Language</h1>
+
+                        <p>
+                            Disclaimer: this is not the correct way to write UML. There are in fact many ways to do UML diagrams, and we will
+                            only be looking at those features that are important to this course and multimedia programming.
+                        </p>
+                        <p>
+                            If you'd like to learn more, take a look. This lecture should provide you with the basics.
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Modeling a Class</h1>
+
+                        <img src="img/uml/umlClass.png" />
+
+                        <div class="rule"></div>
+                        <p>
+                            A UML diagram for a class begins with the class name at the top. Clearly we are going to define a
+                            Moving Object class, followed by two sub-classes: Player and Enemy.
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Adding Fields</h1>
+
+                        <img src="img/uml/umlFields.png" />
+
+                        <div class="rule"></div>
+                        <p>
+                            Now we've added some fields to the classes, and notice this takes on the same structure as if we were to
+                            actually code the class. Define the class name, list the fields, list the methods.
+                        </p>
+                        <p>
+                            The fields are marked with a dash because they are private. If they were public we would use a + sign.
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Adding Methods</h1>
+
+                        <img src="img/uml/umlMethods.png" />
+
+                        <div class="rule"></div>
+                        <p>
+                            When adding methods it is important to encapsulate the method signature and the return type. This should give you a clear idea
+                            of what the method will be doing based on: name and parameters (signature) and the return type.
+                        </p>
+                        <p>
+                            Notice how the methods are public since they are written with the + sign.
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Relationships</h1>
+
+                        <img src="img/uml/umlRelationships.png" />
+
+                        <div class="rule"></div>
+                        <p>
+                            We're only concerned with showing our inheritance relationship in our UML diagrams. This is displayed by drawing a solid
+                            white arrow from the subclass pointing to the superclass.
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Public fields and methods in UML are listed with a (+) sign.</div>
+                        <div class="important">Private fields and methods in UML are listed with a (-) sign.</div>
+
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+                        <h1>Software Design Patterns</h1>
+                        
+                        <img src="http://mudbugmedia.com/blog/wp-content/uploads/2011/05/design_patterns.jpg" />
+
+                        <div class="rule"></div>
+                        <p>
+                            There are several ways to organize objects into a functioning application. Design patters are a way to
+                            approach the problem of complexity. Mainly, we cannot have all objects contained in ArrayLists declared in the
+                            main program, at some point we'd like those objects to simply take care of themselves.
+                            We're going to look at two useful software design patterns that organize complexity in an application.
+                        </p>
+                        
+                        <div class="rule"></div>
+                        <h1>Decorator Pattern</h1>
+
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/e/e9/Decorator_UML_class_diagram.svg" width="700" height="500" />
+
+                        <div class="rule"></div>
+                        <p>
+                            In the decorator pattern there is a main object that needs to be decorated, <strong>Component</strong>. The <strong>Component</strong>
+                            contains a list of objects of type <strong>Decorator</strong>. The <strong>Concrete</strong> objects here are simply subclasses of the
+                            two main classes we're talking about <strong>Components</strong> and <strong>Decorators</strong>.
+                        </p>
+                        <p>
+                            Example: Rewards in a Game
+                        </p>
+                        <p>
+                            A Player class has an ArrayList of type Reward. As the instance of Player scores points, instances of Reward are created and
+                            added to the player's ArrayList. The player instance is now "decorated" with objects of type Reward.
+                        </p>
+                        
+                        <div class="rule"></div>
+                        <h1>Factory Pattern</h1>
+
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/a/a3/FactoryMethod.svg" width="700" height="400" />
+
+                        <div class="rule"></div>
+                        <p>
+                            In the factory pattern there are objects that need to be created with different properties and returned to some object
+                            that contains them. A <strong>Creator</strong> has a factory method to create a <strong>Product</strong> which can be though of as
+                            simply any object that needs creating. Subclasses of the <strong>Creator</strong> can override the factory method to return products of
+                            different types.
+                        </p>
+                        <p>
+                            Example: Painting Application
+                        </p>
+                        <p>
+                            A painting application may have several different instances of a BrushMovement and several different instances of BrushTips.
+                            A factory method in the main Brush class can be used to return a single Brush object that combines a BrushMovement
+                            with a BrushTip and returns the composite object to the main sketch where it can be added to an ArrayList.
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Both Decorator and Factory design patterns can be combined and are closely related.</div>
+                        <div class="important">Decorator Patterns are useful when an object needs to have several different objects added to it.</div>
+                        <div class="important">Factory Patters are useful for creating different objects that may be composed of one or more objects.</div>
+
+                    </div>
+
+                    <div id="tabs-5" class="tab">
+                        <h1>Case Study: Asteroids</h1>
+                        
+                        <img src="http://cdn.fd.uproxx.com/wp-content/uploads/2009/07/asteroids_arcade.jpg" width="500"/>
+
+                        <div class="rule"></div>
+                        <p>
+                            Everyone should be familiar with the game asteroids by now, but how would one go about coding it?
+                            Let's take a look at the requirements:
+                        </p>
+                        <h2>
+                            Classes:
+                        </h2>
+                        <ul>
+                            <li>MovingObject class</li>
+                            <li>Player class</li>
+                            <li>Missile class</li>
+                            <li>Enemy class</li>
+                            <li>Asteroid class</li>
+                            <li>AsteroidFactory class</li>
+                        </ul>
+                        <h2>
+                            Functionality:
+                        </h2>
+                        <ul>
+                            <li>Player is created and can shoot missiles</li>
+                            <li>Asteroids are created from the AsteroidFactory and added a list of active asteroids</li>
+                            <li>Enemies are created and added to the list of active enemies</li>
+                            <li>A Player, Enemy, Missile, and Asteroid are all subclasses of MovingObject</li>
+                            <li>MovingObject will detect collisions between instances of MovingObject</li>
+                            <li>MovingObject will store and update the location of the instance</li>
+                            <li>Each subclass of MovingObject will implement a handleCollision method</li>
+                            <li>The handleCollision method will be overridden and perform the correct function</li>
+                            <li>There will be player lives and score displayed on the screen</li>
+                            <li>There will be a pause button</li>
+                            <li>...</li>
+                        </ul>
+                        <h2>
+                            Basic (incomplete) UML View:
+                        </h2>
+                        <img src="img/uml/asteroids.png" />
+                        <div class="rule"></div>
+                        <p>
+                            Notice with the UML diagram that if it were complete we would have everything we needed to know in order
+                            to create this game. We would know what classes, fields, methods and everything else to implement.
+                            It's highly recommended to always create a detailed UML diagram for any application that goes beyond 2 or 3
+                            classes or has more than a few simple functions.
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
 </html>

@@ -1,133 +1,142 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Assignment 2</title>
-<link type="text/css" rel=StyleSheet href="css/main.css">
-</head>
-<body>
-<div id="assignmentWrap">
-<div id="assignment">
-<div class="whitespace"></div>
-<p><a href="index.html">Back</a></p>
-<h1>
-Assignment 2 - Transformations, Loops, Logic
-</h1>
-<div class="rule"></div>
-<h1>
-Guidelines
-</h1>
-<h2>
-Due at 11.59pm, Sunday, October 9th.
-</h2>
-<ul>
-<li>You are graded on the completeness, neatness, comments, and visual style of your final assignment</li>
-<li>All assignments are individual</li>
-<li>ZIP ALL SKETCH FOLDERS (not individual files) INTO ONE ZIP FILE</li>
-<li>Submit to WebCT before the deadline</li>
-</ul>
-<h1>
-There is no late policy for this course!
-</h1>
-<h2>
-If you do not complete the assignment by the deadline, you will receive 0<br />
-You will be excused pending discussion with your TA<br />
-</h2>
-<div class="rule"></div>
-<h2>
-Create a separate sketch for each part of the assignment.<br />
-</h2>
-<div class="rule"></div>
-<h1>
-Overview
-</h1>
-<p>
-In this assignment, you will give life to your character by animating it. Then you will give your character the ability to move around screen.
-</p>
-<div class="rule"></div>
-<h1>
-Part 1 - Animation
-</h1>
-<p>
-Create a new character or use your character from Assignment 1.<br />
-Separate your character code and scene code into two methods.<br />
-Draw your character in at least two different states.<br />
-Add a parameter to your character method to keep track of which state it should display.<br />
-</p>
-<h2>
-Requirements:
-</h2>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Assignment 2</title>
+        <link type="text/css" rel=StyleSheet href="css/main.css">
+    </head>
+    <body>
+        <div id="assignmentWrap">
+            <div id="assignment">
 
-<ul>
-<li>Character method with parameter to control which state is displayed</li>
-<li>If / Else logic inside character method to display correct state</li>
-<li>Call the method with appropriate argument to animate the character from main draw method</li>
-<li>Example: drawMe( (frameCount / 10) % 2 ); //calls drawMe with argument 0 or 1, switches every 10 frames</li>
-</ul>
-<div class="rule"></div>
-<h1>
-Part 2 - Animation and Movement
-</h1>
-<p>
-Declare global variables to store: x, y, and velocity x, y for your character.<br />
-Examples:
-</p>
-<ul>
-<li>float xPos, yPos, xVel, yVel;</li>
-<li>float xPosition, yPosition, xVelocity, yVelocity;</li>
-</ul>
-<p>
-Initialize your character movement variables inside the setup method.<br />
-Choose your own starting location.<br />
-Examples:
-</p>
-<ul>
-<li>xPos = random(width); //random x position inside the window</li>
-<li>xVel = random(-4, 4); //random velocity, moving either left or right</li>
-</ul>
-<p>
-Move your character based on their given velocity.<br />
-Reverse direction when your character hits a wall.<br />
-</p>
-<h2>
-Requirements:
-</h2>
-<ul>
-<li>A character method with x, y position parameters</li>
-<li>4 global variables to store character position and movement</li>
-<li>Position variables updated in the draw method</li>
-<li>Logic to handle a wall collision and reverse direction</li>
-<li>A call to the character method from the draw method using the updated position variables as arguments</li>
-</ul>
-<div class="rule"></div>
-<h1>
-Part 3 - Looping it up with Arrays
-</h1>
-<p>
-Choose a reasonable amount of characters for your scene (8-12).<br />
-Each character will have movement, wall collision, and animation.<br />
-</p>
-<h2>
-Requirements:
-</h2>
-<ul>
-<li>A global int to control the number of characters you will display</li>
-<li>Each character variable (xPos, yPos, ...) is an array of the same size</li>
-<li>Loop in setup to initialize all arrays with values</li>
-<li>Loop in draw to update all array values (update positions, wall collisions, ...)</li>
-<li>Call character draw method from inside the loop in the main draw method.</li>
-</ul>
-<div class="rule"></div>
-<h1>
-Tips and Tricks
-</h1>
-<ul>
-<li>Look at the lecture notes (Arrays, Methods)</li>
-<li>Style counts! Make your animation look nice and choose appropriate velocities.</li>
-<li>Start next week after your lab! You will have most of what is necessary to complete the assignment.</li>
-</ul>
-<div class="whitespace"></div>
-</div>
-</div>
-</body>
+                <div class="whitespace"></div>
+                <p><a href="index.html">Back</a></p>
+                <h1>
+                    Assignment 2 - Transformations, Loops, Logic
+                </h1>
+                <div class="rule"></div>
+                <h1>
+                    Guidelines
+                </h1>
+                <h2>
+                    Due at 11.59pm, Sunday, October 9th.
+                </h2>
+                <ul>
+                    <li>You are graded on the completeness, neatness, comments, and visual style of your final assignment</li>
+                    <li>All assignments are individual</li>
+                    <li>ZIP ALL SKETCH FOLDERS (not individual files) INTO ONE ZIP FILE</li>
+                    <li>Submit to WebCT before the deadline</li>
+                </ul>
+                <h1>
+                    There is no late policy for this course!
+                </h1>
+                <h2>
+                    If you do not complete the assignment by the deadline, you will receive 0<br />
+                    You will be excused pending discussion with your TA<br />
+                </h2>
+                <div class="rule"></div>
+                <h2>
+                    Create a separate sketch for each part of the assignment.<br />
+                </h2>
+                <div class="rule"></div>
+				<h1>
+                    Overview
+                </h1>
+
+				<p>
+					In this assignment, you will give life to your character by animating it. Then you will give your character the ability to move around screen. 
+				</p>
+
+				<div class="rule"></div>
+                <h1>
+                    Part 1 - Animation
+                </h1>
+                <p>
+                    Create a new character or use your character from Assignment 1.<br />
+                    Separate your character code and scene code into two methods.<br />
+                    Draw your character in at least two different states.<br />
+                    Add a parameter to your character method to keep track of which state it should display.<br/>
+                </p>
+                <h2>
+                    Requirements:
+                </h2>
+                <!--
+                <p>
+                                    Practice animating the frames of a character.
+                                </p>-->
+                
+                <ul>
+                    <li>Character method with parameter to control which state is displayed</li>
+                    <li>If / Else logic inside character method to display correct state</li>
+                    <li>Call the method with appropriate argument to animate the character from main draw method</li>
+                    <li>Example: drawMe( (frameCount / 10) % 2 ); //calls drawMe with argument 0 or 1, switches every 10 frames</li>   
+                </ul>
+                <div class="rule"></div>
+                <h1>
+                    Part 2 - Animation and Movement
+                </h1>
+                <p>
+                    Declare global variables to store: x, y, and velocity x, y for your character.<br />
+                    Examples:
+                </p>
+                <ul>
+                    <li>float xPos, yPos, xVel, yVel;</li>
+                    <li>float xPosition, yPosition, xVelocity, yVelocity;</li>
+                </ul>
+                <p>
+                    Initialize your character movement variables inside the setup method.<br />
+                    Choose your own starting location.<br />
+                    Examples:
+                </p>
+                <ul>
+                    <li>xPos = random(width); //random x position inside the window</li>
+                    <li>xVel = random(-4, 4); //random velocity, moving either left or right</li>
+                </ul>
+                <p>
+                    Move your character based on their given velocity.<br />
+                    Reverse direction when your character hits a wall.<br />
+                </p>
+                <h2>
+                    Requirements:
+                </h2>
+                <ul>
+                    <li>A character method with x, y position parameters</li>
+                    <li>4 global variables to store character position and movement</li>
+                    <li>Position variables updated in the draw method</li>
+                    <li>Logic to handle a wall collision and reverse direction</li>
+                    <li>A call to the character method from the draw method using the updated position variables as arguments</li>
+                </ul>
+                
+                <div class="rule"></div>
+                <h1>
+                    Part 3 - Looping it up with Arrays
+                </h1>
+                <p>
+                    Choose a reasonable amount of characters for your scene (8-12).<br />
+                    Each character will have movement, wall collision, and animation.<br />
+                </p>
+                <h2>
+                    Requirements:
+                </h2>
+                <ul>
+                    <li>A global int to control the number of characters you will display</li>
+                    <li>Each character variable (xPos, yPos, ...) is an array of the same size</li>
+                    <li>Loop in setup to initialize all arrays with values</li>
+                    <li>Loop in draw to update all array values (update positions, wall collisions, ...)</li>
+                    <li>Call character draw method from inside the loop in the main draw method.</li>
+                </ul>
+                <div class="rule"></div>
+                <h1>
+                    Tips and Tricks
+                </h1>
+                <ul>
+                    <li>Look at the lecture notes (Arrays, Methods)</li>
+                    <li>Style counts! Make your animation look nice and choose appropriate velocities.</li>
+                    <li>Start next week after your lab! You will have most of what is necessary to complete the assignment.</li>
+                </ul>
+                <div class="whitespace"></div>
+
+            </div>
+        </div>
+    </body>
 </html>

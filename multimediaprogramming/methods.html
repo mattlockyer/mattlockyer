@@ -1,93 +1,109 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Methods</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Methods</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Creating</a></li>
-<li><a href="#tabs-3">Parameters / Arguments</a></li>
-<li><a href="#tabs-4">Return</a></li>
-<li><a href="#tabs-5">Overloading</a></li>
-<li><a href="#tabs-6">Scope</a></li>
-<li><a href="#tabs-7">Example</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Understanding Methods
-<ul>
-<li>Creating Custom Methods</li>
-<li>Adding Parameters</li>
-<li>Returning</li>
-<li>Overloading Methods</li>
-<li>Variable Scope</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://processing.org/learning/basics/functions.html">http://processing.org/learning/basics/functions.html</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"Art and science have their meeting point in method." ~ Edward G. Bulwer-Lytton
-</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Creating Methods</h1>
-<p>
-In addition to setup and draw Processing allows us to define our own methods. This provides two important features:
-<ul>
-<li>We can separate our code</li>
-<li>We can execute our code multiple times (with different arguments)</li>
-</ul>
-</p>
-<img src="img/methods/definition.gif" />
-<div style="clear:both;"></div>
-<p>
-Methods are composed of a few parts:
-<ul>
-<li><span class="code">Return Type:</span> specifies what type of value will be returned (void for nothing)</li>
-<li><span class="code">Method Name:</span> must be unique (there are exceptions)</li>
-<li><span class="code">Parameters:</span> a list of variables with their type used in the method</li>
-<li><span class="code">Method Body:</span> the code that the method executes</li>
-</ul>
-</p>
-<div class="rule"></div>
-<h1>Calling Methods</h1>
-<p>
-We tell a method to execute it's code by calling it. Calling methods is a simple one line statement.<br />
-<span class="code">drawStar();</span> calls the method named drawStar<br />
-Can you see why all methods must have a unique name?
-</p>
-<p>
-Here is an example of the drawStar method in action:
-</p>
-<form><textarea class="processingide" style="height:400px">
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Creating</a></li>
+                        <li><a href="#tabs-3">Parameters / Arguments</a></li>
+                        <li><a href="#tabs-4">Return</a></li>
+                        <li><a href="#tabs-5">Overloading</a></li>
+                        <li><a href="#tabs-6">Scope</a></li>
+                        <li><a href="#tabs-7">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Understanding Methods
+                                <ul>
+                                    <li>Creating Custom Methods</li>
+                                    <li>Adding Parameters</li>
+                                    <li>Returning</li>
+                                    <li>Overloading Methods</li>
+                                    <li>Variable Scope</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                            <a href="http://processing.org/learning/basics/functions.html">http://processing.org/learning/basics/functions.html</a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "Art and science have their meeting point in method." ~ Edward G. Bulwer-Lytton 
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+                        <h1>Creating Methods</h1>
+                        <p>
+                            In addition to setup and draw Processing allows us to define our own methods. This provides two important features:
+                        <ul>
+                            <li>We can separate our code</li>
+                            <li>We can execute our code multiple times (with different arguments)</li>
+                        </ul>
+                        </p>
+                        <img src="img/methods/definition.gif" />
+                        <div style="clear:both;"></div>
+                        <p>
+                            Methods are composed of a few parts:
+                        <ul>
+                            <li><span class="code">Return Type:</span> specifies what type of value will be returned (void for nothing)</li>
+                            <li><span class="code">Method Name:</span> must be unique (there are exceptions)</li>
+                            <li><span class="code">Parameters:</span> a list of variables with their type used in the method</li>
+                            <li><span class="code">Method Body:</span> the code that the method executes</li>
+                        </ul>
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Calling Methods</h1>
+                        <p>
+                            We tell a method to execute it's code by calling it. Calling methods is a simple one line statement.<br /> 
+                            <span class="code">drawStar();</span> calls the method named drawStar<br />
+                            Can you see why all methods must have a unique name?
+                        </p>
+                        <p>
+                            Here is an example of the drawStar method in action:
+                        </p>
+                        <form><textarea class="processingide" style="height:400px">
 void setup() {
   size(400, 400);
   background(255);
@@ -107,41 +123,43 @@ void drawStar() {
   popMatrix();
 }
                             </textarea></form>
-<div class="rule"></div>
-<div class="important">All methods must have a unique name.</div>
-</div>
-<div id="tabs-3" class="tab">
-<h1>Adding Parameters</h1>
-<p>
-We can add some variables to our method so when we make a method call we can specify certain parameters of how the method
-should behave. There are two parts to parameters:
-<ul>
-<li>A type</li>
-<ul>
-<li>Each parameter must specify it's own type</li>
-<li>There are no shortcuts</li>
-</ul>
-<li>A name</li>
-<ul>
-<li>Each name should be unique</li>
-<li>Do not use the same names as global variables</li>
-</ul>
-</ul>
-</p>
-<h1>Arguments</h1>
-<p>
-In order to use the parameters of a method, we must call the method with the same amount and types of data.
-The values you put in a method call are referred to as arguments. The arguments must always match the parameters of
-a method.<br />
-Draw star method with parameters:<br />
-<span class="code">void drawStar(int x, int y, float startScale);</span> <br />
-Calling draw star with arguments:<br />
-<span class="code">drawStar(width/2, height/2, 0.2);</span> <br />
-</p>
-<p>
-Here is an example of the drawStar method with parameters:
-</p>
-<form><textarea class="processingide" style="height:400px">
+                        <div class="rule"></div>
+                        <div class="important">All methods must have a unique name.</div>
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+
+                        <h1>Adding Parameters</h1>
+                        <p>
+                            We can add some variables to our method so when we make a method call we can specify certain parameters of how the method
+                            should behave. There are two parts to parameters:
+                        <ul>
+                            <li>A type</li>
+                            <ul>
+                                <li>Each parameter must specify it's own type</li>
+                                <li>There are no shortcuts</li>
+                            </ul>
+                            <li>A name</li>
+                            <ul>
+                                <li>Each name should be unique</li>
+                                <li>Do not use the same names as global variables</li>
+                            </ul>
+                        </ul>
+                        </p>
+                        <h1>Arguments</h1>
+                        <p>
+                            In order to use the parameters of a method, we must call the method with the same amount and types of data.
+                            The values you put in a method call are referred to as arguments. The arguments must always match the parameters of
+                            a method.<br /> 
+                            Draw star method with parameters:<br />
+                            <span class="code">void drawStar(int x, int y, float startScale);</span> <br /> 
+                            Calling draw star with arguments:<br />
+                            <span class="code">drawStar(width/2, height/2, 0.2);</span> <br /> 
+                        </p>
+                        <p>
+                            Here is an example of the drawStar method with parameters:
+                        </p>
+                        <form><textarea class="processingide" style="height:400px">
 void setup() {
   size(400, 400);
   background(255);
@@ -164,42 +182,44 @@ void drawStar(int x, int y, float starScale) {
   popMatrix();
 }
                             </textarea></form>
-<div class="rule"></div>
-<div class="important">All parameters must have a unique name (no reserved words or global variables).</div>
-<div class="important">All parameters must specify a type.</div>
-<div class="important">When calling a method with parameters, the arguments must match the parameters.</div>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Returning from a Method</h1>
-<p>
-Every method will return to where the method was called once it has finished executing it's code. This means that the
-last line of code in the method body has been executed.
-</p>
-<p>
-There is something else methods can do however, they can return a value. A method that returns nothing specifies a
-return type of void. Here are some examples:
-</p>
-<p>
-<span class="code">int add2ints(int x, int y);</span> will return an int<br />
-<span class="code">float add2floats(float x, float y);</span> will return a float<br />
-<span class="code">boolean lightIsOn();</span> will return a boolean<br />
-<span class="code">apples[] getBagOfApples();</span> will return an array of apple objects<br />
-</p>
-<p>
-When a method specifies the type of value it will return, it must return that value somewhere in the method body.
-This is accomplished by using the special keyword <span class="code">return</span>.
-</p>
-<p>
-<span class="code">return x + y;</span> returns the sum of x and y<br />
-<span class="code">return true;</span> returns the boolean value true<br />
-<span class="code">return new apples[5];</span> returns an uninitialized array of apple objects<br />
-</p>
-<p>
-When the return statement is reached in the method body, any code after will not be executed.
-Return literally returns to where the method was called, leaving the method and any code after is not
-reached. Here is a live example of some method returning:
-</p>
-<form><textarea class="processingide" style="height:400px">
+                        <div class="rule"></div>
+                        <div class="important">All parameters must have a unique name (no reserved words or global variables).</div>
+                        <div class="important">All parameters must specify a type.</div>
+                        <div class="important">When calling a method with parameters, the arguments must match the parameters.</div>
+
+                    </div>
+                    <div id="tabs-4" class="tab">
+
+                        <h1>Returning from a Method</h1>
+                        <p>
+                            Every method will return to where the method was called once it has finished executing it's code. This means that the
+                            last line of code in the method body has been executed.
+                        </p>
+                        <p>
+                            There is something else methods can do however, they can return a value. A method that returns nothing specifies a
+                            return type of void. Here are some examples:
+                        </p>
+                        <p>
+                            <span class="code">int add2ints(int x, int y);</span> will return an int<br /> 
+                            <span class="code">float add2floats(float x, float y);</span> will return a float<br /> 
+                            <span class="code">boolean lightIsOn();</span> will return a boolean<br /> 
+                            <span class="code">apples[] getBagOfApples();</span> will return an array of apple objects<br /> 
+                        </p>
+                        <p>
+                            When a method specifies the type of value it will return, it must return that value somewhere in the method body.
+                            This is accomplished by using the special keyword <span class="code">return</span>.
+                        </p>
+                        <p>
+                            <span class="code">return x + y;</span> returns the sum of x and y<br /> 
+                            <span class="code">return true;</span> returns the boolean value true<br /> 
+                            <span class="code">return new apples[5];</span> returns an uninitialized array of apple objects<br /> 
+                        </p>
+                        <p>
+                            When the return statement is reached in the method body, any code after will not be executed.
+                            Return literally returns to where the method was called, leaving the method and any code after is not
+                            reached. Here is a live example of some method returning:
+                        </p>
+                        <form><textarea class="processingide" style="height:400px">
 void setup() {
   size(120, 120);
   background(255);
@@ -220,37 +240,39 @@ String sayHi() {
   text( "This will never be printed", 50, 50 );
 }
                             </textarea></form>
-<div class="rule"></div>
-<div class="important">A method specifying a return type other than void, must return a value of that type using the
- return keyword.</div>
-<div class="important">After a return statement has been executed, no other statements in the method body will
-be executed. The method has returned to where it was called.</div>
-</div>
-<div id="tabs-5" class="tab">
-<h1>Method Overloading</h1>
-<p>
-Methods must all have a unique name. While this is only partially true, it is important to know that a method's name
-really includes more than simply the method name itself.
-</p>
-<p>
-A method signature is the method name plus the method's parameters. So two methods can share the same name, but specify
-different parameters. Here are some examples:
-</p>
-<p>
-<span class="code">int addInts(int x, int y);</span><br />
-<span class="code">int addInts(int x, int y, int z);</span><br />
-<span class="code">int addInts(int x, int y, int z, int w);</span><br />
-</p>
-<p>
-Notice how all of these methods share the same return type and name, however, there parameters are different.
-Since both the name and the parameters make up the method signature, it is true that all methods must have
-a unique signature, otherwise Processing will not know which method to call.
-</p>
-<p>
-Here is an example of overloading:<br />
-(Processing.js cannot overload methods, but try this example in regular Processing)
-</p>
-<form><textarea class="processingide" style="height:500px" noplay="true">
+                        <div class="rule"></div>
+                        <div class="important">A method specifying a return type other than void, must return a value of that type using the
+                        return keyword.</div>
+                        <div class="important">After a return statement has been executed, no other statements in the method body will
+                        be executed. The method has returned to where it was called.</div>
+
+                    </div>
+                    <div id="tabs-5" class="tab">
+
+                        <h1>Method Overloading</h1>
+                        <p>
+                            Methods must all have a unique name. While this is only partially true, it is important to know that a method's name
+                            really includes more than simply the method name itself.
+                        </p>
+                        <p>
+                            A method signature is the method name plus the method's parameters. So two methods can share the same name, but specify
+                            different parameters. Here are some examples:
+                        </p>
+                        <p>
+                            <span class="code">int addInts(int x, int y);</span><br /> 
+                            <span class="code">int addInts(int x, int y, int z);</span><br /> 
+                            <span class="code">int addInts(int x, int y, int z, int w);</span><br /> 
+                        </p>
+                        <p>
+                            Notice how all of these methods share the same return type and name, however, there parameters are different.
+                            Since both the name and the parameters make up the method signature, it is true that all methods must have
+                            a unique signature, otherwise Processing will not know which method to call.
+                        </p>
+                        <p>
+                            Here is an example of overloading:<br />
+                            (Processing.js cannot overload methods, but try this example in regular Processing)
+                        </p>
+                        <form><textarea class="processingide" style="height:500px" noplay="true">
 void setup() {
   size(120, 120);
   background(255);
@@ -270,17 +292,19 @@ int addInts(int x, int y, int z, int w) {
   return x + y + z + w;
 }
                             </textarea></form>
-<div class="rule"></div>
-<div class="important">A method signature is the method name plus the parameters.</div>
-<div class="important">Each method must have a unique method signature.</div>
-</div>
-<div id="tabs-6" class="tab">
-<h1>Variable Scope</h1>
-<p>
-Since methods are separated blocks of code. When you declare a variable inside a method, the scope of that variable is
-the method body. This means that the variable does not exist outside the method. Let's look at an example:
-</p>
-<form><textarea class="processingide" style="height:400px">
+                        <div class="rule"></div>
+                        <div class="important">A method signature is the method name plus the parameters.</div>
+                        <div class="important">Each method must have a unique method signature.</div>
+
+                    </div>
+                    <div id="tabs-6" class="tab">
+
+                        <h1>Variable Scope</h1>
+                        <p>
+                            Since methods are separated blocks of code. When you declare a variable inside a method, the scope of that variable is
+                            the method body. This means that the variable does not exist outside the method. Let's look at an example:
+                        </p>
+                        <form><textarea class="processingide" style="height:400px">
 void setup() {
   size(140, 140);
   background(255);
@@ -297,16 +321,18 @@ int addInts(int x, int y) {
 }
 //text(sum, 50, 110); //will NOT work here
                             </textarea></form>
-<p>
-Variable scope is an important topic that we will discuss in more detail in relation to objects.
-</p>
-<div class="rule"></div>
-<div class="important">A variable declared inside a method will only have scope inside that method.</div>
-<div class="important">To declare a variable that can be used everywhere in your sketch. Declare it outside the main
-setup and draw methods. This is referred to as a global variable in Processing.</div>
-</div>
-<div id="tabs-7" class="tab">
-<form><textarea class="processingide" style="height:580px">
+                        <p>
+                            Variable scope is an important topic that we will discuss in more detail in relation to objects.
+                        </p>
+                        <div class="rule"></div>
+                        <div class="important">A variable declared inside a method will only have scope inside that method.</div>
+                        <div class="important">To declare a variable that can be used everywhere in your sketch. Declare it outside the main
+                        setup and draw methods. This is referred to as a global variable in Processing.</div>
+
+                    </div>
+                    <div id="tabs-7" class="tab">
+                        
+                        <form><textarea class="processingide" style="height:580px">
 void setup() {
   size(400, 400);
   background(255);
@@ -338,10 +364,17 @@ void drawStar(int starX, int starY, float starAngle, float starScale) {
   popMatrix();
 }
                             </textarea></form>
-</div>
-</div>
-</div>
-</div>
-</div>
+                       
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
 </html>

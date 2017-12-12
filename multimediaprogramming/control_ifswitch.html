@@ -1,182 +1,192 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
 			Multimedia Programming - Object Oriented Programming: Subclasses
 		</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css">
-<link type="text/css" rel="StyleSheet" href="css/module.css">
-<link type="text/css" rel="StyleSheet" href="css/ide.css">
-<script type="text/javascript" src="js/jquery-1.6.2.min.js">
-</script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js">
-</script>
-<script type="text/javascript" src="js/module.js">
-</script>
+		<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css">
+		<link type="text/css" rel="StyleSheet" href="css/module.css">
+		<link type="text/css" rel="StyleSheet" href="css/ide.css"><!--
+		JQuery Stuff
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		-->
 
-<link rel="stylesheet" href="css/cm/processingide.css" type="text/css">
-<script type="text/javascript" src="js/cm/codemirror.js">
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js">
 </script>
-<script type="text/javascript" src="js/cm/clike.js">
+		<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js">
 </script>
-<link rel="stylesheet" href="css/cm/processing.css" type="text/css">
-<script type="text/javascript" src="js/processing-1.3.0.min.js">
+		<script type="text/javascript" src="js/module.js">
+</script><!-- Syntax Highlighter
+		<script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+		<script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+		<link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+		-->
+		<!-- Code Mirror -->
+		<link rel="stylesheet" href="css/cm/processingide.css" type="text/css">
+		<script type="text/javascript" src="js/cm/codemirror.js">
 </script>
-<style type="text/css">.CodeMirror {border: 2px inset #dee;}
+		<script type="text/javascript" src="js/cm/clike.js">
+</script>
+		<link rel="stylesheet" href="css/cm/processing.css" type="text/css"><!-- Processing.js -->
+
+		<script type="text/javascript" src="js/processing-1.3.0.min.js">
+</script>
+		<style type="text/css">
+.CodeMirror {border: 2px inset #dee;}
 		</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li>
-<a href="index.html">Back</a>
-</li>
-<li>
-<a href="#tabs-1">Goals</a>
-</li>
-<li>
-<a href="#tabs-2">Boolean Expressions</a>
-</li>
-<li>
-<a href="#tabs-3">if</a>
-</li>
-<li>
-<a href="#tabs-4">Nested if</a>
-</li>
-<li>
-<a href="#tabs-5">switch</a>
-</li>
-<li>
-<a href="#tabs-6">Example</a>
-</li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>
-Goals
-</h1>
-<ul>
-<li>To review boolean expressions
-</li>
-<li>To use <span class="code">if</span> statements
-</li>
-<li>To use <span class="code">switch</span> statements
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p><a href="http://processing.org/learning/basics/">http://processing.org/learning/basics/</a> under <em>Control</em></p>
-<div class="rule"></div>
-<div class="quote">A real decision is measured by the fact that you've taken a new action. If there's no action, you haven't truly decided. ~ Tony Robbins </div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>
-Boolean expressions
-</h1>
-<p>
-Boolean expressions are statements that can one of two values: <span class="code">true</span> or <span class="code">false</span>.
-</p>
-<p>
-Example:<br>
-100 &gt; 50 -&gt; evaluates to <span class="code">true</span>
-</p>
-<p>
-Boolean Operators
-</p>
-<ul>
-<li>! - negation
-</li>
-<li>&amp;&amp; - and (conjunction)
-</li>
-<li>|| - or (disjunction)
-</li>
-<li>&gt; - greater than
-</li>
-<li>= - greater than or equals
-</li>
-<li>&lt;= - less than or equals
-</li>
-<li>&lt; - less than
-</li>
-<li>== - equal NOTE the difference between "=", which is the assignment operator
-</li>
-<li>!= - not equal
-</li>
-</ul>
-<div class="rule"></div>
-<div class="important">
-Boolean expressions evaluate to true or false.
-</div>
-</div>
-<div id="tabs-3" class="tab">
-<h1>
-<em>if</em> statement
-</h1><img src="img/control/fork_in_road.png">
-<p>
-<em>if</em> statements are used to allow your code to follow different paths depending on a condition.
-</p>The concept: if the statement is true, do the following bit of code.
-<p>
-Example:<br>
-if ( xPos &lt; 100 &amp;&amp; xPos &gt; 0){<br>
-&nbsp;fill(255, 0, 0);<br>
-}
-</p>
-<p>
-The basic pattern:<br>
-if( <em>boolean expression</em> ){<br>
-&nbsp;// statements<br>
-}<br>
-<br>
-<br>
-</p>
-<div class="rule"></div>
-<p>
-We can add an else. If the thing we wanted to be isn't true, a different set of instructions should be used.
-</p>
-<form>
-<textarea class="processingide" style="height:150px" noplay="true">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="container">
+				<div id="tabs">
+					<ul>
+						<li>
+							<a href="index.html">Back</a>
+						</li>
+						<li>
+							<a href="#tabs-1">Goals</a>
+						</li>
+						<li>
+							<a href="#tabs-2">Boolean Expressions</a>
+						</li>
+						<li>
+							<a href="#tabs-3">if</a>
+						</li>
+						<li>
+							<a href="#tabs-4">Nested if</a>
+						</li>
+						<li>
+							<a href="#tabs-5">switch</a>
+						</li>
+						<li>
+							<a href="#tabs-6">Example</a>
+						</li>
+					</ul>
+					<div id="tabs-1" class="tab">
+						<h1>
+							Goals
+						</h1>
+						<ul>
+							<li>To review boolean expressions
+							</li>
+							<li>To use <span class="code">if</span> statements
+							</li>
+							<li>To use <span class="code">switch</span> statements
+							</li>
+						</ul>
+						<div class="rule"></div>
+						<h1>Resources</h1>
+						<p><a href="http://processing.org/learning/basics/">http://processing.org/learning/basics/</a> under <em>Control</em></p>
+						<div class="rule"></div>
+						<div class="quote">A real decision is measured by the fact that you've taken a new action. If there's no action, you haven't truly decided. ~ Tony Robbins </div>
+					</div>
+					<div id="tabs-2" class="tab">
+						<h1>
+							Boolean expressions
+						</h1>
+						<p>
+							Boolean expressions are statements that can one of two values: <span class="code">true</span> or <span class="code">false</span>.
+						</p>
+						<p>
+							Example:<br>
+							100 &gt; 50 -&gt; evaluates to <span class="code">true</span>
+						</p>
+						<p>
+							Boolean Operators
+						</p>
+						<ul>
+							<li>! - negation
+							</li>
+							<li>&amp;&amp; - and (conjunction)
+							</li>
+							<li>|| - or (disjunction)
+							</li>
+							<li>&gt; - greater than
+							</li>
+							<li>= - greater than or equals
+							</li>
+							<li>&lt;= - less than or equals
+							</li>
+							<li>&lt;  - less than
+							</li>
+							<li>== - equal NOTE the difference between "=", which is the assignment operator
+							</li>
+							<li>!= - not equal
+							</li>
+						</ul>
+						<div class="rule"></div>
+						<div class="important">
+							Boolean expressions evaluate to true or false.
+						</div>
+					</div>
+					<div id="tabs-3" class="tab">
+						<h1>
+							<em>if</em> statement
+						</h1><img src="img/control/fork_in_road.png">
+						<p>
+							<em>if</em> statements are used to allow your code to follow different paths depending on a condition.
+						</p>The concept: if the statement is true, do the following bit of code.
+						<p>
+							Example:<br>
+							if ( xPos &lt; 100 &amp;&amp; xPos &gt; 0){<br>
+							&nbsp;fill(255, 0, 0);<br>
+							}
+						</p>
+						<p>
+							The basic pattern:<br>
+							if( <em>boolean expression</em> ){<br>
+							&nbsp;// statements<br>
+							}<br>
+							<br>
+							<br>
+						</p>
+						<div class="rule"></div>
+						<p>
+							We can add an else. If the thing we wanted to be isn't true, a different set of instructions should be used.
+						</p>
+						<form>
+							<textarea class="processingide" style="height:150px" noplay="true">
 if ( boolean expresion){
     // statements
 }else{
     //statements
 }</textarea></form>
-<p>
-A concrete example:
-</p>
-<form><textarea class="processingide" style="height:175px" noplay="true">
+						<p>
+							A concrete example:
+						</p>
+						<form><textarea class="processingide" style="height:175px" noplay="true">
 if ( xPos &lt; 100 &amp;&amp; xPos &gt; 0){
     fill(255, 0, 0);
 }else{
     fill(0, 255, 0);
 }</textarea></form>
-<div class="rule"></div>
-<p>
-We have a few more forms:
-</p>
-<form>
-<textarea class="processingide" style="height:150px" noplay="true">
+						<div class="rule"></div>
+						<p>
+							We have a few more forms:
+						</p>
+						<form>
+							<textarea class="processingide" style="height:150px" noplay="true">
 if ( boolean expression ){
     //statements.
 }else if(boolean expression){
     //statements
 }</textarea></form>
-<p>
-This shows an <em>else - if</em>, which is basically an else with an <em>if</em> tacked on the end. It requires a second condition to be checked before moving on. In fact, you can chain <em>else - if</em>s together to check a series of different condition making it work just like a <em>switch</em> with just a lot more typing.
-</p>
-<div class="rule"></div>
-<div class="important"><em>if - else</em> statements use a boolean expression to determine which path to take through the code.</div>
-</div>
-<div id="tabs-4" class="tab">
-<h1>
-Nested <em>if</em> statement
-</h1>
-<p>
-Now just to give you more control, you can put an <em>if</em> any place where you can put statements.
-</p>
-<form>
-<textarea class="processingide" style="height:200px" noplay="true">
+						<p>
+							This shows an <em>else - if</em>, which is basically an else with an <em>if</em> tacked on the end. It requires a second condition to be checked before moving on. In fact, you can chain <em>else - if</em>s together to check a series of different condition making it work just like a <em>switch</em> with just a lot more typing.
+						</p>
+						<div class="rule"></div>
+						<div class="important"><em>if - else</em> statements use a boolean expression to determine which path to take through the code.</div>
+						</div>
+						<div id="tabs-4" class="tab">
+							<h1>
+								Nested <em>if</em> statement
+							</h1>
+							<p>
+								Now just to give you more control, you can put an <em>if</em> any place where you can put statements.
+							</p>
+							<form>
+								<textarea class="processingide" style="height:200px" noplay="true">
 if(boolean expression){
     if(boolean expression){
          //statements
@@ -184,12 +194,12 @@ if(boolean expression){
 }else{
     //statements
 }</textarea>
-</form>
-<p>
-One more example:
-</p>
-<form>
-<textarea class="processingide" style="height:235px" noplay="true">
+							</form>
+							<p>
+								One more example:
+							</p>
+							<form>
+								<textarea class="processingide" style="height:235px" noplay="true">
 if(boolean expression){
     if( boolean expression){
          //statements
@@ -199,22 +209,27 @@ if(boolean expression){
 }else{
 	
 }</textarea></form>
-<div class="rule"></div>
-<div class="important"><em>if</em> statements can be nested to deal with sub conditions.</div>
-<div class="important">You can put an <em>if</em> statement anywhere you can put a set of statements: method, loop, if, where ever it is needed.</div>
-</div>
-<div id="tabs-5" class="tab">
-<h1>
-Switch
-</h1>
-<img src="img/control/switch.png">
-<p>
-<span class="code">switch</span> is a shortcut to using a long series of <em>if-else</em> statements<br />
-You can only switch on ints, bytes, shorts, chars. You cannot currently use strings.
-<br /><br />
-To use switch you define a number of cases, and a default case. Once the case has been completed you <span class="code">break</span> out of the block.</p>
-<div class="rule"></div>
-<p>The basic form:</p>
+						<div class="rule"></div>
+						<div class="important"><em>if</em> statements can be nested to deal with sub conditions.</div>
+						<div class="important">You can put an <em>if</em> statement anywhere you can put a set of statements: method, loop, if, where ever it is needed.</div>
+						</div>
+						<div id="tabs-5" class="tab">
+							<h1>
+								Switch
+							</h1>
+							
+							<img src="img/control/switch.png">
+							
+							<p>
+								<span class="code">switch</span> is a shortcut to using a long series of <em>if-else</em> statements<br/>
+								You can only switch on ints, bytes, shorts, chars. You cannot currently use strings.
+								<br/><br/>
+								To use switch you define a number of cases, and a default case. Once the case has been completed you <span class="code">break</span> out of the block.</p>
+							
+						
+							<div class="rule"></div>
+							
+<p>The basic form:</p>							
 <form><textarea class="processingide" style="height:280px" noplay="true">
 switch(valueToSwitchOn){
     case valueToMatch:
@@ -226,6 +241,7 @@ switch(valueToSwitchOn){
     default: // statements that should be executed if none of the cases match
         break;
 }</textarea></form>
+
 <p>A real world example:</p>
 <form><textarea class="processingide" style="height:290px" noplay="true">
 switch(shape){
@@ -238,12 +254,12 @@ switch(shape){
     default:
         ellipse(0,0, 50, 100);
         break;
-}</textarea></form>
+}</textarea></form>			
 <div class="rule"></div>
 <div class="important">You must always have a <span class="code">default</span> case.</div>
 <div class="important">You cannot switch on strings.</div>
-</div>
-<div id="tabs-6" class="tab">
+						</div>
+						<div id="tabs-6" class="tab">
 <form><textarea class="processingide" style="height:580px">
 /*
 Use 's', 'm', 'l' to control the size of the ellipse
@@ -304,10 +320,10 @@ void draw() {
 void keyReleased(){
   shapeCode = key;
 }</textarea></form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</body>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

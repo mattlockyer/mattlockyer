@@ -1,0 +1,42 @@
+body{
+	margin:0px;
+        padding:0px;
+}
+
+.term{
+	float: left;
+	margin-right: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.term h1{
+	font-size: 1.75em;
+}
+
+#heading{
+	text-align: right;
+	color:#cc6600;
+	width: 300px;
+}
+
+.divider{
+	clear: both;
+}
+
+#term {
+	width: 300px;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align:right;
+}
+
+#def {
+	width: 300px;
+	
+        margin-top: 25px;
+	padding-left: 15px;
+	
+	border-left:2px;
+	border-left-style: solid;
+	border-color: #999;
+}

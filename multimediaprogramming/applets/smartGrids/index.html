@@ -1,10 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+  <head>
+    <!-- charset must remain utf-8 to be handled properly by Processing -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>smartGrids : Built with Processing</title>
-<style type="text/css">/* <![CDATA[ */
+    <title>smartGrids : Built with Processing</title>
+
+    <style type="text/css">
+      /* <![CDATA[ */
 	
 	body {
   	  margin: 60px 0px 0px 55px;
@@ -23,14 +26,20 @@
 	a:hover    { color: #3399cc; text-decoration: underline; }
 
       /* ]]> */
-    </style>
-</head>
-<body>
-<div id="content">
-<div id="smartGrids_container">
+    </style>    
+  </head>
 
-<script type="text/javascript" src="http://www.java.com/js/deployJava.js"></script>
-<script type="text/javascript">
+  <body>
+    <div id="content">
+      <div id="smartGrids_container">
+
+	<!-- This version plays nicer with older browsers, 
+	     but requires JavaScript to be enabled. 
+	     http://java.sun.com/javase/6/docs/technotes/guides/jweb/deployment_advice.html
+	     http://download.oracle.com/javase/tutorial/deployment/deploymentInDepth/ -->
+	<script type="text/javascript"
+		src="http://www.java.com/js/deployJava.js"></script>
+	<script type="text/javascript">
 	  /* <![CDATA[ */
 
 	  var attributes = { 
@@ -48,7 +57,8 @@
 
           /* ]]> */
         </script>
-<noscript> <div>
+        
+	<noscript> <div>
 	  <!--[if !IE]> -->
 	  <object classid="java:smartGrids.class" 
             	  type="application/x-java-applet"
@@ -102,27 +112,38 @@
 	  <!--<![endif]-->
 
 	</div> </noscript>
-</div>
-<p>
-draw tool. draws a specific module according to
-its east, south, west and north neighbours.
+
+      </div>
+      
+      <p>
+	
+ draw tool. draws a specific module according to 
+ its east, south, west and north neighbours.
 </p>
 <p>
-MOUSE<br />
-drag left : draw new module
+	
+ MOUSE<br />
+ drag left           : draw new module
 <br />
-drag right : delete a module<br />
-KEYS<br />
-del, backspace : clear screen<br />
-g : toogle. show grid<br />
-d : toogle. show module values<br />
+ drag right          : delete a module<br />
+
+ 
+ KEYS<br />
+
+ del, backspace      : clear screen<br />
+
+ g                   : toogle. show grid<br />
+ d                   : toogle. show module values<br />
+
 </p>
-<p>
-Source code: <a href="smartGrids.pde.txt">smartGrids</a> <a href="Tile.pde.txt">Tile</a>
-</p>
-<p>
-Built with <a href="http://processing.org" title="Processing.org">Processing</a>
-</p>
-</div>
-</body>
+      
+      <p>
+	Source code: <a href="smartGrids.pde">smartGrids</a> <a href="Tile.pde">Tile</a> 
+      </p>
+      
+      <p>
+	Built with <a href="http://processing.org" title="Processing.org">Processing</a>
+      </p>
+    </div>
+  </body>
 </html>

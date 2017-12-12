@@ -1,1 +1,119 @@
-root{display:block;}body{margin:0px;padding:0px;font-family:Arial;background-color:#000000;}#wrapper{width:100%;height:768px;overflow:hidden;text-align:center;background-color:#000000;}#header{width:100%;height:167px;overflow:hidden;border-bottom:1px solid black;background-image:url('../img/header1024.jpg');background-repeat:no-repeat;background-position:center top;background-color:#000;}#container{width:1024px;height:600px;margin:0px auto;text-align:left;overflow:hidden;background-color:#FFFFFF;}#col{font-size:20px;float:left;width:308px;margin:0px auto;padding:16px;text-align:left;}a:link{color:#006699;font-weight:bold;text-decoration:none;}a:active{color:#aa0000;font-weight:bold;text-decoration:none;}a:visited{color:#006699;font-weight:bold;text-decoration:none;}a:hover{color:#aa0000;font-weight:bold;text-decoration:none;}#col .heading{font-size:24px;font-weight:bold;color:#cc6600;}#col .note{font-size:16px;font-weight:normal;}#assignment .rule{clear:both;margin:16px;border-bottom:2px solid gray;}#assignment .whitespace{clear:both;padding:24px;}#assignmentWrap{width:100%;height:100%;text-align:center;background-color:#000000;}#assignment{width:1008px;height:100%;padding:8px;margin:0px auto;text-align:left;background-color:#FFFFFF;}#assignment h1{margin:0px;padding:16px;font-size:24px;font-weight:bold;color:#cc6600;}#assignment h2{margin:0px;padding:16px;font-size:20px;font-weight:bold;color:#006699;}#assignment p{margin:8px;margin-left:16px;font-size:20px;color:#000000;}#assignment li{font-size:20px;color:#000000;}
+root { 
+    display: block;
+}
+body {
+    margin:0px;
+    padding: 0px;
+    font-family:Arial;
+    background-color:#000000;
+}
+
+#wrapper {
+    width:100%;
+    height:768px;
+    overflow:hidden;
+    text-align:center;
+    background-color:#000000;
+}
+
+#header {
+    width:100%;
+    height:167px;
+    overflow:hidden;
+    border-bottom:1px solid black;
+    background-image:url('../img/header1024.jpg');
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-color:#000;
+}
+
+#container {
+    width:1024px;
+    height:600px;
+    margin:0px auto;
+    text-align:left;
+    overflow:hidden;
+    background-color:#FFFFFF;
+}
+
+#col {
+    font-size:20px;
+    float:left;
+    width:308px;
+    margin:0px auto;
+    padding:16px;
+    text-align:left;
+}
+
+a:link {color: #006699; font-weight:bold; text-decoration:none; }
+a:active {color: #aa0000; font-weight:bold; text-decoration:none; }
+a:visited {color: #006699; font-weight:bold; text-decoration:none; }
+a:hover {color: #aa0000; font-weight:bold; text-decoration:none; }
+
+#col .heading {
+    font-size:24px;
+    font-weight:bold;
+    color:#cc6600;
+}
+
+#col .note {
+    font-size:16px;
+    font-weight:normal;
+}
+
+/* For Assignments */
+
+#assignment .rule {
+    clear:both;
+    margin:16px;
+    border-bottom:2px solid gray;
+}
+
+#assignment .whitespace {
+    clear:both;
+    padding:24px;
+}
+
+
+#assignmentWrap {
+    width:100%;
+    height:100%;
+    text-align:center;
+    background-color:#000000;
+}
+
+#assignment {
+    width:1008px;
+    height:100%;
+    padding:8px;
+    margin:0px auto;
+    text-align:left;
+    background-color:#FFFFFF;
+}
+#assignment h1 {
+    margin:0px;
+    padding:16px;
+    font-size:24px;
+    font-weight:bold;
+    color:#cc6600;
+}
+
+#assignment h2 {
+    margin:0px;
+    padding:16px;
+    font-size:20px;
+    font-weight:bold;
+    color:#006699;
+}
+
+#assignment p {
+    margin:8px;
+    margin-left:16px;
+    font-size:20px;
+    color:#000000;
+}
+
+#assignment li {
+    font-size:20px;
+    color:#000000;
+}

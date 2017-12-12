@@ -1,168 +1,211 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Primitive Datatypes</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Primitive Datatypes</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Types</a></li>
-<li><a href="#tabs-3">Declaring</a></li>
-<li><a href="#tabs-4">Initializing</a></li>
-<li><a href="#tabs-5">Errors</a></li>
-<li><a href="#tabs-6">Example</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Understanding Variables
-<ul>
-<li>Types</li>
-<li>Declaring</li>
-<li>Initializing</li>
-<li>Errors</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://processing.org/learning/basics/variables.html">http://processing.org/learning/basics/variables.html</a><br />
-<a href="http://processing.org/learning/basics/integersfloats.html">http://processing.org/learning/basics/integersfloats.html</a><br />
-<a href="http://processing.org/learning/basics/truefalse.html">http://processing.org/learning/basics/truefalse.html</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"The crucial variable in the process of turning knowledge into value is creativity." ~ John Kao
-</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Types</h1>
-<p>
-There are many variable types in processing and it is important to know which variable type suits a particular situation.
-</p>
-<p>
-<span class="code">int</span> integers (whole numbers) between -2,147,483,648 and 2,147,483,647<br />
-<span class="code">float</span> floating point numbers (decimal numbers)<br />
-<span class="code">char</span> a single character<br />
-<span class="code">byte</span> integers between -127 and 128<br />
-<span class="code">boolean</span> true or false
-</p>
-<p>
-Variable types define what information the variable can store. A variable will always be the same type that was specified when
-it was declared (created).
-</p>
-<div class="rule"></div>
-<div class="important">Variable types define what type of information a variable holds.</div>
-</div>
-<div id="tabs-3" class="tab">
-<h1>Declaring</h1>
-<p>
-In order to create a variable we must declare it to processing by specifying the variable type and name.
-</p>
-<p>
-<span class="code">int xPosition;</span> declares a new variable xPosition of type int<br />
-<span class="code">float yPosition;</span> declares a new variable yPosition of type float<br />
-<span class="code">char myFirstInitial;</span> declares a new variable myFirstInitial of type char<br />
-<span class="code">byte numOfApples;</span> declares a new variable numOfApples of type byte<br />
-<span class="code">boolean lightOn;</span> declares a new variable lightOn of type boolean
-</p>
-<p>
-Declaring a variable is an important step since the type and name of the variable will be set often for the duration
-of your program. Variable names cannot contain spaces or most special characters. For this reason there are some
-conventions for naming variables. The first character or word of a variable
-name should not be capitalized, but each word thereafter should be capitalized. Check the examples above. This is called
-camel casing and it is a special convention for naming variables that makes for better readability of code.
-</p>
-<div class="rule"></div>
-<div class="important">Variable types and names are often set for the duration of a program, so declare variables wisely.</div>
-<div class="important">Variable name should be Camel Cased, first word lower case, each word after capitalized.</div>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Initializing</h1>
-<p>
-In order to use a variable we must initialize it with a value so that our variable name represents some data.
-</p>
-<p>
-<span class="code">xPosition = 40;</span> sets the variable xPosition to 40<br />
-<span class="code">yPosition = 40.5;</span> sets the variable yPosition to 40.5<br />
-<span class="code">myFirstInitial = 'M';</span> sets the variable myFirstInitial to M<br />
-<span class="code">numOfApples = 8;</span> sets the variable numOfApples to 8<br />
-<span class="code">lightOn = true;</span> sets the variable lightOn to true
-</p>
-<p>
-You assign variables some data by using the = sign. This is called the assignment operator which assigns the value of
-anything on the right to the variable on the left. Be careful when assigning values to variables since they should be
-of the same type.
-</p>
-<div class="rule"></div>
-<h1>Declaring and Initializing</h1>
-<p>
-Sometimes we will want to do these operations at once. Here is an example
-</p>
-<p>
-<span class="code">float yPosition = 40.5;</span> declare and initialize variable yPosition to 40.5<br />
-</p>
-<p>
-Now we can see what value yPosition is by calling the print statement with yPosition as an argument.
-</p>
-<p>
-<span class="code">print(yPosition);<br />
-</p>
-<p>
-Which will print out 40.5
-</p>
-<div class="rule"></div>
-<div class="important">Variables must be assigned only values that their type will accept.</div>
-</div>
-<div id="tabs-5" class="tab">
-<h1>Errors</h1>
-<p>
-Errors can arise when the value being assigned to the variable is of a different type. Here are some examples:
-</p>
-<p>
-<span class="code">int xPosition = 40.5;</span> cannot assign float to type int<br />
-<span class="code">boolean lightOn = 8;</span> cannot assign int to type boolean<br />
-<span class="code">char myFirstInitial = "ML";</span> cannot assign string to type char<br />
-<span class="code">float yPosition = 40;</span> works, but why?<br />
-</p>
-<p>
-In the last example, the assignment of the integer value 40 to a float worked. This is only because a floating point
-number can represent an integer value as simply 40.0.
-</p>
-<p>
-Another type of error that is common is forgetting to initialize your variable. Usually processing will set this variable
-to 0 if it is an int, byte, float, an empty string if it is a char, and false if it is a boolean. These may not be the
-desired values for the variables in your program so you MUST always initialize your variables.
-</p>
-<div class="rule"></div>
-<div class="important">Do not assign values of a different type to a variable. You must use the type specified when the
-variable was declared.</div>
-<div class="important">Always initialize your variables, do not leave things to chance.</div>
-</div>
-<div id="tabs-6" class="tab">
-<form><textarea class="processingide" style="height:580px">
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Types</a></li>
+                        <li><a href="#tabs-3">Declaring</a></li>
+                        <li><a href="#tabs-4">Initializing</a></li>
+                        <li><a href="#tabs-5">Errors</a></li>
+                        <li><a href="#tabs-6">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Understanding Variables
+                                <ul>
+                                    <li>Types</li>
+                                    <li>Declaring</li>
+                                    <li>Initializing</li>
+                                    <li>Errors</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="rule"></div>
+                         <h1>Resources</h1>
+                        <p>
+                            <a href="http://processing.org/learning/basics/variables.html">http://processing.org/learning/basics/variables.html</a><br />
+                            <a href="http://processing.org/learning/basics/integersfloats.html">http://processing.org/learning/basics/integersfloats.html</a><br />
+                            <a href="http://processing.org/learning/basics/truefalse.html">http://processing.org/learning/basics/truefalse.html</a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "The crucial variable in the process of turning knowledge into value is creativity." ~ John Kao
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Types</h1>
+
+                        <p>
+                            There are many variable types in processing and it is important to know which variable type suits a particular situation.
+                        </p>
+                        <p>
+                            <span class="code">int</span> integers (whole numbers) between -2,147,483,648 and 2,147,483,647<br />
+                            <span class="code">float</span> floating point numbers (decimal numbers)<br />
+                            <span class="code">char</span> a single character<br />
+                            <span class="code">byte</span> integers between -127 and 128<br />
+                            <span class="code">boolean</span> true or false
+                        </p>
+                        <p>
+                            Variable types define what information the variable can store. A variable will always be the same type that was specified when
+                            it was declared (created).
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Variable types define what type of information a variable holds.</div>
+
+                    </div>
+                    
+                    <div id="tabs-3" class="tab">
+
+                        <h1>Declaring</h1>
+
+                        <p>
+                            In order to create a variable we must declare it to processing by specifying the variable type and name.
+                        </p>
+                        <p>
+                            <span class="code">int xPosition;</span> declares a new variable xPosition of type int<br />
+                            <span class="code">float yPosition;</span> declares a new variable yPosition of type float<br />
+                            <span class="code">char myFirstInitial;</span> declares a new variable myFirstInitial of type char<br />
+                            <span class="code">byte numOfApples;</span> declares a new variable numOfApples of type byte<br />
+                            <span class="code">boolean lightOn;</span> declares a new variable lightOn of type boolean
+                        </p>
+                        <p>
+                            Declaring a variable is an important step since the type and name of the variable will be set often for the duration
+                            of your program. Variable names cannot contain spaces or most special characters. For this reason there are some 
+                            conventions for naming variables. The first character or word of a variable
+                            name should not be capitalized, but each word thereafter should be capitalized. Check the examples above. This is called
+                            camel casing and it is a special convention for naming variables that makes for better readability of code.
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Variable types and names are often set for the duration of a program, so declare variables wisely.</div>
+                        <div class="important">Variable name should be Camel Cased, first word lower case, each word after capitalized.</div>
+
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+
+                        <h1>Initializing</h1>
+
+                        <p>
+                            In order to use a variable we must initialize it with a value so that our variable name represents some data.
+                        </p>
+                        <p>
+                            <span class="code">xPosition = 40;</span> sets the variable xPosition to 40<br />
+                            <span class="code">yPosition = 40.5;</span> sets the variable yPosition to 40.5<br />
+                            <span class="code">myFirstInitial = 'M';</span> sets the variable myFirstInitial to M<br />
+                            <span class="code">numOfApples = 8;</span> sets the variable numOfApples to 8<br />
+                            <span class="code">lightOn = true;</span> sets the variable lightOn to true
+                        </p>
+                        <p>
+                            You assign variables some data by using the = sign. This is called the assignment operator which assigns the value of
+                            anything on the right to the variable on the left. Be careful when assigning values to variables since they should be
+                            of the same type.
+                        </p>
+
+                        <div class="rule"></div>
+                        
+                        <h1>Declaring and Initializing</h1>
+
+                        <p>
+                            Sometimes we will want to do these operations at once. Here is an example
+                        </p>
+                        <p>
+                            <span class="code">float yPosition = 40.5;</span> declare and initialize variable yPosition to 40.5<br />
+                        </p>
+                        <p>
+                            Now we can see what value yPosition is by calling the print statement with yPosition as an argument.
+                        </p>
+                        <p>
+                            <span class="code">print(yPosition);<br />
+                        </p>
+                        <p>
+                            Which will print out 40.5
+                        </p>
+                        
+                        <div class="rule"></div>
+                        
+                        <div class="important">Variables must be assigned only values that their type will accept.</div>
+
+                    </div>
+
+                    <div id="tabs-5" class="tab">
+
+                       <h1>Errors</h1>
+
+                         <p>
+                            Errors can arise when the value being assigned to the variable is of a different type. Here are some examples:
+                        </p>
+                        <p>
+                            <span class="code">int xPosition = 40.5;</span> cannot assign float to type int<br />
+                            <span class="code">boolean lightOn = 8;</span> cannot assign int to type boolean<br />
+                            <span class="code">char myFirstInitial = "ML";</span> cannot assign string to type char<br />
+                            <span class="code">float yPosition = 40;</span> works, but why?<br />
+                        </p>
+                         <p>
+                            In the last example, the assignment of the integer value 40 to a float worked. This is only because a floating point
+                            number can represent an integer value as simply 40.0.
+                        </p>
+                         <p>
+                            Another type of error that is common is forgetting to initialize your variable. Usually processing will set this variable
+                            to 0 if it is an int, byte, float, an empty string if it is a char, and false if it is a boolean. These may not be the
+                            desired values for the variables in your program so you MUST always initialize your variables.
+                        </p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Do not assign values of a different type to a variable. You must use the type specified when the
+                        variable was declared.</div>
+                        <div class="important">Always initialize your variables, do not leave things to chance.</div>
+
+                    </div>
+                    
+                    <div id="tabs-6" class="tab">
+
+                        <form><textarea class="processingide" style="height:580px">
 float xPos;
 float yPos;
 
@@ -194,9 +237,18 @@ void draw() {
   popMatrix();
 }
                             </textarea></form>
-</div>
-</div>
-</div>
-</div>
-</body>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
 </html>

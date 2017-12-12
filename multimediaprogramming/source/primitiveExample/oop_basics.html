@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Object-oriented Programming: Basics</title>
+
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
+
+
+    </head>
+    <body>
+        
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+						<li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Background</a></li>
+						<li><a href="#tabs-3">Fields</a></li>
+						<li><a href="#tabs-4">Methods</a></li>
+						<li><a href="#tabs-5">Using Objects</a></li>
+                        <li><a href="#tabs-6">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>To understand basic objects
+								<ul>
+									<li>To describe objects
+										<ul>
+											<li>Fields</li>
+											<li>Methods</li>
+											<li>Constructors</li>
+										</ul>
+									</li>
+									<li>To use objects
+										<ul>
+											<li><span class="code">new</span> keyword</li>
+											<li>To call methods</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+                            
+                        </ul>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "Actually I made up the term “object-oriented”, and I can tell you I did not have C++ in mind." ~ Alan Kay
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Object-oriented Programming</h1>
+
+                        <img src="img/oop/objectConcepts.png"></img>
+
+                        <p>
+                            In English we refer to a bicycle, a dog, or a car as "things" or "objects." "Object" is a generic term.
+							In programming, we can create objects too. Objects can refer to concrete ideas like a particle or to more 
+							abstract ideas like a physics solver. Because the word class refers to a type of objects, we use the 
+							terms <span class="emph">object</span> and <span class="emph">class</span> interchangeably.
+						</p>
+							
+						<p>
+							<span class="code">class Bicycle{</br></br>
+								
+							}</span>
+						</p>
+
+                        <div class="important">We use objects to create user-defined types.</div>
+						
+						<div class="rule"></div>
+						
+                    </div>
+                    <div id="tabs-3" class="tab">
+
+                        <h1>Fields</h1>
+
+                        <p>
+							<ul>
+                            	<li>To store data in objects, we use <span class="emph">fields</span>.</li>
+								<li>When an object contains some data we say that the object <span class="emph">encapsulates</span> data.</li>
+							<li>Saying that an object encapsulates data is fancy way of saying that an object <span class="emph">"has"</span> some 	data. It might have position information or a colour.</li>
+							</ul>
+                        </p>
+
+						<p>
+							Let's add two fields to our <span class="code">Bicycle</span> class. </br></br>
+							<span class="code">
+								class Bicycle{</br>
+									&nbsp;int xPos; //store the x-position</br>
+									&nbsp;int yPos; //store the y-position</br>
+								}
+							</span>
+						</p>
+
+                        <div class="rule"></div>
+
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+
+                        <h1>Methods</h1>
+
+                        <p>
+                            Now that our bike knows where it is, we need to give it the ability to do something. Let's add two methods to our object a method for drawing our bike and one for moving it.
+                        </p>
+
+						<p>
+							<span class="code">
+								class Bicycle{</br>
+									&nbsp;int xPos; //store the x-position</br>
+									&nbsp;int yPos; //store the y-position</br>
+									</br>
+									&nbsp;void draw(){</br></br>
+									&nbsp;&nbsp;// draw a beautiful bicycle</br>
+									}
+									</br></br>
+									&nbsp;void moveRight(){</br></br>
+									&nbsp;&nbsp; xPos = xPos + 5; </br>
+									&nbsp;}
+									</br>
+								}
+							</span>
+						</p>
+
+                        <div class="rule"></div>
+                    </div>
+
+
+
+                    <div id="tabs-5" class="tab">
+
+						<h1>A Little Theory</h1>
+						<img src="img/oop/objectMemory.png"></img>
+						
+						<p>
+							When we create an object, we create a reference variable.The reference variable points to the address of the object in memory. When we use the <span class="code">new</span> keyword a reference to the object is created. The <span class="code">new</span> keyword calls the constructor and returns the address of the new object in memory.
+						</p>
+						
+						<p>This newly create object is called an <span class="emph">instance</span>.</p>
+						
+						<p><span class="code">Bicycle myBike = new Bicycle();</span></p>
+						
+						<div class="rule"></div>
+						
+						<div class="important">Variables that are instances of objects are references to the object in memory.</div>
+
+                    </div>
+                    <div id="tabs-6" class="tab">
+
+                        <form><textarea class="processingide" style="height:580px">
+Bicycle myBike;
+
+void setup() {
+  size(400, 75);
+  background(255);
+
+  // create a bike
+  myBike = new Bicycle();
+}
+
+void draw() {
+  background(255);
+  noStroke();
+
+  //draw sky
+  fill(0, 159, 255);
+  rectMode(CORNER);
+  rect(0, 0, 400, 60);
+
+  // draw grass
+  fill(9, 118, 0);
+  rect(0, 60, 400, 15);
+
+  // draw and move the bike.
+  myBike.draw();
+  myBike.moveRight();
+}
+
+class Bicycle {
+  int xPos; // x-position
+  int yPos; // y-position
+  float spokeRotation; // spoke rotation
+
+  Bicycle() {
+    xPos = 10;
+    yPos = 50;
+  }
+
+  void draw() {
+    pushMatrix();
+
+    // move the bike
+    translate(xPos, yPos);
+
+    //draw wheels
+    noFill();
+    stroke(0);
+    ellipse(0, 0, 40, 40);
+    ellipse(70, 0, 40, 40);
+
+    // draw frame
+    line(0, 0, 30, -25); 
+    line(0, 0, 30, -5);
+    line(30, -5, 65, -25);
+    line(30, -25, 65, -25);
+
+    // draw seat post 
+    line(30, -5, 30, -30);
+    // draw seat
+    noFill();
+    rectMode(CENTER);
+    rect(30, -30, 10, 3);
+
+    // draw forks
+    line(70, 0, 60, -40);
+    //draw handle bars
+    line(60, -40, 45, -45);
+    line(60, -40, 45, -40);
+
+    popMatrix();
+  }
+
+  void moveRight() {
+    // check to see if the bike is still on screen
+    // return to the left of the screen
+    if (xPos > width) {
+      xPos = 10;
+    }
+    else {  
+      xPos = xPos + 2;
+    }
+  }
+}
+
+
+                                </textarea></form>
+                        
+                        
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
+</html>

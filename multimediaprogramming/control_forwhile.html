@@ -1,101 +1,141 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Object Oriented Programming: Subclasses</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Object Oriented Programming: Subclasses</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        
+		<!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        
+		<!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
+        
+        <div id="wrapper">
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Background</a></li>
-<li><a href="#tabs-3">while</a></li>
-<li><a href="#tabs-4">for</a></li>
-<li><a href="#tabs-5">nested</a></li>
-<li><a href="#tabs-6">Example</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>To understand loops
-<ul>
-<li><span class="code">while</span> loop</li>
-<li><span class="code">for</span> loop</li>
-<ul>
-<li>Nested loop</li>
-</ul>
-<li><span class="code">for-each</span> loop</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<div class="quote">I do not like to repeat successes, I like to go on to other things. ~ Walt Disney</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Loops</h1>
-<img src="img/control/loop.png"></img>
-<p>
-We use loops to repeatedly execute a block of code. There are two main types of loops:<br />counter controlled loops and sentinel controlled loops.
-</p>
-<p>
-A counter controlled loop uses a counter to control the number of times it executes. We call each time a loop runs an <strong>iteration</strong>.
-</p>
-<p>A sentinel-controlled loop uses a boolean expression or flag to indicate how many times to iterate. It will iterate until the boolean expression is false.</p>
-<p><strong>Note:</strong> You can use <span class="code">break;</span> in any of these loops to exit out of a statement early.</p>
-<div class="rule"></div>
-<div class="important">Use loops to avoid copy and pasting code. Combine with a function for maximum impact.</div>
-</div>
-<div id="tabs-3" class="tab">
-<h1><span class="code">while</span> loop</h1>
-<p>
-The basic pattern:
-</p>
-<form><textarea class="processingide" style="height:90px" noplay="true">
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+						<li><a href="#tabs-1">Goals</a></li>
+						<li><a href="#tabs-2">Background</a></li>
+                        <li><a href="#tabs-3">while</a></li>
+						<li><a href="#tabs-4">for</a></li>
+                        <li><a href="#tabs-5">nested</a></li>
+                        <li><a href="#tabs-6">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>To understand loops
+								<ul>
+									<li><span class="code">while</span> loop</li>
+									<li><span class="code">for</span> loop</li>
+									<ul>
+										<li>Nested loop</li>
+									</ul>
+									<li><span class="code">for-each</span> loop</li>
+								</ul>
+							</li>
+                        </ul>
+						<div class="rule"></div>
+						<div class="quote">I do not like to repeat successes, I like to go on to other things. ~ Walt Disney</div>
+          			</div>
+                    
+					<div id="tabs-2" class="tab">
+
+                        <h1>Loops</h1>
+
+                        <img src="img/control/loop.png"></img>
+
+                        <p>
+							We use loops to repeatedly execute a block of code. There are two main types of loops:<br/>counter controlled loops and sentinel controlled loops.
+                        </p>
+
+						<p>
+							A counter controlled loop uses a counter to control the number of times it executes. We call each time a loop runs an <strong>iteration</strong>.
+						</p>
+						
+						<p>A sentinel-controlled loop uses a boolean expression or flag to indicate how many times to iterate. It will iterate until the boolean expression is false.</p>
+						
+						<p><strong>Note:</strong> You can use <span class="code">break;</span> in any of these loops to exit out of a statement early.</p>
+						
+						<div class="rule"></div>
+
+                        <div class="important">Use loops to avoid copy and pasting code. Combine with a function for maximum impact.</div>
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+
+                        <h1><span class="code">while</span> loop</h1>
+
+                        <p>
+                           The basic pattern:
+                        </p>
+
+						 <form><textarea class="processingide" style="height:90px" noplay="true">
 while( expressionThatIsTRUE){
     //do something
 }</textarea></form>
-<p>
-Here is an example of a sentinel-controlled <span class="code">while</span> loop.
-</p>
-<form><textarea class="processingide" style="height:90px" noplay="true">
+						<p>
+							Here is an example of a sentinel-controlled <span class="code">while</span> loop.
+						</p>
+						
+												 <form><textarea class="processingide" style="height:90px" noplay="true">
 while(mouseX < width/2){
     // do something
 }</textarea></form>
-<p>Here is an example of a counter-controlled <span class="code">while</span> loop.</p>
+		
+					<p>Here is an example of a counter-controlled <span class="code">while</span> loop.</p>
+					
 <form><textarea class="processingide" style="height:150px" noplay="true">
 int count = 0;
 while(count < 5){
     //do something
     count++;
 }</textarea></form>
+
 <p>Note: you can decided whether the counter should be updated before or after the code is executed. Beware of the difference.</p>
-<div class="rule"></div>
-<div class="important">Use <span class="code">while</span> loops when you need to do something without counting.</div>
-</div>
-<div id="tabs-4" class="tab">
-<h1><span class="code">for</span> loop</h1>
-<p>
-A <span class="code">for</span> loop is a counter-controlled loop. The counter declaration and increment are part of the loops syntax. The loop increments after each iteration.
-</p>
+
+                        <div class="rule"></div>
+
+                        <div class="important">Use <span class="code">while</span> loops when you need to do something without counting.</div>
+
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+
+                        <h1><span class="code">for</span> loop</h1>
+
+                        <p>
+							A <span class="code">for</span> loop is a counter-controlled loop. The counter declaration and increment are part of the loops syntax. The loop increments after each iteration.
+                        </p>
+
 <form><textarea class="processingide" style="height:300px" noplay="true">
 // the basic pattern
 for(initialize variable ;  condition ; "increment"){
@@ -106,23 +146,31 @@ for(initialize variable ;  condition ; "increment"){
 for(int i= 0; i < 10; i++){
     // do something
 }</textarea></form>
-<p>You can do more than just increment the variable. You can decrement/ multiple/ divide, or whatever arithmetic your design requires.</p>
-<form><textarea class="processingide" style="height:150px" noplay="true">
+
+						<p>You can do more than just increment the variable. You can decrement/ multiple/ divide, or whatever arithmetic your design requires.</p>
+
+						<form><textarea class="processingide" style="height:150px" noplay="true">
 // this loop counts down by twos from 100
 for(int i= 100; i => 0; i -= 2){
     // do something
 }</textarea></form>
-<div class="rule"></div>
-<h1><span class="code">for</span>-each loop</h1>
-<p>There is a special type of <span class="code">for</span> loop for working with collections. Collections are a generic way for referring to arrays, lists, and other data structures. They are handy because they require less typing.</p>
-<p>The loop reads: for each item, with a given type, in the collection do what is included in the brackets. The type of the loop variable must match the type of the data stored in the collection.</p>
-<p>The basic pattern:</p>
-<form><textarea class="processingide" style="height:150px" noplay="true">
+
+                        <div class="rule"></div>
+						<h1><span class="code">for</span>-each loop</h1>
+						
+						<p>There is a special type of <span class="code">for</span> loop for working with collections. Collections are a generic way for referring to arrays, lists, and other data structures. They are handy because they require less typing.</p>
+						
+						<p>The loop reads: for each item, with a given type, in the collection do what is included in the brackets. The type of the loop variable must match the type of the data stored in the collection.</p>
+						
+						<p>The basic pattern:</p>
+						
+						<form><textarea class="processingide" style="height:150px" noplay="true">
 // for-each item in the collection.
 for( type loopVariable : collection){
     // statements
 }</textarea></form>
-<p>A specific example:</p>
+
+						<p>A specific example:</p>
 <form><textarea class="processingide" style="height:350px">
 void setup(){
 size(400, 400);
@@ -152,16 +200,22 @@ for(int i: apples){
     popMatrix();
 }
 }</textarea></form>
-<div class="rule"></div>
+						
+						
+						<div class="rule"></div>
 <div class="important">The loop increments after each iteration.</div>
 <div class="important">You can use any math in the loop increment portion of the syntax</div>
-</div>
-<div id="tabs-5" class="tab">
-<h1>Nested loops</h1>
-<p>
-A nested loop is simply a loop inside of loop. We can add a loop anywhere where we can put "statements."
-</p>
-<form><textarea class="processingide" style="height:200px" noplay="true">
+
+ 					</div>
+
+					<div id="tabs-5" class="tab">
+
+                        <h1>Nested loops</h1>
+
+                        <p>
+                            A nested loop is simply a loop inside of loop. We can add a loop anywhere where we can put "statements."
+                        </p>
+						<form><textarea class="processingide" style="height:200px" noplay="true">
 while(somethingistrue){
     //do some stuff
     // print five ellipses
@@ -169,11 +223,15 @@ while(somethingistrue){
         ellipse(i * 10, height/2, 50, 50);
     }
 }</textarea></form>
+
 <p>More on this later. . . </p>
-<div class="rule"></div>
-</div>
-<div id="tabs-6" class="tab">
-<form><textarea class="processingide" style="height:580px">
+
+                        <div class="rule"></div>
+
+                    </div>
+                    <div id="tabs-6" class="tab">
+
+                        <form><textarea class="processingide" style="height:580px">
 // global diameter control
 int diameter = 100;
 
@@ -208,9 +266,18 @@ void draw() {
     redValue += 32;
   }
 }</textarea></form>
-</div>
-</div>
-</div>
-</div>
-</body>
+                        
+                        
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
 </html>

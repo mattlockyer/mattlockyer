@@ -1,178 +1,212 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - IDE</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - IDE</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">What's an IDE?</a></li>
-<li><a href="#tabs-2">Environment</a></li>
-<li><a href="#tabs-3">Saving</a></li>
-<li><a href="#tabs-4">Hello Processing</a></li>
-<li><a href="#tabs-5">Comments</a></li>
-<li><a href="#tabs-6">Debugging</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Integrated Development Environment</h1>
-<p>
-An IDE provides not only a place to write code, but also to run that code and see the result. There are many features
-the Processing IDE offers, here are some:
-</p>
-<ul>
-<li>Compile and run code</li>
-<li>Save and manage projects (sketches)</li>
-<li>Syntax highlighting</li>
-<li>Console and message area for errors</li>
-<li>Find and replace text</li>
-<li>Auto formatting</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://processing.org/learning/">http://processing.org/learning/</a><br />
-<a href="http://processing.org/learning/gettingstarted/">http://processing.org/learning/gettingstarted/</a><br />
-<a href="http://processing.org/learning/overview/">http://processing.org/learning/overview/</a><br />
-</p>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Environment</h1>
-<img src="http://processing.org/learning/gettingstarted/imgs/Fig_02_01.gif" />
-<p>
-Take a look around when you open up Processing. The environment is very minimalist. The play button will run
-your sketch and the stop button will stop it.
- </p>
-<p style="clear:both;">
-There are some extras you should learn right away:
-</p>
-<ul>
-<li>CTRL (Command) R -> Run sketch</li>
-<li>CTRL (Command) S -> Save sketch (do often)</li>
-<li>CTRL (Command) T -> Format code (do often)</li>
-</ul>
-</div>
-<div id="tabs-3" class="tab">
-<h1>Saving</h1>
-<p>
-Processing will automatically create a folder for your sketch where you save it.
-All sketches must exist inside a folder with the same name as the sketch.<br />
-Here are a few golden rules about saving sketches:
-</p>
-<ul>
-<li>Save often</li>
-<li>Save as and make a new version when big progress has been made</li>
-<li>Use a good naming convention:</li>
-<ul>
-<li>Matt_Lockyer_Assignment1_Ver1</li>
-<li>Matt_Lockyer_Assignment1_Ver2</li>
-<li>Matt_Lockyer_Assignment1_Ver3</li>
-<li>...</li>
-</ul>
-<li>Always put your name on an assignment sketch before handing in</li>
-</ul>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Hello Processing</h1>
-<p>
-Printing a message to "Hello World" is one of the quintessential programming lessons of any language. Here's how we print
-out a message to the console with Processing:
-</p>
-<p>
-<span class="code">print("Hello World");</span><br />
-And if we'd like the next thing we print to be on the next line:<br />
-<span class="code">println("Hello World");</span><br />
-println is short for print line
-</p>
-</div>
-<div id="tabs-5" class="tab">
-<h1>Comments</h1>
-<p>
-It is highly recommended you comment your code. This will increase your understanding by providing you with hints and tips
-about what the code is doing. Here's how to write comments:
-</p>
-<p>
-<span style="color:#666">//This is a single line comment</span><br />
-<span style="color:#666">/* This</span><br />
-<span style="color:#666">is</span><br />
-<span style="color:#666">a</span><br />
-<span style="color:#666">multiline</span><br />
-<span style="color:#666">comment */</span><br />
-</p>
-<p>
-Comments are ignored by Processing when you press the play button.
-</p>
-</div>
-<div id="tabs-6" class="tab">
-<h1>Debugging</h1>
-<p>
-RUN YOUR CODE OFTEN! This will help you identify when something is not working (the last thing you were working on).
-Do not try and implement a bunch of features in your sketch and then hit run at the end only to find out something went
- wrong.
-</p>
-<p>
-Build a little, run, test, build more...
-</p>
-<p>
-If something doesn't work. Change one and <em>only</em> ONE thing at time! This practice alone will save you hours of debugging time.
-</p>
-<p>
-Debugging stands for removing errors from your code. Bugs in your code come in two varieties:
-</p>
-<ul>
-<li>A compile time error (the program won't run)</li>
-<ul>
-<li>Usually caused by a syntax error</li>
-<li>You mistyped something</li>
-<li>You missed a bracket</li>
-</ul>
-<li>A run time error (the program crashes)</li>
-<ul>
-<li>Usually accessing a variable that has not been initialized</li>
-<li>Trying to access an array position greater than the size of the array</li>
-<li>Logic errors (the code doesn't do what you expected it to)</li>
-</ul>
-</ul>
-<p>
-Bugs are called bugs because the first computers used vacuum tubes and when something went wrong, there usually was
-a bug in one of the tubes.
-</p>
-<p>
-Always print out the value of variables in your program when things are not behaving as you would expect. This is
-incredibly useful for finding the cause of runtime errors.
-</p>
-<p>
-Tracing code is a valuable skill. To practice follow some code through it's execution and watch the variables by printing
-out their values.
-</p>
-<p>
-ALWAYS CLOSE BRACKETS IMMEDIATELY WHEN YOU OPEN THEM!!!
-</p>
-<p>
-Bracket errors are the most difficult to find. Matching brackets for hours is a pointless and exhausting exercise.
-</p>
-</div>
-</div>
-</div>
-</div>
-</body>
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">What's an IDE?</a></li>
+                        <li><a href="#tabs-2">Environment</a></li>
+                        <li><a href="#tabs-3">Saving</a></li>
+                        <li><a href="#tabs-4">Hello Processing</a></li>
+                        <li><a href="#tabs-5">Comments</a></li>
+                        <li><a href="#tabs-6">Debugging</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+
+                        <h1>Integrated Development Environment</h1>
+                        <p>
+                            An IDE provides not only a place to write code, but also to run that code and see the result. There are many features
+                            the Processing IDE offers, here are some:
+                        </p>
+                        <ul>
+                            <li>Compile and run code</li>
+                            <li>Save and manage projects (sketches)</li>
+                            <li>Syntax highlighting</li>
+                            <li>Console and message area for errors</li>
+                            <li>Find and replace text</li>
+                            <li>Auto formatting</li>
+                        </ul>
+                        
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                            <a href="http://processing.org/learning/">http://processing.org/learning/</a><br />
+                            <a href="http://processing.org/learning/gettingstarted/">http://processing.org/learning/gettingstarted/</a><br />
+                            <a href="http://processing.org/learning/overview/">http://processing.org/learning/overview/</a><br />
+                        </p>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Environment</h1>
+                        
+                        <img src="http://processing.org/learning/gettingstarted/imgs/Fig_02_01.gif" />
+                        
+                        <p>
+                            Take a look around when you open up Processing. The environment is very minimalist. The play button will run
+                            your sketch and the stop button will stop it. 
+                        </p>
+                        <p style="clear:both;">
+                            There are some extras you should learn right away:
+                        </p>
+                        <ul>
+                            <li>CTRL (Command) R -> Run sketch</li>
+                            <li>CTRL (Command) S -> Save sketch (do often)</li>
+                            <li>CTRL (Command) T -> Format code (do often)</li>
+                        </ul>
+                        
+                    </div>
+
+                    <div id="tabs-3" class="tab">
+                        
+                        <h1>Saving</h1>
+                        <p>
+                            Processing will automatically create a folder for your sketch where you save it.
+                            All sketches must exist inside a folder with the same name as the sketch.<br />
+                            Here are a few golden rules about saving sketches:
+                        </p>
+                        <ul>
+                            <li>Save often</li>
+                            <li>Save as and make a new version when big progress has been made</li>
+                            <li>Use a good naming convention:</li>
+                            <ul>
+                                <li>Matt_Lockyer_Assignment1_Ver1</li>
+                                <li>Matt_Lockyer_Assignment1_Ver2</li>
+                                <li>Matt_Lockyer_Assignment1_Ver3</li>
+                                <li>...</li>
+                            </ul>
+                            <li>Always put your name on an assignment sketch before handing in</li>
+                        </ul>
+                        
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+                        
+                        <h1>Hello Processing</h1>
+                        <p>
+                            Printing a message to "Hello World" is one of the quintessential programming lessons of any language. Here's how we print
+                            out a message to the console with Processing:
+                        </p>
+                        <p>
+                            <span class="code">print("Hello World");</span><br /> 
+                            And if we'd like the next thing we print to be on the next line:<br />
+                            <span class="code">println("Hello World");</span><br /> 
+                            println is short for print line
+                        </p>
+                        
+                    </div>
+                    <div id="tabs-5" class="tab">
+                        <h1>Comments</h1>
+                        <p>
+                            It is highly recommended you comment your code. This will increase your understanding by providing you with hints and tips
+                            about what the code is doing. Here's how to write comments:
+                        </p>
+                        <p>
+                            <span style="color:#666">//This is a single line comment</span><br /> 
+                            <span style="color:#666">/* This</span><br /> 
+                            <span style="color:#666">is</span><br /> 
+                            <span style="color:#666">a</span><br /> 
+                            <span style="color:#666">multiline</span><br /> 
+                            <span style="color:#666">comment */</span><br />
+                        </p>
+                        <p>
+                            Comments are ignored by Processing when you press the play button.
+                        </p>
+
+                    </div>
+                    <div id="tabs-6" class="tab">
+                        <h1>Debugging</h1>
+                        <p>
+                            RUN YOUR CODE OFTEN! This will help you identify when something is not working (the last thing you were working on).
+                            Do not try and implement a bunch of features in your sketch and then hit run at the end only to find out something went
+                            wrong.
+                        </p>
+
+                        <p>
+                            Build a little, run, test, build more...
+                        </p>
+						<p>
+							If something doesn't work. Change one and <em>only</em> ONE thing at time! This practice alone will save you hours of debugging time.
+						</p>
+                        <p>
+                            Debugging stands for removing errors from your code. Bugs in your code come in two varieties:
+                        </p>
+                        <ul>
+                            <li>A compile time error (the program won't run)</li>
+                            <ul>
+                                <li>Usually caused by a syntax error</li>
+                                <li>You mistyped something</li>
+                                <li>You missed a bracket</li>
+                            </ul>
+                            <li>A run time error (the program crashes)</li>
+                            <ul>
+                                <li>Usually accessing a variable that has not been initialized</li>
+                                <li>Trying to access an array position greater than the size of the array</li>
+                                <li>Logic errors (the code doesn't do what you expected it to)</li>
+                            </ul>
+                        </ul>
+                        <p>
+                            Bugs are called bugs because the first computers used vacuum tubes and when something went wrong, there usually was
+                            a bug in one of the tubes.
+                        </p>
+                        <p>
+                            Always print out the value of variables in your program when things are not behaving as you would expect. This is
+                            incredibly useful for finding the cause of runtime errors.
+                        </p>
+                        <p>
+                            Tracing code is a valuable skill. To practice follow some code through it's execution and watch the variables by printing
+                            out their values.
+                        </p>
+                        <p>
+                            ALWAYS CLOSE BRACKETS IMMEDIATELY WHEN YOU OPEN THEM!!!
+                        </p>
+                        <p>
+                            Bracket errors are the most difficult to find. Matching brackets for hours is a pointless and exhausting exercise.
+                        </p>
+
+                    </div>
+                   
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
 </html>

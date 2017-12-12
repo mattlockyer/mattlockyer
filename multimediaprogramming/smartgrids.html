@@ -1,102 +1,122 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Smart Grids</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Smart Grids</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Space Filling</a></li>
-<li><a href="#tabs-3">Example</a></li>
-<li><a href="#tabs-4">Smart Grids</a></li>
-<li><a href="#tabs-5">Example</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Space Filling
-<ul>
-<li>Concept</li>
-<li>Steps</li>
-<li>Result</li>
-</ul>
-</li>
-<li>Smart Grids
-<ul>
-<li>Concept</li>
-<li>Steps</li>
-<li>Result</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://www.generative-gestaltung.de/P_2_2_5_01">Procedural Space Filling</a><br />
-<a href="http://www.generative-gestaltung.de/P_2_3_6_01">Procedural Smart Grids</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"Space is the breath of art." ~ Frank Llyod Wright
-</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Space Filling - Concept</h1>
-<img src="img/smartGrids/spaceFill.png" />
-<p>
-Take a look at this image. Notice how each circle takes up space without overlapping?
-They also know who their closest neighbor is and draw a line to them.
-</p>
-<p>
-The main idea here is to make "smart" decisions, before randomly placing objects on the screen. Let's take a look at how
-we do this:
-</p>
-<div class="rule"></div>
-<h1>Steps</h1>
-<p>
-First we need a plan to find out how this is going to work, so let's make some steps:
-</p>
-<ul>
-<li>Make a new Circle object</li>
-<li>Place it randomly with radius 1</li>
-<li>Check if it overlaps with any other
-<ul>
-<li>If it does we won't do anything</li>
-<li>If it does not continue</li>
-</ul>
-</li>
-<li>Find the closest neighbor to the new circle</li>
-<li>Keep setting the radius until we can't find a smaller one (best fit)</li>
-<li>Add the circle to the list</li>
-</ul>
-<p>
-There are two important steps in this guide: detecting an intersection, and finding the closest neighbor.
-</p>
-<h2>
-Detecting an Intersection:
-</h2>
-<form><textarea class="processingide" style="height:220px" noplay="true">
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Space Filling</a></li>
+                        <li><a href="#tabs-3">Example</a></li>
+                        <li><a href="#tabs-4">Smart Grids</a></li>
+                        <li><a href="#tabs-5">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Space Filling
+                                <ul>
+                                    <li>Concept</li>
+                                    <li>Steps</li>
+                                    <li>Result</li>
+                                </ul>
+                            </li>
+                            <li>Smart Grids
+                                <ul>
+                                    <li>Concept</li>
+                                    <li>Steps</li>
+                                    <li>Result</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                            <a href="http://www.generative-gestaltung.de/P_2_2_5_01">Procedural Space Filling</a><br />
+                            <a href="http://www.generative-gestaltung.de/P_2_3_6_01">Procedural Smart Grids</a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "Space is the breath of art." ~ Frank Llyod Wright 
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Space Filling - Concept</h1>
+
+                        <img src="img/smartGrids/spaceFill.png" />
+
+                        <p>
+                            Take a look at this image. Notice how each circle takes up space without overlapping?
+                            They also know who their closest neighbor is and draw a line to them.
+                        </p>
+                        <p>
+                            The main idea here is to make "smart" decisions, before randomly placing objects on the screen. Let's take a look at how
+                            we do this:
+                        </p>
+
+                        <div class="rule"></div>
+                        <h1>Steps</h1>
+                        <p>
+                            First we need a plan to find out how this is going to work, so let's make some steps:
+                        </p>
+                        <ul>
+                            <li>Make a new Circle object</li>
+                            <li>Place it randomly with radius 1</li>
+                            <li>Check if it overlaps with any other
+                                <ul>
+                                    <li>If it does we won't do anything</li>
+                                    <li>If it does not continue</li>
+                                </ul>
+                            </li>
+                            <li>Find the closest neighbor to the new circle</li>
+                            <li>Keep setting the radius until we can't find a smaller one (best fit)</li>
+                            <li>Add the circle to the list</li>
+                        </ul>
+
+                        <p>
+                            There are two important steps in this guide: detecting an intersection, and finding the closest neighbor.
+                        </p>
+                        <h2>
+                            Detecting an Intersection:
+                        </h2>
+                        <form><textarea class="processingide" style="height:220px" noplay="true">
 boolean hasIntersectionWith(Circle other) {
   float distance = dist(other.props.x, other.props.y, props.x, props.y);
   if (distance < (other.props.z + props.z)) { 
@@ -104,14 +124,14 @@ boolean hasIntersectionWith(Circle other) {
   }
   return false;
 }</textarea></form>
-<p>
-Here it's a simple collision detection, is the distance between these two circle
-objects less than the sum of their radii?
-</p>
-<h2>
-Finding the Closest Neighbor:
-</h2>
-<form><textarea class="processingide" style="height:220px" noplay="true">
+                        <p>
+                            Here it's a simple collision detection, is the distance between these two circle
+                            objects less than the sum of their radii?
+                        </p>
+                        <h2>
+                            Finding the Closest Neighbor:
+                        </h2>
+                        <form><textarea class="processingide" style="height:220px" noplay="true">
 void findClosestNeighbor(Circle other) {
   float distance = dist(other.props.x, other.props.y, props.x, props.y);
   if (props.z > distance - other.props.z) {
@@ -119,27 +139,32 @@ void findClosestNeighbor(Circle other) {
     neighbor = other.id;
   }
 }</textarea></form>
-<p>
-In this method, we're taking a look to see if the radius of our new circle it too big to fit next to the
-other circle we're currently checking. If it is, we will set the radius of the new circle to be exactly
-the distance between them minus the other circle's radius. We'll also update the neighbor field to the id of the
-other circle. This loop will keep going until the closest fit is found.
-</p>
-<p>
-This is actually an example of a classic problem in programming, finding the minimum value that will work.
-Each step in the loop, the radius of the new circle might get smaller and smaller, until finally, after checking
-all the other circles, it can't possibly be any smaller, so it must be fitting perfectly to the last circle that
-it was checked with. This is now the new circle's neighbor.
-</p>
-<div class="rule"></div>
-<h1>Result</h1>
-<img src="img/smartGrids/spaceFill2.png" />
-<div class="rule"></div>
-<div class="important">Sometimes it can be important to make some decisions before adding new objects to a design or game.</div>
-<div class="important">There's many ways to calculate optimal positioning, closest distance is just one.</div>
-</div>
- <div id="tabs-3" class="tab">
-<form><textarea class="processingide" style="height:580px">
+                        <p>
+                            In this method, we're taking a look to see if the radius of our new circle it too big to fit next to the
+                            other circle we're currently checking. If it is, we will set the radius of the new circle to be exactly
+                            the distance between them minus the other circle's radius. We'll also update the neighbor field to the id of the
+                            other circle. This loop will keep going until the closest fit is found.
+                        </p>
+                        <p>
+                            This is actually an example of a classic problem in programming, finding the minimum value that will work.
+                            Each step in the loop, the radius of the new circle might get smaller and smaller, until finally, after checking
+                            all the other circles, it can't possibly be any smaller, so it must be fitting perfectly to the last circle that
+                            it was checked with. This is now the new circle's neighbor.
+                        </p>
+                        <div class="rule"></div>
+                        <h1>Result</h1>
+
+                        <img src="img/smartGrids/spaceFill2.png" />
+
+                        <div class="rule"></div>
+
+                        <div class="important">Sometimes it can be important to make some decisions before adding new objects to a design or game.</div>
+                        <div class="important">There's many ways to calculate optimal positioning, closest distance is just one.</div>
+
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+                        <form><textarea class="processingide" style="height:580px">
 ArrayList<Circle> circles = new ArrayList<Circle>();
 
 int mouseRect = 30;
@@ -238,58 +263,65 @@ class Circle {
     line(props.x, props.y, circles.get(neighbor).props.x, circles.get(neighbor).props.y);
   }
 }</textarea></form>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Smart Grids - Concept</h1>
-<img src="img/smartGrids/smartGrid.png" />
-<p>
-Take a look at this grid? There's a special relationship between each cell containing a shape.
-The relationship is calculated using a formula to decide which piece should be at which tile.
-</p>
-<div class="rule"></div>
-<p>
-The formula is based on a binary number that is constructed from the east, south, west, and north
-neighbors of the current tile. If a neighbor is on, it has a value of '1', if it is off it has a value of '0'.
-</p>
-<p>
-The binary number is laid out like this: north + west + south + east.
-</p>
-<p>
-Which constructs a number something like 1101.
-</p>
-<p>
-Converting this number to a decimal will give us the index of the shape in the list of grid shapes that
-we need for this specific tile.
-</p>
-<p>
-So it's simply a clever way to encode and organize shapes based on the information of neighboring tiles.
-The formula can easily be constructed and the correct shape is always selected.
-</p>
-<div class="rule"></div>
-<h1>Steps</h1>
-<p>
-Let's take a look at the plan:
-</p>
-<ul>
-<li>Build a grid of objects</li>
-<li>Allow objects to be turned on (value = 1)</li>
-<li>Loop over entire grid and decide on shape:
-<ul>
-<li>Find east, south, west, north neighbor values</li>
-<li>Put them in a string: north + west + south + east</li>
-<li>Convert this number to a decimal number</li>
-<li>Use number as shape index to select correct shape from shapes array</li>
-</ul>
-</li>
-<li>Draw shapes</li>
-</ul>
-<p>
-There is one crucial step here:
-</p>
-<h2>
-Calculating the formula:
-</h2>
-<form><textarea class="processingide" style="height:520px" noplay="true">
+                       
+                    </div>
+
+                    <div id="tabs-4" class="tab">
+                        <h1>Smart Grids - Concept</h1>
+
+                        <img src="img/smartGrids/smartGrid.png" />
+
+                        <p>
+                            Take a look at this grid? There's a special relationship between each cell containing a shape.
+                            The relationship is calculated using a formula to decide which piece should be at which tile.
+                            
+                        </p>
+                        <div class="rule"></div>
+                        <p>
+                            The formula is based on a binary number that is constructed from the east, south, west, and north
+                            neighbors of the current tile. If a neighbor is on, it has a value of '1', if it is off it has a value of '0'.
+                        </p>
+                        <p>
+                            The binary number is laid out like this: north + west + south + east.
+                        </p>
+                        <p>
+                            Which constructs a number something like 1101.
+                        </p>
+                        <p>
+                            Converting this number to a decimal will give us the index of the shape in the list of grid shapes that
+                            we need for this specific tile.
+                        </p>
+                        <p>
+                            So it's simply a clever way to encode and organize shapes based on the information of neighboring tiles.
+                            The formula can easily be constructed and the correct shape is always selected.
+                        </p>
+                       
+                        <div class="rule"></div>
+                        <h1>Steps</h1>
+                        <p>
+                            Let's take a look at the plan:
+                        </p>
+                        <ul>
+                            <li>Build a grid of objects</li>
+                            <li>Allow objects to be turned on (value = 1)</li>
+                            <li>Loop over entire grid and decide on shape:
+                                <ul>
+                                    <li>Find east, south, west, north neighbor values</li>
+                                    <li>Put them in a string: north + west + south + east</li>
+                                    <li>Convert this number to a decimal number</li>
+                                    <li>Use number as shape index to select correct shape from shapes array</li>
+                                </ul>
+                            </li>
+                            <li>Draw shapes</li>
+                        </ul>
+
+                        <p>
+                            There is one crucial step here:
+                        </p>
+                        <h2>
+                            Calculating the formula:
+                        </h2>
+                        <form><textarea class="processingide" style="height:520px" noplay="true">
 void drawModules() {
   for (int gridY=1; gridY< gridResolutionY-1; gridY++) {  
     for (int gridX=1; gridX< gridResolutionX-1; gridX++) {
@@ -310,40 +342,52 @@ void drawModules() {
     }
   }
 }</textarea></form>
-<p>
-The binaryResult is passed the the draw module method of the shape which handles converting it to a decimal.
-Once it's in decimal form, it's a number between 0 and 15 since it has 4 binary digits.
-</p>
-<p>
-This is because, each digit represents a choice between <strong>0 and 1</strong>, which is a <strong>bit</strong> of information.
-</p>
-<p>
-Since we have <strong>4 bits</strong> of information, we can make 4 choices of <strong>0 and 1</strong>. (4 choices of 2 choices)
-</p>
-<p>
-That means: <strong>2 x 2 x 2 x 2 = 16</strong>, or <strong>2^4</strong>, or <strong>0-15</strong> total possibilities.
-</p>
-<img src="img/smartGrids/allPieces.jpg" />
-<p>
-Now we choose our shape from these shapes using the decimal number as an index into the array.
- </p>
-<p>
-Shapes are 0-15 left to right, top to bottom.
-</p>
-<div class="rule"></div>
-<h1>Result</h1>
-<img src="img/smartGrids/smartGrid2.png" />
-<div class="rule"></div>
-<div class="important">Information about surrounding objects can be valuable in determining visual appearance.</div>
-<div class="important">There are many formulas and techniques that can be created for this type of challenge.</div>
-</div>
-<div id="tabs-5" class="tab">
-<iframe src="applets/smartGrids/index.html" width="100%" height="640">
+                        <p>
+                            The binaryResult is passed the the draw module method of the shape which handles converting it to a decimal.
+                            Once it's in decimal form, it's a number between 0 and 15 since it has 4 binary digits.
+                        </p>
+                        <p>
+                            This is because, each digit represents a choice between <strong>0 and 1</strong>, which is a <strong>bit</strong> of information.
+                        </p>
+                        <p>
+                            Since we have <strong>4 bits</strong> of information, we can make 4 choices of <strong>0 and 1</strong>. (4 choices of 2 choices)
+                        </p>
+                        <p>
+                            That means: <strong>2 x 2 x 2 x 2 = 16</strong>, or <strong>2^4</strong>, or <strong>0-15</strong> total possibilities.
+                        </p>
+                        
+                        <img src="img/smartGrids/allPieces.jpg" />
+                        <p>
+                            Now we choose our shape from these shapes using the decimal number as an index into the array.
+                        </p>
+                        <p>
+                            Shapes are 0-15 left to right, top to bottom.
+                        </p>
+                        
+                        <div class="rule"></div>
+                         <h1>Result</h1>
+
+                        <img src="img/smartGrids/smartGrid2.png" />
+
+                        <div class="rule"></div>
+
+                        <div class="important">Information about surrounding objects can be valuable in determining visual appearance.</div>
+                        <div class="important">There are many formulas and techniques that can be created for this type of challenge.</div>
+
+                    </div>
+
+                    <div id="tabs-5" class="tab">
+                        <iframe src="applets/smartGrids/index.html" width="100%" height="640">
                         Your browser doesn't support iframes
                         </iframe>
-</div>
-</div>
-</div>
-</div>
-</body>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
 </html>

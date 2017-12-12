@@ -1,96 +1,114 @@
 <!doctype html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Multimedia Programming - Advanced Objects</title>
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
-<link type="text/css" rel=StyleSheet href="css/module.css">
-<link type="text/css" rel=StyleSheet href="css/ide.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Multimedia Programming - Advanced Objects</title>
 
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
-<script type="text/javascript" src="js/module.js"></script>
+        <link type="text/css"  rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css"/>	
+        <link type="text/css" rel=StyleSheet href="css/module.css">	
+        <link type="text/css" rel=StyleSheet href="css/ide.css">
+        <!--
+        JQuery Stuff
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+        <script type="text/javascript" src="js/module.js"></script>
+        <!-- Syntax Highlighter
+        <script type="text/javascript" src="js/hightlighter/shCore.js"></script> 
+        <script type="text/javascript" src="js/hightlighter/shProcessing.js"></script> 
+        <link type="text/css" rel="stylesheet" href="css/highlighter/shCoreDefault.css"/>
+        -->
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="css/cm/processingide.css">
+        <script type="text/javascript" src="js/cm/codemirror.js"></script>
+        <script type="text/javascript" src="js/cm/clike.js"></script>
+        <link rel="stylesheet" href="css/cm/processing.css">
+        <!-- Processing.js -->
+        <script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+
+        <style>.CodeMirror {border: 2px inset #dee;}</style>
 
 
-<link rel="stylesheet" href="css/cm/processingide.css">
-<script type="text/javascript" src="js/cm/codemirror.js"></script>
-<script type="text/javascript" src="js/cm/clike.js"></script>
-<link rel="stylesheet" href="css/cm/processing.css">
+    </head>
+    <body>
 
-<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
-<style>.CodeMirror {border: 2px inset #dee;}</style>
-</head>
-<body>
-<div id="wrapper">
-<div id="container">
-<div id="tabs">
-<ul>
-<li><a href="index.html">Back</a></li>
-<li><a href="#tabs-1">Goals</a></li>
-<li><a href="#tabs-2">Composition and Data</a></li>
-<li><a href="#tabs-3">Example</a></li>
-<li><a href="#tabs-4">Recursive Objects</a></li>
-<li><a href="#tabs-5">Example</a></li>
-</ul>
-<div id="tabs-1" class="tab">
-<h1>Goals</h1>
-<ul>
-<li>Composition and Data
-<ul>
-<li>Objects in Objects</li>
-<li>Bookkeeping</li>
-<li>Example</li>
-</ul>
-</li>
-<li>Recursive Objects (sort of)
-<ul>
-<li>Constructor Setup</li>
-<li>Seeding Randomly</li>
-<li>Sampling Area</li>
-</ul>
-</li>
-</ul>
-<div class="rule"></div>
-<h1>Resources</h1>
-<p>
-<a href="http://en.wikipedia.org/wiki/Dynamic_programming">Dynamic Programming</a><br />
-<a href="http://hillside.net/plop/plop98/final_submissions/P21.pdf">Recursive Object Pattern (paper)</a><br />
-</p>
-<div class="rule"></div>
-<div class="quote">
-"No object is so beautiful that, under certain conditions, it will not look ugly." ~ Oscar Wilde
-</div>
-</div>
-<div id="tabs-2" class="tab">
-<h1>Objects in Objects</h1>
-<img src="http://www.celinio.net/techblog/wp-content/uploads/2008/08/uml1.jpg" />
-<p>
-Every time we make an object it has some fields. But what if those fields are other objects. Then there is a much more complex relationship that
-must be maintained in your code.
-</p>
-<p>
-Take for example the car class in the image to the left. Two relationships are shown: aggregation and composition.
-</p>
-<p>
-Aggregation: the Tyre (or Tire...) has an "is part of" relationship with the Car. Since a Tyre will still be a Tyre if not used specifically as a
-field in a Car class.
-</p>
-<p>
-Composition: the Carburetor on the other hand has an "uses a" relationship with the Car. Since a Carburetor is essentially useless without a Car to
-use it, we say that a Car is "composed of" the class Carburetor.
-</p>
-<p>
-The types and numbers of objects stored within other objects may change, these are basic relationships to think about when designing your classes.
-</p>
-<div class="rule"></div>
-<h1>Bookkeeping</h1>
-<p>
-It's important to keep all objects up to date. Including those stored inside another object.
-</p>
-<p>
-A typical scenario is updating a list inside an object. Here's some code from an object that stores and updates a list of positions:
-</p>
-<form><textarea class="processingide" style="height:280px" noplay="true">
+        <div id="wrapper">
+
+            <div id="container">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="index.html">Back</a></li>
+                        <li><a href="#tabs-1">Goals</a></li>
+                        <li><a href="#tabs-2">Composition and Data</a></li>
+                        <li><a href="#tabs-3">Example</a></li>
+                        <li><a href="#tabs-4">Recursive Objects</a></li>
+                        <li><a href="#tabs-5">Example</a></li>
+                    </ul>
+                    <div id="tabs-1" class="tab">
+                        <h1>Goals</h1>
+                        <ul>
+                            <li>Composition and Data
+                                <ul>
+                                    <li>Objects in Objects</li>
+                                    <li>Bookkeeping</li>
+                                    <li>Example</li>
+                                </ul>
+                            </li>
+                            <li>Recursive Objects (sort of)
+                                <ul>
+                                    <li>Constructor Setup</li>
+                                    <li>Seeding Randomly</li>
+                                    <li>Sampling Area</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="rule"></div>
+                        <h1>Resources</h1>
+                        <p>
+                            <a href="http://en.wikipedia.org/wiki/Dynamic_programming">Dynamic Programming</a><br />
+                            <a href="http://hillside.net/plop/plop98/final_submissions/P21.pdf">Recursive Object Pattern (paper)</a><br />
+                        </p>
+                        <div class="rule"></div>
+                        <div class="quote">
+                            "No object is so beautiful that, under certain conditions, it will not look ugly." ~ Oscar Wilde
+                        </div>
+
+                    </div>
+                    <div id="tabs-2" class="tab">
+
+                        <h1>Objects in Objects</h1>
+
+                        <img src="http://www.celinio.net/techblog/wp-content/uploads/2008/08/uml1.jpg" />
+
+                        <p>
+                            Every time we make an object it has some fields. But what if those fields are other objects. Then there is a much more complex relationship that
+                            must be maintained in your code.
+                        </p>
+                        <p>
+                            Take for example the car class in the image to the left. Two relationships are shown: aggregation and composition.
+                        </p>
+                        <p>
+                            Aggregation: the Tyre (or Tire...) has an "is part of" relationship with the Car. Since a Tyre will still be a Tyre if not used specifically as a
+                            field in a Car class.
+                        </p>
+                        <p>
+                            Composition: the Carburetor on the other hand has an "uses a" relationship with the Car. Since a Carburetor is essentially useless without a Car to
+                            use it, we say that a Car is "composed of" the class Carburetor.
+                        </p>
+                        <p>
+                            The types and numbers of objects stored within other objects may change, these are basic relationships to think about when designing your classes.
+                        </p>
+                        <div class="rule"></div>
+                        <h1>Bookkeeping</h1>
+                        <p>
+                            It's important to keep all objects up to date. Including those stored inside another object.
+                        </p>
+                        <p>
+                            A typical scenario is updating a list inside an object. Here's some code from an object that stores and updates a list of positions:
+                        </p>
+                        <form><textarea class="processingide" style="height:280px" noplay="true">
 //add the latest position
 pieces.add(0, new PVector( xPos, yPos, atan2(yVel, xVel) ) );
 //remove old position if ribbon is too long
@@ -101,13 +119,15 @@ if (pieces.size() > maxLength) {
 for (int i = 0; i < pieces.size(); i++) {
   pieces.get(i).add( grav );
 }</textarea></form>
-<div class="rule"></div>
-<div class="important">Composition means Object A stores types of Object B and Object B is essentially useless without Object A.</div>
-<div class="important">Aggregation means Object A stores types of Object B but Object B can be used on it's own.</div>
-<div class="important">Bookkeeping methods update the information inside an object including lists containing other objects.</div>
-</div>
-<div id="tabs-3" class="tab">
-<form><textarea class="processingide" style="height:580px">
+                        <div class="rule"></div>
+
+                        <div class="important">Composition means Object A stores types of Object B and Object B is essentially useless without Object A.</div>
+                        <div class="important">Aggregation means Object A stores types of Object B but Object B can be used on it's own.</div>
+                        <div class="important">Bookkeeping methods update the information inside an object including lists containing other objects.</div>
+
+                    </div>
+                    <div id="tabs-3" class="tab">
+                        <form><textarea class="processingide" style="height:580px">
 ArrayList<Ball> ballList = new ArrayList<Ball>();
 void setup() {
   size(600, 600);
@@ -233,53 +253,56 @@ class Ribbon extends Ball {
     endShape(CLOSE);
   }
 }</textarea></form>
-</div>
-<div id="tabs-4" class="tab">
-<h1>Recursive Objects - Constructor Setup</h1>
-<p>
-Take a look at the following recursive method call:<br />
-<span class="code">drawBranch(x, y, px, py, angle - PI/4 * xMouse, step);</span><br />
-Notice that the drawBranch method call has a number of arguments.<br />
-Every recursive method has at least 1 parameter. Recursive objects are no different.
-</p>
-<p>
-We must set up the constructor of an object with parameters that can define a new object in relation to an old one.
-</p>
-<p>
-Take a look at this constructor:<br />
-<span class="code">Segment(float x, float y, float angle, float life) { ... }</span><br />
-When we call new Segment( ... ) we can provide arguments for the location, angle, and life of this new Segment object.<br />
-This means that previous Segment objects can now seed new Segment objects with the appropriate values.
-</p>
-<div class="rule"></div>
-<h1>Seeding Randomly</h1>
-<p>
-It's been talked about before, but making random decisions is a powerful concept:
-</p>
- <p>
-The basic setup is this:<br />
-<span class="code">if ( random(0, 32) < 1) { ... }</span><br />
-Since the random(0, 32) method call returns a float from 0 to 31.99... We have approximately a 1 in 32 chance that the
-random number is less than 1, or between 0 and 0.99...
-</p>
-<p>
-Using this logic, we can decide to seed our recursive objects randomly, and they can also seed objects randomly, and so on.
-</p>
-<p>
-Why not create new recursive objects all the time? Because we would create so many objects so fast, that it would neither look good
-nor would it run properly, crashing our program due to too many objects.
-</p>
-<div class="rule"></div>
-<h1>Sampling Area</h1>
-<p>
-Somewhat off topic. Say we have an object drawing onto the screen, where other objects are also drawing.<br />
-Perhaps we don't want this object to "run over" the other objects already drawn. But there's no information there, only
-the pixels that have been colored. What we need to do is sample the pixels and make sure they haven't been drawn yet.
-</p>
-<p>
-The basic idea is this:
-</p>
-<form><textarea class="processingide" style="height:400px" noplay="true">
+                                                </div>
+
+                            <div id="tabs-4" class="tab">
+                                <h1>Recursive Objects - Constructor Setup</h1>
+                                <p>
+                                    Take a look at the following recursive method call:<br/>
+                                    <span class="code">drawBranch(x, y, px, py, angle - PI/4 * xMouse, step);</span><br/>
+                                    Notice that the drawBranch method call has a number of arguments.<br/>
+                                    Every recursive method has at least 1 parameter. Recursive objects are no different.
+                                </p>
+                                <p>
+                                    We must set up the constructor of an object with parameters that can define a new object in relation to an old one.
+                                </p>
+                                <p>
+                                    Take a look at this constructor:<br/>
+                                    <span class="code">Segment(float x, float y, float angle, float life) { ... }</span><br/>
+                                    When we call new Segment( ... ) we can provide arguments for the location, angle, and life of this new Segment object.<br/>
+                                    This means that previous Segment objects can now seed new Segment objects with the appropriate values.
+                                </p>
+
+                                <div class="rule"></div>
+                                <h1>Seeding Randomly</h1>
+                                <p>
+                                    It's been talked about before, but making random decisions is a powerful concept:
+                                </p>
+                                <p>
+                                    The basic setup is this:<br/>
+                                    <span class="code">if ( random(0, 32) < 1) { ... }</span><br/>
+                                    Since the random(0, 32) method call returns a float from 0 to 31.99... We have approximately a 1 in 32 chance that the
+                                    random number is less than 1, or between 0 and 0.99...
+                                </p>
+                                <p>
+                                    Using this logic, we can decide to seed our recursive objects randomly, and they can also seed objects randomly, and so on.
+                                </p>
+                                <p>
+                                    Why not create new recursive objects all the time? Because we would create so many objects so fast, that it would neither look good
+                                    nor would it run properly, crashing our program due to too many objects.
+                                </p>
+
+                                <div class="rule"></div>
+                                <h1>Sampling Area</h1>
+                                <p>
+                                    Somewhat off topic. Say we have an object drawing onto the screen, where other objects are also drawing.<br/>
+                                    Perhaps we don't want this object to "run over" the other objects already drawn. But there's no information there, only
+                                    the pixels that have been colored. What we need to do is sample the pixels and make sure they haven't been drawn yet.
+                                </p>
+                                <p>
+                                    The basic idea is this:
+                                </p>
+                                                    <form><textarea class="processingide" style="height:400px" noplay="true">
 boolean found = false;
 loadPixels();
 for (int i = -1; i < 1; i++) {
@@ -301,12 +324,17 @@ for (int i = -1; i < 1; i++) {
   if (found) break;
 }//for i    
 if (found) { /* do something with your object */ }</textarea></form>
-<div class="rule"></div>
-<div class="important">Every recursive definition requires at least 1 parameter.</div>
-<div class="important">Seeding must be done randomly and not so fast that too many objects are created.</div>
-</div>
-<div id="tabs-5" class="tab">
-<form><textarea class="processingide" style="height:580px">
+                                
+                        <div class="rule"></div>
+
+                        <div class="important">Every recursive definition requires at least 1 parameter.</div>
+                        <div class="important">Seeding must be done randomly and not so fast that too many objects are created.</div>
+                                                </div>
+
+
+
+                                                <div id="tabs-5" class="tab">
+                                                    <form><textarea class="processingide" style="height:580px">
 int step = 2;
 ArrayList<Segment> segs = new ArrayList();
 void setup() {
@@ -478,9 +506,13 @@ class SmartCurveSegment extends SmartSegment {
     //endif
   }
 }</textarea></form>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+                                                </div>
+
+                                                </div>
+
+                                                </div>
+                                                </div>
+
+
+                                                </body>
+                                                </html>
