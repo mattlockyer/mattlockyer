@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - 3D Topics</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Z Axis</a></li>
+<li><a href="#tabs-3">Challenges</a></li>
+<li><a href="#tabs-4">PVectors</a></li>
+<li><a href="#tabs-5">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Understanding 3D</li>
+<li>The Z-Axis
+<ul>
+<li>Depth</li>
+<li>Perspective</li>
+<li>Camera</li>
+</ul>
+</li>
+<li>Challenges
+<ul>
+<li>Camera: Fixed or Floating</li>
+<li>Generative Work</li>
+<li>Games: Extra Work</li>
+</ul>
+</li>
+<li>The Return of the PVector</li>
+</ul>
+<div class="rule"></div>
+<h1>Resources</h1>
+<ul>
+<a href="http://processing.org/learning/3d/">http://processing.org/learning/3d/</a>
+</ul>
+<div class="rule"></div>
+<div class="quote">
+"What's troubling is that because the camera is 3D, the northern part of the screen isn't necessarily north anymore.
+So the jungle transforms into the true meaning of a jungle. For someone with no sense of direction like myself,
+I get lost in the caves every time." ~ Hideo Kojima
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>Depth</h1>
+<img src="http://www.processing.lyndondaniels.com/images/3dAxis.jpg"></img>
+<p>
+We already know in our 2D processing experience that the x axis moves left and right, and the y axis moves up and down. But what if we
+add another dimension to this system? Moving in and out of the screen, otherwise known as the z axis.</p>
+<p>
+The top left wall of this image is our original processing screen, but now we have an extra dimension, how close or far our objects are.</p>
+<div class="rule"></div>
+<h1>Perspective</h1>
+<img src="http://upload.wikimedia.org/wikipedia/en/e/e1/ViewFrustum_01.png"></img>
+<p>
+When working in 3D it can be useful to control the perspective. What actually ends up on screen is not always the same image.
+</p>
+<p>
+Just like in the real world, perspectives can be changed, skewed, even distorted.
+</p>
+<p>
+This image represents the <strong>"view frustum"</strong> which is the object that captures the 3D scene and decides how it will get translated into 2D before appearing
+on the screen.
+</p>
+<div class="rule"></div>
+<p>
+In processing you control the size and shape of the view frustum using the perspective() method.
+</p>
+<p>
+<span class="code">perspective(fov, aspect, z-near, z-far);</span><br />
+Where:<br />
+fov = field of view (default = PI/3.0, larger fov makes further objects smaller)<br />
+aspect = aspect ratio of screen (default = (float)width/(float)height)<br />
+z-near = z-near clipping plane, how close can the closest object be<br />
+z-far = z-far clipping plane, how far can the farthest object be<br />
+</p>
+<div class="rule"></div>
+<h1>Camera</h1>
+<img src="http://upload.wikimedia.org/wikipedia/commons/f/f4/Studijskifotoaparat.JPG" width="400" height="400"></img>
+<p>
+We also must specify where our camera is. This is done using the camera() method.
+</p>
+<p>
+The camera method has 9 parameters, but can be broken down into 3 groups: position, target position, tilt.
+</p>
+<div class="rule"></div>
+<p>
+Here's an example call to the perspective method using PVectors for each of the groups:
+</p>
+<p>
+<span class="code">camera(pos.x, pos.y, pos.z,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;target.x, target.y, target.z,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tilt.x, tilt.y, tilt.z);</span><br />
+Where:<br />
+pos = the position of the camera in 3-space<br />
+target = the viewing target of the camera (what is it looking at)<br />
+tilt = which way is up (default = (0, 1, 0) y-axis is up)<br />
+</p>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Challenges</h1>
+<img src="http://1.bp.blogspot.com/_f1__EIMU7zw/TSB-VOEqEkI/AAAAAAAAADE/nlXqoNzoZ-M/s320/challenges.gif"></img>
+<p>
+Adding an extra dimension may sound like a good idea in the beginning. However, this can open up a number of new and unexpected challenges.
+ </p>
+<div class="rule"></div>
+<h1>Camera: Fixed or Floating</h1>
+<p>
+There are lots of problems when it comes to choosing the type of camera for a 3D environment. Where is your camera going to be, will it capture all the
+action? Can a user see everything? Are there objects in the way? These are just a few of the issues that arise.
+</p>
+<p>
+In 2D the worst problem we had to encounter was called the <strong>painter's algorithm</strong>. Each item that was drawn to the screen would overlap
+all other existing items. In this way, the surface of the screen was built up like a stack. The first items on were at the bottom of the stack,
+and the last item drawn would be at the top.
+</p>
+<h2>Fixed Camera</h2>
+<p>
+We can choose to fix our camera in 3D to a specific location, such that it never moves. This will basically leave us with the same problems of a 2D scene,
+although instead of the painter's algorithm, choosing the order in which to paint items, we'll have to order them along the z axis.
+</p>
+<p>
+A fixed camera can also mean that the camera is fixed along a 1 or 2 axes, so the camera may move left and right, or up and down with the scene.
+The issues are the same as above. Objects must have the correct z depth to be visible.
+</p>
+<h2>Floating Camera</h2>
+<p>
+This is where things become difficult. Not only do you have to worry about the items in your scene being in the correct place to be visible,
+the camera as it floats around may get stuck behind items. When items are hidden from view, this is called <strong>occlusion</strong>.
+</p>
+<p>
+If the user should interact with Block A, but the camera is behind Block B so that Block A is occluded, there's really not much that can happen.
+</p>
+<p>
+Additionally, a constantly moving camera must be smooth and not jerky, but fast enough to catch the action. There are many challenges here.
+</p>
+<div class="rule"></div>
+<h1>Generative Work</h1>
+<p>
+Up until now, our generative pieces in 2D all have had something in common. We don't clear the background so that the image can grow as it is generated.
+</p>
+<p>
+This is possible in 3D but with one significant drawback. The camera cannot move. Which begs the question, why use 3D at all?
+</p>
+<p>
+If the camera is moved, the entire scene must be re-drawn to account for the changed perspective. With some generative pieces drawing millions of shapes, this
+is not an easy task.
+</p>
+<div class="rule"></div>
+<h1>Games: Extra Work</h1>
+<p>
+Think about a collision in 2D, we only have to check 2 conditions for a simple box collision. But in 3D we have that extra dimension to worry about.
+Now ever box has a width, height AND depth.
+</p>
+<p>
+The bounds of the world are also an additional headache. we must make sure our objects don't go outside the x and y axis as well as the z axis.
+This simply means more checks and more if statements. With a large number of objects in a scene, this will theoretically slow down a program to 66% of it's
+2D counterpart.
+</p>
+<p>
+The only saving grace when moving to 3D is circular collisions / interactions.
+While the distance formula now needs to incorporate the z dimension. The check whether
+it is less than the combined radii of the two objects for a collision remains the same.
+</p>
+</div>
+<div id="tabs-4" class="tab">
+<h1>PVectors</h1>
+<p>
+PVectors are a special datatype in Processing that store x, y, and z components. They also have a lot of useful built in math functions.
+</p>
+<p>
+Using methods, we can add, sub, mult, div, dot, normalize, mag, limit... etc... our PVector objects.
+</p>
+<p>
+When working in 3D there's absolutely no reason to not use PVectors. There are so many small additions and multiplications that can be
+avoided by learning to use the PVector object efficiently.
+</p>
+<h2>A Note on C++ (and some other languages)</h2>
+<p>
+When working with vectors in C++, you can have vectors of any type (int, float, bool...). Also, the math operators (+, -, *, /, +=, -=, ...) can
+be overloaded, which means that adding two vectors is as easy as: Vec1 += Vec2.
+</p>
+</div>
+<div id="tabs-5" class="tab">
+<form><textarea class="processingide" style="height:580px">
+float bound = 512; //sets a boundary for objects
+
+ArrayList ballList = new ArrayList();
+//stores camera information so we can move around
+Camera cam = new Camera();
+
+void setup() {
+  size(512, 512, OPENGL);
+  sphereDetail(6); //Set low for low power systems
+  perspective(PI/2.2, (float)width/(float)height, 0.2, bound * 4);
+  lights();
+}
+
+void draw() {
+  background(0);
+
+  directionalLight(64, 64, 64, 0, 1, 0);
+  directionalLight(255, 255, 220, 0, -1, 0);
+  directionalLight(255, 255, 220, 1, -1, 0);
+  directionalLight(255, 255, 220, -1, -1, 0);
+
+  if (mousePressed) {
+    ballList.add(new Ball());
+  }
+
+  cam.update();
+  camera(cam.pos.x, cam.pos.y, cam.pos.z,
+  cam.target.x, cam.target.y, cam.target.z,
+  cam.tilt.x, cam.tilt.y, cam.tilt.z);
+
+  //draw a bounding box for the scene
+  stroke(255);
+  noFill();
+  box(bound);
+  noStroke();
+
+  //loop through ballList
+  for (int i = 0; i < ballList.size(); i++) {
+    Ball b = (Ball) ballList.get(i);
+    for (int j = i; j < ballList.size(); j++) {
+      Ball b2 = (Ball) ballList.get(j);
+      b.repel(b2, 64);
+    }
+    b.updatePos();
+    b.wallCollision();
+    b.drawMe();
+  }
+}
+
+//Will need a Camera object named cam to use this code
+void keyPressed() {
+  if (key == 'q') cam.up = true;
+  if (key == 'e') cam.down = true;
+  if (key == 'w') cam.in = true;
+  if (key == 'a') cam.left = true;
+  if (key == 's') cam.out = true;
+  if (key == 'd') cam.right = true;
+}
+void keyReleased() {
+  if (key == 'q') cam.up = false;
+  if (key == 'e') cam.down = false;
+  if (key == 'w') cam.in = false;
+  if (key == 'a') cam.left = false;
+  if (key == 's') cam.out = false;
+  if (key == 'd') cam.right = false;
+}
+
+//A simple Ball Object
+class Ball {
+  //fields
+  PVector pos, vel, acc;
+  float mass, damp;
+  int decay;
+  color c;
+
+  //constructor
+  Ball() {
+    //pos = new PVector(0, 0, 0);
+    //vel = new PVector(random(-8, 8), random(-8, 8), random(-8, 8));
+    vel = new PVector(0, 0, 0);
+    acc = new PVector(0,0,0);
+    mass = random(4, 16);
+    pos = new PVector(random(-bound/2 + mass, bound/2 - mass),
+                        random(-bound/2 + mass, bound/2 - mass),
+                        random(-bound/2 + mass, bound/2 - mass));
+    
+    damp = 0.99;
+    decay = 255;
+    c = color(random(255), random(255), random(255));
+  }
+
+  void repel(Ball o, float force) {
+    PVector dir = PVector.sub(pos, o.pos);
+    float distSq = sq(dir.mag());
+    if (distSq > 1) {
+      dir.normalize();
+      float f = 1/distSq * 32 * force;
+      
+      acc.add( PVector.mult( dir, f / mass ) );
+      o.acc.sub( PVector.mult( dir, f / o.mass ) );
+    }
+  }
+
+  //method to update velocity, position and clear forces from our acceleration
+  void updatePos() {
+    vel.add(acc);
+    vel.mult(damp);
+    pos.add(vel);
+    acc.set(0,0,0);
+
+    if (decay < 1) {
+      ballList.remove(this);
+    }
+  }
+
+  //wall collisions
+  void wallCollision() {
+    if (abs(pos.x) > bound/2 - mass) {
+      vel.x *= -1;
+    }
+    if (abs(pos.y) > bound/2 - mass) {
+      vel.y *= -1;
+    }
+    if (abs(pos.z) > bound/2 - mass) {
+      vel.z *= -1;
+    }
+  }
+
+  void drawMe() {
+    fill(red(c) - (255 - decay), green(c) - (255 - decay), blue(c) - (255 - decay));
+    pushMatrix();
+    translate(pos.x, pos.y, pos.z);
+    sphere(mass);
+    popMatrix();
+    decay--;
+  }
+}
+
+//Stores and updates our camera information
+//Keeps track of keyPresses, multiple keys can be down at one time
+class Camera {
+
+  PVector pos, target, tilt;
+  boolean up, down, left, right, in, out;
+  float angle, zoom, speed;
+
+  Camera() {
+    pos = new PVector(0, 0, 0); //place outside the boundary of our objects
+    target = new PVector(0, 0, 0); //look at the origin
+    tilt = new PVector(0, 1, 0); //tilt the y axis up
+    up = down = left = right = in = out;
+    angle = 0;
+    zoom = bound;
+    speed = 8;
+  }
+  void update() {
+    if (up) pos.y -= speed;
+    if (down) pos.y += speed;
+    if (left) angle += speed/512;
+    if (right) angle -= speed/512;
+    if (in) zoom -= speed;
+    if (out) zoom += speed;
+    
+    pos.x = zoom * cos(angle);
+    pos.z = zoom * sin(angle);
+  }
+}</textarea></form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

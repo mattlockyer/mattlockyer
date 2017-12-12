@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Recursion</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Definition</a></li>
+<li><a href="#tabs-3">Components</a></li>
+<li><a href="#tabs-4">Heads or Tails</a></li>
+<li><a href="#tabs-5">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Understanding Recursion
+<ul>
+<li>Defining Recursion</li>
+<li>Components of Recursion</li>
+<li>Head Recursion</li>
+<li>Tail Recursion</li>
+</ul>
+</li>
+</ul>
+<div class="rule"></div>
+<h1>Resources</h1>
+<p>
+<a href="http://processing.org/learning/basics/functions.html">http://processing.org/learning/basics/functions.html</a><br />
+</p>
+<div class="rule"></div>
+<div class="quote">
+"To understand recursion, you must first understand recursion." ~ Anon
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>Defining Recursion</h1>
+<p>
+Recursion is defined as the repeated application of a recursive definition.<br />
+A recursive definition is a method who's output for a specific input is based on the output of the same method with related but
+different inputs.<br />
+Some examples from nature:
+</p>
+<p>
+<ul>
+<li>A section of a shell spiral is a different sized copy of the section before it</li>
+<li>A tree branch can sprout another branch like the trunk that sprouted it</li>
+<li>A cell divides in two, each copy has the ability to divide in two, like the first</li>
+</ul>
+</p>
+<img src="img/recursion/recursion1.jpg" style="width:300px; height:300px;" />
+<img src="img/recursion/recursion2.jpg" style="width:300px; height:300px;" />
+<img src="img/recursion/recursion3.jpg" style="width:300px; height:300px;" />
+<img src="img/recursion/recursion4.jpg" style="width:300px; height:300px;" />
+<img src="img/recursion/recursion5.jpg" style="width:300px; height:300px;" />
+<img src="img/recursion/recursion6.jpg" style="width:300px; height:300px;" />
+<div class="rule"></div>
+<div class="important">Recursion is based on a recursive definition. It is a way to describe something in terms of itself.</div>
+</div>
+<div id="tabs-3" class="tab">
+<h1>The Base Case</h1>
+<p>
+What if the shell were to keep on spiraling, the tree branches branching, and the cells dividing? It would be chaos!
+There would be no end to the recursion. That is why we must always apply a base case to our recursive methods in order
+to get them to stop. Here are some examples of a base case.
+</p>
+<p>
+<span class="code">if (size < 2) { //stop }</span><br />
+<span class="code">if (size > 2) { //continue } else { //stop }</span><br />
+<span class="code">if (num == 1) { //stop } </span><br />
+</p>
+<p>
+A base case is nothing more than an if statement which ensures the recursion will stop at some point.
+</p>
+<form><textarea class="processingide" style="height:400px">
+void setup() {
+  size(400, 400);
+  background(255);
+  stroke(0, 64);
+  fill(0, 48);
+  circles(390);
+}
+int circles(int radius) {
+  //base case
+  //if the radius is smaller than 1
+  //we return without doing anything
+  if (radius < 1) {
+    return;
+  } else {
+    ellipse(width/2, height/2, radius, radius);
+    circles(radius * 0.6);
+  }
+}
+                            </textarea></form>
+<div class="rule"></div>
+<h1>Recursive Parameters and Arguments</h1>
+<p>
+A recursive method is defined by the parameters it has. The arguments to the parameters usually come from the previous
+calls to the recursive method. There is of course the initial arguments to the recursive method, and setting this up can
+be a bit tricky. Take a look at this example which computes the factorial of the argument in the first method call inside
+setup:
+</p>
+<form><textarea class="processingide" style="height:400px">
+void setup() {
+  size(120, 120);
+  background(255);
+  fill(0);
+  text( factorial(5), 50, 50 );
+}
+int factorial(int num) {
+  if (num > 1) {
+    //we will return the current number multiplied by
+    //the factor of the number that comes before it
+    //this is where the recursion happens
+    return num * factorial(num - 1);
+  } else {
+    //base case, return 1
+    return 1;
+  }
+}
+                            </textarea></form>
+</div>
+<div id="tabs-4" class="tab">
+<h1>Head Recursion</h1>
+<p>
+A recursive method can choose to make the recursive method call before taking an action. This is referred to as head
+recursion. This means that all the recursive calls are made first, and then as the methods begin returning, the rest of
+the code in the method is executed. Take a look at this example:
+</p>
+<form><textarea class="processingide" style="height:400px">
+void setup() {
+  size(120, 600);
+  background(255);
+  fill(0);
+  countDown(10);
+}
+int countDown(int num) {
+  if (num == 0) {
+    background(255);
+    return; //base case
+  } else {
+    countDown(num - 1);
+  }
+  //This code will happen after the method
+  //returns from the base case (num == 0)
+  //where num == 0
+  pushMatrix();
+  translate( 50, 600 - num * 55);
+  scale(2);
+  text(num, 0 , 0);
+  popMatrix();
+}
+                            </textarea></form>
+<div class="rule"></div>
+<h1>Tail Recursion</h1>
+<p>
+Now if we want to do our action first and then make the recursive method calls, we would change the order.
+The real question is... why does nothing show up in this version?
+</p>
+<form><textarea class="processingide" style="height:400px">
+void setup() {
+  size(120, 600);
+  background(255);
+  fill(0);
+  countDown(10);
+}
+int countDown(int num) {
+  if (num == 0) {
+    background(255);
+    return; //base case
+  } else {
+    //This code will happen before the first
+    //recursive method call, and in fact
+    //before all of them
+    pushMatrix();
+    translate( 50, 600 - num * 55);
+    scale(2);
+    text(num, 0 , 0);
+    popMatrix();
+  }
+  //The recursive call happens after the drawing
+  countDown(num - 1);
+}
+                            </textarea></form>
+<div class="rule"></div>
+<div class="important">The decision between head and tail recursion can result in slightly different effects.</div>
+</div>
+<div id="tabs-5" class="tab">
+<form><textarea class="processingide" style="height:580px">
+void setup() {
+  size(600, 600);
+  background(255);
+}
+void mousePressed() {
+  //we need to draw the first branch facing upwards
+  //this is why we use the angle -PI/2
+  drawBranch(mouseX, mouseY, mouseX, mouseY,
+            -PI/2, (float)mouseY/height * 100);
+}
+void keyPressed() {
+  if (key == ' ') {
+    background(255);
+  }
+}
+//we won't be using the draw method
+//however it must exist so we can
+//use mousePressed and keyPressed
+void draw() {}
+//the recursive definition of a branch
+void drawBranch(float x, float y, 
+                  float px, float py, 
+                  float angle, float step) 
+{
+  //base case, we won't do anything if the
+  //branch step size is less than 2
+  if (step < 2) {
+    return;
+  } else {
+    //store px and py
+    px = x;
+    py = y;
+    //move the x,y
+    x += step * cos(angle);
+    y += step * sin(angle);
+    //shrink the step size
+    step *= 0.66;
+    //store the current mouseX in the window as
+    //a float between 0-1
+    float xMouse = (float)mouseX/width;
+    //make two recursive calls to the drawBranch method
+    //notice one adds the angle, and one subtracts the angle
+    drawBranch(x, y, px, py, angle + PI/4 * xMouse, step);
+    drawBranch(x, y, px, py, angle - PI/4 * xMouse, step);
+  }
+  //we'll wait to draw our branches until after
+  //we've made all the recursive method calls
+  stroke(0);
+  strokeWeight( max( 1, (int) step/5 ) );
+  line(x, y, px, py);
+}
+                            </textarea></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

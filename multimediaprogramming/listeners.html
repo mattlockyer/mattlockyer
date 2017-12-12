@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Events and Listeners</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Components</a></li>
+<li><a href="#tabs-3">Events</a></li>
+<li><a href="#tabs-4">Event Handlers</a></li>
+<li><a href="#tabs-5">Example</a></li>
+<li><a href="#tabs-6">ControlP5</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Understanding Events and Listeners
+<ul>
+<li>Components Generate Events</li>
+<li>Events and the Event Class</li>
+<li>Listeners and Event Handlers</li>
+<li>ControlP5 Example</li>
+<li>import ControlP5</li>
+</ul>
+</li>
+</ul>
+<div class="rule"></div>
+<h1>Resources</h1>
+<p>
+<a href="http://www.sojamo.de/libraries/controlP5/">ControlP5</a><br />
+<a href="http://www.kasperkamperman.com/blog/processing-code/controlp5-library-example1/">ControlP5 Example</a><br />
+<a href="http://www.javaworld.com/javaworld/javaqa/2000-08/01-qa-0804-events.html">Java World - Events</a><br />
+</p>
+<div class="rule"></div>
+<div class="quote">
+"A chief event of life is the day in which we have encountered a mind that startled us." ~ Ralph Waldo Emerson
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>Components</h1>
+<p>
+A special object, one that belongs to a larger system is usually referred to in the Java world as a component.
+These components usually have some relationship with other parts of a library that performs a certain function.
+ </p>
+<p>
+For this lesson in Events and Listeners we will be looking a the ControlP5 library, components of the library are:
+</p>
+<ul>
+<li>Bang - on mouse press</li>
+<li>Button - on mouse release</li>
+<li>Toggle - on and off</li>
+<li>Slider - values</li>
+<li>Knob - values</li>
+<li>Number Box - values</li>
+</ul>
+<p>
+Components of the ControlP5 library are called components and not objects because they are related to the rest
+of the library. Simply making a new ControlP5 Button is not enough to use the library.
+</p>
+<p>
+Each component will generate events. However, these events do nothing without a proper listener.
+</p>
+<img src="img/listeners/model.png" />
+<div class="rule"></div>
+<div class="important">A component is an object that is part of a library which usually must be used
+in combination with other library components to perform functions.</div>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Events</h1>
+<p>
+In the Event Listener pattern we have already seen components. We also know that components generate events.
+But what are events and how are they used?
+</p>
+<p>
+An event in the Java world is an instance of some event class, which usually describes the events.
+Event objects represent the who, what, where, when, why, and how of the event that occurred. Here is an example
+</p>
+<ul>
+<li>User presses Button</li>
+<li>Button generates new "MouseEvent" object</li>
+<li>"MouseEvent" object has fields for mouseX, mouseY, mouseButton</li>
+<li>"MouseEvent" fields are initialized by Button</li>
+<li>On next loop, Listener receives "MouseEvent"</li>
+</ul>
+<p>
+Events come in all different kinds:
+</p>
+<ul>
+<li>Mouse Interaction</li>
+<li>Keyboard Interaction</li>
+<li>Touch Interaction</li>
+<li>Data Received</li>
+<li>Data Analyzed</li>
+<li>and more...</li>
+</ul>
+<div class="rule"></div>
+<h1>Making Custom Events</h1>
+<p>
+Creating your own event classes that can represent custom events can be extremely useful. If your application
+works with a lot of data input or special types of user interaction, you will probably want to
+look at building your own event model.
+</p>
+<div class="rule"></div>
+<div class="important">Events are simply objects that capture an instance of data input.</div>
+<div class="important">Components generate Events and initialize their fields so the instance
+of the Event is captured and can be interpreted by the Listener.</div>
+</div>
+<div id="tabs-4" class="tab">
+<h1>Listeners and Event Handlers</h1>
+<p>
+Now that we know what a Component and Event are we can talk about the crucial piece of the Event Listener pattern
+that must exist for anything to happen: the Listener method, commonly referred to as the Event Handler.
+</p>
+<p>
+We've actually been using 2 (sometimes more) listeners in our sketches the entire time. Let's take a look:
+</p>
+<p>
+<span class="code">void setup() { ... }</span> //this method is an event handler<br />
+setup will listen for the event that the sketch has started<br />
+Once the event is fired, the setup method is called<br /><br />
+<span class="code">void draw() { ... }</span> //this method is an event handler<br />
+draw listens for a special timer event based on the frameRate set in your sketch<br />
+Once the event is fired, the draw method is called<br /><br />
+<span class="code">void keyPressed() { ... }</span> //this method is an event handler<br />
+keyPressed listens for an event based on any key on the keyboard being pressed<br />
+Once the event is fired, the keyPressed method is called<br /><br />
+<span class="code">void mousePressed() { ... }</span> //this method is an event handler<br />
+We know what this method does...<br /><br />
+</p>
+<h1>Traditional Event Handlers</h1>
+<p>
+The Listener methods built into processing are special to the processing language, and some don't behave like a traditional
+Event Handler method. Normally, every Event Handler has a parameter to receive the Event that was fired.
+When using ControlP5 this is true. Let's see an example:
+</p>
+<form><textarea class="processingide" style="height:190px" noplay="true">
+void controlEvent(ControlEvent theEvent) {
+  if (theEvent.isController()) {
+    if (theEvent.controller().name()=="ClearScreen") {
+      background(255);
+    }
+  }
+}</textarea></form>
+<p>
+Notice the parameter to the controlEvent method is a reference variable of the type
+ControlEvent? This is the actual event that was generated by one of the ControlP5 components in our sketch.
+</p>
+<p>
+When the component was interacted with, it generated an instance of ControlEvent and populated it's fields.
+Since the component was only a simple button, the event only knows that it was activated by a controller and
+has the name of that controller stored in one of it's fields.
+</p>
+<p>
+Finally, since all the information stored in an event is Private, in order to query the ControlEvent object,
+we must access it's fields through public methods that will return the correct information to us.
+</p>
+<div class="rule"></div>
+<div class="important">Listeners (Event Handlers) are special methods that are called when events are fired.</div>
+<div class="important">A Listener method has a parameter of type Event, and should query that Event parameter to
+determine what course of action to take.</div>
+</div>
+<div id="tabs-5" class="tab">
+ <iframe src="applets/listeners/index.html" width="100%" height="640">
+                        Your browser doesn't support iframes
+                        </iframe>
+</div>
+<div id="tabs-6" class="tab">
+<img src="img/listeners/controlp5.gif" />
+<p>
+Save your sketch somewhere.
+</p>
+<p>
+Download controlP5 <a href="http://www.sojamo.de/libraries/controlP5/">here</a>.
+</p>
+<p>
+Unzip the file in the libraries folder named "controlP5.jar".
+</p>
+<p>
+Use the sketch menu, select "Add File", add "controlP5.jar" to the sketch.
+</p>
+<p>
+Double check now that "controlP5.jar" is inside a folder named "code" in your sketch folder.
+</p>
+<p>
+Add the following line to your sketch at the beginning:<br /> <span class="code">import controlP5.*;</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

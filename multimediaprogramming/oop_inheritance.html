@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Inheritance</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">How / Why / When</a></li>
+<li><a href="#tabs-3">Subclasses and Super</a></li>
+<li><a href="#tabs-4">Polymorphism</a></li>
+<li><a href="#tabs-5">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Inheritance
+<ul>
+<li>How / Why / When to extend a class</li>
+<li>What's in a subclass</li>
+<li>Using Super</li>
+</ul>
+</li>
+<li>Using Subclasses
+<ul>
+<li>Polymorphism</li>
+<li>Overriding</li>
+</ul>
+</li>
+</ul>
+<div class="rule"></div>
+<h1>Resources</h1>
+<p>
+<a href="http://processing.org/learning/basics/inheritance.html">http://processing.org/learning/basics/inheritance.html</a><br />
+<a href="http://processing.org/learning/topics/multipleparticlesystems.html">http://processing.org/learning/topics/multipleparticlesystems.html</a><br />
+</p>
+<div class="rule"></div>
+<div class="quote">
+"The most perfect political community is one in which the middle class is in control, and outnumbers both of the other classes." ~ Aristotle
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>How to Extend a Class</h1>
+<p>
+Extending a class is simple. In a new class definition, simply add the word <span class="code">extends</span> and the name of the class
+the new class should extend. This new class is now a <span class="code">subclass</span> of the class which it extends.
+</p>
+<form><textarea class="processingide" style="height:170px" noplay="true">
+class RaceBike extends Bicycle {
+    //The RaceBike constructor
+    RaceBike() {
+        println("Hi I'm a RaceBike object");
+    }
+}</textarea></form>
+<div class="rule"></div>
+<h1>Why Extend a Class</h1>
+<img src="img/inheritance/figure1.gif" />
+<p>
+In processing and other programming languages there are various tools to help add complexity to a program
+without requiring the programmer to rewrite a lot of code. In fact, good programming practice should have you never
+writing the same code twice. Since we are working with objects, sometimes it's beneficial to describe
+objects as more specific versions of some general object.
+</p>
+<p>
+Take a look at these bikes. There is a general Bicycle object, and then there are a few specific Bicycle objects.
+Each specific Bicycle object <span class="code">extends</span> the general Bicycle class, and therefore is a
+<span class="code">subclass</span> of the Bicycle class.
+</p>
+<div class="rule"></div>
+<h1>When to Extend a Class (Abstraction)</h1>
+<p>
+As mentioned previously, the goal of efficient programming is to never repeat yourself. If we find that when creating
+a new object we're repeating a lot of the fields and methods that belong to another, similar object. We might want to
+<span class="code">"abstract"</span> out the common properties of both classes, and put these into a parent class.
+Now each object from before can <span class="code">inherit</span> these common fields and methods,
+and there's no need to code them for each object.
+</p>
+<p>
+Take another look at the bikes. Every bicycle needs a position, wheel rotation, gear, etc...<br />
+But only a mountain bike would need shock suspension. And perhaps only a race bike would need road tires,
+or a spedometer.<br />
+When designing several classes, always remember that common fields and methods should be combined
+into a parent class, and each class should extend from that parent. This will save time and create cleaner,
+more flexible code.
+</p>
+<div class="rule"></div>
+<div class="important">Use the extends keyword when declaring a class to make it a subclass of another.</div>
+<div class="important">Use inheritence when several classes are sharing common fields and methods.</div>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Subclasses</h1>
+<p>
+A subclass is simply a class which extends another class. This is called <span class="code">inheritance</span>
+because the sublclass <span class="code">inherits</span> the fields and methods of the <span class="code">parent</span> class.
+Let's take a look at the anatomy of a subclass:
+</p>
+<form><textarea class="processingide" style="height:440px" noplay="true">
+class Bicycle {
+    float xPos, yPos, xVel, yVel;
+    Bicycle() { ... } //A simple constructor
+    void move() { ... } //A move method
+    ...
+}
+class RaceBike extends Bicycle {
+    //RaceBike inherits xPos, yPos, xVel, yVel
+    //We only declare are fields unique to RaceBike
+    int spedometer; 
+    //Every class needs a unique constructor
+    RaceBike() { ... }
+    //RaceBike inherits the move method
+    //All we have to code are methods unique to RaceBike
+    void updateSpedometer() { ... }
+    ...
+}</textarea></form>
+<p>
+Notice how our subclass RaceBike inherits the fields and methods of Bicycle? This means that each new RaceBike object
+can set the values of xPos, yPos, xVel, yVel, in addition to the new field spedometer (specific to the RaceBike class).
+</p>
+<p>
+Let's take a look at how we could create an instance of the RaceBike class and use some inherited fields and methods
+from the Bicycle class:
+</p>
+<form><textarea class="processingide" style="height:170px" noplay="true">
+RaceBike myBike = new RaceBike();
+myBike.xPos = width/2; //belongs to all Bicycle objects
+myBike.yPos = height/2;
+myBike.xVel = 1;
+myBike.move(); //belongs to all Bicycle objects
+myBike.updateSpedometer(); //unique to RaceBike objects</textarea></form>
+<div class="rule"></div>
+<h1>Super</h1>
+<p>
+Super is a special scoped reference variable which can be used to the set the scope to the parent class.
+Scope is what is visible or accessible by processing. This means we can use super to transition from the
+scope of our subclass to the scope of the parent class. Let's take a look at how we can use super:
+</p>
+<h2>The super( ... ) Constructor</h2>
+<p>
+Sometimes it may be advantageous for a subclass to call the constructor of it's parent class. We can achieve this
+by using the super( ... ) constructor. Here's an example:
+</p>
+<form><textarea class="processingide" style="height:620px" noplay="true">
+class Bicycle {
+    float xPos, yPos, xVel, yVel;
+    Bicycle() {
+        xPos = random(width); yPos = random(height);
+    }
+    //an overloaded constructor
+    Bicycle(int startX, int startY) {
+        xPos = startX; yPos = startY;
+    }
+    ...
+}
+class RaceBike extends Bicycle {
+    int spedometer; 
+    RaceBike() {
+        super(); //call Bicycle constructor
+        spedometer = 0;
+    }
+    RaceBike(int startX, int startY) {
+        //call overloaded Bicycle constructor
+        super(startX, startY); 
+        spedometer = 0;
+    }
+    ...
+}</textarea></form>
+<p>
+Notice when using super( ... ) we must pass in parameters to match the constructor we are calling. There are two constructors here:
+one to initialize the bike with a random position, and the other (overloaded) one to initialize it with a specific position.
+By using super( ... ) with appropriate arguments for each constructor in the subclass RaceBike, we've managed to match parameters and
+leverage the code that was already written in the Bicycle class constructors.
+</p>
+<h2>The super Reference Variable</h2>
+<p>
+We can also use super as a special reference variable to call methods of a parent class from within the subclass.
+Here's an example:
+</p>
+<form><textarea class="processingide" style="height:420px" noplay="true">
+class Bicycle {
+    ...
+    void move() { ... }
+    void changeGear(int gear) { ... }
+    ...
+}
+class RaceBike extends Bicycle {
+    ...
+    void race() {
+        super.move();
+        if (speed < 4) {
+            super.changeGear(gear - 1);
+        }
+    }
+    ...
+}</textarea></form>
+<div class="rule"></div>
+<div class="important">A subclass inherits all fields and methods of the parent class, except the constructor.</div>
+<div class="important">Each class must have a unique constructor, however we can use the super() method to call
+the parent class constructor.</div>
+<div class="important">We can also call methods of the parent class using super as a special reference variable, referring
+to the parent class and all of it's methods.</div>
+<div class="important">When we use super() in any way, we must make sure that we are calling the constructors and methods
+with the correct arguments as specified by the parameters of those methods.</div>
+</div>
+<div id="tabs-4" class="tab">
+<h1>Polymorphism</h1>
+<p>
+Remember how a subclass inherits all of the fields and methods of a parent class? This means that processing now
+considers the subclass to be an equivalent of the parent class. This principle is called polymorphism and we usually say that
+an instance of a subclass <span class="code">"is a"</span> instance of the parent class. <br />
+In other words: a RaceBike "is a" Bicycle.<br />
+Let's see this in action:
+</p>
+<form><textarea class="processingide" style="height:130px" noplay="true">
+//Same reference type as the object instance
+RaceBike myBike = new RaceBike();
+//Using the parent type to store a subclass reference
+Bicycle myBike2 = new RaceBike();</textarea></form>
+<p>
+Storing a subclass reference using the parent class type is totally legal, however the reverse is not possible.
+Since a RaceBike "is a" Bicycle, we can use a Bicycle reference variable to store a RaceBike reference, but a
+Bicycle is not necessarily a RaceBike.
+</p>
+<h2>Advantages</h2>
+<p>
+Polymorphism has it's advantages, since all Bicycle subclasses can be treated as if they were Bicycles. For instance
+we can take all Bicycle instances, regardless of type, and store them in a single typed ArrayList since they are all
+Bicycles.
+</p>
+<h2>Disadvantages</h2>
+<p>
+There is a disadvantage to using the parent type to store a reference of a subclass. The reference variable type
+is of the parent class, therefore we cannot use this variable to access the fields or methods of the subclass.
+Let's see an example:
+</p>
+<form><textarea class="processingide" style="height:220px" noplay="true">
+//Same reference type as the object instance
+RaceBike myBike = new RaceBike();
+//Using the parent type to store a subclass reference
+Bicycle myBike2 = new RaceBike();
+myBike.xPos = width/2; //works
+myBike2.xPos = width/2; //works
+myBike.updateSpedometer(); //works
+myBike2.updateSpedometer(); //fails (myBike2 is type Bicycle)</textarea></form>
+<div class="rule"></div>
+<h1>Overriding</h1>
+<p>
+Overriding is similar to overloading, however it involves a subclass implementing a method with the exact same method signature as
+the parent class. If an instance of the subclass is stored in a reference variable of the parent type, the overridden methods of
+the subclass will be called instead of the parent's methods. By overriding methods properly we can treat all objects as the parent
+type, call the same methods, while having different implementations. Here is an example:
+</p>
+<form><textarea class="processingide" style="height:420px" noplay="true">
+class Bicycle {
+    ...
+    void move() { ... }
+    void changeGear(int gear) { ... }
+    ...
+}
+class RaceBike extends Bicycle {
+    ...
+    void move() { RaceBike move method }
+    void changeGear(int gear) { RaceBike changeGear method }
+    ...
+}</textarea></form>
+<p>
+Notice how the RaceBike methods have the same method signature as the Bicycle methods. Even if a RaceBike is stored in a
+reference variable of type Bicycle, when we call the methods of this variable we will in fact be calling the overridden methods
+from the RaceBike class.
+</p>
+<div class="rule"></div>
+<div class="important">A class which extends another has an "is a" relationship with it's parent class.</div>
+<div class="important">When an instance of a subclass is stored in a reference variable of the parent class type,
+only the fields and methods belonging to the parent class are visible.</div>
+<div class="important">Overriding allows us to call methods of the subclass even when using reference variables of
+the parent class type.</div>
+</div>
+<div id="tabs-5" class="tab">
+<form><textarea class="processingide" style="height:580px">
+ArrayList<Ball> ballList = new ArrayList<Ball>();
+
+void setup() {
+  size(400, 400);
+  stroke(0, 128);
+  strokeWeight(2);
+  fill(255, 0, 0, 128);
+  //The ArrayList doesn't have a size yet
+  //So we have to set how much we will loop literally (10)
+  for (int i = 0; i < 50; i++) {
+    //Every odd ball will be a crazy ball object
+    if (i % 2 == 0) {
+      ballList.add(new Ball());
+    } else {
+      ballList.add(new CrazyBall());
+    }
+  }
+}
+
+void draw() {
+  background(255);
+  //Now that the ArrayList has a size we can use .size()
+  //in our loop
+  for (int i = 0; i < ballList.size(); i++) {
+    //Get the current ball in the loop, the ball at position i
+    //Notice we DON'T have to cast the reference variable
+    //since the ArrayList is typed
+    Ball curBall = ballList.get(i);
+    curBall.update();
+    curBall.checkWalls();
+    curBall.drawMe();
+  }
+}
+//A crazy ball object
+class CrazyBall extends Ball {
+  //inherited fields: xPos, yPos, xVel, yVel
+  float mass;
+  CrazyBall() {
+    super(); //call Ball constructor
+    mass = random(1,4);
+  }
+  //override the update method from Ball class
+  void update() {
+    //add an attraction to the mouse position
+    xVel += (mouseX - xPos)/width * 1/mass;
+    yVel += (mouseY - yPos)/height * 1/mass;
+    //dampen the velocity
+    xVel *= 0.98;
+    yVel *= 0.98;
+    //call the ball update method to update position
+    super.update();
+  }
+}
+//A class to describe a ball object
+class Ball {
+  float xPos, yPos, xVel, yVel;
+  Ball() {
+    //Set the initial values for our Ball object's variables (fields)
+    xPos = random(16, width - 16);
+    yPos = random(16, height - 16);
+    xVel = random(-2, 2);
+    yVel = random(-2, 2);
+  }
+  //A method to update the ball position
+  void update() {
+    xPos += xVel;
+    yPos += yVel;
+  }
+  //A method to check collisions with the walls
+  void checkWalls() {
+    if (abs(xPos - width/2) > 200 - 16) {
+      xVel *= -1;
+    }
+    if (abs(yPos - height/2) > 200 - 16) {
+      yVel *= -1;
+    }
+  }
+  //A method to draw the ball object
+  void drawMe() {
+    pushMatrix();
+    translate(xPos, yPos);
+    ellipse(0, 0, 32, 32);
+    popMatrix();
+  }
+}</textarea></form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

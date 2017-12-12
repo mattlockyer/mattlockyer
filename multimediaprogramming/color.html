@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Stroke Fill Color</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Stroke and Fill</a></li>
+<li><a href="#tabs-3">Processing Color</a></li>
+<li><a href="#tabs-4">Other Color Systems</a></li>
+<li><a href="#tabs-5">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Making Stuff Look Good</li>
+<li>Stroke and Fill
+<ul>
+<li>Setting</li>
+<li>Stroke Weight</li>
+</ul>
+</li>
+<li>Color
+<ul>
+<li>Additive Color</li>
+<li>Subtractive Color</li>
+<li>Other Color Systems</li>
+</ul>
+</li>
+</ul>
+<div class="rule"></div>
+<h1>Resources</h1>
+<p>
+<a href="http://processing.org/learning/color/">http://processing.org/learning/color/</a><br />
+<a href="http://processing.org/learning/basics/colorwheel.html">http://processing.org/learning/basics/colorwheel.html</a><br />
+</p>
+<div class="rule"></div>
+<div class="quote">
+"Any ground subtracts its own hue from the colors which it carries and therefore influences." ~ Josef Albers
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>Stroke</h1>
+<img src="img/strokeFillColor/stroke.png"></img>
+<p>
+A stroke is the line style for a shape.<br />
+For any shape drawn in processing, always set the stroke before drawing.<br />
+Here is how to set the stroke color:<br />
+<span class="code">stroke( red, green, blue, alpha );</span><br />
+Here is how to set the stroke thickness:<br />
+<span class="code">strokeWeight( thickness );</span><br />
+The strokeWeight expects the number of pixels the line thickness should be.<br />
+</p>
+<div class="important">Strokes have two components, color and weight.</div>
+<div class="rule"></div>
+<h1>Fill</h1>
+<img src="img/strokeFillColor/fill.png"></img>
+<p>
+A fill is the color of a shape.<br />
+The name fill means for the shape to be filled in with this color.<br />
+Here is how to set the fill color:<br />
+<span class="code">fill( red, green, blue, alpha );</span><br />
+The method of specifying red, green, blue and alpha is the most complete method available in processing.<br />
+There are other ways to set colors in processing that we will look at.<br />
+</p>
+<div class="rule"></div>
+<h1>noStroke() and noFill()</h1>
+<p>
+These two commands can be called to eliminate the stroke or fill respectively. It's the same as setting their
+alpha to 0. Any shape drawn after both of these commands are called, with no other stroke or fill commands in between
+will be rendered invisible.
+</p>
+<div class="rule"></div>
+<div class="important">Strokes and fills should be set before drawing any shape, otherwise they will be drawn with
+the last saved stroke and fill, which may cause undesirable appearances for shapes.</div>
+<div class="important">The default stroke is black with weight 1 and the default fill is white.</div>
+<div class="important">noStroke() and noFill() are fast ways of turning off strokes and fills.</div>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Processing Color</h1>
+<img src="img/strokeFillColor/color.png"></img>
+<p>
+Color in processing is different from traditional paint colors in two ways: primary colors and blending.<br />
+The primary colors for computer programming are red, green, blue. Color blending is additive,
+which means that as colors combine, they become brighter.
+Traditional paint color mixing rules don't apply here. Take a look at the secondary colors
+created from the blends of primary colors in processing.
+</p>
+<div class="rule"></div>
+<p>
+Color for strokes and fills can be set 4 different ways:<br />
+<span class="code">fill( red, green, blue, alpha );</span><br />
+<span class="code">fill( red, green, blue );</span><br />
+<span class="code">fill( gray, alpha );</span><br />
+<span class="code">fill( gray );</span><br />
+</p>
+<div class="rule"></div>
+<div class="important">Primary colors are red, green, blue.</div>
+<div class="important">Color is additive, more color = more brightness.</div>
+<div class="important">Color can be set any one of 4 ways.</div>
+</div>
+<div id="tabs-4" class="tab">
+<h1>Other Color Systems</h1>
+<img src="img/strokeFillColor/otherColor.png"></img>
+<p>
+There are two different color spaces in processing. RGB which is the most basic and HSB which stands for
+hue, saturation, brightness. The photoshop color picker shows each color representation possible, two of these
+are RGB and HSB. You can switch between color spaces and set their maxima like this:<br />
+<span class="code">colorMode( mode, max value );</span><br />
+Take a look at the following example and try to figure out why all of the squares are red.
+</p>
+<div class="rule"></div>
+<div class="important">
+When setting a mode like colorMode( ... ) in processing, remember it will be set for all shapes drawn after.
+This could be trouble knowing which mode is set unless the mode is RESET to the default after drawing.
+</div>
+</div>
+<div id="tabs-5" class="tab">
+<form><textarea class="processingide" style="height:580px">
+void setup() {
+  size(400, 400);
+}
+
+void draw() {
+  noStroke();
+  background(400);
+  colorMode(RGB, 400);
+  //Column One
+  fill( mouseX, mouseY, 0 );
+  rect( 50, 50, 100, 100 );
+  fill( mouseX, 0, mouseY );
+  rect( 50, 150, 100, 100 );
+  fill( 0, mouseX, mouseY );
+  rect( 50, 250, 100, 100 );
+  //Column Two
+  fill( mouseX, 0, 0 );
+  rect( 150, 50, 100, 100 );
+  fill( 0, mouseX, 0 );
+  rect( 150, 150, 100, 100 );
+  fill( 0, 0, mouseX );
+  rect( 150, 250, 100, 100 );
+  //Column Three
+  fill( mouseY, mouseX, 0 );
+  rect( 250, 50, 100, 100 );
+  fill( mouseY, 0, mouseX );
+  rect( 250, 150, 100, 100 );
+  fill( 0, mouseY, mouseX );
+  rect( 250, 250, 100, 100 );
+}
+                            </textarea></form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Arrays</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Memory</a></li>
+<li><a href="#tabs-3">Declaring and Initializing</a></li>
+<li><a href="#tabs-4">Using Arrays</a></li>
+<li><a href="#tabs-5">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Understanding Arrays
+<ul>
+<li>Reference Variables in Memory</li>
+<li>Declaring Arrays</li>
+<li>Initializing Arrays</li>
+<li>Using Arrays</li>
+</ul>
+</li>
+</ul>
+<div class="rule"></div>
+<h1>Resources</h1>
+<p>
+<a href="http://processing.org/learning/basics/array.html">http://processing.org/learning/basics/array.html</a><br />
+<a href="http://processing.org/learning/2darray/">http://processing.org/learning/2darray/</a><br />
+</p>
+<div class="rule"></div>
+<div class="quote">
+"Stupidity, outrage, vanity, cruelty, iniquity, bad faith, falsehood
+/ we fail to see the whole array when it is facing in the same direction as we." ~ Jean Rostand
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>Reference Variables in Memory</h1>
+<p>
+Before we declare an array, we need to understand the distinction between variables of the primitive type
+and variables of the reference type.
+</p>
+<p>
+A variable of the primitive type simply points to a location in memory where a value is stored.
+</p>
+<p>
+A reference variable points to the location of an object in memory, and that object stores pointers to
+each piece of information that it contains.
+</p>
+<img src="img/arrays/memory.gif" />
+<p>
+Since an array is an object, the variable for an array is a reference variable. This means that the variable
+itself does not represent a value, since an array is a collection of values it points to the collection.
+</p>
+<p>
+We will see how to access the individual values and variables held in the array in the coming sections.
+</p>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Declaring Arrays</h1>
+<p>
+An array is a special datatype. Much like the string an array is a collection of elements. The difference is
+that an array is a collection of any type of element we specify. Let's take a look at declaring some arrays of
+different types.
+</p>
+<p>
+<span class="code">int[] lottoNumbers = new int[5];</span><br />
+Declares an array of integers for lotto numbers with a size of 5.<br />
+<span class="code">String[] names = new String[3];</span><br />
+Declares an array of String variables to store names with a size of 3.<br />
+<span class="code">boolean[] lights = new boolean[10];</span><br />
+Declares an array of booleans to control lights with a size of 3.<br />
+</p>
+<p>
+Arrays are zero indexed like strings which means that even though the size or length may be 3 or 5,
+the actual position of the last element is always size - 1, since the positions start with 0.
+Arrays must specify their size when being declared, notice how every example states the number of elements
+they will contain.
+</p>
+<div class="rule"></div>
+<h1>Initializing Arrays</h1>
+<p>
+An array is useless unless each element is initialized. After declaring an array, we don't have any actual
+values in the positions in the array. Instead we have a list of empty buckets (no value) and we must initialize
+each bucket (position) in the array with a value. Let's take a look.
+</p>
+<p>
+<span class="code">int[] lottoNumbers = new int[5];</span><br />
+The array lottoNumbers at any position has no value. Let's give it some values.<br />
+<span class="code">lottoNumbers[0] = 2;</span> initialize position 0 to 2<br />
+<span class="code">lottoNumbers[1] = 4;</span> initialize position 1 to 4<br />
+<span class="code">lottoNumbers[2] = 8;</span> ...<br />
+<span class="code">lottoNumbers[3] = 16;</span> ...<br />
+<span class="code">lottoNumbers[4] = 32;</span> ...<br />
+</p>
+<p>
+Now that the array has been initialized, we can ask some questions about the array.<br />
+<span class="code">println( lottoNumbers[3] );</span> prints 16<br />
+Had the array not been initialized we may have printed 0 since java / processing takes care of this for us.
+In other programming languages, this would result in a major error and some pretty wacky numbers.
+</p>
+<div class="rule"></div>
+<div class="important">Arrays are collections of any type specified when the array is declared.</div>
+<div class="important">Every array must specify a size when declared.</div>
+<div class="important">Arrays are zero indexed, positions start at 0 and end at size - 1.</div>
+<div class="important">Arrays should always be initialized to a starting value before being used within a program.</div>
+</div>
+<div id="tabs-4" class="tab">
+<h1>Using Arrays</h1>
+<p>
+Arrays are pretty useful, even better once you have learn loops. The following examples in this module will involve
+some loops. It is safe to assume for these example that all loops are simply looping over each position in the array.
+</p>
+<form><textarea class="processingide" style="height:550px">
+//Declare our arrays
+float[] xPos = new float[10];
+float[] yPos = new float[10];
+void setup() {
+  size(400, 400);
+  stroke(0, 128);
+  strokeWeight(2);
+  fill(255, 0, 0, 128);
+  //Loop over each position in our arrays and initialize with values
+  for (int i = 0; i < xPos.length; i++) {
+    xPos[i] = random(width); //A random number from 0 to width (400)
+    yPos[i] = random(height); //A random number from 0 to height
+  }
+}
+void draw() {
+  background(255);
+  //Loop over each position in the array and draw an ellipse
+  for (int i = 0; i < xPos.length; i++) {
+    pushMatrix();
+    translate(xPos[i], yPos[i]);
+    ellipse(0, 0, 32, 32);
+    popMatrix();
+  }
+}
+                            </textarea></form>
+<div class="rule"></div>
+</div>
+<div id="tabs-5" class="tab">
+<form><textarea class="processingide" style="height:580px">
+//Declare our arrays
+float[] xPos = new float[10];
+float[] yPos = new float[10];
+float[] xVel = new float[10];
+float[] yVel = new float[10];
+void setup() {
+  size(400, 400);
+  stroke(0, 128);
+  strokeWeight(2);
+  fill(255, 0, 0, 128);
+  //Initialize all array positions with values
+  for (int i = 0; i < xPos.length; i++) {
+    xPos[i] = random(16, width - 16);
+    yPos[i] = random(16, height - 16);
+    xVel[i] = random(-2, 2); //A random number between -2 and 2
+    yVel[i] = random(-2, 2);
+  }
+}
+
+void draw() {
+  background(255);
+  //Loop over all array positions, do some updates, and draw
+  for (int i = 0; i < xPos.length; i++) {
+    //update position
+    xPos[i] += xVel[i];
+    yPos[i] += yVel[i];
+    //check walls, if we hit them we reverse our velocity ( vel *= -1 )
+    if (abs(xPos[i] - width/2) > 200 - 16) {
+      xVel[i] *= -1;
+    }
+    if (abs(yPos[i] - height/2) > 200 - 16) {
+      yVel[i] *= -1;
+    }
+    //draw ellipses
+    pushMatrix();
+    translate(xPos[i], yPos[i]);
+    ellipse(0, 0, 32, 32);
+    popMatrix();
+  }
+}
+                            </textarea></form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Sound</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Minim Library</a></li>
+<li><a href="#tabs-3">Playing Sounds</a></li>
+<li><a href="#tabs-4">Analyzing Sounds</a></li>
+<li><a href="#tabs-5">Visualizing</a></li>
+<li><a href="#tabs-6">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Declaring a Minim Object</li>
+<li>Playing Sound
+<ul>
+<li>The AudioPlayer Class</li>
+<li>Playing and Stopping</li>
+</ul>
+</li>
+<li>Analyzing Sound
+<ul>
+<li>The FFT Class</li>
+<li>Getting Data</li>
+</ul>
+</li>
+<li>Visualizing Sound Data</li>
+</ul>
+<div class="rule"></div>
+<div class="quote">
+"The universe is transformation; our life is what our thoughts make it." ~ Marcus Aurelius
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>The Minim Library</h1>
+<img src="img/sound/import.jpg" />
+<p>
+Processing comes complete with a fully featured sound library to handle the playing and analysis of sounds.
+In order to use this library we must import it. To do this go to Sketch -> Import Library -> Minim Audio
+</p>
+<div class="rule"></div>
+<h1>Declaring and Initializing the Minim Object</h1>
+<p>
+In order to use the Minim class we first need to create a Minim Object in our code so we can call the necessary methods
+ to get our sound working.
+</p>
+<p>
+We'll probably want to use our Minim reference variable throughout our sketch, so we'll place the following line of
+code outside our setup and draw method, to give it a global scope.<br />
+<span class="code">Minim minim;</span> declare a reference variable of type Minim<br />
+Now inside our setup we need to initialize the variable minim.<br />
+<span class="code">minim = new Minim(this);</span><br />
+This will create a new Minim object and assign the reference to our variable.<br />
+Why do we pass in "this" as an argument to Minim?<br />
+This is because the Minim library needs to know certain things about our sketch. We use the special keyword "this" to
+refer to the current object instance in which we are coding. In this case it is the instance of our currently running sketch.
+</p>
+<div class="rule"></div>
+<div class="important">Declare the Minim reference variable with a global scope so it can be used throughout the sketch.</div>
+<div class="important">Initialize the Minim reference variable in the setup method by creating a new Minim object and passing
+in "this" as an argument (a reference to our sketch).</div>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Declaring and Initializing the AudioPlayer Class</h1>
+<p>
+In order to play a song, we must first create an instance of the AudioPlayer class. This is a class inside the Minim library
+that handles the playing of sounds.
+</p>
+<p>
+We'll probably want most (if not all) of our sounds to have global scope, like the Minim object, so that we can use and control
+them throughout our sketch. Let's declare the AudioPlayer reference variable outside our setup.<br />
+<span class="code">AudioPlayer song;</span><br />
+Now to initialize our song we need to create a new instance of the AudioPlayer class (an AudioPlayer object).
+We'll do this inside our setup method.<br />
+<span class="code">song = minim.loadFile("song.mp3", 2048);</span><br />
+Notice how we're actually using the loadFile method of the minim object? This is because the Minim class handles the loading
+of mp3 or wav files and then passes back a reference to the loaded sound (with the type AudioPlayer) which can be assigned to
+a reference variable of type AudioPlayer.
+</p>
+<div class="rule"></div>
+<h1>Playing and Controlling Sounds</h1>
+<p>
+Our new AudioPlayer object instance with our sound loaded comes packed with cool features. Let's take a look.
+</p>
+<p>
+<span class="code">song.play();</span> play from current position<br />
+<span class="code">song.pause();</span> stop at current position<br />
+<span class="code">song.rewind();</span> go to beginning<br />
+<span class="code">song.loop();</span> loop forever<br />
+<span class="code">song.loop(int n);</span> loop n times<br />
+<span class="code">song.position();</span> returns play position in millis.(int)<br />
+<span class="code">song.cue(int p);</span> set play position to p millis.<br />
+<span class="code">song.length();</span> returns length millis.(int)<br />
+<span class="code">song.setLoopPoints(int b, int e);</span><br />
+Sets the song to loop between points b and e in millis.
+</p>
+<div class="rule"></div>
+<div class="important">Declare an AudioPlayer reference variable with global scope so it can be used throughout the sketch.</div>
+<div class="important">To initialize an AudioPlayer reference variable you need to create a new instance of the AudioPlayer class
+by calling the loadFile(path, buffersize) method in the Minim class. You will need an instance of the Minim class before you
+can do this.</div>
+</div>
+<div id="tabs-4" class="tab">
+<h1>Declaring and Initializing an FFT Object</h1>
+<img src="img/sound/fft.jpg" alt="http://www.certif.com/cplot_manual/ch0d_D_3_1.html" />
+<p>
+In order to analyze sound, we need to declare and initialize one more object. The class for this object is called FFT which is
+short for Fast Fourier Transform. The specifics of this are not necessary to know, but the basic understanding is this:<br />
+A Fast Fourier Transform takes an analog wave signal and breaks it into a series of digital approximations. What does that mean
+in english? The wave of a song is broken into it's components: lows, mids, highs, and we are given the level of each one.
+</p>
+<p>
+To create an FFT object we again declare this reference variable with a global scope.<br />
+<span class="code">FFT fft;</span><br />
+Inside our setup method we'll need to initialize our new fft reference variable with an instance of the FFT class.<br />
+<span class="code">fft = new FFT(song.bufferSize(), song.sampleRate());</span><br />
+Notice how we pass in two arguments, the song buffer size and sample rate. This is so the FFT object will know about
+the size and shape of our song data.
+</p>
+<div class="rule"></div>
+<h1>Analyzing Sound</h1>
+<p>
+Now that we have our FFT object instance we can use some of the methods of the FFT class to analyze our sound.
+</p>
+<p>
+Inside our draw loop we will need to update our FFT variable with the latest information about our song.<br />
+<span class="code">fft.forward(song.mix);</span><br />
+Since we don't care about stereo sound, we call fft.forward(song.mix) to advance the fft analysis of our song playing
+and mix the left and right audio channels together.<br />
+<span class="code">println( fft.getBand(0) );</span><br />
+This will print out the first average value in our fft object. This is the lowest frequency sound of our song, and what
+is printed will be the volume, or level of that sound.
+</p>
+</div>
+<div id="tabs-5" class="tab">
+<h1>Visualizing Sound Data</h1>
+<p>
+One of the quickest ways to visualize sound data is to build an equalizer. Here is an example sketch of how to create a
+simple equalizer. Since the sounds won't play in the javascript processing, you will have to run the applet on the following
+page. Click once to start the song playing, and again to pause.
+</p>
+<div class="rule"></div>
+<form><textarea class="processingide" style="height:660px" noplay="true">
+import ddf.minim.analysis.*;
+import ddf.minim.*;
+
+Minim minim;
+AudioPlayer song;
+FFT fft;
+int pos;
+
+void setup()
+{
+  size(512, 512);
+  noStroke();
+  minim = new Minim(this);
+  song = minim.loadFile("schubert.mp3", 1024);
+  fft = new FFT(song.bufferSize(), song.sampleRate());
+}
+void mousePressed() {
+  if (song.isPlaying()) {
+    song.pause();
+    pos = song.position();
+  } else {
+    song.loop();
+    song.cue(pos);
+  }
+}
+void draw()
+{
+  background(255);
+  fft.forward(song.mix);
+  if (song.isPlaying()) {
+    fill(0, 64);
+    for (int i = 0; i < fft.specSize(); i++)
+    {
+      rect(i*2, height - fft.getBand(i)*i * 4, 4, fft.getBand(i)*i * 4  );
+    }
+  } else {
+    fill(0);
+    text("Click to play", 128, 256);
+  }
+}
+                            </textarea></form>
+</div>
+<div id="tabs-6" class="tab">
+<iframe src="applets/sound/index.html" width="100%" height="640">
+                        Your browser doesn't support iframes
+                        </iframe>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

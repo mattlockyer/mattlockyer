@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Advanced Images</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Channels</a></li>
+<li><a href="#tabs-3">Using Data</a></li>
+<li><a href="#tabs-4">Example</a></li>
+<li><a href="#tabs-5">Rendering</a></li>
+<li><a href="#tabs-6">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>Channels Channels Channels...
+<ul>
+<li>Color and Channels</li>
+<li>Using the Data</li>
+<li>Results</li>
+</ul>
+</li>
+<li>Rendering Layers
+<ul>
+<li>How to</li>
+<li>Why</li>
+<li>Results</li>
+</ul>
+</li>
+</ul>
+<div class="rule"></div>
+<h1>Resources</h1>
+<p>
+<a href="http://processing.org/learning/color/">About Color</a><br />
+<a href="http://processing.org/reference/color_datatype.html">Color Type</a><br />
+</p>
+<div class="rule"></div>
+<div class="quote">
+"Before long, I'll have my own channel - I'll be like Barney." ~ David Hasselhoff
+</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>Color</h1>
+<img src="http://upload.wikimedia.org/wikipedia/commons/d/de/Closeup_of_pixels.JPG" />
+<p>
+Every image is made of a 2d grid of pixels. Each pixel represents a color value, and each color value represents a
+brightness of red, green, and blue. Each color stores the brightness of it's
+ color in 8 bits of information, allowing the brightness values to range from 0 - 255.
+</p>
+<div class="rule"></div>
+<h1>Binary Review</h1>
+<p>
+Remember from the previous section that each bit represents a decision of 1 or 0, true or false. So if we have 8 bits
+to represent red, green, and blue brightness, how many colors do we have?
+</p>
+<p>
+(2 * 2 * 2 * 2 * 2 * 2 * 2 * 2) *<br />
+(2 * 2 * 2 * 2 * 2 * 2 * 2 * 2) *<br />
+(2 * 2 * 2 * 2 * 2 * 2 * 2 * 2) =<br />
+256 * 256 * 256 = 16,777,216 colors
+</p>
+<div class="rule"></div>
+<h1>Channels</h1>
+<img src="http://upload.wikimedia.org/wikipedia/en/5/56/RGB_channels_separation.png" />
+<p>
+The channels of a color are simply the red, green, and blue values. If you isolate only one channel, that's called separating.
+Different channels will no doubt have different brightness values. This information can be very valuable.
+</p>
+<div class="rule"></div>
+<div class="important">Pixels are made up of red, green, blue. Each color is stored by 8 bits.</div>
+<div class="important">One color in an image is called a channel. Each channel will have different brightness values.</div>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Using Channel Data - Examples</h1>
+<p>
+All of these examples create a simple 2d grid of Tile objects. Each Tile object represents a position and draws itself accordingly.
+You can switch channels using the arrow keys to see the differences that will occur when changing the channel data.
+</p>
+<div class="rule"></div>
+<h1>Using Channel Data - Scale</h1>
+<p>
+The channel data is used to control the scale of the tiles.
+</p>
+<form><textarea class="processingide" style="height:400px">
+PImage img;
+int channel = 0;
+int hTiles = 32;
+int vTiles = 32;
+Tile[][] tiles = new Tile[hTiles][vTiles];
+float tileWidth, tileHeight;
+
+void setup() {
+  size(425, 360);
+  background(255);
+  noStroke();
+  rectMode(CENTER);
+  img = loadImage("img/images/cat.jpg");
+  
+  tileWidth = (float) width/hTiles;
+  tileHeight = (float) height/vTiles;
+  
+  for (int i = 0; i < hTiles; i++) {
+    for (int j = 0; j < vTiles; j++) {
+      tiles[i][j] = new Tile( new PVector(i * tileWidth + tileWidth/2, j * tileHeight + tileHeight/2) );
+    }
+  }
+}
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      channel++;
+      if (channel > 2) channel = 0;
+    } else if (keyCode == DOWN) {
+      channel--;
+      if (channel < 0) channel = 2;
+    }
+  }
+}
+
+void draw() {
+  background(255);
+  
+  for (int i = 0; i < hTiles; i++) {
+    for (int j = 0; j < vTiles; j++) {
+      tiles[i][j].drawMe();
+    }
+  }
+}
+
+class Tile {
+  PVector pos;
+  Tile(PVector pos) {
+    this.pos = pos;
+  }
+  void drawMe() {
+    color c =  img.get( (int) pos.x, (int) pos.y );
+    fill(c);
+    
+    pushMatrix();
+    translate(pos.x, pos.y);
+    
+    switch (channel) {
+      case 0: scale(red(c) / 255); break;
+      case 1: scale(green(c) / 255); break;
+      case 2: scale(blue(c) / 255); break;
+    }
+    
+    rect(0, 0, tileWidth, tileHeight);
+    popMatrix();
+  }
+}</textarea></form>
+<div class="rule"></div>
+<h1>Using Channel Data - Font Scale</h1>
+<p>
+The channel data is used to control the font scale of some text that says, "CAT".
+</p>
+<form><textarea class="processingide" style="height:400px">
+PImage img;
+int channel = 0;
+int hTiles = 12;
+int vTiles = 16;
+Tile[][] tiles = new Tile[hTiles][vTiles];
+float tileWidth, tileHeight;
+
+void setup() {
+  size(425, 360);
+  background(255);
+  noStroke();
+  rectMode(CENTER);
+  textFont(createFont("Arial Black",48));
+  textAlign(CENTER);
+  img = loadImage("img/images/cat.jpg");
+  
+  tileWidth = (float) width/hTiles;
+  tileHeight = (float) height/vTiles;
+  
+  for (int i = 0; i < hTiles; i++) {
+    for (int j = 0; j < vTiles; j++) {
+      tiles[i][j] = new Tile( new PVector(i * tileWidth + tileWidth/2, j * tileHeight + tileHeight/2) );
+    }
+  }
+}
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      channel++;
+      if (channel > 2) channel = 0;
+    } else if (keyCode == DOWN) {
+      channel--;
+      if (channel < 0) channel = 2;
+    }
+  }
+}
+
+void draw() {
+  background(255);
+  
+  for (int i = 0; i < hTiles; i++) {
+    for (int j = 0; j < vTiles; j++) {
+      tiles[i][j].drawMe();
+    }
+  }
+}
+
+class Tile {
+  PVector pos;
+  Tile(PVector pos) {
+    this.pos = pos;
+  }
+  void drawMe() {
+    color c =  img.get( (int) pos.x, (int) pos.y );
+    fill(c, 64);
+    
+    pushMatrix();
+    translate(pos.x, pos.y);
+    
+    switch (channel) {
+      case 0: scale(red(c) / 255); break;
+      case 1: scale(green(c) / 255); break;
+      case 2: scale(blue(c) / 255); break;
+    }
+    
+    //rect(0, 0, tileWidth, tileHeight);
+    text("CAT", 0, 0);
+    popMatrix();
+  }
+}</textarea></form>
+<div class="rule"></div>
+<h1>Using Channel Data - Rotation</h1>
+<p>
+The channel data is used to change the rotation of some lines.
+</p>
+<form><textarea class="processingide" style="height:400px">
+PImage img;
+int channel = 0;
+int hTiles = 48;
+int vTiles = 16;
+Tile[][] tiles = new Tile[hTiles][vTiles];
+float tileWidth, tileHeight;
+
+void setup() {
+  size(425, 360);
+  background(255);
+  smooth();
+  noStroke();
+  rectMode(CENTER);
+  img = loadImage("img/images/cat.jpg");
+  
+  tileWidth = (float) width/hTiles;
+  tileHeight = (float) height/vTiles;
+  
+  for (int i = 0; i < hTiles; i++) {
+    for (int j = 0; j < vTiles; j++) {
+      tiles[i][j] = new Tile( new PVector(i * tileWidth + tileWidth/2, j * tileHeight + tileHeight/2) );
+    }
+  }
+}
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      channel++;
+      if (channel > 3) channel = 0;
+    } else if (keyCode == DOWN) {
+      channel--;
+      if (channel < 0) channel = 3;
+    }
+  }
+}
+
+void draw() {
+  background(255);
+  
+  for (int i = 0; i < hTiles; i++) {
+    for (int j = 0; j < vTiles; j++) {
+      tiles[i][j].drawMe();
+    }
+  }
+}
+
+class Tile {
+  PVector pos;
+  Tile(PVector pos) {
+    this.pos = pos;
+  }
+  void drawMe() {
+    color c =  img.get( (int) pos.x, (int) pos.y );
+    fill(160);
+    
+    pushMatrix();
+    translate(pos.x, pos.y);
+    
+    switch (channel) {
+      case 0: rotate( red(c) / 255 * PI - PI/2 ); break;
+      case 1: rotate( green(c) / 255 * PI - PI/2 ); break;
+      case 2: rotate( blue(c) / 255 * PI - PI/2 ); break;
+      case 3: rotate( brightness(c) / 255 * PI - PI/2 ); break;
+    }
+    
+    rect(0, 0, tileWidth * 3, 2);
+    popMatrix();
+  }
+}</textarea></form>
+</div>
+<div id="tabs-4" class="tab">
+<form><textarea class="processingide" style="height:580px">
+PImage img;
+int channel = 0;
+int maxBall = 256;
+ArrayList<Ball> objects = new ArrayList<Ball>();
+
+void setup() {
+  size(800, 400);
+  background(255);
+  smooth();
+
+  img = loadImage("img/images/colors.jpg");
+  //img = loadImage("img/images/cat.jpg");
+}
+
+void keyPressed() {
+  if (key == ' ') {
+    background(255);
+    objects.clear();
+  }
+  if (key == CODED) {
+    if (keyCode == UP) {
+      channel++;
+      if (channel > 3) channel = 0;
+    } 
+    else if (keyCode == DOWN) {
+      channel--;
+      if (channel < 0) channel = 3;
+    }
+  }
+}
+
+void draw() {
+  if (mousePressed && objects.size() < maxBall) {
+    objects.add( new Ball( mouseX, mouseY ));
+  }
+
+  for (int i = 0; i < objects.size(); i++) {
+    Ball b = objects.get(i);
+    b.channelToAngle();
+    b.update();
+    b.drawMe();
+  }
+
+  noStroke();
+  switch (channel) {
+    case 0: fill(255, 0, 0); rect(0, 0, 50, 50); break;
+    case 1: fill(0, 255, 0); rect(0, 0, 50, 50); break;
+    case 2: fill(0, 0, 255); rect(0, 0, 50, 50); break;
+    case 3: fill(220, 220, 220); rect(0, 0, 50, 50); break;
+  }
+}
+
+class Ball {
+  PVector pos, pPos, vel, acc;
+  float damp, mass;
+  color c;
+  int life;
+
+  Ball(float xPos, float yPos) {
+    pos = new PVector(xPos, yPos);
+    pPos = new PVector(0, 0);
+    vel = new PVector(0, 0);
+    acc = new PVector(0, 0);
+    damp = 0.99;
+    mass = 1;
+    c = color(0, 0, 0);
+    life = 255;
+  }
+
+  void update() {
+    //update position
+    vel.add(acc);
+    vel.mult(damp);
+    pPos.set(pos.x, pos.y, 0);
+    pos.add(vel);
+    acc.set(0, 0, 0);
+    //check if outside
+    outside();
+    //update color
+    c = img.get( (int) pos.x, (int) pos.y );
+    life--;
+    if (life < 0) {
+      objects.remove(this);
+    }
+  }
+
+  void outside() {
+    if (pos.x > width || pos.x < 0
+      || pos.y > height || pos.y < 0) {
+      objects.remove(this);
+    };
+  }
+
+  void channelToAngle() {
+    float bright = 0;
+    switch (channel) {
+      case 0: bright = red(c); break;
+      case 1: bright = green(c); break;
+      case 2: bright = blue(c); break;
+      case 3: bright = brightness(c); break;
+    }
+    //the max bright value is 255, so...
+    bright /= 128; //normalize values between 0 to 2
+    bright -= 1; //minus lower half so we have -1 to 1
+    bright *= PI; //multiple by PI so we can turn -PI to PI
+    bright -= PI/2; //we want positive values to be travelling to the right
+
+    PVector forceVector = new PVector( cos(bright), sin(bright) );
+    forceVector.mult( 0.08 ); //differentiate based on mass
+    acc.add( forceVector );
+    vel.limit(1);
+  }
+
+  void drawMe() {
+    stroke(c);
+    strokeWeight(mass);
+    line(pos.x, pos.y, pPos.x, pPos.y);
+  }
+}</textarea></form>
+</div>
+<div id="tabs-5" class="tab">
+<h1>Creating an Offscreen Buffer Object</h1>
+<p>
+Not everything in processing must be drawn directly to the screen. We also have the option of drawing to another
+surface. This surface is called an offscreen buffer.
+</p>
+<p>
+To set up a buffer we need to create an object of type PGraphics with global scope.<br />
+<span class="code">PGraphics canvas;</span><br />
+We name is canvas because we will draw on it.
+</p>
+<p>
+Now we need to create our buffer so processing knows how much memory to allocate. In our setup we might write:<br />
+<span class="code">canvas = createGraphics(width, height, P2D);</span><br />
+Remember this should be after the size method has been called, since we're using the width and height reserved variables that
+won't be set until after we've set the size of our window.<br /><br />
+Also, notice the third argument "P2D" here. That's a rendering mode of processing that we need to tell processing we will be using.
+It stands for Processing 2D. In theory we could have an offscreen 3D surface as well...
+</p>
+<div class="rule"></div>
+<h1>Rendering Offscreen</h1>
+ <p>
+Now that we have our offscreen buffer setup we can start drawing to it. There are however a few extra steps to target this new buffer.
+</p>
+<p>
+When we want to start using our buffer we must specify:<br />
+<span class="code">canvas.beginDraw();</span><br />
+And when we're finished with our buffer:<br />
+<span class="code">canvas.endDraw();</span><br />
+</p>
+<p>
+Also, every drawing command must be executed with the prefix of our buffer name:<br />
+<span class="code">canvas.background(255);</span><br />
+<span class="code">canvas.fill(255, 0, 0);</span><br />
+<span class="code">canvas.ellipse(0, 0, 20, 20);</span><br />
+</p>
+<div class="rule"></div>
+<div class="important">All extra buffers should be declared with global scope.</div>
+<div class="important">Buffers take a lot of memory and are difficult to draw, try to limit your sketch size or the number of buffers
+you will need.</div>
+<div class="important">Everything done with a buffer must use bufferName.beginDraw(), bufferName.endDraw(), and each draw command
+in between should be prefixed with the bufferName.</div>
+</div>
+<div id="tabs-6" class="tab">
+<form><textarea class="processingide" style="height:580px">
+PGraphics canvas;
+
+PImage img;
+boolean drawRect;
+void setup() {
+  size(425, 720);
+  
+  canvas = createGraphics(width, height/2, P2D);
+  
+  canvas.beginDraw();
+  canvas.background(255);
+  canvas.noStroke();
+  canvas.endDraw();
+  //This image is located in data/img/images/cat.jpg
+  img = loadImage("img/images/cat.jpg");
+  drawRect = false;
+}
+void draw() {
+  background(255);
+  
+  tint(255);
+  image(canvas, 0, 0);
+  
+  tint(255, 128);
+  pushMatrix();
+  scale(1, -1);
+  image(canvas, 0, -height);
+  popMatrix();
+
+  ellipse(mouseX, mouseY, 30, 30);
+
+  if (keyPressed) {
+    if (key == '1') {
+      drawRect = true;
+    } 
+    else if (key == '2') {
+      drawRect = false;
+    }
+  }
+
+  float s = (float) mouseX / width * 32;
+
+  for (int i = 0; i < 16; i++) {
+    int x = (int) random(width);
+    int y = (int) random(height/2);
+    canvas.beginDraw();
+    canvas.fill(img.pixels[y * img.width + x]);
+    canvas.pushMatrix();
+    canvas.translate(x, y);
+    if (drawRect) {
+      canvas.rect(-s/2, -s/2, s, s);
+    } 
+    else {
+      canvas.ellipse(0, 0, s, s);
+    }
+    canvas.popMatrix();
+  }
+  canvas.endDraw();
+}</textarea></form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

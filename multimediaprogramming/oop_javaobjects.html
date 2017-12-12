@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multimedia Programming - Java Objects and Interfaces</title>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.14.custom.css" />
+<link type="text/css" rel=StyleSheet href="css/module.css">
+<link type="text/css" rel=StyleSheet href="css/ide.css">
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+
+
+<link rel="stylesheet" href="css/cm/processingide.css">
+<script type="text/javascript" src="js/cm/codemirror.js"></script>
+<script type="text/javascript" src="js/cm/clike.js"></script>
+<link rel="stylesheet" href="css/cm/processing.css">
+
+<script type="text/javascript" src="js/processing-1.3.0.min.js"></script>
+<style>.CodeMirror {border: 2px inset #dee;}</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="container">
+<div id="tabs">
+<ul>
+<li><a href="index.html">Back</a></li>
+<li><a href="#tabs-1">Goals</a></li>
+<li><a href="#tabs-2">Access Control</a></li>
+<li><a href="#tabs-3">Getter/Setter</a></li>
+<li><a href="#tabs-4">Interfaces</a></li>
+<li><a href="#tabs-5">Methods</a></li>
+<li><a href="#tabs-6">Variables</a></li>
+<li><a href="#tabs-7">Example</a></li>
+</ul>
+<div id="tabs-1" class="tab">
+<h1>Goals</h1>
+<ul>
+<li>To learn know enough about objects to use Java
+<ul>
+<li>To understand Java access control</li>
+<li>To understand proper object encapsulation - the getter and setter</li>
+<li>To understand interfaces</li>
+<li>To understand class and instance variables</li>
+<li>To understand class and instance methods</li>
+</ul>
+</li>
+</ul>
+<h1>Resources</h1>
+<p>
+<a href="http://download.oracle.com/javase/tutorial/java/concepts/interface.html">Java Interfaces</a>
+</p>
+<div class="rule"></div>
+<div class="quote">"This evolution may compromise Java's claim of being simpler than C++,
+but my guess is that the effort will make Java a better language than it is today." ~ Bjarne Stroustrup</div>
+</div>
+<div id="tabs-2" class="tab">
+<h1>Access Control</h1>
+<p>
+It is time to begin to make the transition to using full Java objects. Java offers a number of features for object-oriented programming.
+In this module, we will highlight a few of the most important features.
+You can do more than this with objects, but this should be enough to get you started.
+ You can read more at the <a href="http://download.oracle.com/javase/tutorial/java/concepts/index.html">Java tutorial</a>.
+</p>
+<p>Let's start with access control. There are two types of access control:</p>
+<ul>
+<li><span class="code">public</span></li>
+<li><span class="code">private</span></li>
+</ul>
+<p>These are Java keywords use to indicate whether a method or variable can be accessed from a reference variable.
+A <span class="code">public</span> method or variable can be accessed using the reference variable.
+A private one can not. Its scope is limited to the definition of the class. Let's take a look.</p>
+<form><textarea class="processingide" style="height:500px" noplay="true">
+class Ball {
+    //private access modifiers will help protect our fields
+    public float xPos, yPos;
+    private float xVel, yVel;
+    //Constructors are always public
+    Ball(){ ... }
+    //The update method is private
+    private void update() { ... }
+    //The draw method is public
+    public void draw() { ... }
+}
+
+void setup(){
+    Ball b = new Ball();
+    b.xPos = 10      // works
+    b.xVel = 2;      // error: xVel is private.
+    b.draw();        // works
+    b.update();      // error: update() is private
+}</textarea></form>
+<h1>Why?</h1>
+<p>
+We do this in order to keep the interface, the methods and variables accessible from the reference variable to a minimum.
+Sometimes variables are only used inside the object. The should never be changed by a programmer who using instances of the object, so we hide them.
+As you design your objects, you want to expose only the most important details. Everything else should stay locked inside of the object.
+</p>
+<div class="important">Use public if you want the variable or method to be accessible outside of the class.</div>
+<div class="important">Use private if you want the variable or method to only be accessible inside the class.</div>
+<div class="rule"></div>
+</div>
+<div id="tabs-3" class="tab">
+<h1>Getter / Setter</h1>
+<p>
+If you set a variable to be <span class="code">private</span>, it means you can't change its value.
+What's happens if you need to? That is what a getter and setter is for.
+A <strong>getter / setter</strong> is a public method for changing the value of a private variable.
+</p>
+<p>It might seem a little clumsy to use a getter / setter at first, but the power comes in when you want to do
+something special like storing the radius in addition to its diameter.</p>
+<form><textarea class="processingide" style="height:410px" noplay="true">
+class Ball {
+    private int radius;
+    private int diameter;
+    Ball(){...}
+    public void draw() {....}
+    private void update() { ....}
+	
+    public void setSetDiameter(int d){
+        radius = d/2;
+        diameter = d;
+    }
+    
+    public int getDiameter(){
+        return diameter;
+    }
+}</textarea></form>
+<div class="rule"></div>
+<div class="important">When doing <em>proper</em> Java programming, the only way to access a member variable is through a getter or setter.</div>
+</div>
+<div id="tabs-4" class="tab">
+<h1>Interfaces</h1>
+<img src="img/oop/controller.png" />
+<p>
+ An interface is a description of what an implementing object can do. It like the buttons on a controller.
+It is a list of methods. It does <strong>not</strong> include any implementation.
+We use interfaces to describe the possible behaviours of all the implementing objects. An object can implement multiple interfaces.
+</p>
+<div class="rule"></div>
+<form><textarea class="processingide" style="height:610px" noplay="true">
+// describes what all Balls should do.
+interface Ball {
+    abstract void draw();
+    abstract void move();
+}
+interface Collider {
+    abstract boolean checkBounds(int width, int height);
+}
+class BouncyBall implements Ball, Collider {
+    //some variables
+    BouncyBall(){ ... }
+    //implement move
+    void move(){
+        //code for moving the bouncy ball	
+    }
+    //implement draw
+    void draw(){
+        //code to draw the ball
+    }
+    //implement checkBounds
+    boolean checkBound(int width, int height){
+        //code to check the ball's position inside the bounds.
+    }
+}</textarea></form>
+<div class="rule"></div>
+<div class="important">An an interface defines a list of methods an object can implement.</div>
+<div class="important">If an object implements one of the methods, it must implement all of them.</div>
+<div class="important">An object can implement more than one interface.</div>
+</div>
+<div id="tabs-5" class="tab">
+<h1>Methods</h1>
+<p>There are two different kinds of methods:</p>
+<ul>
+<li>class</li>
+<li>instance</li>
+</ul>
+<p>
+A class method is a method that is defined one and stored in memory only <strong>once</strong> for every instance of the object created. An instance method is a method that has a copy stored in memory for each instance of the object.
+</p>
+
+<form><textarea class="processingide" style="height:260px" noplay="true">
+class Ball {
+    PVector position;
+    PVector velocity;
+    Ball(){ ... }
+    //each instance will have its own copy of the method
+    void update() { ... }    
+    //only one copy of the method will be created
+    static void draw() { ... } 
+}</textarea></form>
+<div class="rule"></div>
+<div class="important">A <span class="code">static</span> method is only created once. Every instance of the object uses the same code.</div>
+<div class="important">A regular method (no <span class="code">static</span> keyword in front) is created new for every instance you create. Every object has its own copy of a method's code.</div>
+</div>
+<div id="tabs-6" class="tab">
+<h1>Variables</h1>
+<p>
+A variable can also be <span class="code">static</span>. It means that all instances of the class share the variable.
+</p>
+<p>A variable can also be declared <span class="code">final</span>. This means that it will never change. We often tell Java that a variable is a constant by declaring that it is both <span class="code">static</span> and <span class="code">final</span>.</p>
+<form><textarea class="processingide" style="height:360px" noplay="true">
+class Ball {
+    static final int BALL_SIZE = 10;
+    static int ballCount = 0;
+    PVector velocity;
+    Ball(){
+        ballCount += 1;
+    }
+    int getNumberOfBalls(){
+        //return the number of Ball objects that have
+        //been instantiated by during the run of program
+        return ballCount; 
+    }
+    ...
+}</textarea></form>
+</div>
+<div id="tabs-7" class="tab">
+<iframe src="applets/objectsJava/index.html" width="100%" height="640">
+                            Your browser doesn't support iframes
+                        </iframe>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
